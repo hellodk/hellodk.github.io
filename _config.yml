@@ -10,9 +10,9 @@ author:
 #Target date in UTC / GMT
 countdown:
   theme: red
-  year: 2020
-  month: 1
-  day: 1
+  year: 2015
+  month: 12
+  day: 10
   hour: 0
   minute: 0
 
