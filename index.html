@@ -1,14 +1,8 @@
 ---
-layout: main
-canonical_url: /index.html
-title: Deepak Gupta - cylon
-description: "Blog on technical and social articles. @hellodiku is a full time technologist and photographer by hobbist"
+layout: default
 ---
 
 <div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
@@ -21,6 +15,6 @@ description: "Blog on technical and social articles. @hellodiku is a full time t
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <!--p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p-->
 
 </div>

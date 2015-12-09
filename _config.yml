@@ -6,16 +6,42 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: cylon
+#title: cylon
+title: "Hello...we're under the process of getting this up, keep watching this space"
 email: hello.dk@outlook.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
+#description: > Coming soon..keep watchig this space
+#baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://hellodk.in" # the base hostname & protocol for your site
 twitter_username: hellodiku
 github_username:  hellodk
 
 # Build settings
 markdown: kramdown
+
+
+description: "Coming Soon"
+#if you modify locale please have a look at _data/messages.yml too
+locale: en
+#for meta name="author" :
+author: 
+
+#Target date in UTC / GMT
+countdown:
+  theme: red
+  year: 2015
+  month: 12
+  day: 10
+  hour: 5
+  minute: 30
+
+# Jekyll configuration
+sass:
+  sass_dir: _sass
+  style: compressed
+permalink: /:categories/:title/
+kramdown:
+  toc_levels: 1..2
+highlighter: pygments
+
+
+exclude: ["lib", "config.rb", ".sass-cache", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "*.sublime-project", "*.sublime-workspace", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "node_modules", "Gruntfile.js", "package.json"]
