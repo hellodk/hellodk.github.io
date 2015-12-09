@@ -1,6 +1,6 @@
 ---
 layout: post-dk
-title:  CI Autooation with Jenkins
+title:  CI Automation with Jenkins
 date:   2015-12-10 01:49:03 +0530
 layout: page
 categories: tech
