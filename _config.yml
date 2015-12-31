@@ -55,7 +55,7 @@ exclude: [vendor]
 safe: false
 lsi: false
 username: hellodk
-repo: jasper
+repo: hellodk.github.io
 branch: master
 relative_source: ../jasper/
 destination: ../jasper-pages/
