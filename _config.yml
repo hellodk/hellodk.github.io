@@ -1,47 +1,73 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-#title: cylon
-title: "Hello...we're under the process of getting this up, keep watching this space"
-email: hello.dk@outlook.com
-#description: > Coming soon..keep watchig this space
-#baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://hellodk.in" # the base hostname & protocol for your site
-twitter_username: hellodk01
-github_username:  hellodk
-
-# Build settings
-markdown: kramdown
-
-
-description: "Coming Soon"
-#if you modify locale please have a look at _data/messages.yml too
-locale: en
-#for meta name="author" :
-author: 
-
-#Target date in UTC / GMT
-countdown:
-  theme: red
-  year: 2015
-  month: 12
-  day: 10
-  hour: 5
-  minute: 30
-
-# Jekyll configuration
-sass:
-  sass_dir: _sass
-  style: compressed
-permalink: /:categories/:title/
-kramdown:
-  toc_levels: 1..2
+# Jykell configuration
+markdown: redcarpet
 highlighter: pygments
+paginate: 5
+language: 'en-uk'
+
+# Website info
+name: 'Curosity is the most powerful thing you own'
+description: "A beautiful narrative written an elegant publishing platform. The story begins here."
+
+# Author's info
+author: 'Deepak Kumar Gupta'
+# edit 'categories' in the front matter of every post to match this username
+nickname: casper
+bio: 'A full time technologist cum foodie. He spends most of the time playing with open source tools and prefers hanging out with friends. Deepak has been a taveller since ages, besides being a hardcore biker and loves doing photogrpahy as hobby.'
+location: 'Bangalore, INDIA'
+url: 'http://hellodk.github.io/'
+image: 'assets/images/casper.png'
+
+short_url: 'hellodk.github.io/'
+#google_analytics: UA-69281367-1
+disqus: username
+# edit baseurl to simply '/' if using as your personal page (instead of a project page)
+baseurl: /
+
+# Permalinks
+permalink: /:title
+# permalink: /author/:username
+# permalink: /tag/:tag
 
 
-exclude: ["lib", "config.rb", ".sass-cache", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "*.sublime-project", "*.sublime-workspace", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "node_modules", "Gruntfile.js", "package.json"]
+# gems and other configs
+gems: [jekyll-paginate]
+exclude: [vendor]
+
+# Additional settings available on the front-matter
+# Site logo in the index.html (as in demo.ghost.io)
+# Author's page cover in _layouts/author.html
+# The same for page.html and tag.html layouts
+# Post's page cover as a per-post basis _posts/...
+# Disqus comments as a per-post basis
+# ...
+
+
+# Settings for builing master branch with travis-ci
+# with jekyll-travis
+
+# Settings for deploy rake task
+# Username and repo of Github repo, e.g.
+# https://github.com/USERNAME/REPO.git
+# username defaults to ENV['GIT_NAME'] used by Travis
+# repo defaults to USERNAME.github.io
+# Branch defaults to "source" for USERNAME.github.io
+# or "master" otherwise
+safe: false
+lsi: false
+username: hellodk
+repo: jasper
+branch: master
+relative_source: ../jasper/
+destination: ../jasper-pages/
+production_url:  https://hellodk.github.io/
+source_url:      https://github.com/hellodk/
+
+exclude:
+  - README.md
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+  - changelog.md
+  - "*.Rmd"
+  - vendor
+  - .travis.yml
