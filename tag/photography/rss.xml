@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>hellodk.github.io/</title>
+   
+   <link>http://hellodk.github.io/</link>
+   <description>A beautiful narrative written an elegant publishing platform. The story begins here.</description>
+   <language>en-uk</language>
+   <managingEditor> Deepak Kumar Gupta</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>Camera Basics</title>
+	  <link>//camera-basics</link>
+	  <author>Deepak Kumar Gupta</author>
+	  <pubDate>1963-08-28T15:48:00+05:30</pubDate>
+	  <guid>//camera-basics</guid>
+	  <description><![CDATA[
+	     <p>A basic tutorial on handling a DSLR for beginners.</p>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>
