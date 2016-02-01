@@ -5,8 +5,8 @@
     <description>A beautiful narrative written an elegant publishing platform. The story begins here.</description>
     <link>http://hellodk.github.io///</link>
     <atom:link href="http://hellodk.github.io///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 01 Feb 2016 14:29:56 +0530</pubDate>
-    <lastBuildDate>Mon, 01 Feb 2016 14:29:56 +0530</lastBuildDate>
+    <pubDate>Mon, 01 Feb 2016 14:34:04 +0530</pubDate>
+    <lastBuildDate>Mon, 01 Feb 2016 14:34:04 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -15,9 +15,8 @@
 
                         D. M. Ritchie
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1&gt;Introduction&lt;/h1&gt;
-
-&lt;p&gt;UNIX is a general-purpose, multi-user time sharing system implemented on several Digital Equipment Corporation PDP series machines.&lt;/p&gt;
+&lt;p&gt;Introduction
+UNIX is a general-purpose, multi-user time sharing system implemented on several Digital Equipment Corporation PDP series machines.&lt;/p&gt;
 
 &lt;p&gt;UNIX was written by K. L. Thompson, who also wrote many of the command programs. The author of this memorandum contributed several of the major commands, including the assembler and the debugger. The file system was originally designed by Thompson, the author, and R. H. Canaday.&lt;/p&gt;
 
