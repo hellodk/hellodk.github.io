@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- [[! Page Meta ]] -->
-    <title>RethinkDb installation on Ubuntu-14.04</title>
+    <title>Understanding Git-Flow</title>
     <meta name="description" content="Curosity is the most powerful thing you own - A beautiful narrative written an elegant publishing platform. The story begins here." />
 
     <meta name="HandheldFriendly" content="True" />
@@ -103,10 +103,10 @@
     <article class="post tag-tutorials">
 
         <header class="post-header">
-            <h1 class="post-title">RethinkDb installation on Ubuntu-14.04</h1>
+            <h1 class="post-title">Understanding Git-Flow</h1>
             <section class="post-meta">
             <!-- <a href='/'>Deepak Kumar Gupta</a> -->
-            <time class="post-date" datetime="2016-01-28">28 Jan 2016</time>
+            <time class="post-date" datetime="2015-11-09">09 Nov 2015</time>
                 <!-- [[tags prefix=" on "]] -->
                  
                 on 
@@ -121,70 +121,51 @@
 
         <section class="post-content">
             
-            <p>Let&#39;s get some hands on rethinkdb today and find it out yourself.</p>
+            <p>Understanding Git Flow for(ubuntu-14.04):</p>
 
-<p>So what is rethinkdb? Well, to say...rethinkdb is an open-source, scalable JSON database built from the ground up for the realtime web. RethinkDB inverts the traditional database architecture by exposing an exciting new access model – instead of polling for changes, the developer can tell RethinkDB to continuously push updated query results to applications in realtime. RethinkDB’s realtime push architecture dramatically reduces the time and effort necessary to build scalable realtime apps. RethinkDB also offers a flexible query language, intuitive operations and monitoring APIs, and is easy to setup and learn. Just like any other database solution, rethinkdb ships as a client-server component model. The installation process for both the server and the client are illustrated below:</p>
+<p>what is git flow?
+Usage?
+How can it be helpful?</p>
 
-<p>How to Install RethinkDb:
-1. Add the RethinkDB PPA to your list of repositories : source /etc/lsb-release &amp;&amp; echo &quot;deb http://download.rethinkdb.com/apt $DISTRIB_CODENAME main&quot; | sudo tee /etc/apt/sources.list.d/rethinkdb.list</p>
+<p>Install git flow using the below command:</p>
 
-<ol>
-<li>Add the keys:</li>
-</ol>
+<p>sudo apt-get install git-flow</p>
 
-<p>wget -qO- http://download.rethinkdb.com/apt/pubkey.gpg | sudo apt-key add -</p>
+<p>Starting with git flow:
+To start with git flow, you first need to initialize it inside an existing repository. This is done by using the below command:</p>
 
-<ol>
-<li>Update the repository:</li>
-</ol>
+<p>git flow init</p>
 
-<p>sudo apt-get update</p>
+<p>In-case you want to force re-initialization of git flow, you can use the same command and pass -f as an argument
+eg: git flow init -f</p>
 
-<ol>
-<li>Install the rethinkdb server via apt-get:</li>
-</ol>
+<p>So far cool, this is dead simple, isn&#39;t it? Now let&#39;s see what happens once we do a git flow init. We&#39;ll have to answer a few questions regarding the naming conventions for our branches. For simplicity it is recommended to use the default values.</p>
 
-<p>sudo apt-get -y install rethinkdb</p>
+<p>$ git flow init -f</p>
 
-<p>Install rethinkdb client:</p>
+<p>Which branch should be used for bringing forth production releases?
+   - develop
+   - feature/lint_cleanup
+   - master
+Branch name for production releases: [master] </p>
 
-<ol>
-<li>Install the python-pip package:</li>
-</ol>
+<p>Which branch should be used for integration of the &quot;next release&quot;?
+   - develop
+   - feature/lint_cleanup
+Branch name for &quot;next release&quot; development: [develop] </p>
 
-<p>sudo apt-get install python-pip</p>
+<p>How to name your supporting branch prefixes?
+Feature branches? [feature/] 
+Release branches? [release/] 
+Hotfix branches? [hotfix/] 
+Support branches? [support/] 
+Version tag prefix? [] </p>
 
-<ol>
-<li>Install the rethinkdb python client:</li>
-</ol>
+<p>Creating/Deleting a tag:</p>
 
-<p>sudo pip install rethinkdb :</p>
+<p>Deleting a tag:</p>
 
-<p>The above steps ensure that rethinkdb is installed on the system, while it does not ensures that this will start the rethinkdb service on system startup. You still need to start the rethinkdb service using the below command</p>
-
-<p>The above command will ensure that rethinkdb is running as a terminal process, and will exit once the terminal is closed, or the process is killed, in short it will not run rethinkdb as a background service.</p>
-
-<p>To start rethinkdb as a service, please follow the below steps:</p>
-
-<ol>
-<li><p>Go to /etc/rethinkdb and you will get the file, default.conf.sample</p></li>
-<li><p>Copy the file to /etc/rethinkdb/instances.d and rename the file as per your requirements ensuring the extension is .conf only. Say for example the file name is rethinkdb1.conf</p></li>
-<li><p>Now open the file /etc/rethinkdb/instances.d/rethinkdb1.conf and modify the paramaters as per your requirements.</p></li>
-<li><p>If setting up a cluster, I suggest do change the server-name to somethink like &#39;rethinkdb-primary&#39; or &#39;rethinkdb-1&#39; or &#39;master&#39; or &#39;slave&#39;. This will ensure that we have a meaningful naming convention for our cluster.</p></li>
-<li><p>The default port details are :</p></li>
-</ol>
-
-<p>29015 : Rethinkdb listens for intracluster connections</p>
-
-<p>28015 : Rethinkdb listens for client driver connections</p>
-
-<p>8080 : Rethinkdb listens for administrative HTTP connections</p>
-
-<p>22 : For SSH. The server uses public key authentication.</p>
-
-<p>80 : For HTTP. It is used during the setup process but otherwise redirects to HTTPS.</p>
-
-<p>443 : For HTTPS. An Nginx server sits between RethinkDB and the world and provides basic HTTP authentication and secure HTTPS connections for the web UI</p>
+<p>$ git tag -d <tag_name></p>
 
 
         </section>
@@ -216,15 +197,15 @@
 
             <section class="share">
                 <h4>Share this post</h4>
-                <a class="icon-twitter" href="http://twitter.com/share?text=RethinkDb installation on Ubuntu-14.04&amp;url=http://hellodk.github.io/rethinkdb_installation_on%20_ubuntu-14.04"
+                <a class="icon-twitter" href="http://twitter.com/share?text=Understanding Git-Flow&amp;url=http://hellodk.github.io/understanding_git_flow"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="hidden">Twitter</span>
                 </a>
-                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://hellodk.github.io/rethinkdb_installation_on%20_ubuntu-14.04"
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://hellodk.github.io/understanding_git_flow"
                     onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                     <span class="hidden">Facebook</span>
                 </a>
-                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://hellodk.github.io/rethinkdb_installation_on%20_ubuntu-14.04"
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://hellodk.github.io/understanding_git_flow"
                    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <span class="hidden">Google+</span>
                 </a>
@@ -243,20 +224,20 @@
 
     <!-- [[! next_post ]] -->
     
-        <a class="read-next-story " style="background-image: url(/assets/images/cover1.jpg)" href="/mark_down_cheatsheet">
+        <a class="read-next-story " style="background-image: url(/assets/images/Minion-in-Despicable-Me-2-Wallpaper-HD-1080p.jpg)" href="/Creating-a-Highly-Available-Distributed-Messaging-Queue-Cluster-with-RabbitMQ-3.5.6">
             <section class="post">
-                <h2>Markdown cheat-sheets</h2>
-                <p>Source : https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet # H1 ## H2 ### H3 #### H4 ##### H5 ###### H6...</p>
+                <h2>Creating a Highly Available Distributed Messaging System</h2>
+                <p>Creating a Highly Available Distributed Messaging Queue Cluster with RabbitMQ-3.5.6 What is rabbitmq? Rabbitmq is...</p>
             </section>
         </a>
     
     <!-- [[! /next_post ]] -->
     <!-- [[! prev_post ]] -->
     
-        <a class="read-next-story prev " style="background-image: url(/assets/images/cover4.jpg)" href="/getting_familiar_with_cassandra">
+        <a class="read-next-story prev " style="background-image: url(/assets/images/cover4.jpg)" href="/going_agentless_with_ansible">
             <section class="post">
-                <h2>Getting started with Cassandra</h2>
-                <p><p>The Growth of Big Data</p> <p>Big Data is one of the key forces driving the...</p>
+                <h2>Going Agntless with Ansible</h2>
+                <p><p>While looking for a light yet powerful Configuration Management tool, I was going through some...</p>
             </section>
         </a>
     

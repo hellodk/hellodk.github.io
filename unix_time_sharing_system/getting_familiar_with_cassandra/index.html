@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- [[! Page Meta ]] -->
-    <title>RethinkDb installation on Ubuntu-14.04</title>
+    <title>Getting started with Cassandra</title>
     <meta name="description" content="Curosity is the most powerful thing you own - A beautiful narrative written an elegant publishing platform. The story begins here." />
 
     <meta name="HandheldFriendly" content="True" />
@@ -103,7 +103,7 @@
     <article class="post tag-tutorials">
 
         <header class="post-header">
-            <h1 class="post-title">RethinkDb installation on Ubuntu-14.04</h1>
+            <h1 class="post-title">Getting started with Cassandra</h1>
             <section class="post-meta">
             <!-- <a href='/'>Deepak Kumar Gupta</a> -->
             <time class="post-date" datetime="2016-01-28">28 Jan 2016</time>
@@ -121,70 +121,120 @@
 
         <section class="post-content">
             
-            <p>Let&#39;s get some hands on rethinkdb today and find it out yourself.</p>
+            <p>The Growth of Big Data</p>
 
-<p>So what is rethinkdb? Well, to say...rethinkdb is an open-source, scalable JSON database built from the ground up for the realtime web. RethinkDB inverts the traditional database architecture by exposing an exciting new access model – instead of polling for changes, the developer can tell RethinkDB to continuously push updated query results to applications in realtime. RethinkDB’s realtime push architecture dramatically reduces the time and effort necessary to build scalable realtime apps. RethinkDB also offers a flexible query language, intuitive operations and monitoring APIs, and is easy to setup and learn. Just like any other database solution, rethinkdb ships as a client-server component model. The installation process for both the server and the client are illustrated below:</p>
+<p>Big Data is one of the key forces driving the growth and popularity of NoSQL for business. The almost limitless array of data collection technologies ranging from simple online actions to point of sale systems to GPS tools to smartphones and tablets to sophisticated sensors – and many more – act as force multipliers for data growth.</p>
 
-<p>How to Install RethinkDb:
-1. Add the RethinkDB PPA to your list of repositories : source /etc/lsb-release &amp;&amp; echo &quot;deb http://download.rethinkdb.com/apt $DISTRIB_CODENAME main&quot; | sudo tee /etc/apt/sources.list.d/rethinkdb.list</p>
+<p>In fact, one of the first reasons to use NoSQL is because you have a Big Data project to tackle. A Big Data project is normally typified by:</p>
 
-<ol>
-<li>Add the keys:</li>
-</ol>
+<p>High data velocity – lots of data coming in very quickly, possibly from different locations.
+Data variety – storage of data that is structured, semi-structured and unstructured.
+Data volume – data that involves many terabytes or petabytes in size.
+Data complexity – data that is stored and managed in different locations or data centers.</p>
 
-<p>wget -qO- http://download.rethinkdb.com/apt/pubkey.gpg | sudo apt-key add -</p>
+<p>Datamodel   Performance Scalability Flexibility Complexity  Functionality
+Key-value store High    High    High    None    Variable (None)
+Column Store    High    High    Moderate    Low Minimal
+Document Store  High    Variable (High) High    Low Variable (Low)
+Graph Database  Variable    Variable    High    High    Graph Theory</p>
 
-<ol>
-<li>Update the repository:</li>
-</ol>
+<p>massively scalable open source NoSQL database. Cassandra is perfect for managing large amounts of structured, semi-structured, and unstructured data across multiple data centers and the cloud. Cassandra delivers continuous availability, linear scalability, and operational simplicity across many commodity servers with no single point of failure, along with a powerful dynamic data model designed for maximum flexibility and fast response times</p>
 
-<p>sudo apt-get update</p>
+<p>built-for-scale architecture means that it is capable of handling petabytes of information and thousands of concurrent users/operations per second.</p>
 
-<ol>
-<li>Install the rethinkdb server via apt-get:</li>
-</ol>
+<p>An apache Software Foundation project, Cassandra is column oriented database and is an open source distributed database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure.</p>
 
-<p>sudo apt-get -y install rethinkdb</p>
+<p>Cassandra does not support joins or subqueries. Rather, Cassandra emphasizes denormalization through features like collections</p>
 
-<p>Install rethinkdb client:</p>
+<p>CQL - Cassandara Query Language</p>
 
-<ol>
-<li>Install the python-pip package:</li>
-</ol>
+<p>Each node in a cluster can accept read and write requests, regardless of where the data is actually located in the cluster.</p>
 
-<p>sudo apt-get install python-pip</p>
+<p>When a node goes down, read/write requests can be served from other nodes in the network.</p>
 
-<ol>
-<li>Install the rethinkdb python client:</li>
-</ol>
+<p>The key components of Cassandra are as follows −
+Node − It is the place where data is stored.
+Data center − It is a collection of related nodes.
+Cluster − A cluster is a component that contains one or more data centers.
+Commit log − The commit log is a crash-recovery mechanism in Cassandra. Every write operation is written to the commit log.
+Mem-table − A mem-table is a memory-resident data structure. After commit log, the data will be written to the mem-table. Sometimes, for a single-column family, there will be multiple mem-tables.
+SSTable − It is a disk file to which the data is flushed from the mem-table when its contents reach a threshold value.
+Bloom filter − These are nothing but quick, nondeterministic, algorithms for testing whether an element is a member of a set. It is a special kind of cache. Bloom filters are accessed after every query.</p>
 
-<p>sudo pip install rethinkdb :</p>
+<h2>Commands:</h2>
 
-<p>The above steps ensure that rethinkdb is installed on the system, while it does not ensures that this will start the rethinkdb service on system startup. You still need to start the rethinkdb service using the below command</p>
+<p>nodetool cfstats : displays statistics for each table and keyspace.
+nodetool cfhistograms : provides statistics about a table, including read/write latency, row size, column count, and number of SSTables.
+nodetool netstats : provides statistics about network operations and connections.
+nodetool tpstats : provides statistics about the number of active, pending, and completed tasks for each stage of Cassandra operations by thread pool.
+nodetool status :</p>
 
-<p>The above command will ensure that rethinkdb is running as a terminal process, and will exit once the terminal is closed, or the process is killed, in short it will not run rethinkdb as a background service.</p>
+<p>cqlsh <machine ip> -  connects to the machine cqlsh</p>
 
-<p>To start rethinkdb as a service, please follow the below steps:</p>
+<h2>cqlsh command list:</h2>
 
-<ol>
-<li><p>Go to /etc/rethinkdb and you will get the file, default.conf.sample</p></li>
-<li><p>Copy the file to /etc/rethinkdb/instances.d and rename the file as per your requirements ensuring the extension is .conf only. Say for example the file name is rethinkdb1.conf</p></li>
-<li><p>Now open the file /etc/rethinkdb/instances.d/rethinkdb1.conf and modify the paramaters as per your requirements.</p></li>
-<li><p>If setting up a cluster, I suggest do change the server-name to somethink like &#39;rethinkdb-primary&#39; or &#39;rethinkdb-1&#39; or &#39;master&#39; or &#39;slave&#39;. This will ensure that we have a meaningful naming convention for our cluster.</p></li>
-<li><p>The default port details are :</p></li>
-</ol>
+<p>HELP - Displays help topics for all cqlsh commands.
+CAPTURE - Captures the output of a command and adds it to a file.
+CONSISTENCY - Shows the current consistency level, or sets a new consistency level.
+COPY - Copies data to and from Cassandra.
+DESCRIBE - Describes the current cluster of Cassandra and its objects.
+EXPAND - Expands the output of a query vertically.
+EXIT - Using this command, you can terminate cqlsh.
+PAGING - Enables or disables query paging.
+SHOW - Displays the details of current cqlsh session such as Cassandra version, host, or data type assumptions.
+SOURCE - Executes a file that contains CQL statements.
+TRACING - Enables or disables request tracing.</p>
 
-<p>29015 : Rethinkdb listens for intracluster connections</p>
+<h2>Upgrading:</h2>
 
-<p>28015 : Rethinkdb listens for client driver connections</p>
+<p>mkdir ~/cassandra<em>backup
+sudo cp -r /etc/cassandra/* ~/cassandra</em>backup
+sudo vi /etc/cassandra/cassandra.yaml and edit num<em>tokens to 1 and uncomment the initial</em>token and set it to 1
+nodetool upgradesstables
+nodetool drain
+sudo service cassandra stop
+sudo cp -r /etc/cassandra/* ~/cassandra<em>backup</em>new
+sudo apt-get install cassandra=2.1.12
+Open the old and new cassandra.yaml files and diff them.
+Merge the diffs by hand, including the partitioner setting, from the old file into the new one.
+Do not use the default partitioner setting in the new cassandra.yaml because it has changed in this release to the Murmur3Partitioner. The Murmur3Partitioner can only be used for new clusters. After data has been added to the cluster, you cannot change the partitioner without reworking tables, which is not practical. Use your old partitioner setting in the new cassandra.yaml file.
+Save the file as cassandra.yaml.</p>
 
-<p>8080 : Rethinkdb listens for administrative HTTP connections</p>
+<p>Configuration file &#39;/etc/cassandra/cassandra.yaml&#39;
+ ==&gt; Modified (by you or by a script) since installation.
+ ==&gt; Package distributor has shipped an updated version.
+   What would you like to do about it ?  Your options are:
+    Y or I  : install the package maintainer&#39;s version
+    N or O  : keep your currently-installed version
+      D     : show the differences between the versions
+      Z     : start a shell to examine the situation
+ The default action is to keep your current version.
+*** cassandra.yaml (Y/I/N/O/D/Z) [default=N] ? </p>
 
-<p>22 : For SSH. The server uses public key authentication.</p>
+<p>************<strong><em>Inserting values into tables</em></strong>**************************
+CREATE KEYSPACE tutorialspoint WITH replication = {
+  &#39;class&#39;: &#39;NetworkTopologyStrategy&#39;,
+  &#39;cdr_record&#39;: &#39;2&#39;
+};</p>
 
-<p>80 : For HTTP. It is used during the setup process but otherwise redirects to HTTPS.</p>
+<p>INSERT INTO tutorialspoint.emp (emp<em>id,emp</em>city,emp<em>name,emp</em>phone,emp_sal) VALUES(3,&#39;Kolkata&#39;,&#39;Stag1&#39;,8791134412,60);</p>
 
-<p>443 : For HTTPS. An Nginx server sits between RethinkDB and the world and provides basic HTTP authentication and secure HTTPS connections for the web UI</p>
+<p>UPDATE TABLE emp(
+   emp<em>id int PRIMARY KEY,
+   emp</em>name text,
+   emp<em>city text,
+   emp</em>sal varint,
+   emp_phone varint);</p>
+
+<p>INSERT INTO TABLE emp(emp<em>id int,emp</em>name,emp<em>city,emp</em>sal,emp_phone) VALUES(1,&#39;dk&#39;,&#39;Bangalore&#39;,24,9964014500);</p>
+
+<p>/usr/local/freeswitch/bin/fs_cli -x &quot;originate  freetdm/8/a/009716337516 &amp;park()&quot;</p>
+
+<h2>Nodetool Command Set:</h2>
+
+<p>nodetool status
+nodetool info
+nodetool -host 10.60.8.23 ring</p>
 
 
         </section>
@@ -216,15 +266,15 @@
 
             <section class="share">
                 <h4>Share this post</h4>
-                <a class="icon-twitter" href="http://twitter.com/share?text=RethinkDb installation on Ubuntu-14.04&amp;url=http://hellodk.github.io/rethinkdb_installation_on%20_ubuntu-14.04"
+                <a class="icon-twitter" href="http://twitter.com/share?text=Getting started with Cassandra&amp;url=http://hellodk.github.io/getting_familiar_with_cassandra"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="hidden">Twitter</span>
                 </a>
-                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://hellodk.github.io/rethinkdb_installation_on%20_ubuntu-14.04"
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://hellodk.github.io/getting_familiar_with_cassandra"
                     onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                     <span class="hidden">Facebook</span>
                 </a>
-                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://hellodk.github.io/rethinkdb_installation_on%20_ubuntu-14.04"
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://hellodk.github.io/getting_familiar_with_cassandra"
                    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <span class="hidden">Google+</span>
                 </a>
@@ -243,20 +293,20 @@
 
     <!-- [[! next_post ]] -->
     
-        <a class="read-next-story " style="background-image: url(/assets/images/cover1.jpg)" href="/mark_down_cheatsheet">
+        <a class="read-next-story " style="background-image: url(/assets/images/cover4.jpg)" href="/rethinkdb_installation_on%20_ubuntu-14.04">
             <section class="post">
-                <h2>Markdown cheat-sheets</h2>
-                <p>Source : https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet # H1 ## H2 ### H3 #### H4 ##### H5 ###### H6...</p>
+                <h2>RethinkDb installation on Ubuntu-14.04</h2>
+                <p>Let's get some hands on rethinkdb today and find it out yourself. So what is...</p>
             </section>
         </a>
     
     <!-- [[! /next_post ]] -->
     <!-- [[! prev_post ]] -->
     
-        <a class="read-next-story prev " style="background-image: url(/assets/images/cover4.jpg)" href="/getting_familiar_with_cassandra">
+        <a class="read-next-story prev " style="background-image: url(/assets/images/cover4.jpg)" href="/5_interesting_cloud_predictions_2016">
             <section class="post">
-                <h2>Getting started with Cassandra</h2>
-                <p><p>The Growth of Big Data</p> <p>Big Data is one of the key forces driving the...</p>
+                <h2>5 interesting cloud predictions for 2016</h2>
+                <p><ol> <li>It&#39;s time for IOT-</li> </ol> <p>The IOT or the Internet of Things has been...</p>
             </section>
         </a>
     
