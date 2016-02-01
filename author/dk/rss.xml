@@ -183,6 +183,21 @@ There is space in each i-node for eight disk addresses. A file which fits into e
 
 <h6>H6</h6>
 
+<h1>Will become a heading</h1>
+
+<h2>Will become a sub heading</h2>
+
+<p><em>This will be Italic</em></p>
+
+<p><strong>This will be Bold</strong></p>
+
+<ul>
+<li>This will be a list item</li>
+<li><p>This will be a list item</p>
+
+<p>Add a indent and this will end up as code</p></li>
+</ul>
+
 <p>Alternatively, for H1 and H2, an underline-ish style:</p>
 
 <h1>Alt-H1</h1>
