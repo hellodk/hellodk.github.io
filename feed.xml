@@ -5,8 +5,8 @@
     <description>A beautiful narrative written an elegant publishing platform. The story begins here.</description>
     <link>http://hellodk.github.io///</link>
     <atom:link href="http://hellodk.github.io///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 05 Feb 2016 13:46:42 +0530</pubDate>
-    <lastBuildDate>Fri, 05 Feb 2016 13:46:42 +0530</lastBuildDate>
+    <pubDate>Fri, 05 Feb 2016 13:49:05 +0530</pubDate>
+    <lastBuildDate>Fri, 05 Feb 2016 13:49:05 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -586,6 +586,21 @@ nodetool -host 10.60.8.23 ring&lt;/p&gt;
       </item>
     
       <item>
+        <title>About</title>
+        <description>&lt;p&gt;Write Things about the website&lt;/p&gt;
+</description>
+        <pubDate>Mon, 28 Dec 2015 15:48:00 +0530</pubDate>
+        <link>http://hellodk.github.io///about</link>
+        <guid isPermaLink="true">http://hellodk.github.io///about</guid>
+        
+        <category>about</category>
+        
+        
+        <category>casper</category>
+        
+      </item>
+    
+      <item>
         <title>Creating a Highly Available Distributed Messaging System</title>
         <description>&lt;p&gt;Creating a Highly Available Distributed Messaging Queue Cluster with RabbitMQ-3.5.6
 What is rabbitmq?&lt;/p&gt;
@@ -811,21 +826,6 @@ ansible-playbook playbook.yml -f 10&lt;/p&gt;
         <category>tutorials</category>
         
         <category>photography</category>
-        
-        
-        <category>casper</category>
-        
-      </item>
-    
-      <item>
-        <title>About</title>
-        <description>&lt;p&gt;Write Things about the website&lt;/p&gt;
-</description>
-        <pubDate>Wed, 28 Aug 1963 15:48:00 +0530</pubDate>
-        <link>http://hellodk.github.io///about</link>
-        <guid isPermaLink="true">http://hellodk.github.io///about</guid>
-        
-        <category>about</category>
         
         
         <category>casper</category>

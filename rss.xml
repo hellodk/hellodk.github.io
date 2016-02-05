@@ -58,6 +58,16 @@
       <dc:date>2016-01-28T15:48:00+05:30</dc:date>
     </item>
     <item>
+      <title>About</title>
+      <link>http://hellodk.github.io//about</link>
+      <description>Write Things about the website
+
+
+</description>
+      <pubDate>Mon, 28 Dec 2015 15:48:00 +0530</pubDate>
+      <dc:date>2015-12-28T15:48:00+05:30</dc:date>
+    </item>
+    <item>
       <title>Creating a Highly Available Distributed Messaging System</title>
       <link>http://hellodk.github.io//Creating-a-Highly-Available-Distributed-Messaging-Queue-Cluster-with-RabbitMQ-3.5.6</link>
       <description>Creating a Highly Available Distributed Messaging Queue Cluster with RabbitMQ-3.5.6
@@ -92,16 +102,6 @@ So why don't you try your hands on Ansible and experience it's awesomeness....al
       <title>Camera Basics</title>
       <link>http://hellodk.github.io//camera-basics</link>
       <description>A basic tutorial on handling a DSLR for beginners.
-
-</description>
-      <pubDate>Wed, 28 Aug 1963 15:48:00 +0530</pubDate>
-      <dc:date>1963-08-28T15:48:00+05:30</dc:date>
-    </item>
-    <item>
-      <title>About</title>
-      <link>http://hellodk.github.io//about</link>
-      <description>Write Things about the website
-
 
 </description>
       <pubDate>Wed, 28 Aug 1963 15:48:00 +0530</pubDate>
