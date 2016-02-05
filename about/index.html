@@ -53,7 +53,7 @@
     <link rel="alternate" type="application/rss+xml" title="Curosity is the most powerful thing you own" href="/rss.xml" />
 
 </head>
-<body class="page-template nav-closed">
+<body class="post-template nav-closed">
 
     <div class="nav">
     <h3 class="nav-title">Menu</h3>
@@ -83,39 +83,124 @@
         <!-- [[! Everything else gets inserted here ]] -->
         <!-- < default -->
 
-<!-- This is a page template. A page outputs content just like any other post, and has all the same -->
-    <!-- attributes by default, but you can also customise it to behave differently if you prefer.  -->
+<!-- The comment above "< default" means - insert everything in this file into -->
+    <!-- the [body] of the default.hbs template, which contains our header/footer. -->
 
-<!-- Everything inside the #post tags pulls data from the page -->
+<!-- Everything inside the #post tags pulls data from the post -->
 <!-- #post -->
 
-<header class="main-header post-head " style="background-image: url(/assets/images/Minion-in-Despicable-Me-2-Wallpaper-HD-1080p.jpg)">
-    <nav class="main-nav overlay clearfix">
+<header class="main-header post-head " style="background-image: url(/assets/images/Minion-in-Despicable-Me-2-Wallpaper-HD-1080p.jpg) ">
+    <nav class="main-nav  overlay  clearfix">
         <a class="blog-logo" href="/"><img src="/assets/images/ghost.png" alt="Blog Logo" /></a>
         
             <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
-            
         
     </nav>
 </header>
 
 <main class="content" role="main">
-    <article class="post">
-        <!-- Everything inside the #post tags pulls data from the post -->
+
+    <article class="post tag-tutorials">
 
         <header class="post-header">
             <h1 class="post-title">About</h1>
+            <section class="post-meta">
+            <!-- <a href='/'>Deepak Kumar Gupta</a> -->
+            <time class="post-date" datetime="2015-12-28">28 Dec 2015</time>
+                <!-- [[tags prefix=" on "]] -->
+                 
+                on 
+                
+                    
+                       <a href='/tag/about'>About</a>
+                       
+                
+                
+            </section>
         </header>
 
         <section class="post-content">
+            
             <p>Too often we under-estimate the power of a touch, a smile, a kind word, a listening ear, an honest compliment, or the smallest act of caring, all of which have the potential to turn a life around. 
 The idea behind writing this blog/website is to conect to people and share my experiences with them.</p>
 
+
         </section>
+
+        <footer class="post-footer">
+
+            <!-- Everything inside the #author tags pulls data from the author -->
+            <!-- #author-->
+
+            
+            <figure class="author-image">
+                <a class="img" href="/author/casper" style="background-image: url(/assets/images/casper.png)"><span class="hidden">'s Picture</span></a>
+            </figure>
+            
+
+            <section class="author">
+                <h4><a href="/author/casper">Deepak Kumar Gupta</a></h4>
+                
+                
+                    <p> A full time technologist cum foodie. He spends most of the time playing with open source tools and prefers hanging out with friends. Deepak has been a taveller since ages, besides being a hardcore biker and loves doing photogrpahy as hobby.</p>
+                
+                <div class="author-meta">
+                    <span class="author-location icon-location"> Bangalore, INDIA</span> 
+                    <span class="author-link icon-link"><a href="http://hellodk.github.io/"> hellodk.github.io/</a></span> 
+                </div>
+            </section>
+
+            <!-- /author  -->
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="http://twitter.com/share?text=About&amp;url=http://hellodk.github.io/about"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://hellodk.github.io/about"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://hellodk.github.io/about"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+            
+            <!-- Add Disqus Comments -->
+            
+            
+        </footer>
 
     </article>
 
 </main>
+
+<aside class="read-next">
+
+    <!-- [[! next_post ]] -->
+    
+        <a class="read-next-story " style="background-image: url(/assets/images/cover4.jpg)" href="/5_interesting_cloud_predictions_2016">
+            <section class="post">
+                <h2>5 interesting cloud predictions for 2016</h2>
+                <p>1. It's time for IOT- The IOT or the Internet of Things has been a...</p>
+            </section>
+        </a>
+    
+    <!-- [[! /next_post ]] -->
+    <!-- [[! prev_post ]] -->
+    
+        <a class="read-next-story prev " style="background-image: url(/assets/images/Minion-in-Despicable-Me-2-Wallpaper-HD-1080p.jpg)" href="/Creating-a-Highly-Available-Distributed-Messaging-Queue-Cluster-with-RabbitMQ-3.5.6">
+            <section class="post">
+                <h2>Creating a Highly Available Distributed Messaging System</h2>
+                <p><p>Creating a Highly Available Distributed Messaging Queue Cluster with RabbitMQ-3.5.6 What is rabbitmq?</p> <p>Rabbitmq is...</p>
+            </section>
+        </a>
+    
+    <!-- [[! /prev_post ]] -->
+</aside>
+
 <!-- /post -->
 
 
