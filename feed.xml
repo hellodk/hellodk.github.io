@@ -5,8 +5,8 @@
     <description>A beautiful narrative written an elegant publishing platform. The story begins here.</description>
     <link>http://hellodk.github.io///</link>
     <atom:link href="http://hellodk.github.io///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 01 Feb 2016 22:43:51 +0530</pubDate>
-    <lastBuildDate>Mon, 01 Feb 2016 22:43:51 +0530</lastBuildDate>
+    <pubDate>Fri, 05 Feb 2016 13:46:42 +0530</pubDate>
+    <lastBuildDate>Fri, 05 Feb 2016 13:46:42 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -811,6 +811,21 @@ ansible-playbook playbook.yml -f 10&lt;/p&gt;
         <category>tutorials</category>
         
         <category>photography</category>
+        
+        
+        <category>casper</category>
+        
+      </item>
+    
+      <item>
+        <title>About</title>
+        <description>&lt;p&gt;Write Things about the website&lt;/p&gt;
+</description>
+        <pubDate>Wed, 28 Aug 1963 15:48:00 +0530</pubDate>
+        <link>http://hellodk.github.io///about</link>
+        <guid isPermaLink="true">http://hellodk.github.io///about</guid>
+        
+        <category>about</category>
         
         
         <category>casper</category>

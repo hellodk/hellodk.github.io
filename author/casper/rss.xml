@@ -128,6 +128,18 @@ sudo rabbitmqctl set</em>permissions -p / <user id> &quot;.<em>&quot; &quot;.</e
 	  ]]></description>
 	</item>
 
+	<item>
+	  <title>About</title>
+	  <link>//about</link>
+	  <author>Deepak Kumar Gupta</author>
+	  <pubDate>1963-08-28T15:48:00+05:30</pubDate>
+	  <guid>//about</guid>
+	  <description><![CDATA[
+	     <p>Write Things about the website</p>
+
+	  ]]></description>
+	</item>
+
 
 </channel>
 </rss>

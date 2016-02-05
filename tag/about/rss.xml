@@ -12,13 +12,13 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
-	  <title>Camera Basics</title>
-	  <link>//camera-basics</link>
+	  <title>About</title>
+	  <link>//about</link>
 	  <author>Deepak Kumar Gupta</author>
 	  <pubDate>1963-08-28T15:48:00+05:30</pubDate>
-	  <guid>//camera-basics</guid>
+	  <guid>//about</guid>
 	  <description><![CDATA[
-	     <p>A basic tutorial on handling a DSLR for beginners.</p>
+	     <p>Write Things about the website</p>
 
 	  ]]></description>
 	</item>
