@@ -8,7 +8,23 @@
     <title>Curosity is the most powerful thing you own</title>
     <link>http://hellodk.github.io/</link>
     <description>A beautiful narrative written an elegant publishing platform. The story begins here.</description>
-    <pubDate>Mon, 01 Feb 2016 13:48:37 +0530</pubDate>
+    <pubDate>Tue, 23 Feb 2016 19:13:00 +0530</pubDate>
+    <item>
+      <title>Linux tar commands examples</title>
+      <link>http://hellodk.github.io//linux_tar_examples</link>
+      <description>1. Create a tar archive of a directory
+In this example we will come to know basic tar command using option ‘cvf’ to create a tar archive.
+Here we are creating a tar file ‘my-archive.tar’ for a directory ‘/home/my-directory’ in current working directory:
+1
+[root@chasiota /]# tar cvf my-archive.tar /home/my-directory
+c – Creates a new .tar archive file
+v – Verbosely list files which are processed
+f – File name type of the archive file
+
+</description>
+      <pubDate>Tue, 23 Feb 2016 19:13:00 +0530</pubDate>
+      <dc:date>2016-02-23T19:13:00+05:30</dc:date>
+    </item>
     <item>
       <title>The UNIX Time-Sharing System</title>
       <link>http://hellodk.github.io//unix_time_sharing_system</link>
@@ -31,9 +47,9 @@
       <dc:date>2016-02-01T13:48:37+05:30</dc:date>
     </item>
     <item>
-      <title>RethinkDb installation on Ubuntu-14.04</title>
+      <title>Rethinkdb Installation on Ubuntu-14.04</title>
       <link>http://hellodk.github.io//rethinkdb_installation_on%20_ubuntu-14.04</link>
-      <description>Let's get some hands on rethinkdb today and find it out yourself.
+      <description>Hey guys, hope you all are doing well. In this blog we are gonna see how do we setup rethinkdb server on an ubuntu box.
 
 </description>
       <pubDate>Thu, 28 Jan 2016 15:48:00 +0530</pubDate>
@@ -99,6 +115,33 @@ So why don't you try your hands on Ansible and experience it's awesomeness....al
       <dc:date>2015-04-06T15:48:00+05:30</dc:date>
     </item>
     <item>
+      <title>Rethinkdb Title</title>
+      <link>http://hellodk.github.io//rethinkdb</link>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;HTML5, CSS3 and JavaScript demo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!-- Start your code here --&gt;
+  &lt;font color=black font-family: &quot;Times New Roman&quot;, Times, serif;&gt;&lt;h3&gt;&lt;u&gt;RethinkDb Installation on Ubuntu-14.04&lt;/u&gt;
+  &lt;/font&gt;&lt;/h3&gt;
+&lt;!--p class=&quot;lw&quot;&gt;Hello Weaver!&lt;/p--&gt;
+
+</description>
+      <pubDate>Sat, 27 Sep 2014 15:48:00 +0530</pubDate>
+      <dc:date>2014-09-27T15:48:00+05:30</dc:date>
+    </item>
+    <item>
+      <title>A Full and Comprehensive Style Test</title>
+      <link>http://hellodk.github.io//a-full-and-comprehensive-style-test</link>
+      <description>&lt;p&gt;This is just an &lt;em&gt;ipsis verbis&lt;/em&gt; copy of the first example running on the &lt;a href=&quot;http://demo.ghost.io&quot;&gt;Ghost Demo&lt;/a&gt;. This shows how you can use html styling to achieve your hopes.&lt;/p&gt;
+
+</description>
+      <pubDate>Sat, 27 Sep 2014 15:48:00 +0530</pubDate>
+      <dc:date>2014-09-27T15:48:00+05:30</dc:date>
+    </item>
+    <item>
       <title>Camera Basics</title>
       <link>http://hellodk.github.io//camera-basics</link>
       <description>A basic tutorial on handling a DSLR for beginners.
@@ -107,6 +150,6 @@ So why don't you try your hands on Ansible and experience it's awesomeness....al
       <pubDate>Wed, 28 Aug 1963 15:48:00 +0530</pubDate>
       <dc:date>1963-08-28T15:48:00+05:30</dc:date>
     </item>
-    <dc:date>2016-02-01T13:48:37+05:30</dc:date>
+    <dc:date>2016-02-23T19:13:00+05:30</dc:date>
   </channel>
 </rss>

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- [[! Page Meta ]] -->
-    <title>Markdown cheat-sheets</title>
+    <title>Rethinkdb Title</title>
     <meta name="description" content="Curosity is the most powerful thing you own - A beautiful narrative written an elegant publishing platform. The story begins here." />
 
     <meta name="HandheldFriendly" content="True" />
@@ -89,7 +89,7 @@
 <!-- Everything inside the #post tags pulls data from the post -->
 <!-- #post -->
 
-<header class="main-header post-head " style="background-image: url(/assets/images/cover1.jpg) ">
+<header class="main-header post-head " style="background-image: url(/assets/images/cover3.jpg) ">
     <nav class="main-nav  overlay  clearfix">
         <a class="blog-logo" href="/"><img src="/assets/images/ghost.png" alt="Blog Logo" /></a>
         
@@ -100,19 +100,27 @@
 
 <main class="content" role="main">
 
-    <article class="post tag-fiction">
+    <article class="post tag-test tag-content">
 
         <header class="post-header">
-            <h1 class="post-title">Markdown cheat-sheets</h1>
+            <h1 class="post-title">Rethinkdb Title</h1>
             <section class="post-meta">
             <!-- <a href='/'>Deepak Kumar Gupta</a> -->
-            <time class="post-date" datetime="2016-02-01">01 Feb 2016</time>
+            <time class="post-date" datetime="2014-09-27">27 Sep 2014</time>
                 <!-- [[tags prefix=" on "]] -->
                  
                 on 
                 
                     
-                       <a href='/tag/tutorials'>Tutorials</a>
+                       <a href='/tag/test'>Test</a>,
+                       
+                
+                    
+                       <a href='/tag/content'>Content</a>,
+                       
+                
+                    
+                       <a href='/tag/blog'>Blog</a>
                        
                 
                 
@@ -121,176 +129,83 @@
 
         <section class="post-content">
             
-            <p>Source : https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet</p>
+            <!DOCTYPE html>
+<html>
+<head>
+<title>HTML5, CSS3 and JavaScript demo</title>
+</head>
+<body>
+<!-- Start your code here -->
+  <font color=black font-family: "Times New Roman", Times, serif;><h3><u>RethinkDb Installation on Ubuntu-14.04</u>
+  </font></h3>
+<!--p class="lw">Hello Weaver!</p-->
 
-<h1>H1</h1>
+<p>Hey guys, hope you all are doing well. In this blog we're gonna setup rethinkdb server on an ubuntu box.</p>
 
-<h2>H2</h2>
+<p>Before we get into the process of making our hands dirty, let's  first understand why rethinkdb?</p>
 
-<h3>H3</h3>
+<p>Well...rethinkdb is an open-source, scalable JSON database built from the ground up for the realtime web. RethinkDB inverts the traditional database architecture by exposing an exciting new access model – instead of polling for changes, the developer can tell RethinkDB to continuously push updated query results to applications in realtime.</p>
+<p>RethinkDB’s realtime push architecture dramatically reduces the time and effort necessary to build scalable realtime apps. RethinkDB also offers a flexible query language, intuitive operations and monitoring APIs, and is easy to setup and learn. Just like any other database solution, rethinkdb ships as a client-server component model. The installation process for both the server and the client are illustrated below:</p>
 
-<h4>H4</h4>
+<p>1. Add the RethinkDB PPA to your list of repositories :</p> source /etc/lsb-release && echo "deb http://download.rethinkdb.com/apt $DISTRIB_CODENAME main" | sudo tee /etc/apt/sources.list.d/rethinkdb.list
+<br>
+<br>
+2. Add the keys:
+<br>
+<br>  
+wget -qO- http://download.rethinkdb.com/apt/pubkey.gpg | sudo apt-key add -<br><br>
 
-<h5>H5</h5>
+3. Update the repository:<br><br>
 
-<h6>H6</h6>
+sudo apt-get update<br><br>
 
-<h1>Will become a heading</h1>
+4. Install the rethinkdb server via apt-get:<br><br>
 
-<h2>Will become a sub heading</h2>
+sudo apt-get -y install rethinkdb<br><br>
 
-<p><em>This will be Italic</em></p>
+Install rethinkdb client:<br><br>
 
-<p><strong>This will be Bold</strong></p>
+1. Install the python-pip package:<br><br>
 
-<ul>
-<li>This will be a list item</li>
-<li><p>This will be a list item</p>
+sudo apt-get install python-pip<br><br>
 
-<p>Add a indent and this will end up as code</p></li>
-</ul>
+2. Install the rethinkdb python client:<br><br>
 
-<p>Alternatively, for H1 and H2, an underline-ish style:</p>
+sudo pip install rethinkdb :<br><br>
 
-<h1>Alt-H1</h1>
+The above steps ensure that rethinkdb is installed on the system, while it does not ensures that this will start the rethinkdb service on system startup. You still need to start the rethinkdb service using the below command<br><br>
 
-<h2>Alt-H2</h2>
+The above command will ensure that rethinkdb is running as a terminal process, and will exit once the terminal is closed, or the process is killed, in short it will not run rethinkdb as a background service.
+<br><br>
+To start rethinkdb as a service, please follow the below steps:<br><br>
 
-<p>Emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>.</p>
+1. Go to /etc/rethinkdb and you will get the file, default.conf.sample
+<br><br>
+2. Copy the file to /etc/rethinkdb/instances.d and rename the file as per your requirements ensuring the extension is .conf only. Say for example the file name is rethinkdb1.conf<br><br>
 
-<p>Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.</p>
+3. Now open the file /etc/rethinkdb/instances.d/rethinkdb1.conf and modify the paramaters as per your requirements.<br><br>
 
-<p>Combined emphasis with <strong>asterisks and <em>underscores</em></strong>.</p>
+4. If setting up a cluster, I suggest do change the server-name to somethink like 'rethinkdb-primary' or 'rethinkdb-1' or 'master' or 'slave'. This will ensure that we have a meaningful naming convention for our cluster.<br><br>
 
-<p>Strikethrough uses two tildes. ~~Scratch this.~~</p>
+5. The default port details are :<br><br>
 
-<ol>
-<li>First ordered list item</li>
-<li>Another item
-⋅⋅* Unordered sub-list. </li>
-<li>Actual numbers don&#39;t matter, just that it&#39;s a number
-⋅⋅1. Ordered sub-list</li>
-<li>And another item.</li>
-</ol>
+29015 : Rethinkdb listens for intracluster connections<br><br>
 
-<p>⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we&#39;ll use three here to also align the raw Markdown).</p>
+28015 : Rethinkdb listens for client driver connections<br><br>
 
-<p>⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
-⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
-⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)</p>
+8080 : Rethinkdb listens for administrative HTTP connections<br><br>
 
-<ul>
-<li>Unordered list can use asterisks</li>
-<li>Or minuses</li>
-<li>Or pluses</li>
-</ul>
+22 : For SSH. The server uses public key authentication.<br><br>
 
-<p><a href="https://www.google.com">I&#39;m an inline-style link</a></p>
+80 : For HTTP. It is used during the setup process but otherwise redirects to HTTPS.
+<br><br>
 
-<p><a href="https://www.google.com" title="Google&#39;s Homepage">I&#39;m an inline-style link with title</a></p>
+443 : For HTTPS. An Nginx server sits between RethinkDB and the world and provides basic HTTP authentication and secure HTTPS connections for the web UI
+<br>
 
-<p><a href="https://www.mozilla.org">I&#39;m a reference-style link</a></p>
-
-<p><a href="../blob/master/LICENSE">I&#39;m a relative reference to a repository file</a></p>
-
-<p><a href="http://slashdot.org">You can use numbers for reference-style link definitions</a></p>
-
-<p>Or leave it empty and use the <a href="http://www.reddit.com">link text itself</a>.</p>
-
-<p>URLs and URLs in angle brackets will automatically get turned into links. 
-http://www.example.com or <a href="http://www.example.com">http://www.example.com</a> and sometimes 
-example.com (but not on Github, for example).</p>
-
-<p>Some text to show that the reference links can follow later.</p>
-
-<p>Here&#39;s our logo (hover to see the title text):</p>
-
-<p>Inline-style: 
-<img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="Logo Title Text 1"></p>
-
-<p>Reference-style: 
-<img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="Logo Title Text 2"></p>
-
-<p>Inline <code>code</code> has <code>back-ticks around</code> it.</p>
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="s2">&quot;JavaScript syntax highlighting&quot;</span><span class="p">;</span>
-<span class="nx">alert</span><span class="p">(</span><span class="nx">s</span><span class="p">);</span>
-</code></pre></div><div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">s</span> <span class="o">=</span> <span class="s">&quot;Python syntax highlighting&quot;</span>
-<span class="k">print</span> <span class="n">s</span>
-</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">No language indicated, so no syntax highlighting. 
-But let&#39;s throw in a &lt;b&gt;tag&lt;/b&gt;.
-</code></pre></div>
-<p>var s = &quot;JavaScript syntax highlighting&quot;;
-alert(s);</p>
-
-<p>s = &quot;Python syntax highlighting&quot;
-print s</p>
-
-<p>No language indicated, so no syntax highlighting in Markdown Here (varies on Github). 
-But let&#39;s throw in a <b>tag</b>.</p>
-
-<p>Colons can be used to align columns.</p>
-
-<p>| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |</p>
-
-<p>There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don&#39;t need to make the 
-raw Markdown line up prettily. You can also use inline Markdown.</p>
-
-<p>Markdown | Less | Pretty
---- | --- | ---
-<em>Still</em> | <code>renders</code> | <strong>nicely</strong>
-1 | 2 | 3</p>
-
-<blockquote>
-<p>Blockquotes are very handy in email to emulate reply text.
-This line is part of the same quote.</p>
-</blockquote>
-
-<p>Quote break.</p>
-
-<blockquote>
-<p>This is a very long line that will still be quoted properly when it wraps. Oh boy let&#39;s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can <em>put</em> <strong>Markdown</strong> into a blockquote. </p>
-</blockquote>
-
-<dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
-
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-</dl>
-
-<p>Three or more...</p>
-
-<hr>
-
-<p>Hyphens</p>
-
-<hr>
-
-<p>Asterisks</p>
-
-<hr>
-
-<p>Underscores</p>
-
-<p>Here&#39;s a line for us to start with.</p>
-
-<p>This line is separated from the one above by two newlines, so it will be a <em>separate paragraph</em>.</p>
-
-<p>This line is also a separate paragraph, but...
-This line is only separated by a single newline, so it&#39;s a separate line in the <em>same paragraph</em>.</p>
-
-<p><a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE
-" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a></p>
-
-<p><a href="http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" alt="IMAGE ALT TEXT HERE"></a></p>
-
+<!-- End your code here -->
+</body>
+</html>
 
         </section>
 
@@ -321,15 +236,15 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a></p>
 
             <section class="share">
                 <h4>Share this post</h4>
-                <a class="icon-twitter" href="http://twitter.com/share?text=Markdown cheat-sheets&amp;url=http://hellodk.github.io/mark_down_cheatsheet"
+                <a class="icon-twitter" href="http://twitter.com/share?text=Rethinkdb Title&amp;url=http://hellodk.github.io/rethinkdb"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="hidden">Twitter</span>
                 </a>
-                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://hellodk.github.io/mark_down_cheatsheet"
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://hellodk.github.io/rethinkdb"
                     onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                     <span class="hidden">Facebook</span>
                 </a>
-                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://hellodk.github.io/mark_down_cheatsheet"
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://hellodk.github.io/rethinkdb"
                    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <span class="hidden">Google+</span>
                 </a>
@@ -348,20 +263,20 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a></p>
 
     <!-- [[! next_post ]] -->
     
-        <a class="read-next-story " style="background-image: url(/assets/images/cover1.jpg)" href="/unix_time_sharing_system">
+        <a class="read-next-story " style="background-image: url(/assets/images/cover4.jpg)" href="/going_agentless_with_ansible">
             <section class="post">
-                <h2>The UNIX Time-Sharing System</h2>
-                <p>Drafted By D. M. Ritchie Introduction UNIX is a general-purpose, multi-user time sharing system implemented...</p>
+                <h2>Going Agntless with Ansible</h2>
+                <p>While looking for a light yet powerful Configuration Management tool, I was going through some...</p>
             </section>
         </a>
     
     <!-- [[! /next_post ]] -->
     <!-- [[! prev_post ]] -->
     
-        <a class="read-next-story prev " style="background-image: url(/assets/images/cover4.jpg)" href="/rethinkdb_installation_on%20_ubuntu-14.04">
+        <a class="read-next-story prev " style="background-image: url(/assets/images/cover3.jpg)" href="/a-full-and-comprehensive-style-test">
             <section class="post">
-                <h2>Rethinkdb Installation on Ubuntu-14.04</h2>
-                <p><p>Hey guys, hope you all are doing well. In this blog we are gonna see...</p>
+                <h2>A Full and Comprehensive Style Test</h2>
+                <p><p>This is just an <em>ipsis verbis</em> copy of the first example running on the <a...</p>
             </section>
         </a>
     
