@@ -5,8 +5,8 @@
     <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
     <link>http://hellodk.github.io///</link>
     <atom:link href="http://hellodk.github.io///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 22 Sep 2016 00:21:20 +0530</pubDate>
-    <lastBuildDate>Thu, 22 Sep 2016 00:21:20 +0530</lastBuildDate>
+    <pubDate>Thu, 22 Sep 2016 00:40:55 +0530</pubDate>
+    <lastBuildDate>Thu, 22 Sep 2016 00:40:55 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -53,33 +53,36 @@ The above command will ensure that rethinkdb is running as a terminal process, a
 &lt;br&gt;&lt;/br&gt;
 To start rethinkdb as a service, please follow the below steps:
 &lt;br&gt;&lt;/br&gt;
-1. Go to /etc/rethinkdb and you will get the file, default.conf.sample
+1.  Move to the directory /etc/rethinkdb
+&lt;br&gt;&lt;/br&gt;&lt;code&gt;cd /etc/rethinkdb&lt;/code&gt;
 &lt;br&gt;&lt;/br&gt;
 2. Copy the file to /etc/rethinkdb/instances.d and rename the file as per your requirements ensuring the extension is .conf only. Say for example the file name is rethinkdb1.conf
+&lt;br&gt;&lt;/br&gt;&lt;code&gt;cp default.conf.sample rethinkdb1.conf&lt;/code&gt;
 &lt;br&gt;&lt;/br&gt;
 3. Now open the file /etc/rethinkdb/instances.d/rethinkdb1.conf and modify the paramaters as per your requirements.
+&lt;br&gt;&lt;/br&gt;&lt;code&gt;vim rethinkdb1.conf&lt;/code&gt;
 &lt;br&gt;&lt;/br&gt;
 4. If setting up a cluster, we suggest do change the server-name to somethink like &#39;rethinkdb-primary&#39; or &#39;rethinkdb-1&#39; or &#39;master&#39; or &#39;slave&#39;. This will ensure that we have a meaningful naming convention for our cluster.
 &lt;br&gt;&lt;/br&gt;
 5. The default port details are :
 &lt;br&gt;&lt;/br&gt;
-29015 : Rethinkdb listens for intracluster connections
+&lt;code&gt;29015 :&lt;/code&gt; Rethinkdb listens for intracluster connections
 &lt;/br&gt;
-28015 : Rethinkdb listens for client driver connections
+&lt;code&gt;28015 :&lt;/code&gt; Rethinkdb listens for client driver connections
 &lt;/br&gt;
-8080 : Rethinkdb listens for administrative HTTP connections
+&lt;code&gt;8080  :&lt;/code&gt; Rethinkdb listens for administrative HTTP connections
 &lt;/br&gt;
-22 : For SSH. The server uses public key authentication.
+&lt;code&gt;22    :&lt;/code&gt; For SSH. The server uses public key authentication.
 &lt;/br&gt;
-80 : For HTTP. It is used during the setup process but otherwise redirects to HTTPS.
+&lt;code&gt;80    :&lt;/code&gt; For HTTP. It is used during the setup process but otherwise redirects to HTTPS.
 &lt;/br&gt;
-443 : For HTTPS. An Nginx server sits between RethinkDB and the world and provides basic HTTP authentication and secure HTTPS connections for the web UI
+&lt;code&gt;443   :&lt;/code&gt; For HTTPS. An Nginx server sits between RethinkDB and the world and provides basic HTTP authentication and secure HTTPS connections for the web UI
 &lt;br&gt;&lt;/br&gt;
 &lt;/body&gt;
 &lt;/html&gt;</description>
         <pubDate>Wed, 21 Sep 2016 15:48:00 +0530</pubDate>
-        <link>http://hellodk.github.io///rethinkdb_installation_on%20_ubuntu-14.04</link>
-        <guid isPermaLink="true">http://hellodk.github.io///rethinkdb_installation_on%20_ubuntu-14.04</guid>
+        <link>http://hellodk.github.io///rethinkdb_installation_ubuntu14</link>
+        <guid isPermaLink="true">http://hellodk.github.io///rethinkdb_installation_ubuntu14</guid>
         
         <category>tutorials</category>
         

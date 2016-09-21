@@ -91,7 +91,7 @@
 
 <header class="main-header post-head " style="background-image: url(/assets/images/rethinkdb/rethinkdb3.png) ">
     <nav class="main-nav  overlay  clearfix">
-        <a class="blog-logo" href="/"><img src="/assets/images/ghost.png" alt="Blog Logo" /></a>
+        
         
             <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
         
@@ -163,27 +163,30 @@ The above command will ensure that rethinkdb is running as a terminal process, a
 <br></br>
 To start rethinkdb as a service, please follow the below steps:
 <br></br>
-1. Go to /etc/rethinkdb and you will get the file, default.conf.sample
+1.  Move to the directory /etc/rethinkdb
+<br></br><code>cd /etc/rethinkdb</code>
 <br></br>
 2. Copy the file to /etc/rethinkdb/instances.d and rename the file as per your requirements ensuring the extension is .conf only. Say for example the file name is rethinkdb1.conf
+<br></br><code>cp default.conf.sample rethinkdb1.conf</code>
 <br></br>
 3. Now open the file /etc/rethinkdb/instances.d/rethinkdb1.conf and modify the paramaters as per your requirements.
+<br></br><code>vim rethinkdb1.conf</code>
 <br></br>
 4. If setting up a cluster, we suggest do change the server-name to somethink like 'rethinkdb-primary' or 'rethinkdb-1' or 'master' or 'slave'. This will ensure that we have a meaningful naming convention for our cluster.
 <br></br>
 5. The default port details are :
 <br></br>
-29015 : Rethinkdb listens for intracluster connections
+<code>29015 :</code> Rethinkdb listens for intracluster connections
 </br>
-28015 : Rethinkdb listens for client driver connections
+<code>28015 :</code> Rethinkdb listens for client driver connections
 </br>
-8080 : Rethinkdb listens for administrative HTTP connections
+<code>8080  :</code> Rethinkdb listens for administrative HTTP connections
 </br>
-22 : For SSH. The server uses public key authentication.
+<code>22    :</code> For SSH. The server uses public key authentication.
 </br>
-80 : For HTTP. It is used during the setup process but otherwise redirects to HTTPS.
+<code>80    :</code> For HTTP. It is used during the setup process but otherwise redirects to HTTPS.
 </br>
-443 : For HTTPS. An Nginx server sits between RethinkDB and the world and provides basic HTTP authentication and secure HTTPS connections for the web UI
+<code>443   :</code> For HTTPS. An Nginx server sits between RethinkDB and the world and provides basic HTTP authentication and secure HTTPS connections for the web UI
 <br></br>
 </body>
 </html>
@@ -217,15 +220,15 @@ To start rethinkdb as a service, please follow the below steps:
 
             <section class="share">
                 <h4>Share this post</h4>
-                <a class="icon-twitter" href="http://twitter.com/share?text=RethinkDb Installation on Ubuntu-14.04&amp;url=http://hellodk.github.io/rethinkdb_installation_on%20_ubuntu-14.04"
+                <a class="icon-twitter" href="http://twitter.com/share?text=RethinkDb Installation on Ubuntu-14.04&amp;url=http://hellodk.github.io/rethinkdb_installation_ubuntu14"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="hidden">Twitter</span>
                 </a>
-                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://hellodk.github.io/rethinkdb_installation_on%20_ubuntu-14.04"
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://hellodk.github.io/rethinkdb_installation_ubuntu14"
                     onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                     <span class="hidden">Facebook</span>
                 </a>
-                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://hellodk.github.io/rethinkdb_installation_on%20_ubuntu-14.04"
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://hellodk.github.io/rethinkdb_installation_ubuntu14"
                    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <span class="hidden">Google+</span>
                 </a>
