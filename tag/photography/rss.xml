@@ -6,15 +6,15 @@
       <title>hellodk.github.io/</title>
    
    <link>http://hellodk.github.io/</link>
-   <description>A beautiful narrative written an elegant publishing platform. The story begins here.</description>
+   <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
    <language>en-uk</language>
-   <managingEditor> Deepak Kumar Gupta</managingEditor>
+   <managingEditor> Deepak Gupta</managingEditor>
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
 	  <title>Camera Basics</title>
 	  <link>//camera-basics</link>
-	  <author>Deepak Kumar Gupta</author>
+	  <author>Deepak Gupta</author>
 	  <pubDate>1963-08-28T15:48:00+05:30</pubDate>
 	  <guid>//camera-basics</guid>
 	  <description><![CDATA[

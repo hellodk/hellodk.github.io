@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- [[! Page Meta ]] -->
-    <title>RethinkDb installation on Ubuntu-14.04</title>
-    <meta name="description" content="Curosity is the most powerful thing you own - A beautiful narrative written an elegant publishing platform. The story begins here." />
+    <title>RethinkDb Installation on Ubuntu-14.04</title>
+    <meta name="description" content="Curosity is the most powerful thing you own - A beautiful narrative written over an elegant publishing platform. The story begins here..." />
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,13 +28,13 @@
     <meta property="og:site_name" content="Curosity is the most powerful thing you own" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Curosity is the most powerful thing you own" />
-    <meta property="og:description" content="A beautiful narrative written an elegant publishing platform. The story begins here." />
+    <meta property="og:description" content="A beautiful narrative written over an elegant publishing platform. The story begins here..." />
     <meta property="og:url" content="/" />
     <meta property="og:image" content="/assets/images/cover1.jpg" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Curosity is the most powerful thing you own" />
-    <meta name="twitter:description" content="A beautiful narrative written an elegant publishing platform. The story begins here." />
+    <meta name="twitter:description" content="A beautiful narrative written over an elegant publishing platform. The story begins here..." />
     <meta name="twitter:url" content="/" />
     <meta name="twitter:image:src" content="/assets/images/cover1.jpg" />
 
@@ -45,7 +45,7 @@
     "publisher": "Finding The Way Home head.html",
     "url": "/",
     "image": "/assets/images/cover1.jpg",
-    "description": "A beautiful narrative written an elegant publishing platform. The story begins here."
+    "description": "A beautiful narrative written over an elegant publishing platform. The story begins here..."
 }
     </script>
 
@@ -89,7 +89,7 @@
 <!-- Everything inside the #post tags pulls data from the post -->
 <!-- #post -->
 
-<header class="main-header post-head " style="background-image: url(/assets/images/cover4.jpg) ">
+<header class="main-header post-head " style="background-image: url(/assets/images/rethinkdb/rethinkdb3.png) ">
     <nav class="main-nav  overlay  clearfix">
         <a class="blog-logo" href="/"><img src="/assets/images/ghost.png" alt="Blog Logo" /></a>
         
@@ -103,10 +103,10 @@
     <article class="post tag-tutorials">
 
         <header class="post-header">
-            <h1 class="post-title">RethinkDb installation on Ubuntu-14.04</h1>
+            <h1 class="post-title">RethinkDb Installation on Ubuntu-14.04</h1>
             <section class="post-meta">
-            <!-- <a href='/'>Deepak Kumar Gupta</a> -->
-            <time class="post-date" datetime="2016-01-28">28 Jan 2016</time>
+            <!-- <a href='/'>Deepak Gupta</a> -->
+            <time class="post-date" datetime="2016-09-21">21 Sep 2016</time>
                 <!-- [[tags prefix=" on "]] -->
                  
                 on 
@@ -121,71 +121,72 @@
 
         <section class="post-content">
             
-            <p>Let&#39;s get some hands on rethinkdb today and find it out yourself.</p>
+            Let's get some hands on rethinkdb today and find it out yourself. </br>
+</br>
+So what is rethinkdb?
+</br></br>
+Rethinkdb is an open-source, scalable JSON database built from the ground up for the realtime web.
+</br>RethinkDB inverts the traditional database architecture by exposing an exciting new access model – instead of polling for changes, the developer can tell RethinkDB to continuously push updated query results to applications in realtime. RethinkDB’s realtime push architecture dramatically reduces the time and effort necessary to build scalable realtime apps. RethinkDB also offers a flexible query language, intuitive operations and monitoring APIs, and is easy to setup and learn. Just like any other database solution, rethinkdb ships as a client-server component model. The installation process for both the server and the client are illustrated below:
 
-<p>So what is rethinkdb? Well, to say...rethinkdb is an open-source, scalable JSON database built from the ground up for the realtime web. RethinkDB inverts the traditional database architecture by exposing an exciting new access model – instead of polling for changes, the developer can tell RethinkDB to continuously push updated query results to applications in realtime. RethinkDB’s realtime push architecture dramatically reduces the time and effort necessary to build scalable realtime apps. RethinkDB also offers a flexible query language, intuitive operations and monitoring APIs, and is easy to setup and learn. Just like any other database solution, rethinkdb ships as a client-server component model. The installation process for both the server and the client are illustrated below:</p>
+<p>How to Install RethinkDb:</p>
+1. Add the RethinkDB PPA to your list of repositories : 
+<br></br>
+<code>source /etc/lsb-release && echo "deb http://download.rethinkdb.com/apt $DISTRIB_CODENAME main" | sudo tee /etc/apt/sources.list.d/rethinkdb.list</code>
+<br></br>
+2. Add the keys:<br></br>
 
-<p>How to Install RethinkDb:
-1. Add the RethinkDB PPA to your list of repositories : source /etc/lsb-release &amp;&amp; echo &quot;deb http://download.rethinkdb.com/apt $DISTRIB_CODENAME main&quot; | sudo tee /etc/apt/sources.list.d/rethinkdb.list</p>
-
-<ol>
-<li>Add the keys:</li>
-</ol>
-
-<p>wget -qO- http://download.rethinkdb.com/apt/pubkey.gpg | sudo apt-key add -</p>
-
-<ol>
-<li>Update the repository:</li>
-</ol>
-
-<p>sudo apt-get update</p>
-
-<ol>
-<li>Install the rethinkdb server via apt-get:</li>
-</ol>
-
-<p>sudo apt-get -y install rethinkdb</p>
-
-<p>Install rethinkdb client:</p>
-
-<ol>
-<li>Install the python-pip package:</li>
-</ol>
-
-<p>sudo apt-get install python-pip</p>
-
-<ol>
-<li>Install the rethinkdb python client:</li>
-</ol>
-
-<p>sudo pip install rethinkdb :</p>
-
-<p>The above steps ensure that rethinkdb is installed on the system, while it does not ensures that this will start the rethinkdb service on system startup. You still need to start the rethinkdb service using the below command</p>
-
-<p>The above command will ensure that rethinkdb is running as a terminal process, and will exit once the terminal is closed, or the process is killed, in short it will not run rethinkdb as a background service.</p>
-
-<p>To start rethinkdb as a service, please follow the below steps:</p>
-
-<ol>
-<li><p>Go to /etc/rethinkdb and you will get the file, default.conf.sample</p></li>
-<li><p>Copy the file to /etc/rethinkdb/instances.d and rename the file as per your requirements ensuring the extension is .conf only. Say for example the file name is rethinkdb1.conf</p></li>
-<li><p>Now open the file /etc/rethinkdb/instances.d/rethinkdb1.conf and modify the paramaters as per your requirements.</p></li>
-<li><p>If setting up a cluster, I suggest do change the server-name to somethink like &#39;rethinkdb-primary&#39; or &#39;rethinkdb-1&#39; or &#39;master&#39; or &#39;slave&#39;. This will ensure that we have a meaningful naming convention for our cluster.</p></li>
-<li><p>The default port details are :</p></li>
-</ol>
-
-<p>29015 : Rethinkdb listens for intracluster connections</p>
-
-<p>28015 : Rethinkdb listens for client driver connections</p>
-
-<p>8080 : Rethinkdb listens for administrative HTTP connections</p>
-
-<p>22 : For SSH. The server uses public key authentication.</p>
-
-<p>80 : For HTTP. It is used during the setup process but otherwise redirects to HTTPS.</p>
-
-<p>443 : For HTTPS. An Nginx server sits between RethinkDB and the world and provides basic HTTP authentication and secure HTTPS connections for the web UI</p>
-
+<code>wget -qO- http://download.rethinkdb.com/apt/pubkey.gpg | sudo apt-key add -</code>
+<br></br>
+3. Update the repository:
+<br></br>
+<code>sudo apt-get update</code>
+<br></br>
+4. Install the rethinkdb server via apt-get:
+<br></br>
+<code>sudo apt-get -y install rethinkdb</code>
+<br></br>
+Install rethinkdb client:
+<br></br>
+1. Install the python-pip package:
+<br></br>
+<code>sudo apt-get install python-pip</code>
+<br></br>
+2. Install the rethinkdb python client:
+<br></br>
+<code>sudo pip install rethinkdb</code>
+<br></br>
+The above steps ensure that rethinkdb is installed on the system, while it does not ensures that this will start the rethinkdb service on system startup. You still need to start the rethinkdb service using the below command
+<br></br>
+<code>rethinkdb</code>
+<br></br>
+The above command will ensure that rethinkdb is running as a terminal process, and will exit once the terminal is closed, or the process is killed, in short it will not run rethinkdb as a background service.
+<br></br>
+To start rethinkdb as a service, please follow the below steps:
+<br></br>
+1. Go to /etc/rethinkdb and you will get the file, default.conf.sample
+<br></br>
+2. Copy the file to /etc/rethinkdb/instances.d and rename the file as per your requirements ensuring the extension is .conf only. Say for example the file name is rethinkdb1.conf
+<br></br>
+3. Now open the file /etc/rethinkdb/instances.d/rethinkdb1.conf and modify the paramaters as per your requirements.
+<br></br>
+4. If setting up a cluster, we suggest do change the server-name to somethink like 'rethinkdb-primary' or 'rethinkdb-1' or 'master' or 'slave'. This will ensure that we have a meaningful naming convention for our cluster.
+<br></br>
+5. The default port details are :
+<br></br>
+29015 : Rethinkdb listens for intracluster connections
+</br>
+28015 : Rethinkdb listens for client driver connections
+</br>
+8080 : Rethinkdb listens for administrative HTTP connections
+</br>
+22 : For SSH. The server uses public key authentication.
+</br>
+80 : For HTTP. It is used during the setup process but otherwise redirects to HTTPS.
+</br>
+443 : For HTTPS. An Nginx server sits between RethinkDB and the world and provides basic HTTP authentication and secure HTTPS connections for the web UI
+<br></br>
+</body>
+</html>
 
         </section>
 
@@ -201,7 +202,7 @@
             
 
             <section class="author">
-                <h4><a href="/author/casper">Deepak Kumar Gupta</a></h4>
+                <h4><a href="/author/casper">Deepak Gupta</a></h4>
                 
                 
                     <p> A full time technologist cum foodie. He spends most of the time playing with open source tools and prefers hanging out with friends. Deepak has been a taveller since ages, besides being a hardcore biker and loves doing photogrpahy as hobby.</p>
@@ -216,7 +217,7 @@
 
             <section class="share">
                 <h4>Share this post</h4>
-                <a class="icon-twitter" href="http://twitter.com/share?text=RethinkDb installation on Ubuntu-14.04&amp;url=http://hellodk.github.io/rethinkdb_installation_on%20_ubuntu-14.04"
+                <a class="icon-twitter" href="http://twitter.com/share?text=RethinkDb Installation on Ubuntu-14.04&amp;url=http://hellodk.github.io/rethinkdb_installation_on%20_ubuntu-14.04"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="hidden">Twitter</span>
                 </a>
@@ -243,20 +244,13 @@
 
     <!-- [[! next_post ]] -->
     
-        <a class="read-next-story " style="background-image: url(/assets/images/cover1.jpg)" href="/mark_down_cheatsheet">
-            <section class="post">
-                <h2>Markdown cheat-sheets</h2>
-                <p>Source : https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet # H1 ## H2 ### H3 #### H4 ##### H5 ###### H6...</p>
-            </section>
-        </a>
-    
     <!-- [[! /next_post ]] -->
     <!-- [[! prev_post ]] -->
     
-        <a class="read-next-story prev " style="background-image: url(/assets/images/cover4.jpg)" href="/getting_familiar_with_cassandra">
+        <a class="read-next-story prev " style="background-image: url(/assets/images/cover1.jpg)" href="/unix_time_sharing_system">
             <section class="post">
-                <h2>Getting started with Cassandra</h2>
-                <p><p>The Growth of Big Data</p> <p>Big Data is one of the key forces driving the...</p>
+                <h2>The UNIX Time-Sharing System</h2>
+                <p><div class="highlight"><pre><code class="language-text" data-lang="text"> Drafted By D. M. Ritchie </code></pre></div> <p>Introduction UNIX is a general-purpose,...</p>
             </section>
         </a>
     

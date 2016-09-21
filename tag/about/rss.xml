@@ -6,15 +6,15 @@
       <title>hellodk.github.io/</title>
    
    <link>http://hellodk.github.io/</link>
-   <description>A beautiful narrative written an elegant publishing platform. The story begins here.</description>
+   <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
    <language>en-uk</language>
-   <managingEditor> Deepak Kumar Gupta</managingEditor>
+   <managingEditor> Deepak Gupta</managingEditor>
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
 	  <title>About</title>
 	  <link>//about</link>
-	  <author>Deepak Kumar Gupta</author>
+	  <author>Deepak Gupta</author>
 	  <pubDate>2015-12-28T15:48:00+05:30</pubDate>
 	  <guid>//about</guid>
 	  <description><![CDATA[

@@ -7,8 +7,22 @@
   <channel>
     <title>Curosity is the most powerful thing you own</title>
     <link>http://hellodk.github.io/</link>
-    <description>A beautiful narrative written an elegant publishing platform. The story begins here.</description>
-    <pubDate>Mon, 01 Feb 2016 13:48:37 +0530</pubDate>
+    <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
+    <pubDate>Wed, 21 Sep 2016 15:48:00 +0530</pubDate>
+    <item>
+      <title>RethinkDb Installation on Ubuntu-14.04</title>
+      <link>http://hellodk.github.io//rethinkdb_installation_on%20_ubuntu-14.04</link>
+      <description>Let's get some hands on rethinkdb today and find it out yourself. &lt;/br&gt;
+&lt;/br&gt;
+So what is rethinkdb?
+&lt;/br&gt;&lt;/br&gt;
+Rethinkdb is an open-source, scalable JSON database built from the ground up for the realtime web.
+&lt;/br&gt;RethinkDB inverts the traditional database architecture by exposing an exciting new access model – instead of polling for changes, the developer can tell RethinkDB to continuously push updated query results to applications in realtime. RethinkDB’s realtime push architecture dramatically reduces the time and effort necessary to build scalable realtime apps. RethinkDB also offers a flexible query language, intuitive operations and monitoring APIs, and is easy to setup and learn. Just like any other database solution, rethinkdb ships as a client-server component model. The installation process for both the server and the client are illustrated below:
+
+</description>
+      <pubDate>Wed, 21 Sep 2016 15:48:00 +0530</pubDate>
+      <dc:date>2016-09-21T15:48:00+05:30</dc:date>
+    </item>
     <item>
       <title>The UNIX Time-Sharing System</title>
       <link>http://hellodk.github.io//unix_time_sharing_system</link>
@@ -31,7 +45,7 @@
       <dc:date>2016-02-01T13:48:37+05:30</dc:date>
     </item>
     <item>
-      <title>RethinkDb installation on Ubuntu-14.04</title>
+      <title>RethinkDb Installation on Ubuntu-14.04</title>
       <link>http://hellodk.github.io//rethinkdb_installation_on%20_ubuntu-14.04</link>
       <description>Let's get some hands on rethinkdb today and find it out yourself.
 
@@ -107,6 +121,6 @@ So why don't you try your hands on Ansible and experience it's awesomeness....al
       <pubDate>Wed, 28 Aug 1963 15:48:00 +0530</pubDate>
       <dc:date>1963-08-28T15:48:00+05:30</dc:date>
     </item>
-    <dc:date>2016-02-01T13:48:37+05:30</dc:date>
+    <dc:date>2016-09-21T15:48:00+05:30</dc:date>
   </channel>
 </rss>
