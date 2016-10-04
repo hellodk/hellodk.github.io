@@ -434,9 +434,9 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a></p>
 In fact, one of the first reasons to use NoSQL is because you have a Big Data project to tackle. A Big Data project is normally typified by:<br/>
 
 High data velocity – lots of data coming in very quickly, possibly from different locations.<br/>
-Data variety – storage of data that is structured, semi-structured and unstructured.<br/>
-Data volume – data that involves many terabytes or petabytes in size.<br/>
-Data complexity – data that is stored and managed in different locations or data centers.<br/>
+Data variety       – storage of data that is structured, semi-structured and unstructured.<br/>
+Data volume        – data that involves many terabytes or petabytes in size.<br/>
+Data complexity    – data that is stored and managed in different locations or data centers.<br/>
 
 
 <p><code>Datamodel       Performance Scalability Flexibility Complexity  Functionality</code>
@@ -539,9 +539,12 @@ Configuration file '/etc/cassandra/cassandra.yaml'
 <p>INSERT INTO TABLE emp(emp_id int,emp_name,emp_city,emp_sal,emp_phone) VALUES(1,'foo','Bangalore',24,1234567);</p>
 
 <h5>Nodetool Command Set:</h5>
-<p>nodetool status</p>
-<p>nodetool info</p>
-<p>nodetool -host 10.60.8.23 ring</p>
+1. <code>nodetool status</code>
+<br/>
+2. <code>nodetool info</code>
+<br/>
+3. <code>nodetool -host 10.60.8.23 ring</code>
+<br/>
 
 	  ]]></description>
 	</item>

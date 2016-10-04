@@ -5,8 +5,8 @@
     <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
     <link>http://hellodk.github.io///</link>
     <atom:link href="http://hellodk.github.io///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 23 Sep 2016 01:33:08 +0530</pubDate>
-    <lastBuildDate>Fri, 23 Sep 2016 01:33:08 +0530</lastBuildDate>
+    <pubDate>Tue, 04 Oct 2016 16:52:29 +0530</pubDate>
+    <lastBuildDate>Tue, 04 Oct 2016 16:52:29 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -436,9 +436,9 @@ alt=&quot;IMAGE ALT TEXT HERE&quot; width=&quot;240&quot; height=&quot;180&quot;
 In fact, one of the first reasons to use NoSQL is because you have a Big Data project to tackle. A Big Data project is normally typified by:&lt;br/&gt;
 
 High data velocity – lots of data coming in very quickly, possibly from different locations.&lt;br/&gt;
-Data variety – storage of data that is structured, semi-structured and unstructured.&lt;br/&gt;
-Data volume – data that involves many terabytes or petabytes in size.&lt;br/&gt;
-Data complexity – data that is stored and managed in different locations or data centers.&lt;br/&gt;
+Data variety       – storage of data that is structured, semi-structured and unstructured.&lt;br/&gt;
+Data volume        – data that involves many terabytes or petabytes in size.&lt;br/&gt;
+Data complexity    – data that is stored and managed in different locations or data centers.&lt;br/&gt;
 
 
 &lt;p&gt;&lt;code&gt;Datamodel       Performance Scalability Flexibility Complexity  Functionality&lt;/code&gt;
@@ -541,9 +541,12 @@ Configuration file &#39;/etc/cassandra/cassandra.yaml&#39;
 &lt;p&gt;INSERT INTO TABLE emp(emp_id int,emp_name,emp_city,emp_sal,emp_phone) VALUES(1,&#39;foo&#39;,&#39;Bangalore&#39;,24,1234567);&lt;/p&gt;
 
 &lt;h5&gt;Nodetool Command Set:&lt;/h5&gt;
-&lt;p&gt;nodetool status&lt;/p&gt;
-&lt;p&gt;nodetool info&lt;/p&gt;
-&lt;p&gt;nodetool -host 10.60.8.23 ring&lt;/p&gt;
+1. &lt;code&gt;nodetool status&lt;/code&gt;
+&lt;br/&gt;
+2. &lt;code&gt;nodetool info&lt;/code&gt;
+&lt;br/&gt;
+3. &lt;code&gt;nodetool -host 10.60.8.23 ring&lt;/code&gt;
+&lt;br/&gt;
 </description>
         <pubDate>Thu, 28 Jan 2016 15:48:00 +0530</pubDate>
         <link>http://hellodk.github.io///getting_familiar_with_cassandra</link>
