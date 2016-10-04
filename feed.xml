@@ -5,8 +5,8 @@
     <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
     <link>http://hellodk.github.io///</link>
     <atom:link href="http://hellodk.github.io///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 22 Sep 2016 00:56:53 +0530</pubDate>
-    <lastBuildDate>Thu, 22 Sep 2016 00:56:53 +0530</lastBuildDate>
+    <pubDate>Fri, 23 Sep 2016 01:33:08 +0530</pubDate>
+    <lastBuildDate>Fri, 23 Sep 2016 01:33:08 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -250,17 +250,17 @@ There is space in each i-node for eight disk addresses. A file which fits into e
         <title>Markdown cheat-sheets</title>
         <description>&lt;p&gt;Source : https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&lt;/p&gt;
 
-&lt;h1&gt;H1&lt;/h1&gt;
+&lt;h1&gt;H1 - # H1&lt;/h1&gt;
 
-&lt;h2&gt;H2&lt;/h2&gt;
+&lt;h2&gt;H2 - ## H2&lt;/h2&gt;
 
-&lt;h3&gt;H3&lt;/h3&gt;
+&lt;h3&gt;H3 - ### H3&lt;/h3&gt;
 
-&lt;h4&gt;H4&lt;/h4&gt;
+&lt;h4&gt;H4 - #### H4&lt;/h4&gt;
 
-&lt;h5&gt;H5&lt;/h5&gt;
+&lt;h5&gt;H5 - ##### H5&lt;/h5&gt;
 
-&lt;h6&gt;H6&lt;/h6&gt;
+&lt;h6&gt;H6 -  ######H6&lt;/h6&gt;
 
 &lt;h1&gt;Will become a heading&lt;/h1&gt;
 
@@ -431,59 +431,58 @@ alt=&quot;IMAGE ALT TEXT HERE&quot; width=&quot;240&quot; height=&quot;180&quot;
     
       <item>
         <title>Getting started with Cassandra</title>
-        <description>&lt;p&gt;The Growth of Big Data&lt;/p&gt;
+        <description>&lt;p&gt;The Growth of Big Data - Big Data is one of the key forces driving the growth and popularity of NoSQL for business. The almost limitless array of data collection technologies ranging from simple online actions to point of sale systems to GPS tools to smartphones and tablets to sophisticated sensors – and many more – act as force multipliers for data growth.
+&lt;/p&gt;
+In fact, one of the first reasons to use NoSQL is because you have a Big Data project to tackle. A Big Data project is normally typified by:&lt;br/&gt;
 
-&lt;p&gt;Big Data is one of the key forces driving the growth and popularity of NoSQL for business. The almost limitless array of data collection technologies ranging from simple online actions to point of sale systems to GPS tools to smartphones and tablets to sophisticated sensors – and many more – act as force multipliers for data growth.&lt;/p&gt;
+High data velocity – lots of data coming in very quickly, possibly from different locations.&lt;br/&gt;
+Data variety – storage of data that is structured, semi-structured and unstructured.&lt;br/&gt;
+Data volume – data that involves many terabytes or petabytes in size.&lt;br/&gt;
+Data complexity – data that is stored and managed in different locations or data centers.&lt;br/&gt;
 
-&lt;p&gt;In fact, one of the first reasons to use NoSQL is because you have a Big Data project to tackle. A Big Data project is normally typified by:&lt;/p&gt;
 
-&lt;p&gt;High data velocity – lots of data coming in very quickly, possibly from different locations.
-Data variety – storage of data that is structured, semi-structured and unstructured.
-Data volume – data that involves many terabytes or petabytes in size.
-Data complexity – data that is stored and managed in different locations or data centers.&lt;/p&gt;
-
-&lt;p&gt;Datamodel   Performance Scalability Flexibility Complexity  Functionality
-Key-value store High    High    High    None    Variable (None)
+&lt;p&gt;&lt;code&gt;Datamodel       Performance Scalability Flexibility Complexity  Functionality&lt;/code&gt;
+&lt;p&gt;&lt;code&gt;Key-value store     High        High       High        None        Variable(None)&lt;/code&gt;&lt;/p&gt;
 Column Store    High    High    Moderate    Low Minimal
 Document Store  High    Variable (High) High    Low Variable (Low)
-Graph Database  Variable    Variable    High    High    Graph Theory&lt;/p&gt;
+Graph Database  Variable    Variable    High    High    Graph Theory
+&lt;/p&gt;
+massively scalable open source NoSQL database. Cassandra is perfect for managing large amounts of structured, semi-structured, and unstructured data across multiple data centers and the cloud. Cassandra delivers continuous availability, linear scalability, and operational simplicity across many commodity servers with no single point of failure, along with a powerful dynamic data model designed for maximum flexibility and fast response times
 
-&lt;p&gt;massively scalable open source NoSQL database. Cassandra is perfect for managing large amounts of structured, semi-structured, and unstructured data across multiple data centers and the cloud. Cassandra delivers continuous availability, linear scalability, and operational simplicity across many commodity servers with no single point of failure, along with a powerful dynamic data model designed for maximum flexibility and fast response times&lt;/p&gt;
+built-for-scale architecture means that it is capable of handling petabytes of information and thousands of concurrent users/operations per second.
 
-&lt;p&gt;built-for-scale architecture means that it is capable of handling petabytes of information and thousands of concurrent users/operations per second.&lt;/p&gt;
+An apache Software Foundation project, Cassandra is column oriented database and is an open source distributed database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure.
 
-&lt;p&gt;An apache Software Foundation project, Cassandra is column oriented database and is an open source distributed database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure.&lt;/p&gt;
+Cassandra does not support joins or subqueries. Rather, Cassandra emphasizes denormalization through features like collections
 
-&lt;p&gt;Cassandra does not support joins or subqueries. Rather, Cassandra emphasizes denormalization through features like collections&lt;/p&gt;
+CQL - Cassandara Query Language
 
-&lt;p&gt;CQL - Cassandara Query Language&lt;/p&gt;
+Each node in a cluster can accept read and write requests, regardless of where the data is actually located in the cluster.
 
-&lt;p&gt;Each node in a cluster can accept read and write requests, regardless of where the data is actually located in the cluster.&lt;/p&gt;
+When a node goes down, read/write requests can be served from other nodes in the network.
 
-&lt;p&gt;When a node goes down, read/write requests can be served from other nodes in the network.&lt;/p&gt;
-
-&lt;p&gt;The key components of Cassandra are as follows −
+The key components of Cassandra are as follows −
 Node − It is the place where data is stored.
 Data center − It is a collection of related nodes.
 Cluster − A cluster is a component that contains one or more data centers.
 Commit log − The commit log is a crash-recovery mechanism in Cassandra. Every write operation is written to the commit log.
 Mem-table − A mem-table is a memory-resident data structure. After commit log, the data will be written to the mem-table. Sometimes, for a single-column family, there will be multiple mem-tables.
 SSTable − It is a disk file to which the data is flushed from the mem-table when its contents reach a threshold value.
-Bloom filter − These are nothing but quick, nondeterministic, algorithms for testing whether an element is a member of a set. It is a special kind of cache. Bloom filters are accessed after every query.&lt;/p&gt;
+Bloom filter − These are nothing but quick, nondeterministic, algorithms for testing whether an element is a member of a set. It is a special kind of cache. Bloom filters are accessed after every query.
 
-&lt;h2&gt;Commands:&lt;/h2&gt;
-
-&lt;p&gt;nodetool cfstats : displays statistics for each table and keyspace.
+Commands:
+---------
+&lt;p&gt;nodetool cfstats : displays statistics for each table and keyspace.&lt;/p&gt;
 nodetool cfhistograms : provides statistics about a table, including read/write latency, row size, column count, and number of SSTables.
 nodetool netstats : provides statistics about network operations and connections.
 nodetool tpstats : provides statistics about the number of active, pending, and completed tasks for each stage of Cassandra operations by thread pool.
-nodetool status :&lt;/p&gt;
+nodetool status :
 
-&lt;p&gt;cqlsh &lt;machine ip&gt; -  connects to the machine cqlsh&lt;/p&gt;
+cqlsh &lt;machine ip&gt; -  connects to the machine cqlsh
 
-&lt;h2&gt;cqlsh command list:&lt;/h2&gt;
-
-&lt;p&gt;HELP - Displays help topics for all cqlsh commands.
+cqlsh command list:
+-------------------
+HELP - Displays help topics for all cqlsh commands.
 CAPTURE - Captures the output of a command and adds it to a file.
 CONSISTENCY - Shows the current consistency level, or sets a new consistency level.
 COPY - Copies data to and from Cassandra.
@@ -493,58 +492,58 @@ EXIT - Using this command, you can terminate cqlsh.
 PAGING - Enables or disables query paging.
 SHOW - Displays the details of current cqlsh session such as Cassandra version, host, or data type assumptions.
 SOURCE - Executes a file that contains CQL statements.
-TRACING - Enables or disables request tracing.&lt;/p&gt;
+TRACING - Enables or disables request tracing.
 
-&lt;h2&gt;Upgrading:&lt;/h2&gt;
-
-&lt;p&gt;mkdir ~/cassandra&lt;em&gt;backup
-sudo cp -r /etc/cassandra/* ~/cassandra&lt;/em&gt;backup
-sudo vi /etc/cassandra/cassandra.yaml and edit num&lt;em&gt;tokens to 1 and uncomment the initial&lt;/em&gt;token and set it to 1
+Upgrading:
+----------
+mkdir ~/cassandra_backup
+sudo cp -r /etc/cassandra/* ~/cassandra_backup
+sudo vi /etc/cassandra/cassandra.yaml and edit num_tokens to 1 and uncomment the initial_token and set it to 1
 nodetool upgradesstables
 nodetool drain
 sudo service cassandra stop
-sudo cp -r /etc/cassandra/* ~/cassandra&lt;em&gt;backup&lt;/em&gt;new
+sudo cp -r /etc/cassandra/* ~/cassandra_backup_new
 sudo apt-get install cassandra=2.1.12
 Open the old and new cassandra.yaml files and diff them.
 Merge the diffs by hand, including the partitioner setting, from the old file into the new one.
 Do not use the default partitioner setting in the new cassandra.yaml because it has changed in this release to the Murmur3Partitioner. The Murmur3Partitioner can only be used for new clusters. After data has been added to the cluster, you cannot change the partitioner without reworking tables, which is not practical. Use your old partitioner setting in the new cassandra.yaml file.
-Save the file as cassandra.yaml.&lt;/p&gt;
+Save the file as cassandra.yaml.
 
-&lt;p&gt;Configuration file &amp;#39;/etc/cassandra/cassandra.yaml&amp;#39;
- ==&amp;gt; Modified (by you or by a script) since installation.
- ==&amp;gt; Package distributor has shipped an updated version.
+Configuration file &#39;/etc/cassandra/cassandra.yaml&#39;
+ ==&gt; Modified (by you or by a script) since installation.
+ ==&gt; Package distributor has shipped an updated version.
    What would you like to do about it ?  Your options are:
-    Y or I  : install the package maintainer&amp;#39;s version
+    Y or I  : install the package maintainer&#39;s version
     N or O  : keep your currently-installed version
       D     : show the differences between the versions
       Z     : start a shell to examine the situation
  The default action is to keep your current version.
-*** cassandra.yaml (Y/I/N/O/D/Z) [default=N] ? &lt;/p&gt;
+*** cassandra.yaml (Y/I/N/O/D/Z) [default=N] ? 
 
-&lt;p&gt;************&lt;strong&gt;&lt;em&gt;Inserting values into tables&lt;/em&gt;&lt;/strong&gt;**************************
-CREATE KEYSPACE tutorialspoint WITH replication = {
-  &amp;#39;class&amp;#39;: &amp;#39;NetworkTopologyStrategy&amp;#39;,
-  &amp;#39;cdr_record&amp;#39;: &amp;#39;2&amp;#39;
+
+
+
+&lt;h5&gt;Inserting values into tables&lt;/h5&gt;
+&lt;p&gt;CREATE KEYSPACE tutorial WITH replication = {
+  &#39;class&#39;: &#39;NetworkTopologyStrategy&#39;,
+  &#39;cdr_record&#39;: &#39;2&#39;
 };&lt;/p&gt;
 
-&lt;p&gt;INSERT INTO tutorialspoint.emp (emp&lt;em&gt;id,emp&lt;/em&gt;city,emp&lt;em&gt;name,emp&lt;/em&gt;phone,emp_sal) VALUES(3,&amp;#39;Kolkata&amp;#39;,&amp;#39;Stag1&amp;#39;,8791134412,60);&lt;/p&gt;
+&lt;p&gt;INSERT INTO tutorialspoint.emp (emp_id,emp_city,emp_name,emp_phone,emp_sal) VALUES(3,&#39;Kolkata&#39;,&#39;Stag1&#39;,4412,60);&lt;/p&gt;
 
 &lt;p&gt;UPDATE TABLE emp(
-   emp&lt;em&gt;id int PRIMARY KEY,
-   emp&lt;/em&gt;name text,
-   emp&lt;em&gt;city text,
-   emp&lt;/em&gt;sal varint,
-   emp_phone varint);&lt;/p&gt;
+   emp_id int PRIMARY KEY,
+   emp_name text,
+   emp_city text,
+   emp_sal varint,
+   emp_phone varint);
+&lt;/p&gt;
+&lt;p&gt;INSERT INTO TABLE emp(emp_id int,emp_name,emp_city,emp_sal,emp_phone) VALUES(1,&#39;foo&#39;,&#39;Bangalore&#39;,24,1234567);&lt;/p&gt;
 
-&lt;p&gt;INSERT INTO TABLE emp(emp&lt;em&gt;id int,emp&lt;/em&gt;name,emp&lt;em&gt;city,emp&lt;/em&gt;sal,emp_phone) VALUES(1,&amp;#39;dk&amp;#39;,&amp;#39;Bangalore&amp;#39;,24,9964014500);&lt;/p&gt;
-
-&lt;p&gt;/usr/local/freeswitch/bin/fs_cli -x &amp;quot;originate  freetdm/8/a/009716337516 &amp;amp;park()&amp;quot;&lt;/p&gt;
-
-&lt;h2&gt;Nodetool Command Set:&lt;/h2&gt;
-
-&lt;p&gt;nodetool status
-nodetool info
-nodetool -host 10.60.8.23 ring&lt;/p&gt;
+&lt;h5&gt;Nodetool Command Set:&lt;/h5&gt;
+&lt;p&gt;nodetool status&lt;/p&gt;
+&lt;p&gt;nodetool info&lt;/p&gt;
+&lt;p&gt;nodetool -host 10.60.8.23 ring&lt;/p&gt;
 </description>
         <pubDate>Thu, 28 Jan 2016 15:48:00 +0530</pubDate>
         <link>http://hellodk.github.io///getting_familiar_with_cassandra</link>

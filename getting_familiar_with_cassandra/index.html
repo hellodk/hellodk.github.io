@@ -89,7 +89,7 @@
 <!-- Everything inside the #post tags pulls data from the post -->
 <!-- #post -->
 
-<header class="main-header post-head " style="background-image: url(/assets/images/cover4.jpg) ">
+<header class="main-header post-head " style="background-image: url(/assets/images/cassandra/astronaut_on_the_moon.jpg) ">
     <nav class="main-nav  overlay  clearfix">
         <a class="blog-logo" href="/"><img src="/assets/images/ghost.png" alt="Blog Logo" /></a>
         
@@ -121,59 +121,58 @@
 
         <section class="post-content">
             
-            <p>The Growth of Big Data</p>
+            <p>The Growth of Big Data - Big Data is one of the key forces driving the growth and popularity of NoSQL for business. The almost limitless array of data collection technologies ranging from simple online actions to point of sale systems to GPS tools to smartphones and tablets to sophisticated sensors – and many more – act as force multipliers for data growth.
+</p>
+In fact, one of the first reasons to use NoSQL is because you have a Big Data project to tackle. A Big Data project is normally typified by:<br/>
 
-<p>Big Data is one of the key forces driving the growth and popularity of NoSQL for business. The almost limitless array of data collection technologies ranging from simple online actions to point of sale systems to GPS tools to smartphones and tablets to sophisticated sensors – and many more – act as force multipliers for data growth.</p>
+High data velocity – lots of data coming in very quickly, possibly from different locations.<br/>
+Data variety – storage of data that is structured, semi-structured and unstructured.<br/>
+Data volume – data that involves many terabytes or petabytes in size.<br/>
+Data complexity – data that is stored and managed in different locations or data centers.<br/>
 
-<p>In fact, one of the first reasons to use NoSQL is because you have a Big Data project to tackle. A Big Data project is normally typified by:</p>
 
-<p>High data velocity – lots of data coming in very quickly, possibly from different locations.
-Data variety – storage of data that is structured, semi-structured and unstructured.
-Data volume – data that involves many terabytes or petabytes in size.
-Data complexity – data that is stored and managed in different locations or data centers.</p>
-
-<p>Datamodel   Performance Scalability Flexibility Complexity  Functionality
-Key-value store High    High    High    None    Variable (None)
+<p><code>Datamodel       Performance Scalability Flexibility Complexity  Functionality</code>
+<p><code>Key-value store     High        High       High        None        Variable(None)</code></p>
 Column Store    High    High    Moderate    Low Minimal
 Document Store  High    Variable (High) High    Low Variable (Low)
-Graph Database  Variable    Variable    High    High    Graph Theory</p>
+Graph Database  Variable    Variable    High    High    Graph Theory
+</p>
+massively scalable open source NoSQL database. Cassandra is perfect for managing large amounts of structured, semi-structured, and unstructured data across multiple data centers and the cloud. Cassandra delivers continuous availability, linear scalability, and operational simplicity across many commodity servers with no single point of failure, along with a powerful dynamic data model designed for maximum flexibility and fast response times
 
-<p>massively scalable open source NoSQL database. Cassandra is perfect for managing large amounts of structured, semi-structured, and unstructured data across multiple data centers and the cloud. Cassandra delivers continuous availability, linear scalability, and operational simplicity across many commodity servers with no single point of failure, along with a powerful dynamic data model designed for maximum flexibility and fast response times</p>
+built-for-scale architecture means that it is capable of handling petabytes of information and thousands of concurrent users/operations per second.
 
-<p>built-for-scale architecture means that it is capable of handling petabytes of information and thousands of concurrent users/operations per second.</p>
+An apache Software Foundation project, Cassandra is column oriented database and is an open source distributed database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure.
 
-<p>An apache Software Foundation project, Cassandra is column oriented database and is an open source distributed database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure.</p>
+Cassandra does not support joins or subqueries. Rather, Cassandra emphasizes denormalization through features like collections
 
-<p>Cassandra does not support joins or subqueries. Rather, Cassandra emphasizes denormalization through features like collections</p>
+CQL - Cassandara Query Language
 
-<p>CQL - Cassandara Query Language</p>
+Each node in a cluster can accept read and write requests, regardless of where the data is actually located in the cluster.
 
-<p>Each node in a cluster can accept read and write requests, regardless of where the data is actually located in the cluster.</p>
+When a node goes down, read/write requests can be served from other nodes in the network.
 
-<p>When a node goes down, read/write requests can be served from other nodes in the network.</p>
-
-<p>The key components of Cassandra are as follows −
+The key components of Cassandra are as follows −
 Node − It is the place where data is stored.
 Data center − It is a collection of related nodes.
 Cluster − A cluster is a component that contains one or more data centers.
 Commit log − The commit log is a crash-recovery mechanism in Cassandra. Every write operation is written to the commit log.
 Mem-table − A mem-table is a memory-resident data structure. After commit log, the data will be written to the mem-table. Sometimes, for a single-column family, there will be multiple mem-tables.
 SSTable − It is a disk file to which the data is flushed from the mem-table when its contents reach a threshold value.
-Bloom filter − These are nothing but quick, nondeterministic, algorithms for testing whether an element is a member of a set. It is a special kind of cache. Bloom filters are accessed after every query.</p>
+Bloom filter − These are nothing but quick, nondeterministic, algorithms for testing whether an element is a member of a set. It is a special kind of cache. Bloom filters are accessed after every query.
 
-<h2>Commands:</h2>
-
-<p>nodetool cfstats : displays statistics for each table and keyspace.
+Commands:
+---------
+<p>nodetool cfstats : displays statistics for each table and keyspace.</p>
 nodetool cfhistograms : provides statistics about a table, including read/write latency, row size, column count, and number of SSTables.
 nodetool netstats : provides statistics about network operations and connections.
 nodetool tpstats : provides statistics about the number of active, pending, and completed tasks for each stage of Cassandra operations by thread pool.
-nodetool status :</p>
+nodetool status :
 
-<p>cqlsh <machine ip> -  connects to the machine cqlsh</p>
+cqlsh <machine ip> -  connects to the machine cqlsh
 
-<h2>cqlsh command list:</h2>
-
-<p>HELP - Displays help topics for all cqlsh commands.
+cqlsh command list:
+-------------------
+HELP - Displays help topics for all cqlsh commands.
 CAPTURE - Captures the output of a command and adds it to a file.
 CONSISTENCY - Shows the current consistency level, or sets a new consistency level.
 COPY - Copies data to and from Cassandra.
@@ -183,58 +182,58 @@ EXIT - Using this command, you can terminate cqlsh.
 PAGING - Enables or disables query paging.
 SHOW - Displays the details of current cqlsh session such as Cassandra version, host, or data type assumptions.
 SOURCE - Executes a file that contains CQL statements.
-TRACING - Enables or disables request tracing.</p>
+TRACING - Enables or disables request tracing.
 
-<h2>Upgrading:</h2>
-
-<p>mkdir ~/cassandra<em>backup
-sudo cp -r /etc/cassandra/* ~/cassandra</em>backup
-sudo vi /etc/cassandra/cassandra.yaml and edit num<em>tokens to 1 and uncomment the initial</em>token and set it to 1
+Upgrading:
+----------
+mkdir ~/cassandra_backup
+sudo cp -r /etc/cassandra/* ~/cassandra_backup
+sudo vi /etc/cassandra/cassandra.yaml and edit num_tokens to 1 and uncomment the initial_token and set it to 1
 nodetool upgradesstables
 nodetool drain
 sudo service cassandra stop
-sudo cp -r /etc/cassandra/* ~/cassandra<em>backup</em>new
+sudo cp -r /etc/cassandra/* ~/cassandra_backup_new
 sudo apt-get install cassandra=2.1.12
 Open the old and new cassandra.yaml files and diff them.
 Merge the diffs by hand, including the partitioner setting, from the old file into the new one.
 Do not use the default partitioner setting in the new cassandra.yaml because it has changed in this release to the Murmur3Partitioner. The Murmur3Partitioner can only be used for new clusters. After data has been added to the cluster, you cannot change the partitioner without reworking tables, which is not practical. Use your old partitioner setting in the new cassandra.yaml file.
-Save the file as cassandra.yaml.</p>
+Save the file as cassandra.yaml.
 
-<p>Configuration file &#39;/etc/cassandra/cassandra.yaml&#39;
- ==&gt; Modified (by you or by a script) since installation.
- ==&gt; Package distributor has shipped an updated version.
+Configuration file '/etc/cassandra/cassandra.yaml'
+ ==> Modified (by you or by a script) since installation.
+ ==> Package distributor has shipped an updated version.
    What would you like to do about it ?  Your options are:
-    Y or I  : install the package maintainer&#39;s version
+    Y or I  : install the package maintainer's version
     N or O  : keep your currently-installed version
       D     : show the differences between the versions
       Z     : start a shell to examine the situation
  The default action is to keep your current version.
-*** cassandra.yaml (Y/I/N/O/D/Z) [default=N] ? </p>
+*** cassandra.yaml (Y/I/N/O/D/Z) [default=N] ? 
 
-<p>************<strong><em>Inserting values into tables</em></strong>**************************
-CREATE KEYSPACE tutorialspoint WITH replication = {
-  &#39;class&#39;: &#39;NetworkTopologyStrategy&#39;,
-  &#39;cdr_record&#39;: &#39;2&#39;
+
+
+
+<h5>Inserting values into tables</h5>
+<p>CREATE KEYSPACE tutorial WITH replication = {
+  'class': 'NetworkTopologyStrategy',
+  'cdr_record': '2'
 };</p>
 
-<p>INSERT INTO tutorialspoint.emp (emp<em>id,emp</em>city,emp<em>name,emp</em>phone,emp_sal) VALUES(3,&#39;Kolkata&#39;,&#39;Stag1&#39;,8791134412,60);</p>
+<p>INSERT INTO tutorialspoint.emp (emp_id,emp_city,emp_name,emp_phone,emp_sal) VALUES(3,'Kolkata','Stag1',4412,60);</p>
 
 <p>UPDATE TABLE emp(
-   emp<em>id int PRIMARY KEY,
-   emp</em>name text,
-   emp<em>city text,
-   emp</em>sal varint,
-   emp_phone varint);</p>
+   emp_id int PRIMARY KEY,
+   emp_name text,
+   emp_city text,
+   emp_sal varint,
+   emp_phone varint);
+</p>
+<p>INSERT INTO TABLE emp(emp_id int,emp_name,emp_city,emp_sal,emp_phone) VALUES(1,'foo','Bangalore',24,1234567);</p>
 
-<p>INSERT INTO TABLE emp(emp<em>id int,emp</em>name,emp<em>city,emp</em>sal,emp_phone) VALUES(1,&#39;dk&#39;,&#39;Bangalore&#39;,24,9964014500);</p>
-
-<p>/usr/local/freeswitch/bin/fs_cli -x &quot;originate  freetdm/8/a/009716337516 &amp;park()&quot;</p>
-
-<h2>Nodetool Command Set:</h2>
-
-<p>nodetool status
-nodetool info
-nodetool -host 10.60.8.23 ring</p>
+<h5>Nodetool Command Set:</h5>
+<p>nodetool status</p>
+<p>nodetool info</p>
+<p>nodetool -host 10.60.8.23 ring</p>
 
 
         </section>
@@ -317,7 +316,7 @@ var disqus_config = function () {
         <a class="read-next-story " style="background-image: url(/assets/images/cover1.jpg)" href="/mark_down_cheatsheet">
             <section class="post">
                 <h2>Markdown cheat-sheets</h2>
-                <p>Source : https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet # H1 ## H2 ### H3 #### H4 ##### H5 ###### H6...</p>
+                <p>Source : https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet # H1 - # H1 ## H2 - ## H2 ### H3...</p>
             </section>
         </a>
     
