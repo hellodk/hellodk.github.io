@@ -5,8 +5,8 @@
     <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
     <link>http://hellodk.github.io///</link>
     <atom:link href="http://hellodk.github.io///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 05 Oct 2016 15:28:01 +0530</pubDate>
-    <lastBuildDate>Wed, 05 Oct 2016 15:28:01 +0530</lastBuildDate>
+    <pubDate>Fri, 07 Oct 2016 13:54:58 +0530</pubDate>
+    <lastBuildDate>Fri, 07 Oct 2016 13:54:58 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -442,20 +442,33 @@ In fact, one of the first reasons to use NoSQL is because you have a Big Data pr
   &lt;li&gt;&lt;i&gt;Data complexity&lt;/i&gt; – data that is stored and managed in different locations or data centers.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;code&gt;Datamodel       Performance Scalability Flexibility Complexity  Functionality&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Key-value store     High        High       High        None        Variable(None)&lt;/code&gt;&lt;/p&gt;
-Column Store    High    High    Moderate    Low Minimal
-Document Store  High    Variable (High) High    Low Variable (Low)
-Graph Database  Variable    Variable    High    High    Graph Theory
-massively scalable open source NoSQL database. Cassandra is perfect for managing large amounts of structured, semi-structured, and unstructured data across multiple data centers and the cloud. Cassandra delivers continuous availability, linear scalability, and operational simplicity across many commodity servers with no single point of failure, along with a powerful dynamic data model designed for maximum flexibility and fast response times
+&lt;table style=&quot;width:100%&quot;&gt;
+  &lt;caption&gt;Comparison&lt;/caption&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Datamodel&lt;/th&gt;
+    &lt;th&gt;Performance&lt;/th&gt;
+    &lt;th&gt;Scalability&lt;/th&gt;
+    &lt;th&gt;Flexibility&lt;/th&gt;
+    &lt;th&gt;Complexity&lt;/th&gt;
+    &lt;th&gt;Functionality&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Key-value store&lt;/td&gt;&lt;td&gt;High&lt;/td&gt;&lt;td&gt;High&lt;/td&gt;&lt;td&gt;High&lt;/td&gt;&lt;td&gt;None&lt;/td&gt;&lt;td&gt;Variable (None)&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Column Store&lt;/td&gt;&lt;td&gt;High&lt;/td&gt;&lt;td&gt;High&lt;/td&gt;&lt;td&gt;Loq&lt;/td&gt;&lt;td&gt;Moderate&lt;/td&gt;&lt;td&gt;Low Minimal&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Document Store&lt;/td&gt;&lt;td&gt;High&lt;/td&gt;&lt;td&gt;Variable&lt;/td&gt;&lt;td&gt;High&lt;/td&gt;&lt;td&gt;Low&lt;/td&gt;&lt;td&gt;Variable&lt;/td&gt;
+  &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;Graph Database&lt;/td&gt;&lt;td&gt;Variable&lt;/td&gt;&lt;td&gt;Variable&lt;/td&gt;&lt;td&gt;High&lt;/td&gt;&lt;td&gt;High&lt;/td&gt;&lt;td&gt;Graph Theory&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
 
-built-for-scale architecture means that it is capable of handling petabytes of information and thousands of concurrent users/operations per second.
+&lt;p&gt;Cassandra is perfect for managing large amounts of structured, semi-structured, and unstructured data across multiple data centers and the cloud. Cassandra delivers continuous availability, linear scalability, and operational simplicity across many commodity servers with no single point of failure, along with a powerful dynamic data model designed for maximum flexibility and fast response times. Built-for-scale architecture means that it is capable of handling petabytes of information and thousands of concurrent users/operations per second.&lt;/p&gt;
 
-An apache Software Foundation project, Cassandra is column oriented database and is an open source distributed database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure.
-
-Cassandra does not support joins or subqueries. Rather, Cassandra emphasizes denormalization through features like collections
-
-CQL - Cassandara Query Language
+&lt;p&gt;An apache Software Foundation project, Cassandra is column oriented database and is an open source distributed database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure. Cassandra does not support joins or subqueries. Rather, Cassandra emphasizes denormalization through features like collections.&lt;/p&gt;
 
 Each node in a cluster can accept read and write requests, regardless of where the data is actually located in the cluster.
 
