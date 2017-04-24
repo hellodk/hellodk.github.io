@@ -5,9 +5,401 @@
     <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
     <link>http://hellodk.github.io///</link>
     <atom:link href="http://hellodk.github.io///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 19 Apr 2017 15:01:17 +0530</pubDate>
-    <lastBuildDate>Wed, 19 Apr 2017 15:01:17 +0530</lastBuildDate>
+    <pubDate>Mon, 24 Apr 2017 13:27:18 +0530</pubDate>
+    <lastBuildDate>Mon, 24 Apr 2017 13:27:18 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>RabbitMQ - Detecting Dead TCP Connections with Heartbeats</title>
+        <description>&lt;p&gt;
+In some types of network failure, packet loss can mean that disrupted TCP connections take a moderately long time (about 11 minutes with default configuration on Linux, for example) to be detected by the operating system. AMQP 0-9-1 offers a heartbeat feature to ensure that the application layer promptly finds out about disrupted connections (and also completely unresponsive peers). Heartbeats also defend against certain network equipment which may terminate &quot;idle&quot; TCP connections. See Heartbeats for details.
+&lt;/p&gt;
+
+&lt;h3&gt;At the Broker&lt;/h3&gt;
+&lt;p&gt;
+In order to avoid losing messages in the broker we need to cope with broker restarts, broker hardware failure and in extremis even broker crashes.
+&lt;/p&gt;
+&lt;p&gt;
+To ensure that messages and broker definitions survive restarts, we need to ensure that they are on disk. The AMQP standard has a concept of durability for exchanges, queues and of persistent messages, requiring that a durable object or persistent message will survive a restart. More details about specific flags pertaining to durability and persistence can be found in the AMQP Concepts Guide.
+&lt;/p&gt;
+&lt;h3&gt;Clustering and High Availability&lt;/h3&gt;
+&lt;p&gt;
+If we need to ensure that our broker survives hardware failure, we can use RabbitMQ&#39;s clustering. In a RabbitMQ cluster, all definitions (of exchanges, bindings, users, etc) are mirrored across the entire cluster. Queues behave differently, by default residing only on a single node, but optionally being mirrored across several or all nodes. Queues remain visible and reachable from all nodes regardless of where they are located.
+&lt;/p&gt;
+&lt;p&gt;
+Mirrored queues replicate their contents across all configured cluster nodes, tolerating node failures seamlessly and without message loss (although see this note on unsynchronised slaves). However, consuming applications need to be aware that when queues fail their consumers will be cancelled and they will need to reconsume - see the documentation for more details.
+&lt;/p&gt;
+At the Producer
+
+When using confirms, producers recovering from a channel or connection failure should retransmit any messages for which an acknowledgement has not been received from the broker. There is a possibility of message duplication here, because the broker might have sent a confirmation that never reached the producer (due to network failures, etc). Therefore consumer applications will need to perform deduplication or handle incoming messages in an idempotent manner.
+
+Ensuring Messages are Routed
+In some circumstances it can be important for producers to ensure that their messages are being routed to queues (although not always - in the case of a pub-sub system producers will just publish and if no consumers are interested it is correct for messages to be dropped).
+
+To ensure messages are routed to a single known queue, the producer can just declare a destination queue and publish directly to it. If messages may be routed in more complex ways but the producer still needs to know if they reached at least one queue, it can set the mandatory flag on a basic.publish, ensuring that a basic.return (containing a reply code and some textual explanation) will be sent back to the client if no queues were appropriately bound.
+
+Producers should also be aware that when publishing to a clustered node, if one or more destination queues that are bound to the exchange have mirrors in the cluster, it&#39;s possible to incur delays in the face of network failures between nodes, due to flow control between replicas and the master queue process. See here for more details.
+
+At the Consumer
+
+In the event of network failure (or a node crashing), messages can be duplicated, and consumers must be prepared to handle them. If possible, the simplest way to handle this is to ensure that your consumers handle messages in an idempotent way rather than explicitly deal with deduplication.
+
+If a message is delivered to a consumer and then requeued (because it was not acknowledged before the consumer connection dropped, for example) then RabbitMQ will set the redelivered flag on it when it is delivered again (whether to the same consumer or a different one). This is a hint that a consumer may have seen this message before (although that&#39;s not guaranteed, the message may have made it out of the broker but not into a consumer before the connection dropped). Conversely if the redelivered flag is not set then it is guaranteed that the message has not been seen before. Therefore if a consumer finds it more expensive to deduplicate messages or process them in an idempotent manner, it can do this only for messages with the redelivered flag set.
+
+Consumer Cancel Notification
+Under some circumstances the server needs to be able to cancel a consumer - since the queue it was consuming from has been deleted, or has failed over. In this case the consumer should consume again but be aware that it may see messages again which it has already seen.
+
+Note that consumer cancel notification is a RabbitMQ extension to AMQP, and as such may not be supported by all clients.
+
+Messages That Cannot Be Processed
+If a consumer determines that it cannot handle a message then it can reject it using basic.reject (or basic.nack), either asking the server to requeue it, or not (in which case the server might be configured to dead-letter it instead.
+
+Distributed RabbitMQ
+
+Rabbit provides two plugins to assist with distributing nodes over unreliable networks: federation and the shovel. Both are implemented as AMQP clients, so if you configure them to use confirms and acknowledgements, they will retransmit when necessary. Both will use confirms and acknowledgements by default.
+
+When connecting clusters with federation or the shovel, it is desirable to ensure that the federation links and shovels tolerate node failures. Federation will automatically distribute links across the downstream cluster and fail them over on failure of a downstream node. In order to connect to a new upstream when an upstream node fails you can specify multiple redundant URIs for an upstream, or connect via a TCP load balancer.
+
+When using the shovel, it is possible to specify redundant brokers in a source or destination clause; however it is not currently possible to make the shovel itself redundant. We hope to improve this situation in the future; in the mean time a new node can be brought up manually to run a shovel if the node it was originally running on fails.</description>
+        <pubDate>Mon, 24 Apr 2017 17:48:00 +0530</pubDate>
+        <link>http://hellodk.github.io///detecting-dead-tcp-connections</link>
+        <guid isPermaLink="true">http://hellodk.github.io///detecting-dead-tcp-connections</guid>
+        
+        <category>tutorials</category>
+        
+        
+        <category>dk</category>
+        
+      </item>
+    
+      <item>
+        <title>HTTP Quick Reference - A Quick reminder about HTTP</title>
+        <description>&lt;h2&gt;&lt;u&gt;HTTP Transaction Model:&lt;/u&gt;&lt;/h2&gt;
+&lt;p&gt;The HTTP protocol is transaction-driven. This means that each request will lead
+to one and only one response. Traditionally, a TCP connection is established
+from the client to the server, a request is sent by the client on the
+connection, the server responds and the connection is closed. A new request
+will involve a new connection :&lt;/p&gt;
+
+&lt;code&gt;  [CON1] [REQ1] ... [RESP1] [CLO1] [CON2] [REQ2] ... [RESP2] [CLO2] ... &lt;/code&gt;
+&lt;/br&gt;&lt;/br&gt;
+
+&lt;p&gt;In this mode, called the &quot;HTTP close&quot; mode, there are as many connection
+establishments as there are HTTP transactions. Since the connection is closed
+by the server after the response, the client does not need to know the content
+length.&lt;/p&gt;
+
+&lt;p&gt;Due to the transactional nature of the protocol, it was possible to improve it
+to avoid closing a connection between two subsequent transactions. In this mode
+however, it is mandatory that the server indicates the content length for each
+response so that the client does not wait indefinitely. For this, a special
+header is used: &quot;Content-length&quot;. This mode is called the &quot;keep-alive&quot; mode :&lt;/p&gt;
+
+  &lt;code&gt;[CON] [REQ1] ... [RESP1] [REQ2] ... [RESP2] [CLO] ...&lt;/code&gt;
+&lt;/br&gt;&lt;/br&gt;
+&lt;p&gt;Its advantages are a reduced latency between transactions, and less processing
+power required on the server side. It is generally better than the close mode,
+but not always because the clients often limit their concurrent connections to
+a smaller value.&lt;/p&gt;
+
+&lt;p&gt;A last improvement in the communications is the pipelining mode. It still uses
+keep-alive, but the client does not wait for the first response to send the
+second request. This is useful for fetching large number of images composing a
+page :&lt;/p&gt;
+
+&lt;code&gt;  [CON] [REQ1] [REQ2] ... [RESP1] [RESP2] [CLO] ...&lt;/code&gt;
+&lt;/br&gt;&lt;/br&gt;
+
+&lt;p&gt;This can obviously have a tremendous benefit on performance because the network
+latency is eliminated between subsequent requests. Many HTTP agents do not
+correctly support pipelining since there is no way to associate a response with
+the corresponding request in HTTP. For this reason, it is mandatory for the
+server to reply in the exact same order as the requests were received.&lt;/p&gt;
+
+  &lt;h2&gt;&lt;u&gt;HTTP Request&lt;/u&gt;&lt;/h2&gt;
+  &lt;p&gt;First, let&#39;s consider this HTTP request :&lt;/p&gt;
+  
+  &lt;table id=&quot;t01&quot;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Line Number&lt;/th&gt;
+    &lt;th&gt;Contents&lt;/th&gt; 
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;GET /serv/login.php?lang=en&amp;profile=2 HTTP/1.1&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;Host: www.mydomain.com&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;User-agent: my small browser&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;Accept: image/jpeg, image/gif&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;5&lt;/td&gt;
+    &lt;td&gt;Accept: image/png&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;h3&gt;&lt;u&gt;The Request line&lt;/u&gt;&lt;/h3&gt;
+
+&lt;p&gt;Line 1 is the &quot;request line&quot;. It is always composed of 3 fields :&lt;/p&gt;
+&lt;li&gt;METHOD      : GET&lt;/li&gt;
+&lt;li&gt;URI         : /serv/login.php?lang=en&amp;profile=2&lt;/li&gt;
+&lt;li&gt;Version tag : HTTP/1.1&lt;/li&gt;
+&lt;/br/&gt;
+&lt;p&gt;
+All of them are delimited by what the standard calls LWS (linear white spaces),
+which are commonly spaces, but can also be tabs or line feeds/carriage returns
+followed by spaces/tabs. The method itself cannot contain any colon (&#39;:&#39;) and
+is limited to alphabetic letters.
+&lt;/p&gt;
+
+The URI itself can have several forms :
+&lt;/br&gt;
+&lt;li&gt;A &quot;relative URI&quot; : (&lt;code&gt;/serv/login.php?lang=en&amp;profile=2&lt;/code&gt;)
+    It is a complete URL without the host part. This is generally what is received by servers, reverse proxies and transparent proxies.
+&lt;/li&gt;
+&lt;li&gt;An &quot;absolute URI&quot;, also called a &quot;URL&quot; : (&lt;code&gt;http://192.168.0.12:8080/serv/login.php?lang=en&amp;profile=2&lt;/code&gt;)
+    It is composed of a &quot;scheme&quot; (the protocol name followed by &#39;://&#39;), a host
+    name or address, optionally a colon (&#39;:&#39;) followed by a port number, then
+    a relative URI beginning at the first slash (&#39;/&#39;) after the address part.
+    This is generally what proxies receive, but a server supporting HTTP/1.1
+    must accept this form too.
+&lt;/li&gt;
+&lt;li&gt;A &quot;star&quot; : &lt;code&gt;(&#39;*&#39;)&lt;/code&gt; This form is only accepted in association with the OPTIONS
+    method and is not relayable. It is used to inquiry a next hop&#39;s capabilities.
+&lt;/li&gt;
+&lt;li&gt;An address:port combination : (&lt;code&gt;192.168.0.12:80&lt;/code&gt;)
+    This is used with the CONNECT method, which is used to establish TCP
+    tunnels through HTTP proxies, generally for HTTPS, but sometimes for
+    other protocols too.
+&lt;/li&gt;
+&lt;/code&gt;
+&lt;/br&gt;
+&lt;p&gt;
+In a relative URI, two sub-parts are identified. The part before the question
+mark is called the &quot;path&quot;. It is typically the relative path to static objects
+on the server. The part after the question mark is called the &quot;query string&quot;.
+It is mostly used with GET requests sent to dynamic scripts and is very
+specific to the language, framework or application in use.
+&lt;/p&gt;
+&lt;/br&gt;
+&lt;h2&gt;&lt;u&gt;The request headers&lt;/u&gt;&lt;/h2&gt;
+&lt;p&gt;
+The headers start at the second line and are composed of a name at the
+beginning of the line, immediately followed by a colon &lt;code&gt;(&#39;:&#39;)&lt;/code&gt;. Traditionally,
+an LWS is added after the colon but that&#39;s not required. Then come the values.
+Multiple identical headers may be folded into one single line, delimiting the
+values with commas, provided that their order is respected. This is commonly
+encountered in the &quot;Cookie:&quot; field. A header may span over multiple lines if
+the subsequent lines begin with an LWS. In the example in 1.2, lines 4 and 5
+define a total of 3 values for the &quot;Accept:&quot; header.
+&lt;/p&gt;
+
+&lt;p&gt;
+Contrary to a common mis-conception, header names are not case-sensitive, and
+their values are not either if they refer to other header names (such as the
+&quot;Connection:&quot; header).
+&lt;/p&gt;
+&lt;p&gt;
+The end of the headers is indicated by the first empty line. People often say
+that it&#39;s a double line feed, which is not exact, even if a double line feed
+is one valid form of empty line.
+&lt;/p&gt;
+
+&lt;h2&gt;&lt;u&gt;HTTP response&lt;/u&gt;&lt;/h2&gt;
+&lt;p&gt;An HTTP response looks very much like an HTTP request. Both are called HTTP
+messages. Let&#39;s consider this HTTP response :
+
+&lt;table&gt;
+&lt;tr&gt;
+&lt;th&gt;Line&lt;/th&gt;
+&lt;th&gt;Contents&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;HTTP/1.1 200 OK&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;Content-length: 350&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;Content-Type: text/html&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;   
+&lt;/p&gt;
+
+&lt;p&gt;
+As a special case, HTTP supports so called &quot;Informational responses&quot; as status
+codes 1xx. These messages are special in that they don&#39;t convey any part of the
+response, they&#39;re just used as sort of a signaling message to ask a client to
+continue to post its request for instance.
+&lt;/p&gt;
+&lt;p&gt;
+In the case of a status 100 response
+the requested information will be carried by the next non-100 response message
+following the informational one. This implies that multiple responses may be
+sent to a single request, and that this only works when keep-alive is enabled
+(1xx messages are HTTP/1.1 only).
+&lt;/p&gt;
+
+&lt;h2&gt;&lt;u&gt;The Response line&lt;/u&gt;&lt;/h2&gt;
+&lt;p&gt;Line 1 is the &quot;response line&quot;. It is always composed of 3 fields :
+
+&lt;table&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Value(can be different at times)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Version tag&lt;/td&gt;
+&lt;td&gt;HTTP/1.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Status code&lt;/td&gt;
+&lt;td&gt;200&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Reason&lt;/td&gt;
+&lt;td&gt;OK&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;/p&gt;
+The status code is always 3-digit. The first digit indicates a general status :
+&lt;table&gt;
+&lt;tr&gt;
+&lt;th&gt;Code&lt;/th&gt;
+&lt;th&gt;Message&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+ &lt;td&gt;1xx&lt;/td&gt;
+ &lt;td&gt;informational message to be skipped (eg: 100, 101)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+ &lt;td&gt;2xx&lt;/td&gt;
+ &lt;td&gt;OK, content is following   (eg: 200, 206)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+ &lt;td&gt;3xx&lt;/td&gt;
+ &lt;td&gt;OK, no content following   (eg: 302, 304)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+ &lt;td&gt;4xx&lt;/td&gt;
+ &lt;td&gt;error caused by the client (eg: 401, 403, 404)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+ &lt;td&gt;5xx&lt;/td&gt;
+ &lt;td&gt;error caused by the server (eg: 500, 502, 503)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+
+You can also refer to RFC2616 for the detailed meaning of all such codes. The
+&quot;reason&quot; field is just a hint, but is not parsed by clients. Anything can be
+found there, but it&#39;s a common practice to respect the well-established
+messages. It can be composed of one or multiple words, such as &quot;OK&quot;, &quot;Found&quot;,
+or &quot;Authentication Required&quot;.
+
+Below is the table depicting the basic interpretation of HTTP status codes:
+
+&lt;table&gt;
+&lt;tr&gt;
+  &lt;th&gt;Code&lt;/th&gt;
+  &lt;th&gt;When / reason&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td&gt;200&lt;/td&gt;
+   &lt;td&gt;access to stats page, and when replying to monitoring requests&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td&gt;301&lt;/td&gt;
+   &lt;td&gt;when performing a redirection, depending on the configured code&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td&gt;302&lt;/td&gt;
+   &lt;td&gt;when performing a redirection, depending on the configured code&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td&gt;303&lt;/td&gt;
+   &lt;td&gt;when performing a redirection, depending on the configured code&lt;/td&gt;
+   &lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td&gt;307&lt;/td&gt;
+   &lt;td&gt;when performing a redirection, depending on the configured code&lt;/td&gt;
+   &lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td&gt;308&lt;/td&gt;
+   &lt;td&gt;when performing a redirection, depending on the configured code&lt;/td&gt;
+   &lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td&gt;400&lt;/td&gt;
+   &lt;td&gt;for an invalid or too large request&lt;/td&gt;
+   &lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td&gt;401&lt;/td&gt;
+   &lt;td&gt;when an authentication is required to perform the action (when accessing the stats page)&lt;/td&gt;
+   &lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td&gt;403&lt;/td&gt;
+   &lt;td&gt;when a request is forbidden by a &quot;block&quot; ACL or &quot;reqdeny&quot; filter&lt;/td&gt;
+   &lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td&gt;408&lt;/td&gt;
+   &lt;td&gt;when the request timeout strikes before the request is complete&lt;/td&gt;
+   &lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td&gt;500&lt;/td&gt;
+   &lt;td&gt;when haproxy encounters an unrecoverable internal error, such as a memory allocation failure, which should never happen&lt;/td&gt;
+   &lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td&gt;502&lt;/td&gt;
+   &lt;td&gt;when the server returns an empty, invalid or incomplete response, or when an &quot;rspdeny&quot; filter blocks the response.&lt;/td&gt;
+   &lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td&gt;503&lt;/td&gt;
+   &lt;td&gt;when no server was available to handle the request, or in response to monitoring requests which match the &quot;monitor fail&quot; condition&lt;/td&gt;
+   &lt;/tr&gt;
+&lt;tr&gt;
+   &lt;td&gt;504&lt;/td&gt;
+   &lt;td&gt;when the response timeout strikes before the server responds&lt;/td&gt;
+   &lt;/tr&gt;
+&lt;/table&gt;
+&lt;/br&gt;
+
+&lt;h2&gt;&lt;u&gt;The response headers&lt;/u&gt;&lt;/h2&gt;
+&lt;p&gt;Response headers work exactly like request headers.&lt;/p&gt;</description>
+        <pubDate>Thu, 20 Apr 2017 18:00:00 +0530</pubDate>
+        <link>http://hellodk.github.io///http_quick_reference</link>
+        <guid isPermaLink="true">http://hellodk.github.io///http_quick_reference</guid>
+        
+        <category>tutorials</category>
+        
+        
+        <category>dk</category>
+        
+      </item>
+    
+      <item>
+        <title>HA Proxy for Beginners</title>
+        <description></description>
+        <pubDate>Thu, 20 Apr 2017 18:00:00 +0530</pubDate>
+        <link>http://hellodk.github.io///ha_proxy_for_beginners</link>
+        <guid isPermaLink="true">http://hellodk.github.io///ha_proxy_for_beginners</guid>
+        
+        <category>tutorials</category>
+        
+        
+        <category>dk</category>
+        
+      </item>
     
       <item>
         <title>RethinkDb Installation on Ubuntu-14.04</title>
@@ -742,130 +1134,6 @@ sudo rabbitmqctl set&lt;/em&gt;permissions -p / &lt;user id&gt; &amp;quot;.&lt;e
         <guid isPermaLink="true">http://hellodk.github.io///Creating-a-Highly-Available-Distributed-Messaging-Queue-Cluster-with-RabbitMQ-3.5.6</guid>
         
         <category>tutorials</category>
-        
-        
-        <category>casper</category>
-        
-      </item>
-    
-      <item>
-        <title>Understanding Git-Flow</title>
-        <description>&lt;p&gt;Understanding Git Flow for(ubuntu-14.04):&lt;/p&gt;
-
-&lt;p&gt;what is git flow?
-Usage?
-How can it be helpful?&lt;/p&gt;
-
-&lt;p&gt;Install git flow using the below command:&lt;/p&gt;
-
-&lt;p&gt;sudo apt-get install git-flow&lt;/p&gt;
-
-&lt;p&gt;Starting with git flow:
-To start with git flow, you first need to initialize it inside an existing repository. This is done by using the below command:&lt;/p&gt;
-
-&lt;p&gt;git flow init&lt;/p&gt;
-
-&lt;p&gt;In-case you want to force re-initialization of git flow, you can use the same command and pass -f as an argument
-eg: git flow init -f&lt;/p&gt;
-
-&lt;p&gt;So far cool, this is dead simple, isn&amp;#39;t it? Now let&amp;#39;s see what happens once we do a git flow init. We&amp;#39;ll have to answer a few questions regarding the naming conventions for our branches. For simplicity it is recommended to use the default values.&lt;/p&gt;
-
-&lt;p&gt;$ git flow init -f&lt;/p&gt;
-
-&lt;p&gt;Which branch should be used for bringing forth production releases?
-   - develop
-   - feature/lint_cleanup
-   - master
-Branch name for production releases: [master] &lt;/p&gt;
-
-&lt;p&gt;Which branch should be used for integration of the &amp;quot;next release&amp;quot;?
-   - develop
-   - feature/lint_cleanup
-Branch name for &amp;quot;next release&amp;quot; development: [develop] &lt;/p&gt;
-
-&lt;p&gt;How to name your supporting branch prefixes?
-Feature branches? [feature/] 
-Release branches? [release/] 
-Hotfix branches? [hotfix/] 
-Support branches? [support/] 
-Version tag prefix? [] &lt;/p&gt;
-
-&lt;p&gt;Creating/Deleting a tag:&lt;/p&gt;
-
-&lt;p&gt;Deleting a tag:&lt;/p&gt;
-
-&lt;p&gt;$ git tag -d &lt;tag_name&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 09 Nov 2015 00:00:00 +0530</pubDate>
-        <link>http://hellodk.github.io///understanding_git_flow</link>
-        <guid isPermaLink="true">http://hellodk.github.io///understanding_git_flow</guid>
-        
-        <category>tutorials</category>
-        
-        
-        <category>dk</category>
-        
-      </item>
-    
-      <item>
-        <title>Going Agntless with Ansible</title>
-        <description>&lt;p&gt;While looking for a light yet powerful Configuration Management tool, I was going through some of the various available tools, and came across Ansible. After having a quick look at the features, something which caught my attention: &amp;quot;Ansible is agent-less&amp;quot;, hence I decided to give it a try. Having used Ansible for some around more than 8+ months configuration management, I personally feel...Ansible is awesome!!
-So what is Ansible? Well, it is a configuration management tool, and it empowers you to configure/orchestrate multiple systems at great ease, saving a lot of downtime and resources.
-So how does it does that? The answer lies with ssh keys based agent forwarding. Ansible uses ssh for logging to the remote system, and can execute package installation, shell commands, install/update package management systems, clone git and anything under the sun you need for configuration management.
-So why don&amp;#39;t you try your hands on Ansible and experience it&amp;#39;s awesomeness....all you need to do is to install it on your host system.&lt;/p&gt;
-
-&lt;p&gt;Ansible does not have it&amp;#39;s own process, and unlike other configuration tolls available, it is agent-less!!&lt;/p&gt;
-
-&lt;p&gt;Ansible ships in 2 forms:
-1. Core Ansible
-2. Ansible Tower&lt;/p&gt;
-
-&lt;p&gt;Installation:
-1. OS package manager:
-sudo apt-get install software-properties-common
-sudo apt-add-repository ppa:ansible/ansiblesudo apt-get update
-sudo apt-get install ansible
-2. Via python pip:
-sudo pip install ansible&lt;/p&gt;
-
-&lt;p&gt;Ansible uses a configuration file, called host files for doing ssh to the remote machines. By default it is located in /etc/ansible/hosts
-All you need to do is to add the host ip and the ssh_username to the file, and the public key of your host to the remote machine and you are all set to go!!&lt;/p&gt;
-
-&lt;p&gt;Commands:
-ansible all -i ansible_hosts -m ping
-ansible all -m ping -u deepak
-ansible -m shell -a &amp;#39;free -m&amp;#39; host1
-ansible all -m shell -a &amp;#39;free -m&amp;#39; -u dk&lt;/p&gt;
-
-&lt;p&gt;Playbooks are Ansible’s configuration, deployment, and orchestration language. They can describe a policy you want your remote systems to enforce, or a set of steps in a general IT process.&lt;/p&gt;
-
-&lt;p&gt;Playbooks are written in YAML language, and comprises of Plays&lt;/p&gt;
-
-&lt;p&gt;Running a Playbook in Ansible:
-ansible-playbook playbook.yml -f 10&lt;/p&gt;
-</description>
-        <pubDate>Mon, 06 Apr 2015 15:48:00 +0530</pubDate>
-        <link>http://hellodk.github.io///going_agentless_with_ansible</link>
-        <guid isPermaLink="true">http://hellodk.github.io///going_agentless_with_ansible</guid>
-        
-        <category>tutorials</category>
-        
-        
-        <category>dk</category>
-        
-      </item>
-    
-      <item>
-        <title>Camera Basics</title>
-        <description>&lt;p&gt;A basic tutorial on handling a DSLR for beginners.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 28 Aug 1963 15:48:00 +0530</pubDate>
-        <link>http://hellodk.github.io///camera-basics</link>
-        <guid isPermaLink="true">http://hellodk.github.io///camera-basics</guid>
-        
-        <category>tutorials</category>
-        
-        <category>photography</category>
         
         
         <category>casper</category>
