@@ -6,12 +6,12 @@
   xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
   <channel>
     <title>Curosity is the most powerful thing you own</title>
-    <link>http://hellodk.github.io/</link>
+    <link>http://hellodk.in/</link>
     <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
     <pubDate>Mon, 24 Apr 2017 17:48:00 +0530</pubDate>
     <item>
       <title>RabbitMQ - Detecting Dead TCP Connections with Heartbeats</title>
-      <link>http://hellodk.github.io//detecting-dead-tcp-connections</link>
+      <link>http://hellodk.in//detecting-dead-tcp-connections</link>
       <description>&lt;p&gt;
 In some types of network failure, packet loss can mean that disrupted TCP connections take a moderately long time (about 11 minutes with default configuration on Linux, for example) to be detected by the operating system. AMQP 0-9-1 offers a heartbeat feature to ensure that the application layer promptly finds out about disrupted connections (and also completely unresponsive peers). Heartbeats also defend against certain network equipment which may terminate &quot;idle&quot; TCP connections. See Heartbeats for details.
 &lt;/p&gt;
@@ -22,7 +22,7 @@ In some types of network failure, packet loss can mean that disrupted TCP connec
     </item>
     <item>
       <title>HTTP Quick Reference - A Quick reminder about HTTP</title>
-      <link>http://hellodk.github.io//http_quick_reference</link>
+      <link>http://hellodk.in//http_quick_reference</link>
       <description>In this tutorial we will cover the basics of an HHTP request and see how it works.
 &lt;/br&gt;
 &lt;h2&gt;&lt;u&gt;HTTP Transaction Model:&lt;/u&gt;&lt;/h2&gt;
@@ -38,7 +38,7 @@ will involve a new connection :&lt;/p&gt;
     </item>
     <item>
       <title>HA Proxy for Beginners</title>
-      <link>http://hellodk.github.io//ha_proxy_for_beginners</link>
+      <link>http://hellodk.in//ha_proxy_for_beginners</link>
       <description>
 
 </description>
@@ -47,7 +47,7 @@ will involve a new connection :&lt;/p&gt;
     </item>
     <item>
       <title>RethinkDb Installation on Ubuntu-14.04</title>
-      <link>http://hellodk.github.io//rethinkdb_installation_ubuntu14</link>
+      <link>http://hellodk.in//rethinkdb_installation_ubuntu14</link>
       <description>Let's get some hands on rethinkdb today and find it out yourself. &lt;/br&gt;
 &lt;/br&gt;
 So what is rethinkdb?
@@ -61,7 +61,7 @@ Rethinkdb is an open-source, scalable JSON database built from the ground up for
     </item>
     <item>
       <title>The UNIX Time-Sharing System</title>
-      <link>http://hellodk.github.io//unix_time_sharing_system</link>
+      <link>http://hellodk.in//unix_time_sharing_system</link>
       <description>                              Drafted By
 
 </description>
@@ -70,7 +70,7 @@ Rethinkdb is an open-source, scalable JSON database built from the ground up for
     </item>
     <item>
       <title>Markdown cheat-sheets</title>
-      <link>http://hellodk.github.io//mark_down_cheatsheet</link>
+      <link>http://hellodk.in//mark_down_cheatsheet</link>
       <description>Source : https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
 [arbitrary case-insensitive reference text]: https://www.mozilla.org
@@ -82,7 +82,7 @@ Rethinkdb is an open-source, scalable JSON database built from the ground up for
     </item>
     <item>
       <title>Getting started with Cassandra</title>
-      <link>http://hellodk.github.io//getting_familiar_with_cassandra</link>
+      <link>http://hellodk.in//getting_familiar_with_cassandra</link>
       <description>&lt;p&gt;The Growth of Big Data - Big Data is one of the key forces driving the growth and popularity of NoSQL for business. The almost limitless array of data collection technologies ranging from simple online actions to point of sale systems to GPS tools to smartphones and tablets to sophisticated sensors – and many more – act as force multipliers for data growth.
 &lt;/p&gt;
 
@@ -92,7 +92,7 @@ Rethinkdb is an open-source, scalable JSON database built from the ground up for
     </item>
     <item>
       <title>5 interesting cloud predictions for 2016</title>
-      <link>http://hellodk.github.io//5_interesting_cloud_predictions_2016</link>
+      <link>http://hellodk.in//5_interesting_cloud_predictions_2016</link>
       <description>1. It's time for IOT-
 
 </description>
@@ -101,7 +101,7 @@ Rethinkdb is an open-source, scalable JSON database built from the ground up for
     </item>
     <item>
       <title>About</title>
-      <link>http://hellodk.github.io//about</link>
+      <link>http://hellodk.in//about</link>
       <description>Too often we under-estimate the power of a touch, a smile, a kind word, a listening ear, an honest compliment, or the smallest act of caring, all of which have the potential to turn a life around. 
 The idea behind writing this blog/website is to conect to people and share my experiences with them.
 
@@ -111,7 +111,7 @@ The idea behind writing this blog/website is to conect to people and share my ex
     </item>
     <item>
       <title>Creating a Highly Available Distributed Messaging System</title>
-      <link>http://hellodk.github.io//Creating-a-Highly-Available-Distributed-Messaging-Queue-Cluster-with-RabbitMQ-3.5.6</link>
+      <link>http://hellodk.in//Creating-a-Highly-Available-Distributed-Messaging-Queue-Cluster-with-RabbitMQ-3.5.6</link>
       <description>Creating a Highly Available Distributed Messaging Queue Cluster with RabbitMQ-3.5.6
 What is rabbitmq?
 
@@ -121,7 +121,7 @@ What is rabbitmq?
     </item>
     <item>
       <title>Understanding Git-Flow</title>
-      <link>http://hellodk.github.io//understanding_git_flow</link>
+      <link>http://hellodk.in//understanding_git_flow</link>
       <description>Understanding Git Flow for(ubuntu-14.04):
 
 </description>
@@ -130,7 +130,7 @@ What is rabbitmq?
     </item>
     <item>
       <title>Going Agntless with Ansible</title>
-      <link>http://hellodk.github.io//going_agentless_with_ansible</link>
+      <link>http://hellodk.in//going_agentless_with_ansible</link>
       <description>While looking for a light yet powerful Configuration Management tool, I was going through some of the various available tools, and came across Ansible. After having a quick look at the features, something which caught my attention: &quot;Ansible is agent-less&quot;, hence I decided to give it a try. Having used Ansible for some around more than 8+ months configuration management, I personally feel...Ansible is awesome!!
 So what is Ansible? Well, it is a configuration management tool, and it empowers you to configure/orchestrate multiple systems at great ease, saving a lot of downtime and resources.
 So how does it does that? The answer lies with ssh keys based agent forwarding. Ansible uses ssh for logging to the remote system, and can execute package installation, shell commands, install/update package management systems, clone git and anything under the sun you need for configuration management.
@@ -142,7 +142,7 @@ So why don't you try your hands on Ansible and experience it's awesomeness....al
     </item>
     <item>
       <title>Camera Basics</title>
-      <link>http://hellodk.github.io//camera-basics</link>
+      <link>http://hellodk.in//camera-basics</link>
       <description>A basic tutorial on handling a DSLR for beginners.
 
 </description>

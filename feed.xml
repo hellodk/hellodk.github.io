@@ -3,10 +3,10 @@
   <channel>
     <title></title>
     <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
-    <link>http://hellodk.github.io///</link>
-    <atom:link href="http://hellodk.github.io///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 24 Apr 2017 13:32:10 +0530</pubDate>
-    <lastBuildDate>Mon, 24 Apr 2017 13:32:10 +0530</lastBuildDate>
+    <link>http://hellodk.in///</link>
+    <atom:link href="http://hellodk.in///feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 24 Apr 2017 13:46:54 +0530</pubDate>
+    <lastBuildDate>Mon, 24 Apr 2017 13:46:54 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -62,8 +62,8 @@ When connecting clusters with federation or the shovel, it is desirable to ensur
 
 When using the shovel, it is possible to specify redundant brokers in a source or destination clause; however it is not currently possible to make the shovel itself redundant. We hope to improve this situation in the future; in the mean time a new node can be brought up manually to run a shovel if the node it was originally running on fails.</description>
         <pubDate>Mon, 24 Apr 2017 17:48:00 +0530</pubDate>
-        <link>http://hellodk.github.io///detecting-dead-tcp-connections</link>
-        <guid isPermaLink="true">http://hellodk.github.io///detecting-dead-tcp-connections</guid>
+        <link>http://hellodk.in///detecting-dead-tcp-connections</link>
+        <guid isPermaLink="true">http://hellodk.in///detecting-dead-tcp-connections</guid>
         
         <category>tutorials</category>
         
@@ -379,8 +379,8 @@ Below is the table depicting the basic interpretation of HTTP status codes:
 &lt;h2&gt;&lt;u&gt;The response headers&lt;/u&gt;&lt;/h2&gt;
 &lt;p&gt;Response headers work exactly like request headers.&lt;/p&gt;</description>
         <pubDate>Thu, 20 Apr 2017 18:00:00 +0530</pubDate>
-        <link>http://hellodk.github.io///http_quick_reference</link>
-        <guid isPermaLink="true">http://hellodk.github.io///http_quick_reference</guid>
+        <link>http://hellodk.in///http_quick_reference</link>
+        <guid isPermaLink="true">http://hellodk.in///http_quick_reference</guid>
         
         <category>tutorials</category>
         
@@ -393,8 +393,8 @@ Below is the table depicting the basic interpretation of HTTP status codes:
         <title>HA Proxy for Beginners</title>
         <description></description>
         <pubDate>Thu, 20 Apr 2017 18:00:00 +0530</pubDate>
-        <link>http://hellodk.github.io///ha_proxy_for_beginners</link>
-        <guid isPermaLink="true">http://hellodk.github.io///ha_proxy_for_beginners</guid>
+        <link>http://hellodk.in///ha_proxy_for_beginners</link>
+        <guid isPermaLink="true">http://hellodk.in///ha_proxy_for_beginners</guid>
         
         <category>tutorials</category>
         
@@ -475,8 +475,8 @@ To start rethinkdb as a service, please follow the below steps:
 &lt;/body&gt;
 &lt;/html&gt;</description>
         <pubDate>Wed, 21 Sep 2016 15:48:00 +0530</pubDate>
-        <link>http://hellodk.github.io///rethinkdb_installation_ubuntu14</link>
-        <guid isPermaLink="true">http://hellodk.github.io///rethinkdb_installation_ubuntu14</guid>
+        <link>http://hellodk.in///rethinkdb_installation_ubuntu14</link>
+        <guid isPermaLink="true">http://hellodk.in///rethinkdb_installation_ubuntu14</guid>
         
         <category>tutorials</category>
         
@@ -630,8 +630,8 @@ There is space in each i-node for eight disk addresses. A file which fits into e
 &lt;p&gt;A program which reads or writes files in units of 128 bytes has an advantage over a program which reads or writes a single byte at a time, but the gain is not immense. As an example, the editor ed (8.9 and A2.4 below) was originally written, for simplicity, to do I/O one character at a time; it increased its speed by a factor of about two when it was rewritten to use 128-byte units. Because the system attempts to retain copies of the most recently used disk blocks in core, the speed gain in dealing with large units comes principally from elimination of system overhead, not from latency delays.&lt;/p&gt;
 </description>
         <pubDate>Mon, 01 Feb 2016 13:48:37 +0530</pubDate>
-        <link>http://hellodk.github.io///unix_time_sharing_system</link>
-        <guid isPermaLink="true">http://hellodk.github.io///unix_time_sharing_system</guid>
+        <link>http://hellodk.in///unix_time_sharing_system</link>
+        <guid isPermaLink="true">http://hellodk.in///unix_time_sharing_system</guid>
         
         <category>tutorials</category>
         
@@ -813,8 +813,8 @@ alt=&quot;IMAGE ALT TEXT HERE&quot; width=&quot;240&quot; height=&quot;180&quot;
 &lt;p&gt;&lt;a href=&quot;http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE&quot;&gt;&lt;img src=&quot;http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg&quot; alt=&quot;IMAGE ALT TEXT HERE&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 01 Feb 2016 13:48:37 +0530</pubDate>
-        <link>http://hellodk.github.io///mark_down_cheatsheet</link>
-        <guid isPermaLink="true">http://hellodk.github.io///mark_down_cheatsheet</guid>
+        <link>http://hellodk.in///mark_down_cheatsheet</link>
+        <guid isPermaLink="true">http://hellodk.in///mark_down_cheatsheet</guid>
         
         <category>tutorials</category>
         
@@ -975,8 +975,8 @@ When a node goes down, read/write requests can be served from other nodes in the
 &lt;br/&gt;
 </description>
         <pubDate>Thu, 28 Jan 2016 15:48:00 +0530</pubDate>
-        <link>http://hellodk.github.io///getting_familiar_with_cassandra</link>
-        <guid isPermaLink="true">http://hellodk.github.io///getting_familiar_with_cassandra</guid>
+        <link>http://hellodk.in///getting_familiar_with_cassandra</link>
+        <guid isPermaLink="true">http://hellodk.in///getting_familiar_with_cassandra</guid>
         
         <category>tutorials</category>
         
@@ -1008,8 +1008,8 @@ When a node goes down, read/write requests can be served from other nodes in the
 &lt;/ol&gt;
 </description>
         <pubDate>Thu, 28 Jan 2016 15:48:00 +0530</pubDate>
-        <link>http://hellodk.github.io///5_interesting_cloud_predictions_2016</link>
-        <guid isPermaLink="true">http://hellodk.github.io///5_interesting_cloud_predictions_2016</guid>
+        <link>http://hellodk.in///5_interesting_cloud_predictions_2016</link>
+        <guid isPermaLink="true">http://hellodk.in///5_interesting_cloud_predictions_2016</guid>
         
         <category>tutorials</category>
         
@@ -1024,8 +1024,8 @@ When a node goes down, read/write requests can be served from other nodes in the
 The idea behind writing this blog/website is to conect to people and share my experiences with them.&lt;/p&gt;
 </description>
         <pubDate>Mon, 28 Dec 2015 15:48:00 +0530</pubDate>
-        <link>http://hellodk.github.io///about</link>
-        <guid isPermaLink="true">http://hellodk.github.io///about</guid>
+        <link>http://hellodk.in///about</link>
+        <guid isPermaLink="true">http://hellodk.in///about</guid>
         
         <category>about</category>
         
@@ -1132,8 +1132,8 @@ sudo rabbitmqctl set&lt;/em&gt;user&lt;em&gt;tags &lt;user id&gt; administrator
 sudo rabbitmqctl set&lt;/em&gt;permissions -p / &lt;user id&gt; &amp;quot;.&lt;em&gt;&amp;quot; &amp;quot;.&lt;/em&gt;&amp;quot; &amp;quot;.*&amp;quot;&lt;/p&gt;
 </description>
         <pubDate>Sat, 19 Dec 2015 15:48:00 +0530</pubDate>
-        <link>http://hellodk.github.io///Creating-a-Highly-Available-Distributed-Messaging-Queue-Cluster-with-RabbitMQ-3.5.6</link>
-        <guid isPermaLink="true">http://hellodk.github.io///Creating-a-Highly-Available-Distributed-Messaging-Queue-Cluster-with-RabbitMQ-3.5.6</guid>
+        <link>http://hellodk.in///Creating-a-Highly-Available-Distributed-Messaging-Queue-Cluster-with-RabbitMQ-3.5.6</link>
+        <guid isPermaLink="true">http://hellodk.in///Creating-a-Highly-Available-Distributed-Messaging-Queue-Cluster-with-RabbitMQ-3.5.6</guid>
         
         <category>tutorials</category>
         
