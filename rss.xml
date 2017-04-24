@@ -23,7 +23,7 @@ In some types of network failure, packet loss can mean that disrupted TCP connec
     <item>
       <title>HTTP Quick Reference - A Quick reminder about HTTP</title>
       <link>http://hellodk.in//http_quick_reference</link>
-      <description>In this tutorial we will cover the basics of an HHTP request and see how it works.
+      <description>In this tutorial we will cover the basics of an HTTP request and see how it works.
 &lt;/br&gt;
 &lt;h2&gt;&lt;u&gt;HTTP Transaction Model:&lt;/u&gt;&lt;/h2&gt;
 &lt;p&gt;The HTTP protocol is transaction-driven. This means that each request will lead
