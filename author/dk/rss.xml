@@ -78,7 +78,8 @@ When using the shovel, it is possible to specify redundant brokers in a source o
 	  <pubDate>2017-04-20T18:00:00+05:30</pubDate>
 	  <guid>//http_quick_reference</guid>
 	  <description><![CDATA[
-	     <h2><u>HTTP Transaction Model:</u></h2>
+	     In this tutorial we will cover the basics of an HHTP request and see how it works.
+<h2><u>HTTP Transaction Model:</u></h2>
 <p>The HTTP protocol is transaction-driven. This means that each request will lead
 to one and only one response. Traditionally, a TCP connection is established
 from the client to the server, a request is sent by the client on the
