@@ -12,6 +12,18 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Configure multiple SSH identities for GitBash, Mac OSX, & Linux</title>
+	  <link>//configure_multiple_ssh_identities_for_gitbash_mac_linux</link>
+	  <author>Deepak Gupta</author>
+	  <pubDate>2017-04-26T18:48:00+05:30</pubDate>
+	  <guid>//configure_multiple_ssh_identities_for_gitbash_mac_linux</guid>
+	  <description><![CDATA[
+	     <p>
+</p>
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>RabbitMQ - Detecting Dead TCP Connections with Heartbeats</title>
 	  <link>//detecting-dead-tcp-connections</link>
 	  <author>Deepak Gupta</author>
@@ -485,158 +497,6 @@ To start rethinkdb as a service, please follow the below steps:
 	</item>
 
 	<item>
-	  <title>The UNIX Time-Sharing System</title>
-	  <link>//unix_time_sharing_system</link>
-	  <author>Deepak Gupta</author>
-	  <pubDate>2016-02-01T13:48:37+05:30</pubDate>
-	  <guid>//unix_time_sharing_system</guid>
-	  <description><![CDATA[
-	     <div class="highlight"><pre><code class="language-text" data-lang="text">                          Drafted By
-
-                        D. M. Ritchie
-</code></pre></div>
-<h3>Introduction</h3>
-
-<p>UNIX is a general-purpose, multi-user time sharing system implemented on several Digital Equipment Corporation PDP series machines.</p>
-
-<p>UNIX was written by K. L. Thompson, who also wrote many of the command programs. The author of this memorandum contributed several of the major commands, including the assembler and the debugger. The file system was originally designed by Thompson, the author, and R. H. Canaday.</p>
-
-<p>There are two versions of UNIX. The first, which has been in existence about a year, runs on the PDP-7 and -9 computers; a more modern version, a few months old, uses the PDP-11. This document describes UNIX-11, since it is more modern and many of the differences between it and UNIX-7 result from redesign of features found to be deficient or lacking in the earlier system. Although the PDP-7 and PDP-11 are both small computers, the design of UNIX is amenable to expansion for use on more powerful machines. Indeed, UNIX contains a number of features very seldom offered even by larger systems, including</p>
-
-<p>A versatile, convenient file system with complete integration between disk files and I/O devices;</p>
-
-<p>The ability to initiate asynchrously running processes.</p>
-
-<p>It must be said, however, that the most important features of UNIX are its simplicity, elegance, and ease of use.</p>
-
-<p>Besides the system proper, the major programs available under UNIX are an assembler, a text editor based on QED, a symbolic debugger for examining and patching faulty programs, and &quot;B&quot;, a higher level language resembling BCPL. UNIX-7 also has a version of the compiler writing language TMGL contributed by M. D. McIlroy, and besides its own assembler, there is a PDP-11 assembler which was used to write UNIX-11. On the PDP-11 there is a version of BASIC [reference] adapted from the one supplied by DEC [reference]. All but the last of these programs were written locally, and except for the very first versions of the editor and assembler, using UNIX itself.</p>
-
-<p>Hardware
-The PDP-11 on which UNIX is implemented is a 16-bit 12K computer, and UNIX occupies 8K words. More than half of this space, however, is utilized for a variable number of disk buffers; with some loss of speed the number of buffers could be cut significantly.</p>
-
-<p>The PDP-11 has a 256K word disk, almost all of which is used for file system storage. It is equipped with DECTAPE, a variety of magnetic tape facility in which individual records may be addressed and rewritten at will. Also available are a high-speed paper tape reader and punch. Besides the standard Teletype, there are several variable-speed communications interfaces.</p>
-
-<p>The File System
-The most important role of UNIX is to provide a file system. From the point of view of the user, there are three kinds of files: ordinary disk files, directories, and special files.</p>
-
-<h4>Ordinary Files</h4>
-
-<p>A file contains whatever information the user places there, for example symbolic or binary (object) programs. No particular structuring is expected by the system. Files of text ordinarily consist simply of a string of characters, with lines demarcated by the new-line character. Binary programs are sequences of words as they will appear in core memory when the program starts executing. A few user programs generate and expect files with more structure; for example, the assembler generates, and the debugger expects, a name list file in a particular format; however, the structure of files is controlled solely by the programs which use them, not by the system.</p>
-
-<h4>Directories</h4>
-
-<p>Directories (sometimes, &quot;catalogs&quot;), provide the mapping between the names of files and the files themselves, and thus induce a structure on the file system as a whole. Each user has a directory of his own files; he may also create subdirectories to contain groups of files conveniently treated together.</p>
-
-<p>A directory is exactly like an ordinary file except that it cannot be written on by user programs, so that the system controls the contents of directories. However, anyone with appropriate permission may read a directory just like any other file.</p>
-
-<p>The system maintains several directories for its own use. One of these is the root directory. All files in the system can be found by tracing a path through a chain of directories until the desired file is reached. The starting point for such searches is often the root, which contains an entry for each user&#39;s master directory. Another system directory contains all the programs provided as part of the system; that is, all the commands (elsewhere, &quot;subsystems&quot;). As will be seen, however, it is by no means necessary that a program reside in this directory for it to be used as a command.</p>
-
-<p>Files and directories are named by sequences of eight or fewer characters. When the name of a file is specified to the system, it may be in the form of a path name, which is a sequence of directory names separated by slashes and ending in a file name. If the sequence begins with a slash, the search begins in the root directory. The name &quot;/a/b/c&quot; causes the system to search the root for directory &quot;a&quot;; then to search &quot;a&quot; for &quot;b&quot;, and then to find &quot;c&quot; in &quot;b&quot;. &quot;c&quot; may be an ordinary file, a directory, or a special file. As a limiting case, the name &quot;/&quot; refers to the root itself.</p>
-
-<p>The same non-directory file may appear in several directories under possibly different names. This feature is called &quot;linking&quot;; a directory entry for a file is sometimes called a link. UNIX differs from other systems in which linking is permitted in that all links to a file have equal status. That is, a file does not exist within a particular directory; the directory entry for a file consists merely of its name and a pointer to the information actually describing the file. Thus a file exists independently of any directory entry, although in practice a file is made to disappear along with the last link to it.</p>
-
-<p>When a user logs into UNIX, he is assigned a default current directory, but he may change to any directory readable by him. A path name not starting with &quot;/&quot; causes the system to begin the search in the userâ€™s current directory. Thus, the name &quot;a/b&quot; specifies the file named &quot;b&quot; in directory &quot;a&quot;, which is found in the current working directory. The simplest kind of name, for example &quot;a&quot;, refers to a file which itself is found in the working directory.</p>
-
-<p>Each directory always has at least two entries. The name &quot;.&quot; in each directory refers to the directory itself. Thus a program may read the current directory under the name &quot;.&quot; without knowing its actual path name. The name &quot;..&quot; by convention refers to the parent of the directory in which it appears; that is, the directory in which it was first created.</p>
-
-<p>The directory structure is constrained to have the form of a rooted tree. Except for the special entries &quot;.&quot; and &quot;..&quot;, each directory must appear as an entry in exactly one other, which is its parent. The reason for this is to simplify the writing of programs which visit subtrees of the directory structure, and more important, to avoid the separation of portions of the hierarchy. If arbitrary links to directories were permitted, it would be quite difficult to detect when the last connection from the root to a directory was severed.</p>
-
-<h4>Special Files</h4>
-
-<p>Special files constitute the most unusual feature of the UNIX file system. Each I/O device supported by UNIX is associated with at least one special file. Special files are read and written just like ordinary disk files, but the result is activation of the associated device. Entries for all special files reside in the root directory, so they may all be referred to by &quot;/&quot; followed by the appropriate name.</p>
-
-<p>The special files are discussed further in section 6 below.</p>
-
-<h4>Protection</h4>
-
-<p>The protection scheme in UNIX is quite simple. Each user of the system is assigned a unique user number. When a file-is created, it is marked with the number of its creator. Also given for new files is a set of protection bits. Four of these specify independently permission to read or write for the owner of the file and for all other users. A fifth bit indicates permission to execute the file as a program. If the sixth bit is on, the system will temporarily change the user identification of the current user to that of the creator of the file whenever the file is executed as a program. This feature provides for privileged programs which may use files which should neither be read nor changed by other users. If the set-user-identification bit is on for a program, the accounting file may be accessed during the programâ€™s execution but not otherwise.</p>
-
-<h4>System I/O Calls</h4>
-
-<p>The system calls to do I/O are designed to eliminate the differences between the various devices and styles of access. There is no distinction between &quot;random&quot; and sequential I/O, nor is any logical or physical record size imposed by the system. The size of a file on the disk is determined by the location of the last piece of information written on it; no predetermination of the size of a file is necessary. In UNIX-11, the unit of information is the 8-bit byte, since the PDP-11 is a byte-oriented machine.</p>
-
-<p>To illustrate the essentials of I/O in UNIX, the basic calls are summarized below in an anonymous higher level language which will indicate the needed parameters without getting into the complexities of machine language programming. (All system calls are also described in Appendix 1 in their actual form.) Each call to the system may potentially result in an error return, which for simplicity is not represented in the calling sequence.</p>
-
-<h5>Open</h5>
-
-<p>To read or write a file assumed to exist already, it must be Opened by the following call:</p>
-
-<p>filep = open(name, flag)
-Name indicates the name of the file. An arbitrary path name may be given. The flag argument indicates whether the file is to be read or written. If the file is to be &quot;updated&quot;, that is read and written simultaneously, it may be opened twice, once for reading and once for writing.</p>
-
-<p>The returned argument filep is called a file descriptor. It is used to identify the file in subsequent calls to read, write or otherwise manipulate the file.</p>
-
-<p>There are no locks in the file system, nor is there any restriction on the number of users who may have a file open for reading or writing. Although one may imagine situations in which this fact is unfortunate, in practice difficulties are quite rare.</p>
-
-<h5>Create</h5>
-
-<p>To create a new file, the following call is used.</p>
-
-<p>filep = create(name, mode)
-Here filep and name are as before. If the file already existed, it is truncated to zero length. Creation of a file implies opening for writing as well. The mode argument indicates the permissions which are to be placed on the file by the protection mechanism. To create a file, the user must have write permission in the directory in which the file is being created.</p>
-
-<h5>Write</h5>
-
-<p>Except as indicated below, reading and writing are sequential. This means that if a particular byte in the file was the last byte written (or read), the next I/O call implicitly refers to the first following byte. For each Open file there is a pointer, maintained by the system, which always indicates the next byte to be read or written. If n bytes are read, the pointer advances by n bytes.</p>
-
-<p>Once a file is open for writing, the following call may be used.</p>
-
-<p>nwritten = write(filep, buffer, count)
-Buffer is the address of count sequentially stored bytes (words in UNIX-7) which will be written onto the file. nwritten is the number of bytes actually written; except in rare cases it is the same as count. Occasionally, an error may be indicated; for example if paper tape is being written, an error occurs if the tape runs out.</p>
-
-<p>For disk files which already existed (that is, were opened by open, not create) the bytes written affect only those implied by the position of the write pointer and the number of bytes written; no other part of the file is changed.</p>
-
-<h5>Read</h5>
-
-<p>To read, the call is</p>
-
-<p>nread = read(filep, buffer, count)
-Up to count bytes are read from the file into buffer. The number actually read is returned as nread. Every program must be prepared for the possibility that nread is less than count. If the read pointer is so near the end of the file that reading count characters would cause reading beyond the end, only sufficient bytes are transmitted to reach the end of the file. Furthermore, devices like the typewriters work in units of lines. Suppose, for example, that before anything has been typed a program tries to read 128 characters from the console. This forces the program to wait, since nothing has been typed. The user now types a line consisting, say, of 10 characters and hits the &quot;new line&quot; key. At this point the read call would return indicating 11 characters read (including the new line). On the other hand, it is permissible to read fewer characters than were typed without losing information; for example bytes may be picked up one at a time.</p>
-
-<p>When the read call returns with nread equal to zero, it indicates the end of the file. For disk files this occurs when the read pointer becomes equal to the current size of the file. It is possible to generate an end-of-file from a typewriter by use of an escape sequence which depends on the device used.</p>
-
-<h5>Seek</h5>
-
-<p>To do &quot;random&quot;, that is, direct access I/O it is only necessary to move the read or write pointer to the appropriate location in the file.</p>
-
-<p>seek(filep, base, offset)
-The read pointer (respectively write pointer) associated with filep is moved to a position offset words from the beginning, from the current position of the pointer, or from the end of the file, depending on whether base is O, 1, or 2. Offset may he negative to move the pointer backwards. For some devices (e.g. paper tape and typewriters) seek calls are meaningless and are ignored.</p>
-
-<h5>Tell</h5>
-
-<p>The current position of the pointer may be discovered as follows:</p>
-
-<p>offset = tell(filep, base)
-As with seek, filep is the file descriptor for an open file, and base specifies whether the desired offset is to be measured from the beginning of the file, from the current position of the pointer, or from the end. In the second case, of course, the result is always zero.</p>
-
-<p>Implementation of the File System
-As mentioned in section 3.2 above, a directory entry contains only a name for the associated file and a pointer to the file itself. This pointer is an integer called the i-number (for identification number) of the file. When the file is accessed, its i-number is looked up in a system table stored in a known part of the disk. The entry thereby found (the file&#39;s i-node) contains the description of the file:</p>
-
-<ol>
-<li>its owner;</li>
-<li>its protection bits;</li>
-<li>the physical disk addresses for the file contents;</li>
-<li>its size;</li>
-<li>times of creation and last modification;</li>
-<li>the number of links to the file; that is, the number of
- times it appears in a directory;</li>
-<li>bits indicating whether the file is a directory and whether
- it is special (in which case the size and disk addresses
- are meaningless);</li>
-<li>a bit indicating whether the file is &quot;large&quot; or &quot;small.&quot;
-There is space in each i-node for eight disk addresses. A file which fits into eight or fewer 64-word (128-byte) blocks is considered small; in this case the addresses of the blocks themselves are stored. For large files, each of the eight disk addresses may point to an indirect block of 64 words containing the addresses of the blocks constituting the file itself. Thus files may be as large as 864128, or 65,536 bytes.</li>
-</ol>
-
-<p>When the number of links to a file drops to zero, its contents are freed and its i-node is marked unused.</p>
-
-<p>To the user, both reading and writing of files appears to be synchronous and unbuffered. That is, immediately after return from a read call the data is available, and conversely after a write the user&#39;s workspace may be reused. In fact the system maintains, unseen by the user, a rather complicated buffering mechanism. Suppose a write call is made specifying transmission of a single byte. UNIX will search its own buffers to see whether the affected disk block currently resides in its own buffers; if not, it will be read in from the disk. Then the affected byte is replaced in the buffer and an entry is made in a list of blocks to be written on the disk. The return from the write call may then take place, although the actual I/O may not be completed until a later time. Conversely, if a single byte is read, the system determines whether the disk block in which the byte is located is already in one of the system&#39;s buffers; if so, the byte can be returned immediately. If not, the block is read into a buffer and the byte picked out. Because sequential reading of a file is so common, UNIX attempts to optimize this situation by prereading the disk block following the one in which the requested byte is found. This strategy tends to minimize and in some cases eliminate disk latency delays.</p>
-
-<p>A program which reads or writes files in units of 128 bytes has an advantage over a program which reads or writes a single byte at a time, but the gain is not immense. As an example, the editor ed (8.9 and A2.4 below) was originally written, for simplicity, to do I/O one character at a time; it increased its speed by a factor of about two when it was rewritten to use 128-byte units. Because the system attempts to retain copies of the most recently used disk blocks in core, the speed gain in dealing with large units comes principally from elimination of system overhead, not from latency delays.</p>
-
-	  ]]></description>
-	</item>
-
-	<item>
 	  <title>Markdown cheat-sheets</title>
 	  <link>//mark_down_cheatsheet</link>
 	  <author>Deepak Gupta</author>
@@ -812,6 +672,158 @@ This line is only separated by a single newline, so it&#39;s a separate line in 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a></p>
 
 <p><a href="http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" alt="IMAGE ALT TEXT HERE"></a></p>
+
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>The UNIX Time-Sharing System</title>
+	  <link>//unix_time_sharing_system</link>
+	  <author>Deepak Gupta</author>
+	  <pubDate>2016-02-01T13:48:37+05:30</pubDate>
+	  <guid>//unix_time_sharing_system</guid>
+	  <description><![CDATA[
+	     <div class="highlight"><pre><code class="language-text" data-lang="text">                          Drafted By
+
+                        D. M. Ritchie
+</code></pre></div>
+<h3>Introduction</h3>
+
+<p>UNIX is a general-purpose, multi-user time sharing system implemented on several Digital Equipment Corporation PDP series machines.</p>
+
+<p>UNIX was written by K. L. Thompson, who also wrote many of the command programs. The author of this memorandum contributed several of the major commands, including the assembler and the debugger. The file system was originally designed by Thompson, the author, and R. H. Canaday.</p>
+
+<p>There are two versions of UNIX. The first, which has been in existence about a year, runs on the PDP-7 and -9 computers; a more modern version, a few months old, uses the PDP-11. This document describes UNIX-11, since it is more modern and many of the differences between it and UNIX-7 result from redesign of features found to be deficient or lacking in the earlier system. Although the PDP-7 and PDP-11 are both small computers, the design of UNIX is amenable to expansion for use on more powerful machines. Indeed, UNIX contains a number of features very seldom offered even by larger systems, including</p>
+
+<p>A versatile, convenient file system with complete integration between disk files and I/O devices;</p>
+
+<p>The ability to initiate asynchrously running processes.</p>
+
+<p>It must be said, however, that the most important features of UNIX are its simplicity, elegance, and ease of use.</p>
+
+<p>Besides the system proper, the major programs available under UNIX are an assembler, a text editor based on QED, a symbolic debugger for examining and patching faulty programs, and &quot;B&quot;, a higher level language resembling BCPL. UNIX-7 also has a version of the compiler writing language TMGL contributed by M. D. McIlroy, and besides its own assembler, there is a PDP-11 assembler which was used to write UNIX-11. On the PDP-11 there is a version of BASIC [reference] adapted from the one supplied by DEC [reference]. All but the last of these programs were written locally, and except for the very first versions of the editor and assembler, using UNIX itself.</p>
+
+<p>Hardware
+The PDP-11 on which UNIX is implemented is a 16-bit 12K computer, and UNIX occupies 8K words. More than half of this space, however, is utilized for a variable number of disk buffers; with some loss of speed the number of buffers could be cut significantly.</p>
+
+<p>The PDP-11 has a 256K word disk, almost all of which is used for file system storage. It is equipped with DECTAPE, a variety of magnetic tape facility in which individual records may be addressed and rewritten at will. Also available are a high-speed paper tape reader and punch. Besides the standard Teletype, there are several variable-speed communications interfaces.</p>
+
+<p>The File System
+The most important role of UNIX is to provide a file system. From the point of view of the user, there are three kinds of files: ordinary disk files, directories, and special files.</p>
+
+<h4>Ordinary Files</h4>
+
+<p>A file contains whatever information the user places there, for example symbolic or binary (object) programs. No particular structuring is expected by the system. Files of text ordinarily consist simply of a string of characters, with lines demarcated by the new-line character. Binary programs are sequences of words as they will appear in core memory when the program starts executing. A few user programs generate and expect files with more structure; for example, the assembler generates, and the debugger expects, a name list file in a particular format; however, the structure of files is controlled solely by the programs which use them, not by the system.</p>
+
+<h4>Directories</h4>
+
+<p>Directories (sometimes, &quot;catalogs&quot;), provide the mapping between the names of files and the files themselves, and thus induce a structure on the file system as a whole. Each user has a directory of his own files; he may also create subdirectories to contain groups of files conveniently treated together.</p>
+
+<p>A directory is exactly like an ordinary file except that it cannot be written on by user programs, so that the system controls the contents of directories. However, anyone with appropriate permission may read a directory just like any other file.</p>
+
+<p>The system maintains several directories for its own use. One of these is the root directory. All files in the system can be found by tracing a path through a chain of directories until the desired file is reached. The starting point for such searches is often the root, which contains an entry for each user&#39;s master directory. Another system directory contains all the programs provided as part of the system; that is, all the commands (elsewhere, &quot;subsystems&quot;). As will be seen, however, it is by no means necessary that a program reside in this directory for it to be used as a command.</p>
+
+<p>Files and directories are named by sequences of eight or fewer characters. When the name of a file is specified to the system, it may be in the form of a path name, which is a sequence of directory names separated by slashes and ending in a file name. If the sequence begins with a slash, the search begins in the root directory. The name &quot;/a/b/c&quot; causes the system to search the root for directory &quot;a&quot;; then to search &quot;a&quot; for &quot;b&quot;, and then to find &quot;c&quot; in &quot;b&quot;. &quot;c&quot; may be an ordinary file, a directory, or a special file. As a limiting case, the name &quot;/&quot; refers to the root itself.</p>
+
+<p>The same non-directory file may appear in several directories under possibly different names. This feature is called &quot;linking&quot;; a directory entry for a file is sometimes called a link. UNIX differs from other systems in which linking is permitted in that all links to a file have equal status. That is, a file does not exist within a particular directory; the directory entry for a file consists merely of its name and a pointer to the information actually describing the file. Thus a file exists independently of any directory entry, although in practice a file is made to disappear along with the last link to it.</p>
+
+<p>When a user logs into UNIX, he is assigned a default current directory, but he may change to any directory readable by him. A path name not starting with &quot;/&quot; causes the system to begin the search in the userâ€™s current directory. Thus, the name &quot;a/b&quot; specifies the file named &quot;b&quot; in directory &quot;a&quot;, which is found in the current working directory. The simplest kind of name, for example &quot;a&quot;, refers to a file which itself is found in the working directory.</p>
+
+<p>Each directory always has at least two entries. The name &quot;.&quot; in each directory refers to the directory itself. Thus a program may read the current directory under the name &quot;.&quot; without knowing its actual path name. The name &quot;..&quot; by convention refers to the parent of the directory in which it appears; that is, the directory in which it was first created.</p>
+
+<p>The directory structure is constrained to have the form of a rooted tree. Except for the special entries &quot;.&quot; and &quot;..&quot;, each directory must appear as an entry in exactly one other, which is its parent. The reason for this is to simplify the writing of programs which visit subtrees of the directory structure, and more important, to avoid the separation of portions of the hierarchy. If arbitrary links to directories were permitted, it would be quite difficult to detect when the last connection from the root to a directory was severed.</p>
+
+<h4>Special Files</h4>
+
+<p>Special files constitute the most unusual feature of the UNIX file system. Each I/O device supported by UNIX is associated with at least one special file. Special files are read and written just like ordinary disk files, but the result is activation of the associated device. Entries for all special files reside in the root directory, so they may all be referred to by &quot;/&quot; followed by the appropriate name.</p>
+
+<p>The special files are discussed further in section 6 below.</p>
+
+<h4>Protection</h4>
+
+<p>The protection scheme in UNIX is quite simple. Each user of the system is assigned a unique user number. When a file-is created, it is marked with the number of its creator. Also given for new files is a set of protection bits. Four of these specify independently permission to read or write for the owner of the file and for all other users. A fifth bit indicates permission to execute the file as a program. If the sixth bit is on, the system will temporarily change the user identification of the current user to that of the creator of the file whenever the file is executed as a program. This feature provides for privileged programs which may use files which should neither be read nor changed by other users. If the set-user-identification bit is on for a program, the accounting file may be accessed during the programâ€™s execution but not otherwise.</p>
+
+<h4>System I/O Calls</h4>
+
+<p>The system calls to do I/O are designed to eliminate the differences between the various devices and styles of access. There is no distinction between &quot;random&quot; and sequential I/O, nor is any logical or physical record size imposed by the system. The size of a file on the disk is determined by the location of the last piece of information written on it; no predetermination of the size of a file is necessary. In UNIX-11, the unit of information is the 8-bit byte, since the PDP-11 is a byte-oriented machine.</p>
+
+<p>To illustrate the essentials of I/O in UNIX, the basic calls are summarized below in an anonymous higher level language which will indicate the needed parameters without getting into the complexities of machine language programming. (All system calls are also described in Appendix 1 in their actual form.) Each call to the system may potentially result in an error return, which for simplicity is not represented in the calling sequence.</p>
+
+<h5>Open</h5>
+
+<p>To read or write a file assumed to exist already, it must be Opened by the following call:</p>
+
+<p>filep = open(name, flag)
+Name indicates the name of the file. An arbitrary path name may be given. The flag argument indicates whether the file is to be read or written. If the file is to be &quot;updated&quot;, that is read and written simultaneously, it may be opened twice, once for reading and once for writing.</p>
+
+<p>The returned argument filep is called a file descriptor. It is used to identify the file in subsequent calls to read, write or otherwise manipulate the file.</p>
+
+<p>There are no locks in the file system, nor is there any restriction on the number of users who may have a file open for reading or writing. Although one may imagine situations in which this fact is unfortunate, in practice difficulties are quite rare.</p>
+
+<h5>Create</h5>
+
+<p>To create a new file, the following call is used.</p>
+
+<p>filep = create(name, mode)
+Here filep and name are as before. If the file already existed, it is truncated to zero length. Creation of a file implies opening for writing as well. The mode argument indicates the permissions which are to be placed on the file by the protection mechanism. To create a file, the user must have write permission in the directory in which the file is being created.</p>
+
+<h5>Write</h5>
+
+<p>Except as indicated below, reading and writing are sequential. This means that if a particular byte in the file was the last byte written (or read), the next I/O call implicitly refers to the first following byte. For each Open file there is a pointer, maintained by the system, which always indicates the next byte to be read or written. If n bytes are read, the pointer advances by n bytes.</p>
+
+<p>Once a file is open for writing, the following call may be used.</p>
+
+<p>nwritten = write(filep, buffer, count)
+Buffer is the address of count sequentially stored bytes (words in UNIX-7) which will be written onto the file. nwritten is the number of bytes actually written; except in rare cases it is the same as count. Occasionally, an error may be indicated; for example if paper tape is being written, an error occurs if the tape runs out.</p>
+
+<p>For disk files which already existed (that is, were opened by open, not create) the bytes written affect only those implied by the position of the write pointer and the number of bytes written; no other part of the file is changed.</p>
+
+<h5>Read</h5>
+
+<p>To read, the call is</p>
+
+<p>nread = read(filep, buffer, count)
+Up to count bytes are read from the file into buffer. The number actually read is returned as nread. Every program must be prepared for the possibility that nread is less than count. If the read pointer is so near the end of the file that reading count characters would cause reading beyond the end, only sufficient bytes are transmitted to reach the end of the file. Furthermore, devices like the typewriters work in units of lines. Suppose, for example, that before anything has been typed a program tries to read 128 characters from the console. This forces the program to wait, since nothing has been typed. The user now types a line consisting, say, of 10 characters and hits the &quot;new line&quot; key. At this point the read call would return indicating 11 characters read (including the new line). On the other hand, it is permissible to read fewer characters than were typed without losing information; for example bytes may be picked up one at a time.</p>
+
+<p>When the read call returns with nread equal to zero, it indicates the end of the file. For disk files this occurs when the read pointer becomes equal to the current size of the file. It is possible to generate an end-of-file from a typewriter by use of an escape sequence which depends on the device used.</p>
+
+<h5>Seek</h5>
+
+<p>To do &quot;random&quot;, that is, direct access I/O it is only necessary to move the read or write pointer to the appropriate location in the file.</p>
+
+<p>seek(filep, base, offset)
+The read pointer (respectively write pointer) associated with filep is moved to a position offset words from the beginning, from the current position of the pointer, or from the end of the file, depending on whether base is O, 1, or 2. Offset may he negative to move the pointer backwards. For some devices (e.g. paper tape and typewriters) seek calls are meaningless and are ignored.</p>
+
+<h5>Tell</h5>
+
+<p>The current position of the pointer may be discovered as follows:</p>
+
+<p>offset = tell(filep, base)
+As with seek, filep is the file descriptor for an open file, and base specifies whether the desired offset is to be measured from the beginning of the file, from the current position of the pointer, or from the end. In the second case, of course, the result is always zero.</p>
+
+<p>Implementation of the File System
+As mentioned in section 3.2 above, a directory entry contains only a name for the associated file and a pointer to the file itself. This pointer is an integer called the i-number (for identification number) of the file. When the file is accessed, its i-number is looked up in a system table stored in a known part of the disk. The entry thereby found (the file&#39;s i-node) contains the description of the file:</p>
+
+<ol>
+<li>its owner;</li>
+<li>its protection bits;</li>
+<li>the physical disk addresses for the file contents;</li>
+<li>its size;</li>
+<li>times of creation and last modification;</li>
+<li>the number of links to the file; that is, the number of
+ times it appears in a directory;</li>
+<li>bits indicating whether the file is a directory and whether
+ it is special (in which case the size and disk addresses
+ are meaningless);</li>
+<li>a bit indicating whether the file is &quot;large&quot; or &quot;small.&quot;
+There is space in each i-node for eight disk addresses. A file which fits into eight or fewer 64-word (128-byte) blocks is considered small; in this case the addresses of the blocks themselves are stored. For large files, each of the eight disk addresses may point to an indirect block of 64 words containing the addresses of the blocks constituting the file itself. Thus files may be as large as 864128, or 65,536 bytes.</li>
+</ol>
+
+<p>When the number of links to a file drops to zero, its contents are freed and its i-node is marked unused.</p>
+
+<p>To the user, both reading and writing of files appears to be synchronous and unbuffered. That is, immediately after return from a read call the data is available, and conversely after a write the user&#39;s workspace may be reused. In fact the system maintains, unseen by the user, a rather complicated buffering mechanism. Suppose a write call is made specifying transmission of a single byte. UNIX will search its own buffers to see whether the affected disk block currently resides in its own buffers; if not, it will be read in from the disk. Then the affected byte is replaced in the buffer and an entry is made in a list of blocks to be written on the disk. The return from the write call may then take place, although the actual I/O may not be completed until a later time. Conversely, if a single byte is read, the system determines whether the disk block in which the byte is located is already in one of the system&#39;s buffers; if so, the byte can be returned immediately. If not, the block is read into a buffer and the byte picked out. Because sequential reading of a file is so common, UNIX attempts to optimize this situation by prereading the disk block following the one in which the requested byte is found. This strategy tends to minimize and in some cases eliminate disk latency delays.</p>
+
+<p>A program which reads or writes files in units of 128 bytes has an advantage over a program which reads or writes a single byte at a time, but the gain is not immense. As an example, the editor ed (8.9 and A2.4 below) was originally written, for simplicity, to do I/O one character at a time; it increased its speed by a factor of about two when it was rewritten to use 128-byte units. Because the system attempts to retain copies of the most recently used disk blocks in core, the speed gain in dealing with large units comes principally from elimination of system overhead, not from latency delays.</p>
 
 	  ]]></description>
 	</item>
@@ -1057,51 +1069,6 @@ Version tag prefix? [] </p>
 <p>Deleting a tag:</p>
 
 <p>$ git tag -d <tag_name></p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Going Agntless with Ansible</title>
-	  <link>//going_agentless_with_ansible</link>
-	  <author>Deepak Gupta</author>
-	  <pubDate>2015-04-06T15:48:00+05:30</pubDate>
-	  <guid>//going_agentless_with_ansible</guid>
-	  <description><![CDATA[
-	     <p>While looking for a light yet powerful Configuration Management tool, I was going through some of the various available tools, and came across Ansible. After having a quick look at the features, something which caught my attention: &quot;Ansible is agent-less&quot;, hence I decided to give it a try. Having used Ansible for some around more than 8+ months configuration management, I personally feel...Ansible is awesome!!
-So what is Ansible? Well, it is a configuration management tool, and it empowers you to configure/orchestrate multiple systems at great ease, saving a lot of downtime and resources.
-So how does it does that? The answer lies with ssh keys based agent forwarding. Ansible uses ssh for logging to the remote system, and can execute package installation, shell commands, install/update package management systems, clone git and anything under the sun you need for configuration management.
-So why don&#39;t you try your hands on Ansible and experience it&#39;s awesomeness....all you need to do is to install it on your host system.</p>
-
-<p>Ansible does not have it&#39;s own process, and unlike other configuration tolls available, it is agent-less!!</p>
-
-<p>Ansible ships in 2 forms:
-1. Core Ansible
-2. Ansible Tower</p>
-
-<p>Installation:
-1. OS package manager:
-sudo apt-get install software-properties-common
-sudo apt-add-repository ppa:ansible/ansiblesudo apt-get update
-sudo apt-get install ansible
-2. Via python pip:
-sudo pip install ansible</p>
-
-<p>Ansible uses a configuration file, called host files for doing ssh to the remote machines. By default it is located in /etc/ansible/hosts
-All you need to do is to add the host ip and the ssh_username to the file, and the public key of your host to the remote machine and you are all set to go!!</p>
-
-<p>Commands:
-ansible all -i ansible_hosts -m ping
-ansible all -m ping -u deepak
-ansible -m shell -a &#39;free -m&#39; host1
-ansible all -m shell -a &#39;free -m&#39; -u dk</p>
-
-<p>Playbooks are Ansible’s configuration, deployment, and orchestration language. They can describe a policy you want your remote systems to enforce, or a set of steps in a general IT process.</p>
-
-<p>Playbooks are written in YAML language, and comprises of Plays</p>
-
-<p>Running a Playbook in Ansible:
-ansible-playbook playbook.yml -f 10</p>
 
 	  ]]></description>
 	</item>
