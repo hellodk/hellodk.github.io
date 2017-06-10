@@ -72,6 +72,7 @@
         <!--li class="nav-fables " role="presentation"><a href="/tag/fables">Fables</a></li>
         <li class="nav-speeches " role="presentation"><a href="/tag/speeches">Speeches</a></li>
         <li class="nav-fiction " role="presentation"><a href="/tag/fiction">Fiction</a></li-->
+        <li class="nav-travel " role="presentation"><a href="/tag/travel">Travel</a></li>
 
         <li class="nav-tutorials " role="presentation"><a href="/tag/tutorials">Tutorials</a></li>
 
@@ -127,7 +128,30 @@
 
         <section class="post-content">
             
-            
+            <h2><u>Introduction</u></h2>
+
+<h5>Installing HA proxy</h5>
+<h5>Configuring HAProxy</h5>
+<p>
+Configuration file format:
+</p>
+
+There are 3 major parameters in HA Proxy's configuration:
+
+1. Command Line Arguments, 
+HAProxy's configuration process involves 3 major sources of parameters :
+
+  - the arguments from the command-line, which always take precedence
+  - the "global" section, which sets process-wide parameters
+  - the proxies sections which can take form of "defaults", "listen",
+    "frontend" and "backend".
+
+The configuration file syntax consists in lines beginning with a keyword
+referenced in this manual, optionally followed by one or several parameters
+delimited by spaces. If spaces have to be entered in strings, then they must be
+preceded by a backslash ('\') to be escaped. Backslashes also have to be
+escaped by doubling them.
+
 
         </section>
 
@@ -216,10 +240,10 @@ var disqus_config = function () {
     <!-- [[! /next_post ]] -->
     <!-- [[! prev_post ]] -->
     
-        <a class="read-next-story prev " style="background-image: url(/assets/images/rethinkdb/rethinkdb3.png)" href="/rethinkdb_installation_ubuntu14">
+        <a class="read-next-story prev " style="background-image: url(/assets/images/travel/travel_cover.jpg)" href="/travel_diaries">
             <section class="post">
-                <h2>RethinkDb Installation on Ubuntu-14.04</h2>
-                <p>Let's get some hands on rethinkdb today and find it out yourself. </br> </br> So...</p>
+                <h2>lune de miel à andaman</h2>
+                <p>While looking for a light yet powerful Configuration Management tool, I was going through some...</p>
             </section>
         </a>
     

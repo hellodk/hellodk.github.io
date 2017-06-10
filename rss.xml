@@ -49,11 +49,23 @@ will involve a new connection :&lt;/p&gt;
     <item>
       <title>HA Proxy for Beginners</title>
       <link>http://hellodk.in//ha_proxy_for_beginners</link>
-      <description>
+      <description>&lt;h2&gt;&lt;u&gt;Introduction&lt;/u&gt;&lt;/h2&gt;
 
 </description>
       <pubDate>Thu, 20 Apr 2017 18:00:00 +0530</pubDate>
       <dc:date>2017-04-20T18:00:00+05:30</dc:date>
+    </item>
+    <item>
+      <title>lune de miel à andaman</title>
+      <link>http://hellodk.in//travel_diaries</link>
+      <description>While looking for a light yet powerful Configuration Management tool, I was going through some of the various available tools, and came across Ansible. After having a quick look at the features, something which caught my attention: &quot;Ansible is agent-less&quot;, hence I decided to give it a try. Having used Ansible for some around more than 8+ months configuration management, I personally feel...Ansible is awesome!!
+So what is Ansible? Well, it is a configuration management tool, and it empowers you to configure/orchestrate multiple systems at great ease, saving a lot of downtime and resources.
+So how does it does that? The answer lies with ssh keys based agent forwarding. Ansible uses ssh for logging to the remote system, and can execute package installation, shell commands, install/update package management systems, clone git and anything under the sun you need for configuration management.
+So why don't you try your hands on Ansible and experience it's awesomeness....all you need to do is to install it on your host system.
+
+</description>
+      <pubDate>Wed, 01 Mar 2017 09:48:00 +0530</pubDate>
+      <dc:date>2017-03-01T09:48:00+05:30</dc:date>
     </item>
     <item>
       <title>RethinkDb Installation on Ubuntu-14.04</title>

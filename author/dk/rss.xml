@@ -413,7 +413,74 @@ Below is the table depicting the basic interpretation of HTTP status codes:
 	  <pubDate>2017-04-20T18:00:00+05:30</pubDate>
 	  <guid>//ha_proxy_for_beginners</guid>
 	  <description><![CDATA[
-	     
+	     <h2><u>Introduction</u></h2>
+
+<h5>Installing HA proxy</h5>
+<h5>Configuring HAProxy</h5>
+<p>
+Configuration file format:
+</p>
+
+There are 3 major parameters in HA Proxy's configuration:
+
+1. Command Line Arguments, 
+HAProxy's configuration process involves 3 major sources of parameters :
+
+  - the arguments from the command-line, which always take precedence
+  - the "global" section, which sets process-wide parameters
+  - the proxies sections which can take form of "defaults", "listen",
+    "frontend" and "backend".
+
+The configuration file syntax consists in lines beginning with a keyword
+referenced in this manual, optionally followed by one or several parameters
+delimited by spaces. If spaces have to be entered in strings, then they must be
+preceded by a backslash ('\') to be escaped. Backslashes also have to be
+escaped by doubling them.
+
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>lune de miel à andaman</title>
+	  <link>//travel_diaries</link>
+	  <author>Deepak Gupta</author>
+	  <pubDate>2017-03-01T09:48:00+05:30</pubDate>
+	  <guid>//travel_diaries</guid>
+	  <description><![CDATA[
+	     While looking for a light yet powerful Configuration Management tool, I was going through some of the various available tools, and came across Ansible. After having a quick look at the features, something which caught my attention: "Ansible is agent-less", hence I decided to give it a try. Having used Ansible for some around more than 8+ months configuration management, I personally feel...Ansible is awesome!!
+So what is Ansible? Well, it is a configuration management tool, and it empowers you to configure/orchestrate multiple systems at great ease, saving a lot of downtime and resources.
+So how does it does that? The answer lies with ssh keys based agent forwarding. Ansible uses ssh for logging to the remote system, and can execute package installation, shell commands, install/update package management systems, clone git and anything under the sun you need for configuration management.
+So why don't you try your hands on Ansible and experience it's awesomeness....all you need to do is to install it on your host system.
+
+Ansible does not have it's own process, and unlike other configuration tolls available, it is agent-less!!
+
+Ansible ships in 2 forms:
+1. Core Ansible
+2. Ansible Tower
+
+Installation:
+1. OS package manager:
+sudo apt-get install software-properties-common
+sudo apt-add-repository ppa:ansible/ansiblesudo apt-get update
+sudo apt-get install ansible
+2. Via python pip:
+sudo pip install ansible
+
+Ansible uses a configuration file, called host files for doing ssh to the remote machines. By default it is located in /etc/ansible/hosts
+All you need to do is to add the host ip and the ssh_username to the file, and the public key of your host to the remote machine and you are all set to go!!
+
+Commands:
+ansible all -i ansible_hosts -m ping
+ansible all -m ping -u deepak
+ansible -m shell -a 'free -m' host1
+ansible all -m shell -a 'free -m' -u dk
+
+Playbooks are Ansible’s configuration, deployment, and orchestration language. They can describe a policy you want your remote systems to enforce, or a set of steps in a general IT process.
+
+Playbooks are written in YAML language, and comprises of Plays
+
+Running a Playbook in Ansible:
+ansible-playbook playbook.yml -f 10
 	  ]]></description>
 	</item>
 
@@ -1013,62 +1080,6 @@ When a node goes down, read/write requests can be served from other nodes in the
 <li><p>With the rise in better internet services and bandwidth in the second and third world&#39;s Dockerization/containerization will be emerging as a critical technology and on rise and will soon be a critical component in deployments.</p></li>
 <li><p>Security - Cloud security should be a major concern for everyone working on cloud/IOT. One should perform a security assessment before starting their design. For IOT&#39;s, using an RTOS does not ensure security and neither does Encryption. One should ensure all attack vectors are addressed. Even if you are able to secure the cloud, rest assured it may not be enough because your device can still be compromised.</p></li>
 </ol>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Understanding Git-Flow</title>
-	  <link>//understanding_git_flow</link>
-	  <author>Deepak Gupta</author>
-	  <pubDate>2015-11-09T00:00:00+05:30</pubDate>
-	  <guid>//understanding_git_flow</guid>
-	  <description><![CDATA[
-	     <p>Understanding Git Flow for(ubuntu-14.04):</p>
-
-<p>what is git flow?
-Usage?
-How can it be helpful?</p>
-
-<p>Install git flow using the below command:</p>
-
-<p>sudo apt-get install git-flow</p>
-
-<p>Starting with git flow:
-To start with git flow, you first need to initialize it inside an existing repository. This is done by using the below command:</p>
-
-<p>git flow init</p>
-
-<p>In-case you want to force re-initialization of git flow, you can use the same command and pass -f as an argument
-eg: git flow init -f</p>
-
-<p>So far cool, this is dead simple, isn&#39;t it? Now let&#39;s see what happens once we do a git flow init. We&#39;ll have to answer a few questions regarding the naming conventions for our branches. For simplicity it is recommended to use the default values.</p>
-
-<p>$ git flow init -f</p>
-
-<p>Which branch should be used for bringing forth production releases?
-   - develop
-   - feature/lint_cleanup
-   - master
-Branch name for production releases: [master] </p>
-
-<p>Which branch should be used for integration of the &quot;next release&quot;?
-   - develop
-   - feature/lint_cleanup
-Branch name for &quot;next release&quot; development: [develop] </p>
-
-<p>How to name your supporting branch prefixes?
-Feature branches? [feature/] 
-Release branches? [release/] 
-Hotfix branches? [hotfix/] 
-Support branches? [support/] 
-Version tag prefix? [] </p>
-
-<p>Creating/Deleting a tag:</p>
-
-<p>Deleting a tag:</p>
-
-<p>$ git tag -d <tag_name></p>
 
 	  ]]></description>
 	</item>

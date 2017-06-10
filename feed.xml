@@ -5,8 +5,8 @@
     <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
     <link>http://hellodk.in///</link>
     <atom:link href="http://hellodk.in///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 28 Apr 2017 15:06:31 +0530</pubDate>
-    <lastBuildDate>Fri, 28 Apr 2017 15:06:31 +0530</lastBuildDate>
+    <pubDate>Thu, 18 May 2017 15:41:41 +0530</pubDate>
+    <lastBuildDate>Thu, 18 May 2017 15:41:41 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -415,12 +415,82 @@ Below is the table depicting the basic interpretation of HTTP status codes:
     
       <item>
         <title>HA Proxy for Beginners</title>
-        <description></description>
+        <description>&lt;h2&gt;&lt;u&gt;Introduction&lt;/u&gt;&lt;/h2&gt;
+
+&lt;h5&gt;Installing HA proxy&lt;/h5&gt;
+&lt;h5&gt;Configuring HAProxy&lt;/h5&gt;
+&lt;p&gt;
+Configuration file format:
+&lt;/p&gt;
+
+There are 3 major parameters in HA Proxy&#39;s configuration:
+
+1. Command Line Arguments, 
+HAProxy&#39;s configuration process involves 3 major sources of parameters :
+
+  - the arguments from the command-line, which always take precedence
+  - the &quot;global&quot; section, which sets process-wide parameters
+  - the proxies sections which can take form of &quot;defaults&quot;, &quot;listen&quot;,
+    &quot;frontend&quot; and &quot;backend&quot;.
+
+The configuration file syntax consists in lines beginning with a keyword
+referenced in this manual, optionally followed by one or several parameters
+delimited by spaces. If spaces have to be entered in strings, then they must be
+preceded by a backslash (&#39;\&#39;) to be escaped. Backslashes also have to be
+escaped by doubling them.
+</description>
         <pubDate>Thu, 20 Apr 2017 18:00:00 +0530</pubDate>
         <link>http://hellodk.in///ha_proxy_for_beginners</link>
         <guid isPermaLink="true">http://hellodk.in///ha_proxy_for_beginners</guid>
         
         <category>tutorials</category>
+        
+        
+        <category>dk</category>
+        
+      </item>
+    
+      <item>
+        <title>lune de miel à andaman</title>
+        <description>While looking for a light yet powerful Configuration Management tool, I was going through some of the various available tools, and came across Ansible. After having a quick look at the features, something which caught my attention: &quot;Ansible is agent-less&quot;, hence I decided to give it a try. Having used Ansible for some around more than 8+ months configuration management, I personally feel...Ansible is awesome!!
+So what is Ansible? Well, it is a configuration management tool, and it empowers you to configure/orchestrate multiple systems at great ease, saving a lot of downtime and resources.
+So how does it does that? The answer lies with ssh keys based agent forwarding. Ansible uses ssh for logging to the remote system, and can execute package installation, shell commands, install/update package management systems, clone git and anything under the sun you need for configuration management.
+So why don&#39;t you try your hands on Ansible and experience it&#39;s awesomeness....all you need to do is to install it on your host system.
+
+Ansible does not have it&#39;s own process, and unlike other configuration tolls available, it is agent-less!!
+
+Ansible ships in 2 forms:
+1. Core Ansible
+2. Ansible Tower
+
+Installation:
+1. OS package manager:
+sudo apt-get install software-properties-common
+sudo apt-add-repository ppa:ansible/ansiblesudo apt-get update
+sudo apt-get install ansible
+2. Via python pip:
+sudo pip install ansible
+
+Ansible uses a configuration file, called host files for doing ssh to the remote machines. By default it is located in /etc/ansible/hosts
+All you need to do is to add the host ip and the ssh_username to the file, and the public key of your host to the remote machine and you are all set to go!!
+
+Commands:
+ansible all -i ansible_hosts -m ping
+ansible all -m ping -u deepak
+ansible -m shell -a &#39;free -m&#39; host1
+ansible all -m shell -a &#39;free -m&#39; -u dk
+
+Playbooks are Ansible’s configuration, deployment, and orchestration language. They can describe a policy you want your remote systems to enforce, or a set of steps in a general IT process.
+
+Playbooks are written in YAML language, and comprises of Plays
+
+Running a Playbook in Ansible:
+ansible-playbook playbook.yml -f 10</description>
+        <pubDate>Wed, 01 Mar 2017 09:48:00 +0530</pubDate>
+        <link>http://hellodk.in///travel_diaries</link>
+        <guid isPermaLink="true">http://hellodk.in///travel_diaries</guid>
+        
+        <category>travel</category>
         
         
         <category>dk</category>
@@ -1039,22 +1109,6 @@ When a node goes down, read/write requests can be served from other nodes in the
         
         
         <category>dk</category>
-        
-      </item>
-    
-      <item>
-        <title>About</title>
-        <description>&lt;p&gt;Too often we under-estimate the power of a touch, a smile, a kind word, a listening ear, an honest compliment, or the smallest act of caring, all of which have the potential to turn a life around. 
-The idea behind writing this blog/website is to conect to people and share my experiences with them.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 28 Dec 2015 15:48:00 +0530</pubDate>
-        <link>http://hellodk.in///about</link>
-        <guid isPermaLink="true">http://hellodk.in///about</guid>
-        
-        <category>about</category>
-        
-        
-        <category>casper</category>
         
       </item>
     
