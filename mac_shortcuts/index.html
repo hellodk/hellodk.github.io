@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- [[! Page Meta ]] -->
-    <title>RethinkDb Installation on Ubuntu-14.04</title>
+    <title>Mac Shortcuts</title>
     <meta name="description" content="Curosity is the most powerful thing you own - A beautiful narrative written over an elegant publishing platform. The story begins here..." />
 
     <meta name="HandheldFriendly" content="True" />
@@ -110,10 +110,10 @@
     <article class="post tag-tutorials">
 
         <header class="post-header">
-            <h1 class="post-title">RethinkDb Installation on Ubuntu-14.04</h1>
+            <h1 class="post-title">Mac Shortcuts</h1>
             <section class="post-meta">
             <!-- <a href='/'>Deepak Gupta</a> -->
-            <time class="post-date" datetime="2016-09-21">21 Sep 2016</time>
+            <time class="post-date" datetime="2017-07-05">05 Jul 2017</time>
                 <!-- [[tags prefix=" on "]] -->
                  
                 on 
@@ -128,75 +128,33 @@
 
         <section class="post-content">
             
-            Let's get some hands on rethinkdb today and find it out yourself. </br>
-</br>
-So what is rethinkdb?
-</br></br>
-Rethinkdb is an open-source, scalable JSON database built from the ground up for the realtime web.
-</br>RethinkDB inverts the traditional database architecture by exposing an exciting new access model – instead of polling for changes, the developer can tell RethinkDB to continuously push updated query results to applications in realtime. RethinkDB’s realtime push architecture dramatically reduces the time and effort necessary to build scalable realtime apps. RethinkDB also offers a flexible query language, intuitive operations and monitoring APIs, and is easy to setup and learn. Just like any other database solution, rethinkdb ships as a client-server component model. The installation process for both the server and the client are illustrated below:
-
-<p>How to Install RethinkDb:</p>
-1. Add the RethinkDB PPA to your list of repositories : 
-<br></br>
-<code>source /etc/lsb-release && echo "deb http://download.rethinkdb.com/apt $DISTRIB_CODENAME main" | sudo tee /etc/apt/sources.list.d/rethinkdb.list</code>
-<br></br>
-2. Add the keys:<br></br>
-
-<code>wget -qO- http://download.rethinkdb.com/apt/pubkey.gpg | sudo apt-key add -</code>
-<br></br>
-3. Update the repository:
-<br></br>
-<code>sudo apt-get update</code>
-<br></br>
-4. Install the rethinkdb server via apt-get:
-<br></br>
-<code>sudo apt-get -y install rethinkdb</code>
-<br></br>
-Install rethinkdb client:
-<br></br>
-1. Install the python-pip package:
-<br></br>
-<code>sudo apt-get install python-pip</code>
-<br></br>
-2. Install the rethinkdb python client:
-<br></br>
-<code>sudo pip install rethinkdb</code>
-<br></br>
-The above steps ensure that rethinkdb is installed on the system, while it does not ensures that this will start the rethinkdb service on system startup. You still need to start the rethinkdb service using the below command
-<br></br>
-<code>rethinkdb</code>
-<br></br>
-The above command will ensure that rethinkdb is running as a terminal process, and will exit once the terminal is closed, or the process is killed, in short it will not run rethinkdb as a background service.
-<br></br>
-To start rethinkdb as a service, please follow the below steps:
-<br></br>
-1.  Move to the directory /etc/rethinkdb
-<br></br><code>cd /etc/rethinkdb</code>
-<br></br>
-2. Copy the file to /etc/rethinkdb/instances.d and rename the file as per your requirements ensuring the extension is .conf only. Say for example the file name is rethinkdb1.conf
-<br></br><code>cp default.conf.sample rethinkdb1.conf</code>
-<br></br>
-3. Now open the file /etc/rethinkdb/instances.d/rethinkdb1.conf and modify the paramaters as per your requirements.
-<br></br><code>vim rethinkdb1.conf</code>
-<br></br>
-4. If setting up a cluster, we suggest do change the server-name to somethink like 'rethinkdb-primary' or 'rethinkdb-1' or 'master' or 'slave'. This will ensure that we have a meaningful naming convention for our cluster.
-<br></br>
-5. The default port details are :
-<br></br>
-<code>29015 :</code> Rethinkdb listens for intracluster connections
-</br>
-<code>28015 :</code> Rethinkdb listens for client driver connections
-</br>
-<code>8080  :</code> Rethinkdb listens for administrative HTTP connections
-</br>
-<code>22    :</code> For SSH. The server uses public key authentication.
-</br>
-<code>80    :</code> For HTTP. It is used during the setup process but otherwise redirects to HTTPS.
-</br>
-<code>443   :</code> For HTTPS. An Nginx server sits between RethinkDB and the world and provides basic HTTP authentication and secure HTTPS connections for the web UI
-<br></br>
-</body>
-</html>
+            <h3>Keyboard Tips</h3>
+<ol>
+<li>The Delete key works like Backspace if you are from other platforms. To delete on the other direction, press Fn + Delete</li>
+<li>The Backspace will feel slow by default. This can be changed in Keyboard Preferences by making "Key Repeat" fast & "Delay Until Repeat" short. Ref: http://forums.macrumors.com/showthread.php?t=508385 </li>
+<li>If you are missing Home & End keys, it is Command+ Left Arrow & Command + Right Arrow</li>
+<li>If you are missing Page Up & Down keys, it is Command+ Up Arrow & Command + Down Arrow</li>
+ 
+<h3>Mouse/Trackpad Tips:</h3>
+To Drag something, Select Text, you can press the mouse button and drag it. If you are familiar with Double Tap & Drag like in Windows, Linux, You can have the same settings enabled in System Preferences > Universal Access > Mouse & Trackpad >Trackpad Options -> Enable Dragging Without Lock. Ref: http://chris.dziemborowicz.com/blog/2012/07/04/enable-double-tap-to-drag-in-mac-os-x-lion/
+ 
+Navigation:
+Command+Down To Open a Folder/File or to launch an application from keyboard
+Command + Up   To go one level up in finder
+Ctrl + Up             To Bring Mission Control
+Command + tilde  To Switch windows of same App
+Command + h       To hide the window
+/                          To enter/paste a path in Finder Window (Open, Save Dialog boxes)
+ 
+Terminal:
+Ctrl+a  To go to the beginning of line, Ctrl+e to go the end of line. The Link has more shortcuts: http://apple.stackexchange.com/questions/12997/can-home-and-end-keys-be-mapped-when-using-terminal
+Tweaks:
+Show Full Path in the title bar:
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
+killall Finder
+ Ref: http://osxdaily.com/2007/12/02/show-full-directory-path-in-finder-window-title-bars/
+Copy Path of selected Folder/File:
+Ref: http://osxdaily.com/2013/06/19/copy-file-folder-path-mac-os-x/
 
         </section>
 
@@ -227,15 +185,15 @@ To start rethinkdb as a service, please follow the below steps:
 
             <section class="share">
                 <h4>Share this post</h4>
-                <a class="icon-twitter" href="http://twitter.com/share?text=RethinkDb Installation on Ubuntu-14.04&amp;url=http://hellodk.in/rethinkdb_installation_ubuntu14"
+                <a class="icon-twitter" href="http://twitter.com/share?text=Mac Shortcuts&amp;url=http://hellodk.in/mac_shortcuts"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="hidden">Twitter</span>
                 </a>
-                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://hellodk.in/rethinkdb_installation_ubuntu14"
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://hellodk.in/mac_shortcuts"
                     onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                     <span class="hidden">Facebook</span>
                 </a>
-                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://hellodk.in/rethinkdb_installation_ubuntu14"
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://hellodk.in/mac_shortcuts"
                    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <span class="hidden">Google+</span>
                 </a>
@@ -275,20 +233,20 @@ var disqus_config = function () {
 
     <!-- [[! next_post ]] -->
     
-        <a class="read-next-story " style="background-image: url(/assets/images/travel/travel_cover.jpg)" href="/travel_diaries">
+        <a class="read-next-story " style="background-image: url(/assets/images/rethinkdb/rethinkdb3.png)" href="/overexposed_photos">
             <section class="post">
-                <h2>lune de miel à andaman</h2>
-                <p>While looking for a light yet powerful Configuration Management tool, I was going through some...</p>
+                <h2>Over Exposed Photos</h2>
+                <p><h2><u>Introduction</u></h2> <h5>Installing HA proxy</h5> <h5>Configuring HAProxy</h5> <p> Configuration file format: </p> There are 3 major...</p>
             </section>
         </a>
     
     <!-- [[! /next_post ]] -->
     <!-- [[! prev_post ]] -->
     
-        <a class="read-next-story prev " style="background-image: url(/assets/images/rethinkdb/rethinkdb3.png)" href="/mysql_master_master_replication_insights">
+        <a class="read-next-story prev " style="background-image: url(/assets/images/http1.png)" href="/yum_commands_quick_reference">
             <section class="post">
-                <h2>MySQL multi master replication fundas</h2>
-                <p><html> <p> Master-master replication (more generally -- multi-master replication) conceptually works by assuming that conflicts...</p>
+                <h2>Yum Commands - A quick jist</h2>
+                <p><ol> <li><h5>To make a search of some package or term in the data base in...</p>
             </section>
         </a>
     

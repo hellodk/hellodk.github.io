@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- [[! Page Meta ]] -->
-    <title>Curosity is the most powerful thing you own</title>
+    <title>Author</title>
     <meta name="description" content="Curosity is the most powerful thing you own - A beautiful narrative written over an elegant publishing platform. The story begins here..." />
 
     <meta name="HandheldFriendly" content="True" />
@@ -59,7 +59,7 @@
     <link rel="alternate" type="application/rss+xml" title="Curosity is the most powerful thing you own" href="/rss.xml" />
 
 </head>
-<body class="tag-template nav-closed">
+<body class="author-template nav-closed">
 
     <div class="nav">
     <h3 class="nav-title">Menu</h3>
@@ -74,12 +74,12 @@
         <li class="nav-fiction " role="presentation"><a href="/tag/fiction">Fiction</a></li-->
         <li class="nav-travel " role="presentation"><a href="/tag/travel">Travel</a></li>
 
-        <li class="nav-tutorials  nav-current" role="presentation"><a href="/tag/tutorials">Tutorials</a></li>
+        <li class="nav-tutorials " role="presentation"><a href="/tag/tutorials">Tutorials</a></li>
 
 
         <li class="nav-photography " role="presentation"><a href="/tag/photography">Photography</a></li>
 
-        <li class="nav-author " role="presentation"><a href="/author/casper">Author</a></li>
+        <li class="nav-author  nav-current" role="presentation"><a href="/author/casper">Author</a></li>
     </ul>
     <a class="subscribe-button icon-feed" href="/rss.xml">Subscribe</a>
 </div>
@@ -88,49 +88,55 @@
     <div class="site-wrapper">
 
         <!-- [[! Everything else gets inserted here ]] -->
-        <!-- < dynamically overriding backgrounds for tags as well as descriptions -->
-
-   
-   
-
-
-
-
-<!-- < default}} -->
+        <!-- < default}} -->
 <!-- The tag above means - insert everything in this file into the [body] of the default.hbs template -->
 
-<!-- If we have a tag cover, display that - else blog cover - else nothing -->
-<header class="main-header tag-head " style="background-image: url(/assets/images/cover7.jpg) ">
-    <nav class="main-nav overlay clearfix">
-        <a class="blog-logo" href="/"><img src="/assets/images/ghost.png" alt="Blog Logo" /></a>
-        
-            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
-        
-    </nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">Tutorials</h1>
-            <h2 class="page-description">
+<!-- The big featured header -->
+
+<!-- Everything inside the #author tags pulls data from the author -->
+<!-- #author  -->
+    <header class="main-header author-head " style="background-image: url(/assets/images/cover4.jpg) ">
+        <nav class="main-nav overlay clearfix">
+            <a class="blog-logo" href="/"><img src="/assets/images/ghost.png" alt="Blog Logo" /></a>
             
-                A series of short tutorials.
+                <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
             
-            </h2>
+        </nav>
+    </header>
+
+    <section class="author-profile inner">
+        
+        <figure class="author-image">
+            <div class="img" style="background-image: url(/assets/images/casper.png)"><span class="hidden">Deepak Gupta's Picture</span></div>
+        </figure>
+        
+        <h1 class="author-title">Deepak Gupta</h1>
+        
+            <h2 class="author-bio">A full time technologist cum foodie. He spends most of the time playing with open source tools and prefers hanging out with friends. Deepak has been a taveller since ages, besides being a hardcore biker and loves doing photogrpahy as hobby.</h2>
+        
+        <div class="author-meta">
+            <span class="author-location icon-location">Bangalore, INDIA</span>
+            <span class="author-link icon-link"><a href="http://hellodk.in/">http://hellodk.in/</a></span>
+            <!-- <span class="author-stats"><i class="icon-stats"></i> [[plural ../pagination.total empty='No posts' singular='% post' plural='% posts']]</span> -->
+            <span class="author-stats"><i class="icon-stats"></i>17 posts</span>
         </div>
-    </div>
-</header>
+    </section>
+<!-- /author -->
 
 <!-- The main content area on the homepage -->
 <main id="content" class="content" role="main">
 
-    <!-- The tag below includes the post loop - partials/loop.hbs -->
+    <!-- The tag below includes the post loop - partials/loop.hbs  -->
         <!-- Previous/next page links - only displayed on page 2+ -->
     <div class="extra-pagination inner">
         
             <nav class="pagination" role="pagination">
     
-    <span class="page-number"> Page 1 of 4 </span>
-     
-        <a class="older-posts" href="/tag/tutorials/page2/" title="Next Page">Older Posts &raquo;</a>
+        
+            <a class="newer-posts" href="/author/casper/page3/" title="Previous Page">&laquo; Newer Posts</a>
+      
+    
+    <span class="page-number"> Page 4 of 4 </span>
      
 </nav>
         
@@ -140,10 +146,10 @@
     
     <article class="post">
         <header class="post-header">
-            <h2 class="post-title"><a href="/python_regex_simplified">Python regex Simplified</a></h2>
+            <h2 class="post-title"><a href="/understanding_git_flow">Understanding Git-Flow</a></h2>
         </header>
         <section class="post-excerpt">
-            <p><h2><u>Introduction</u></h2> <h3>Python regex metacharacters</h3> . ^ $ * + ? { } [ ] \ | ( ) <p> 1. [] - Negate - ^ Escape... <a class="read-more" href="/python_regex_simplified">&raquo;</a></p>
+            <p><p>Understanding Git Flow for(ubuntu-14.04):</p> <p>what is git flow? Usage? How can it be helpful?</p> <p>Install git flow using the below command:</p> <p>sudo apt-get install git-flow</p> <p>Starting... <a class="read-more" href="/understanding_git_flow">&raquo;</a></p>
         </section>
         <footer class="post-meta">
             <img class="author-thumb" src="/assets/images/casper.png" alt="Author image" nopin="nopin" />
@@ -158,16 +164,16 @@
                        
                 
             
-            <time class="post-date" datetime="2017-07-13">13 Jul 2017</time>
+            <time class="post-date" datetime="2015-11-09">09 Nov 2015</time>
         </footer>
     </article>
     
     <article class="post">
         <header class="post-header">
-            <h2 class="post-title"><a href="/mac_shortcuts">Mac Shortcuts</a></h2>
+            <h2 class="post-title"><a href="/going_agentless_with_ansible">Going Agntless with Ansible</a></h2>
         </header>
         <section class="post-excerpt">
-            <p><h3>Keyboard Tips</h3> <ol> <li>The Delete key works like Backspace if you are from other platforms. To delete on the other direction, press Fn + Delete</li> <li>The... <a class="read-more" href="/mac_shortcuts">&raquo;</a></p>
+            <p><p>While looking for a light yet powerful Configuration Management tool, I was going through some of the various available tools, and came across Ansible. After having... <a class="read-more" href="/going_agentless_with_ansible">&raquo;</a></p>
         </section>
         <footer class="post-meta">
             <img class="author-thumb" src="/assets/images/casper.png" alt="Author image" nopin="nopin" />
@@ -182,80 +188,7 @@
                        
                 
             
-            <time class="post-date" datetime="2017-07-05">05 Jul 2017</time>
-        </footer>
-    </article>
-    
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="/yum_commands_quick_reference">Yum Commands - A quick jist</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p><ol> <li><h5>To make a search of some package or term in the data base in some of the formed deposits yum in the system:</h5></li> </br> <p>Syntax:... <a class="read-more" href="/yum_commands_quick_reference">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            <img class="author-thumb" src="/assets/images/casper.png" alt="Author image" nopin="nopin" />
-            <!-- author -->
-            <a href='/author/casper'>Deepak Gupta</a>
-            <!-- [[tags prefix=" on "]] -->
-             
-                on 
-                
-                    
-                       <a href='/tag/tutorials'>Tutorials</a>
-                       
-                
-            
-            <time class="post-date" datetime="2017-06-10">10 Jun 2017</time>
-        </footer>
-    </article>
-    
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="/configure_multiple_ssh_identities_for_gitbash_mac_linux">Configure multiple SSH identities for GitBash, Mac OSX, & Linux</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p><p>
-</p> <a class="read-more" href="/configure_multiple_ssh_identities_for_gitbash_mac_linux">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            <img class="author-thumb" src="/assets/images/casper.png" alt="Author image" nopin="nopin" />
-            <!-- author -->
-            <a href='/author/casper'>Deepak Gupta</a>
-            <!-- [[tags prefix=" on "]] -->
-             
-                on 
-                
-                    
-                       <a href='/tag/tutorials'>Tutorials</a>
-                       
-                
-            
-            <time class="post-date" datetime="2017-04-26">26 Apr 2017</time>
-        </footer>
-    </article>
-    
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="/detecting-dead-tcp-connections">RabbitMQ - Detecting Dead TCP Connections with Heartbeats</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p><p> In some types of network failure, packet loss can mean that disrupted TCP connections take a moderately long time (about 11 minutes with default configuration... <a class="read-more" href="/detecting-dead-tcp-connections">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            <img class="author-thumb" src="/assets/images/casper.png" alt="Author image" nopin="nopin" />
-            <!-- author -->
-            <a href='/author/casper'>Deepak Gupta</a>
-            <!-- [[tags prefix=" on "]] -->
-             
-                on 
-                
-                    
-                       <a href='/tag/tutorials'>Tutorials</a>
-                       
-                
-            
-            <time class="post-date" datetime="2017-04-24">24 Apr 2017</time>
+            <time class="post-date" datetime="2015-04-06">06 Apr 2015</time>
         </footer>
     </article>
     
@@ -264,15 +197,18 @@
     
         <nav class="pagination" role="pagination">
     
-    <span class="page-number"> Page 1 of 4 </span>
-     
-        <a class="older-posts" href="/tag/tutorials/page2/" title="Next Page">Older Posts &raquo;</a>
+        
+            <a class="newer-posts" href="/author/casper/page3/" title="Previous Page">&laquo; Newer Posts</a>
+      
+    
+    <span class="page-number"> Page 4 of 4 </span>
      
 </nav>
     
 
 
 </main>
+
 
         <footer class="site-footer clearfix">
           <section class="copyright"><a href="/">Curosity is the most powerful thing you own</a> &copy; 2017</section>
