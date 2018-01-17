@@ -12,6 +12,200 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Fancy Bear DDoS for Ransom</title>
+	  <link>//fancy_bear_ddos</link>
+	  <author>Deepak Gupta</author>
+	  <pubDate>2017-12-15T19:10:00+05:30</pubDate>
+	  <guid>//fancy_bear_ddos</guid>
+	  <description><![CDATA[
+	     <html>
+Threat Summary : ERT Threat Alert - Fancy Bear DDoS for Ransom
+ 
+Radware’s Emergency Response Team (ERT) has identified an emerging
+ransom denial-of-service (RDoS) campaign from a group identifying itself as Fancy Bear. The group has been distributing extortion emails to payment processing vendors in multiple locations across the globe.
+In RDoS attacks, the perpetrators send a letter threatening to attack an organization—rendering its business, operations or capability unavailable—unless a ransom is paid by the deadline. This extortion method has grown in popularity every year since 2010 and typically come in the form of a volumetric distributed denial-of-service (DDoS) attack. However, it is increasingly in vogue to find techniques that are more piercing and more efficient without generating large volumes. The most advanced attacks combine both volumetric and non-volumetric cyber-attack techniques.
+At the end of April, a group claiming to be Fancy Bear began sending out extortion attempts. The extortionist behind this campaign attempted to intimidate their victims by using the name of APT28 (Fancy Bear) and an infamous cyber-espionage group. APT28 is believed to be a nation state-level attacker that uses zero-day exploits and spear phishing attacks to spread malware.
+ 
+Who are affected?
+The group claiming to be Fancy Bear is targeting a limited number of financial services organizations – payment processers under the threat of an attack from the Mirai Botnet. Each letter contains a unique bitcoin address. In the note, Fancy Bear listed the IP address of the victim and targeted them with a sample attack.
+ 
+Threat Summary : World's Biggest Botnet Just Sent 12.5 Million Emails With Scarab Ransomware
+ 
+A massive malicious email campaign that stems from the world's largest spam botnet Necurs is spreading a new strain of ransomware at the rate of over 2 million emails per hour and hitting computers across the globe.
+The popular malspam botnet Necrus which has previously found distributing Dridex banking trojan, Trickbot banking trojan, Locky ransomware, and Jaff ransomware, has now started spreading a new version of Scarab ransomware.
+According to F-Secure, Necurs botnet is the most prominent deliverer of spam emails with five to six million infected hosts online monthly and is responsible for the biggest single malware spam campaigns.
+Scarab ransomware is a relatively new ransomware family that was initially spotted by ID Ransomware creator Michael Gillespie in June this year.
+ 
+According to the security firm Forcepoint, the massive email campaign spreading Scarab ransomware virus started at approximately 07:30 UTC on 23 November (Thursday) and sent about 12.5 million emails in just six hours.
+The Forcepoint researchers said "the majority of the traffic is being sent to the .com top-level domain (TLD). However, this was followed by region-specific TLDs for the United Kingdom, Australia, France, and Germany."
+The spam email contains a malicious VBScript downloader compressed with 7zip that pulls down the final payload, with one of these subject lines:
+Scanned from Lexmark
+Scanned from Epson
+Scanned from HP
+Scanned from Canon
+As with previous Necurs botnet campaigns, the VBScript contained a number of references to the widely watched series Game of Thrones, like the strings 'Samwell' and 'JohnSnow.'
+The final payload is the latest version of Scarab ransomware with no change in filenames, but it appends a new file extension with ".[suupport@protonmail.com].scarab" to the encrypted files.
+Once done with the encryption, the ransomware then drops a ransom note with the filename "IF YOU WANT TO GET ALL YOUR FILES BACK, PLEASE READ THIS.TXT" within each affected directory.
+The ransom note does not specify the amount being demanded by the criminals; instead, it merely states that "the price depends on how fast you [the victim] write to us."
+However, Scarab ransomware offers to decrypt three files for free to prove the decryption will work: "Before paying you can send us up to 3 files for free decryption."
+ 
+How to Protect Yourself:
+Keep a good backup routine in place that makes their copies to an external storage device that is not always connected to your PC in order to always have a tight grip on all your important files and documents.
+Always be suspicious of any uninvited document sent over an email and should never click on links provided in those documents unless verifying the source.
+ 
+ 
+Threat Summary : FortiOS web GUI login disclaimer redir parameter XSS vulnerability
+ 
+A reflected XSS vulnerability exists in FortiOS web GUI "Login Disclaimer" redir parameter. It is potentially exploitable by a remote unauthenticated attacker, via sending a maliciously crafted URL to a victim who has an open session on the web GUI. Visiting that malicious URL may cause the execution of arbitrary javascript code in the security context of the victim's browser.
+ 
+Impact:
+Cross-site scripting (XSS)
+ 
+Who are affected?
+Firmware Version 5.6: FortiOS 5.6.0
+Firmware Version 5.4: FortiOS 5.4.0 to 5.4.5
+Other Firmware Version are not affected
+ 
+How to Protect Yourself:
+Firmware Version 5.6: Upgrade to FortiOS 5.6.1 or above
+Firmware Version 5.4: Upgrade to FortiOS 5.4.6 or above.
+ 
+Reference:
+http://fortiguard.com/psirt/FG-IR-17-113
+ 
+Threat Summary : FortiClient privilege escalation vulnerability
+ 
+A low privileged user may be able to execute arbitrary code by exploiting a FortiClient Named Pipe vulnerability.
+ 
+Impact:
+Privilege escalation
+ 
+Who are affected?
+FortiClient Windows 5.4.1, 5.4.2.
+ 
+How to Protect Yourself:
+Upgrade to FortiClient Windows: 5.4.3 or 5.6.0
+ 
+Reference:
+http://fortiguard.com/psirt/FG-IR-16-095
+</html>
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>Fancy Bear DDoS for Ransom</title>
+	  <link>//blue_borne</link>
+	  <author>Deepak Gupta</author>
+	  <pubDate>2017-12-15T19:10:00+05:30</pubDate>
+	  <guid>//blue_borne</guid>
+	  <description><![CDATA[
+	     <html>
+Threat Summary : The IoT Attack Vector “BlueBorne” Exposes Almost Every Connected Device
+
+
+Armis Labs revealed a new attack vector endangering major desktop, and IoT operating systems, including Windows, and Linux, and the devices using them. The new vector is dubbed “BlueBorne”, as it spread through the air (airborne) and attacks devices via Bluetooth. BlueBorne allows attackers to take control of devices, access corporate data and networks, penetrate secure “air-gapped” networks, and spread malware laterally to adjacent devices. BlueBorne is an attack vector by which hackers can leverage Bluetooth connections to penetrate and take complete control over targeted devices. The attack does not require the targeted device to be paired to the attacker’s device, or even to be set on discoverable mode. The BlueBorne attack vector can be used to conduct a large range of offenses, including remote code execution as well as Man-in-The-Middle attacks.
+
+
+
+Impact:
+
+The BlueBorne attack vector requires no user interaction, is compatible to all software versions, and does not require any preconditions or configurations aside of the Bluetooth being active. Unlike the common misconception, Bluetooth enabled devices are constantly searching for incoming connections from any devices, and not only those they have been paired with. This means a Bluetooth connection can be established without pairing the devices at all. This makes BlueBorne one of the most broad potential attacks found in recent years, and allows an attacker to strike completely undetected.
+
+
+
+Who are affected?
+
+Windows - All Windows computers since Windows Vista are affected by the “Bluetooth Pineapple” vulnerability which allows an attacker to perform a Man-in-The-Middle attack (CVE-2017-8628). This vulnerability resides in the Bluetooth stack, and enables the attacker to create a malicious  network interface on the victim’s device, re-configure IP routing and force the device to transmit all communication through it. This attack does not require any user interaction, authentication or pairing, making it also practically invisible.
+
+
+
+Linux -  Linux is the underlying operating system for a wide range of devices. The most commercial, and consumer-oriented platform based on Linux is the Tizen OS. All Linux devices running BlueZ are affected by the information leak vulnerability (CVE-2017-1000250).
+
+This vulnerability resides in the SDP server responsible for identifying other services using Bluetooth around the device. The flaw allows the attacker to send a set of crafted requests to the server, causing it to disclose memory bits in response. This can be used by an attacker to expose sensitive data from the Bluetooth process that may also contain encryption keys of Bluetooth communications.
+
+
+
+All Linux devices from version 3.3-rc1 (released in October 2011) are affected by the remote code execution vulnerability (CVE-2017-1000251).
+
+This vulnerability was found in the Bluetooth stack of the Linux Kernel, which is the very core of the operating system. An internal flaw in the L2CAP (Logical Link Control and Adaptation Protocol) that is used to connect between two devices causes a memory corruption. An attacker can use this memory corruption to gain full control of the device.
+
+
+
+Fix:
+
+Microsoft issued has security patches to all supported Windows versions on July 11, 2017, with coordinated notification on Tuesday, September 12.
+
+A kpatch for customers running Red Hat Enterprise Linux 7.2 or greater will be available. Please open a support case with Red-Hat to gain access to the kpatch. You can also use the below script to check if your Linux servers are vulnerable.
+
+https://access.redhat.com/sites/default/files/cve-2017-1000251-1.sh
+</html>
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>Fancy Bear DDoS for Ransom</title>
+	  <link>//blue_borne</link>
+	  <author>Deepak Gupta</author>
+	  <pubDate>2017-12-15T19:10:00+05:30</pubDate>
+	  <guid>//blue_borne</guid>
+	  <description><![CDATA[
+	     <html>
+Threat Summary: Decyphering the Noise Around ‘Meltdown’ and ‘Spectre’
+
+ 
+
+The McAfee Advanced Threat Research (ATR) Team has closely followed the attack techniques that have been named Meltdown and Spectre throughout the lead-up to their announcement on January 3.
+
+ 
+
+The vulnerabilities been categorized into two attacks, Meltdown (CVE-2017-5754) and Spectre (CVE-2017-5753 and CVE-2017-5715), which could allow attackers to steal sensitive data which is currently processed on the computer.
+
+Both attacks take advantage of a feature in chips known as "speculative execution," a technique used by most modern CPUs to optimize performance.
+
+"In order to improve performance, many CPUs may choose to speculatively execute instructions based on assumptions that are considered likely to be true. During speculative execution, the processor is verifying these assumptions; if they are valid, then the execution continues. If they are invalid, then the execution is unwound. Therefore, it is possible for such speculative execution to have "side effects which are not restored when the CPU state is unwound and can lead to information disclosure," which can be accessed using side-channel attacks.
+
+Meltdown Attack: Meltdown attack allows attackers to read not only kernel memory but also the entire physical memory of the target machines, and therefore all secrets of other programs and the operating system. Meltdown uses speculative execution to break the isolation between user applications and the operating system, allowing any application to access all system memory, including memory allocated for the kernel.
+
+Spectre Attack: Spectre attack breaks the isolation between different applications, allowing the attacker-controlled program to trick error-free programs into leaking their secrets by forcing them into accessing arbitrary portions of its memory, which can then be read through a side channel.
+
+Spectre attacks can be used to leak information from the kernel to user programs, as well as from virtualization hypervisors to guest systems.
+
+ 
+
+Who are affected?
+
+This vulnerability impacts almost every system, including desktops, laptops, cloud servers, as well as smartphones—powered by Intel, AMD, and ARM chips.
+
+ 
+
+How to Protect Yourself:
+
+There is no single fix for both the attacks since each requires protection independently.
+
+·         Windows — Microsoft has issued an out-of-band patch update for Windows 10, while other versions of Windows will be patched on the traditional Patch Tuesday on January 9, 2018
+
+·         MacOS — Apple had already fixed most of these security holes in macOS High Sierra 10.13.2 last month, but MacOS 10.13.3 will enhance or complete these mitigations.
+
+·         Linux — Linux kernel developers have also released patches by implementing kernel page-table isolation (KPTI) to move the kernel into an entirely separate address space.
+
+·         Android — Google has released security patches for Pixel/Nexus users as part of the Android January security patch update.  Other users have to wait for their device manufacturers to release a compatible security update.
+
+·         Allow scripting languages to execute only from trusted sites.
+
+·         Anti Virus vendors like McAfee have some detection capabilities around these threats,  . McAfee Windows Security Suite or McAfee Endpoint Security (ENS) can provide warnings if you visit a known dangerous site.McAfee products can also provide an alternate script-execution engine that prevents known malicious scripts from executing.
+
+ 
+
+Reference:
+
+https://thehackernews.com/2018/01/meltdown-spectre-vulnerability.html
+
+https://securingtomorrow.mcafee.com/mcafee-labs/decyphering-the-noise-around-meltdown-and-spectre/
+</html>
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>Python regex Simplified</title>
 	  <link>//python_regex_simplified</link>
 	  <author>Deepak Gupta</author>
@@ -562,262 +756,6 @@ referenced in this manual, optionally followed by one or several parameters
 delimited by spaces. If spaces have to be entered in strings, then they must be
 preceded by a backslash ('\') to be escaped. Backslashes also have to be
 escaped by doubling them.
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>RethinkDb Installation on Ubuntu-14.04</title>
-	  <link>//rethinkdb_installation_ubuntu14</link>
-	  <author>Deepak Gupta</author>
-	  <pubDate>2016-09-21T15:48:00+05:30</pubDate>
-	  <guid>//rethinkdb_installation_ubuntu14</guid>
-	  <description><![CDATA[
-	     Let's get some hands on rethinkdb today and find it out yourself. </br>
-</br>
-So what is rethinkdb?
-</br></br>
-Rethinkdb is an open-source, scalable JSON database built from the ground up for the realtime web.
-</br>RethinkDB inverts the traditional database architecture by exposing an exciting new access model – instead of polling for changes, the developer can tell RethinkDB to continuously push updated query results to applications in realtime. RethinkDB’s realtime push architecture dramatically reduces the time and effort necessary to build scalable realtime apps. RethinkDB also offers a flexible query language, intuitive operations and monitoring APIs, and is easy to setup and learn. Just like any other database solution, rethinkdb ships as a client-server component model. The installation process for both the server and the client are illustrated below:
-
-<p>How to Install RethinkDb:</p>
-1. Add the RethinkDB PPA to your list of repositories : 
-<br></br>
-<code>source /etc/lsb-release && echo "deb http://download.rethinkdb.com/apt $DISTRIB_CODENAME main" | sudo tee /etc/apt/sources.list.d/rethinkdb.list</code>
-<br></br>
-2. Add the keys:<br></br>
-
-<code>wget -qO- http://download.rethinkdb.com/apt/pubkey.gpg | sudo apt-key add -</code>
-<br></br>
-3. Update the repository:
-<br></br>
-<code>sudo apt-get update</code>
-<br></br>
-4. Install the rethinkdb server via apt-get:
-<br></br>
-<code>sudo apt-get -y install rethinkdb</code>
-<br></br>
-Install rethinkdb client:
-<br></br>
-1. Install the python-pip package:
-<br></br>
-<code>sudo apt-get install python-pip</code>
-<br></br>
-2. Install the rethinkdb python client:
-<br></br>
-<code>sudo pip install rethinkdb</code>
-<br></br>
-The above steps ensure that rethinkdb is installed on the system, while it does not ensures that this will start the rethinkdb service on system startup. You still need to start the rethinkdb service using the below command
-<br></br>
-<code>rethinkdb</code>
-<br></br>
-The above command will ensure that rethinkdb is running as a terminal process, and will exit once the terminal is closed, or the process is killed, in short it will not run rethinkdb as a background service.
-<br></br>
-To start rethinkdb as a service, please follow the below steps:
-<br></br>
-1.  Move to the directory /etc/rethinkdb
-<br></br><code>cd /etc/rethinkdb</code>
-<br></br>
-2. Copy the file to /etc/rethinkdb/instances.d and rename the file as per your requirements ensuring the extension is .conf only. Say for example the file name is rethinkdb1.conf
-<br></br><code>cp default.conf.sample rethinkdb1.conf</code>
-<br></br>
-3. Now open the file /etc/rethinkdb/instances.d/rethinkdb1.conf and modify the paramaters as per your requirements.
-<br></br><code>vim rethinkdb1.conf</code>
-<br></br>
-4. If setting up a cluster, we suggest do change the server-name to somethink like 'rethinkdb-primary' or 'rethinkdb-1' or 'master' or 'slave'. This will ensure that we have a meaningful naming convention for our cluster.
-<br></br>
-5. The default port details are :
-<br></br>
-<code>29015 :</code> Rethinkdb listens for intracluster connections
-</br>
-<code>28015 :</code> Rethinkdb listens for client driver connections
-</br>
-<code>8080  :</code> Rethinkdb listens for administrative HTTP connections
-</br>
-<code>22    :</code> For SSH. The server uses public key authentication.
-</br>
-<code>80    :</code> For HTTP. It is used during the setup process but otherwise redirects to HTTPS.
-</br>
-<code>443   :</code> For HTTPS. An Nginx server sits between RethinkDB and the world and provides basic HTTP authentication and secure HTTPS connections for the web UI
-<br></br>
-</body>
-</html>
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>MySQL multi master replication fundas</title>
-	  <link>//mysql_master_master_replication_insights</link>
-	  <author>Deepak Gupta</author>
-	  <pubDate>2016-09-21T15:48:00+05:30</pubDate>
-	  <guid>//mysql_master_master_replication_insights</guid>
-	  <description><![CDATA[
-	     <html>
-<p>
-Master-master replication (more generally -- multi-master replication) conceptually works by assuming that conflicts are not common and only keeping the entire system loosely consistent, asynchonously communication updates between masters, which ends up violating basic ACID properties.
-
-As carmbrester correctly suggested (and independent of MySQL), key generation is an important mitigation strategy against conflicts (e.g., same ID being generated). Beyond that, I think the key is to think of conflicts in multi-master systems as akin to conflicts in optimistic locking models. Both succeed because the remaining risks are generally small compared to the payoffs.
-
-However, conflicts can happen (as you suggest) and different vendors provide different strategies. For example Oracle allows DBAs to choose from a range of conflict resolution basis-es (timestamp, affinity, etc) and subsqeuent actions (logging an error in a queue, etc). See more details on Oracle at http://www.orafaq.com/wiki/Advanced_Replication_FAQ#What_happens_if_two_or_more_sites_change_the_same_data.3F
-</p>
-
-<p>Context is important, but here is a little bit of information on how MySql handles the scenario...
-
-The binlog from each master is read and executed on the other master. Auto-increment offset is configured so that primary keys do not collide, i.e. one of the masters would be configured with an offset that results in even numbers are used during auto-increment, while the other master would be configured to use odd numbers during auto-increment.
-
-For MySql Clustering replication, which can also be configured with dual masters, you can configure how conflicts are handled as outlined in this link.</p>
-</html>
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>The UNIX Time-Sharing System</title>
-	  <link>//unix_time_sharing_system</link>
-	  <author>Deepak Gupta</author>
-	  <pubDate>2016-02-01T13:48:37+05:30</pubDate>
-	  <guid>//unix_time_sharing_system</guid>
-	  <description><![CDATA[
-	     <div class="highlight"><pre><code class="language-text" data-lang="text">                          Drafted By
-
-                        D. M. Ritchie
-</code></pre></div>
-<h3>Introduction</h3>
-
-<p>UNIX is a general-purpose, multi-user time sharing system implemented on several Digital Equipment Corporation PDP series machines.</p>
-
-<p>UNIX was written by K. L. Thompson, who also wrote many of the command programs. The author of this memorandum contributed several of the major commands, including the assembler and the debugger. The file system was originally designed by Thompson, the author, and R. H. Canaday.</p>
-
-<p>There are two versions of UNIX. The first, which has been in existence about a year, runs on the PDP-7 and -9 computers; a more modern version, a few months old, uses the PDP-11. This document describes UNIX-11, since it is more modern and many of the differences between it and UNIX-7 result from redesign of features found to be deficient or lacking in the earlier system. Although the PDP-7 and PDP-11 are both small computers, the design of UNIX is amenable to expansion for use on more powerful machines. Indeed, UNIX contains a number of features very seldom offered even by larger systems, including</p>
-
-<p>A versatile, convenient file system with complete integration between disk files and I/O devices;</p>
-
-<p>The ability to initiate asynchrously running processes.</p>
-
-<p>It must be said, however, that the most important features of UNIX are its simplicity, elegance, and ease of use.</p>
-
-<p>Besides the system proper, the major programs available under UNIX are an assembler, a text editor based on QED, a symbolic debugger for examining and patching faulty programs, and &quot;B&quot;, a higher level language resembling BCPL. UNIX-7 also has a version of the compiler writing language TMGL contributed by M. D. McIlroy, and besides its own assembler, there is a PDP-11 assembler which was used to write UNIX-11. On the PDP-11 there is a version of BASIC [reference] adapted from the one supplied by DEC [reference]. All but the last of these programs were written locally, and except for the very first versions of the editor and assembler, using UNIX itself.</p>
-
-<p>Hardware
-The PDP-11 on which UNIX is implemented is a 16-bit 12K computer, and UNIX occupies 8K words. More than half of this space, however, is utilized for a variable number of disk buffers; with some loss of speed the number of buffers could be cut significantly.</p>
-
-<p>The PDP-11 has a 256K word disk, almost all of which is used for file system storage. It is equipped with DECTAPE, a variety of magnetic tape facility in which individual records may be addressed and rewritten at will. Also available are a high-speed paper tape reader and punch. Besides the standard Teletype, there are several variable-speed communications interfaces.</p>
-
-<p>The File System
-The most important role of UNIX is to provide a file system. From the point of view of the user, there are three kinds of files: ordinary disk files, directories, and special files.</p>
-
-<h4>Ordinary Files</h4>
-
-<p>A file contains whatever information the user places there, for example symbolic or binary (object) programs. No particular structuring is expected by the system. Files of text ordinarily consist simply of a string of characters, with lines demarcated by the new-line character. Binary programs are sequences of words as they will appear in core memory when the program starts executing. A few user programs generate and expect files with more structure; for example, the assembler generates, and the debugger expects, a name list file in a particular format; however, the structure of files is controlled solely by the programs which use them, not by the system.</p>
-
-<h4>Directories</h4>
-
-<p>Directories (sometimes, &quot;catalogs&quot;), provide the mapping between the names of files and the files themselves, and thus induce a structure on the file system as a whole. Each user has a directory of his own files; he may also create subdirectories to contain groups of files conveniently treated together.</p>
-
-<p>A directory is exactly like an ordinary file except that it cannot be written on by user programs, so that the system controls the contents of directories. However, anyone with appropriate permission may read a directory just like any other file.</p>
-
-<p>The system maintains several directories for its own use. One of these is the root directory. All files in the system can be found by tracing a path through a chain of directories until the desired file is reached. The starting point for such searches is often the root, which contains an entry for each user&#39;s master directory. Another system directory contains all the programs provided as part of the system; that is, all the commands (elsewhere, &quot;subsystems&quot;). As will be seen, however, it is by no means necessary that a program reside in this directory for it to be used as a command.</p>
-
-<p>Files and directories are named by sequences of eight or fewer characters. When the name of a file is specified to the system, it may be in the form of a path name, which is a sequence of directory names separated by slashes and ending in a file name. If the sequence begins with a slash, the search begins in the root directory. The name &quot;/a/b/c&quot; causes the system to search the root for directory &quot;a&quot;; then to search &quot;a&quot; for &quot;b&quot;, and then to find &quot;c&quot; in &quot;b&quot;. &quot;c&quot; may be an ordinary file, a directory, or a special file. As a limiting case, the name &quot;/&quot; refers to the root itself.</p>
-
-<p>The same non-directory file may appear in several directories under possibly different names. This feature is called &quot;linking&quot;; a directory entry for a file is sometimes called a link. UNIX differs from other systems in which linking is permitted in that all links to a file have equal status. That is, a file does not exist within a particular directory; the directory entry for a file consists merely of its name and a pointer to the information actually describing the file. Thus a file exists independently of any directory entry, although in practice a file is made to disappear along with the last link to it.</p>
-
-<p>When a user logs into UNIX, he is assigned a default current directory, but he may change to any directory readable by him. A path name not starting with &quot;/&quot; causes the system to begin the search in the userâ€™s current directory. Thus, the name &quot;a/b&quot; specifies the file named &quot;b&quot; in directory &quot;a&quot;, which is found in the current working directory. The simplest kind of name, for example &quot;a&quot;, refers to a file which itself is found in the working directory.</p>
-
-<p>Each directory always has at least two entries. The name &quot;.&quot; in each directory refers to the directory itself. Thus a program may read the current directory under the name &quot;.&quot; without knowing its actual path name. The name &quot;..&quot; by convention refers to the parent of the directory in which it appears; that is, the directory in which it was first created.</p>
-
-<p>The directory structure is constrained to have the form of a rooted tree. Except for the special entries &quot;.&quot; and &quot;..&quot;, each directory must appear as an entry in exactly one other, which is its parent. The reason for this is to simplify the writing of programs which visit subtrees of the directory structure, and more important, to avoid the separation of portions of the hierarchy. If arbitrary links to directories were permitted, it would be quite difficult to detect when the last connection from the root to a directory was severed.</p>
-
-<h4>Special Files</h4>
-
-<p>Special files constitute the most unusual feature of the UNIX file system. Each I/O device supported by UNIX is associated with at least one special file. Special files are read and written just like ordinary disk files, but the result is activation of the associated device. Entries for all special files reside in the root directory, so they may all be referred to by &quot;/&quot; followed by the appropriate name.</p>
-
-<p>The special files are discussed further in section 6 below.</p>
-
-<h4>Protection</h4>
-
-<p>The protection scheme in UNIX is quite simple. Each user of the system is assigned a unique user number. When a file-is created, it is marked with the number of its creator. Also given for new files is a set of protection bits. Four of these specify independently permission to read or write for the owner of the file and for all other users. A fifth bit indicates permission to execute the file as a program. If the sixth bit is on, the system will temporarily change the user identification of the current user to that of the creator of the file whenever the file is executed as a program. This feature provides for privileged programs which may use files which should neither be read nor changed by other users. If the set-user-identification bit is on for a program, the accounting file may be accessed during the programâ€™s execution but not otherwise.</p>
-
-<h4>System I/O Calls</h4>
-
-<p>The system calls to do I/O are designed to eliminate the differences between the various devices and styles of access. There is no distinction between &quot;random&quot; and sequential I/O, nor is any logical or physical record size imposed by the system. The size of a file on the disk is determined by the location of the last piece of information written on it; no predetermination of the size of a file is necessary. In UNIX-11, the unit of information is the 8-bit byte, since the PDP-11 is a byte-oriented machine.</p>
-
-<p>To illustrate the essentials of I/O in UNIX, the basic calls are summarized below in an anonymous higher level language which will indicate the needed parameters without getting into the complexities of machine language programming. (All system calls are also described in Appendix 1 in their actual form.) Each call to the system may potentially result in an error return, which for simplicity is not represented in the calling sequence.</p>
-
-<h5>Open</h5>
-
-<p>To read or write a file assumed to exist already, it must be Opened by the following call:</p>
-
-<p>filep = open(name, flag)
-Name indicates the name of the file. An arbitrary path name may be given. The flag argument indicates whether the file is to be read or written. If the file is to be &quot;updated&quot;, that is read and written simultaneously, it may be opened twice, once for reading and once for writing.</p>
-
-<p>The returned argument filep is called a file descriptor. It is used to identify the file in subsequent calls to read, write or otherwise manipulate the file.</p>
-
-<p>There are no locks in the file system, nor is there any restriction on the number of users who may have a file open for reading or writing. Although one may imagine situations in which this fact is unfortunate, in practice difficulties are quite rare.</p>
-
-<h5>Create</h5>
-
-<p>To create a new file, the following call is used.</p>
-
-<p>filep = create(name, mode)
-Here filep and name are as before. If the file already existed, it is truncated to zero length. Creation of a file implies opening for writing as well. The mode argument indicates the permissions which are to be placed on the file by the protection mechanism. To create a file, the user must have write permission in the directory in which the file is being created.</p>
-
-<h5>Write</h5>
-
-<p>Except as indicated below, reading and writing are sequential. This means that if a particular byte in the file was the last byte written (or read), the next I/O call implicitly refers to the first following byte. For each Open file there is a pointer, maintained by the system, which always indicates the next byte to be read or written. If n bytes are read, the pointer advances by n bytes.</p>
-
-<p>Once a file is open for writing, the following call may be used.</p>
-
-<p>nwritten = write(filep, buffer, count)
-Buffer is the address of count sequentially stored bytes (words in UNIX-7) which will be written onto the file. nwritten is the number of bytes actually written; except in rare cases it is the same as count. Occasionally, an error may be indicated; for example if paper tape is being written, an error occurs if the tape runs out.</p>
-
-<p>For disk files which already existed (that is, were opened by open, not create) the bytes written affect only those implied by the position of the write pointer and the number of bytes written; no other part of the file is changed.</p>
-
-<h5>Read</h5>
-
-<p>To read, the call is</p>
-
-<p>nread = read(filep, buffer, count)
-Up to count bytes are read from the file into buffer. The number actually read is returned as nread. Every program must be prepared for the possibility that nread is less than count. If the read pointer is so near the end of the file that reading count characters would cause reading beyond the end, only sufficient bytes are transmitted to reach the end of the file. Furthermore, devices like the typewriters work in units of lines. Suppose, for example, that before anything has been typed a program tries to read 128 characters from the console. This forces the program to wait, since nothing has been typed. The user now types a line consisting, say, of 10 characters and hits the &quot;new line&quot; key. At this point the read call would return indicating 11 characters read (including the new line). On the other hand, it is permissible to read fewer characters than were typed without losing information; for example bytes may be picked up one at a time.</p>
-
-<p>When the read call returns with nread equal to zero, it indicates the end of the file. For disk files this occurs when the read pointer becomes equal to the current size of the file. It is possible to generate an end-of-file from a typewriter by use of an escape sequence which depends on the device used.</p>
-
-<h5>Seek</h5>
-
-<p>To do &quot;random&quot;, that is, direct access I/O it is only necessary to move the read or write pointer to the appropriate location in the file.</p>
-
-<p>seek(filep, base, offset)
-The read pointer (respectively write pointer) associated with filep is moved to a position offset words from the beginning, from the current position of the pointer, or from the end of the file, depending on whether base is O, 1, or 2. Offset may he negative to move the pointer backwards. For some devices (e.g. paper tape and typewriters) seek calls are meaningless and are ignored.</p>
-
-<h5>Tell</h5>
-
-<p>The current position of the pointer may be discovered as follows:</p>
-
-<p>offset = tell(filep, base)
-As with seek, filep is the file descriptor for an open file, and base specifies whether the desired offset is to be measured from the beginning of the file, from the current position of the pointer, or from the end. In the second case, of course, the result is always zero.</p>
-
-<p>Implementation of the File System
-As mentioned in section 3.2 above, a directory entry contains only a name for the associated file and a pointer to the file itself. This pointer is an integer called the i-number (for identification number) of the file. When the file is accessed, its i-number is looked up in a system table stored in a known part of the disk. The entry thereby found (the file&#39;s i-node) contains the description of the file:</p>
-
-<ol>
-<li>its owner;</li>
-<li>its protection bits;</li>
-<li>the physical disk addresses for the file contents;</li>
-<li>its size;</li>
-<li>times of creation and last modification;</li>
-<li>the number of links to the file; that is, the number of
- times it appears in a directory;</li>
-<li>bits indicating whether the file is a directory and whether
- it is special (in which case the size and disk addresses
- are meaningless);</li>
-<li>a bit indicating whether the file is &quot;large&quot; or &quot;small.&quot;
-There is space in each i-node for eight disk addresses. A file which fits into eight or fewer 64-word (128-byte) blocks is considered small; in this case the addresses of the blocks themselves are stored. For large files, each of the eight disk addresses may point to an indirect block of 64 words containing the addresses of the blocks constituting the file itself. Thus files may be as large as 864128, or 65,536 bytes.</li>
-</ol>
-
-<p>When the number of links to a file drops to zero, its contents are freed and its i-node is marked unused.</p>
-
-<p>To the user, both reading and writing of files appears to be synchronous and unbuffered. That is, immediately after return from a read call the data is available, and conversely after a write the user&#39;s workspace may be reused. In fact the system maintains, unseen by the user, a rather complicated buffering mechanism. Suppose a write call is made specifying transmission of a single byte. UNIX will search its own buffers to see whether the affected disk block currently resides in its own buffers; if not, it will be read in from the disk. Then the affected byte is replaced in the buffer and an entry is made in a list of blocks to be written on the disk. The return from the write call may then take place, although the actual I/O may not be completed until a later time. Conversely, if a single byte is read, the system determines whether the disk block in which the byte is located is already in one of the system&#39;s buffers; if so, the byte can be returned immediately. If not, the block is read into a buffer and the byte picked out. Because sequential reading of a file is so common, UNIX attempts to optimize this situation by prereading the disk block following the one in which the requested byte is found. This strategy tends to minimize and in some cases eliminate disk latency delays.</p>
-
-<p>A program which reads or writes files in units of 128 bytes has an advantage over a program which reads or writes a single byte at a time, but the gain is not immense. As an example, the editor ed (8.9 and A2.4 below) was originally written, for simplicity, to do I/O one character at a time; it increased its speed by a factor of about two when it was rewritten to use 128-byte units. Because the system attempts to retain copies of the most recently used disk blocks in core, the speed gain in dealing with large units comes principally from elimination of system overhead, not from latency delays.</p>
 
 	  ]]></description>
 	</item>

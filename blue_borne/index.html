@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- [[! Page Meta ]] -->
-    <title>Mac Shortcuts</title>
+    <title>Fancy Bear DDoS for Ransom</title>
     <meta name="description" content="Curosity is the most powerful thing you own - A beautiful narrative written over an elegant publishing platform. The story begins here..." />
 
     <meta name="HandheldFriendly" content="True" />
@@ -110,10 +110,10 @@
     <article class="post tag-tutorials">
 
         <header class="post-header">
-            <h1 class="post-title">Mac Shortcuts</h1>
+            <h1 class="post-title">Fancy Bear DDoS for Ransom</h1>
             <section class="post-meta">
             <!-- <a href='/'>Deepak Gupta</a> -->
-            <time class="post-date" datetime="2017-07-05">05 Jul 2017</time>
+            <time class="post-date" datetime="2017-12-15">15 Dec 2017</time>
                 <!-- [[tags prefix=" on "]] -->
                  
                 on 
@@ -128,33 +128,46 @@
 
         <section class="post-content">
             
-            <h3>Keyboard Tips</h3>
-<ol>
-<li>The Delete key works like Backspace if you are from other platforms. To delete on the other direction, press Fn + Delete</li>
-<li>The Backspace will feel slow by default. This can be changed in Keyboard Preferences by making "Key Repeat" fast & "Delay Until Repeat" short. Ref: http://forums.macrumors.com/showthread.php?t=508385 </li>
-<li>If you are missing Home & End keys, it is Command+ Left Arrow & Command + Right Arrow</li>
-<li>If you are missing Page Up & Down keys, it is Command+ Up Arrow & Command + Down Arrow</li>
- 
-<h3>Mouse/Trackpad Tips:</h3>
-To Drag something, Select Text, you can press the mouse button and drag it. If you are familiar with Double Tap & Drag like in Windows, Linux, You can have the same settings enabled in System Preferences > Universal Access > Mouse & Trackpad >Trackpad Options -> Enable Dragging Without Lock. Ref: http://chris.dziemborowicz.com/blog/2012/07/04/enable-double-tap-to-drag-in-mac-os-x-lion/
- 
-Navigation:
-Command+Down To Open a Folder/File or to launch an application from keyboard
-Command + Up   To go one level up in finder
-Ctrl + Up             To Bring Mission Control
-Command + tilde  To Switch windows of same App
-Command + h       To hide the window
-/                          To enter/paste a path in Finder Window (Open, Save Dialog boxes)
- 
-Terminal:
-Ctrl+a  To go to the beginning of line, Ctrl+e to go the end of line. The Link has more shortcuts: http://apple.stackexchange.com/questions/12997/can-home-and-end-keys-be-mapped-when-using-terminal
-Tweaks:
-Show Full Path in the title bar:
-defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
-killall Finder
- Ref: http://osxdaily.com/2007/12/02/show-full-directory-path-in-finder-window-title-bars/
-Copy Path of selected Folder/File:
-Ref: http://osxdaily.com/2013/06/19/copy-file-folder-path-mac-os-x/
+            <html>
+Threat Summary : The IoT Attack Vector “BlueBorne” Exposes Almost Every Connected Device
+
+
+Armis Labs revealed a new attack vector endangering major desktop, and IoT operating systems, including Windows, and Linux, and the devices using them. The new vector is dubbed “BlueBorne”, as it spread through the air (airborne) and attacks devices via Bluetooth. BlueBorne allows attackers to take control of devices, access corporate data and networks, penetrate secure “air-gapped” networks, and spread malware laterally to adjacent devices. BlueBorne is an attack vector by which hackers can leverage Bluetooth connections to penetrate and take complete control over targeted devices. The attack does not require the targeted device to be paired to the attacker’s device, or even to be set on discoverable mode. The BlueBorne attack vector can be used to conduct a large range of offenses, including remote code execution as well as Man-in-The-Middle attacks.
+
+
+
+Impact:
+
+The BlueBorne attack vector requires no user interaction, is compatible to all software versions, and does not require any preconditions or configurations aside of the Bluetooth being active. Unlike the common misconception, Bluetooth enabled devices are constantly searching for incoming connections from any devices, and not only those they have been paired with. This means a Bluetooth connection can be established without pairing the devices at all. This makes BlueBorne one of the most broad potential attacks found in recent years, and allows an attacker to strike completely undetected.
+
+
+
+Who are affected?
+
+Windows - All Windows computers since Windows Vista are affected by the “Bluetooth Pineapple” vulnerability which allows an attacker to perform a Man-in-The-Middle attack (CVE-2017-8628). This vulnerability resides in the Bluetooth stack, and enables the attacker to create a malicious  network interface on the victim’s device, re-configure IP routing and force the device to transmit all communication through it. This attack does not require any user interaction, authentication or pairing, making it also practically invisible.
+
+
+
+Linux -  Linux is the underlying operating system for a wide range of devices. The most commercial, and consumer-oriented platform based on Linux is the Tizen OS. All Linux devices running BlueZ are affected by the information leak vulnerability (CVE-2017-1000250).
+
+This vulnerability resides in the SDP server responsible for identifying other services using Bluetooth around the device. The flaw allows the attacker to send a set of crafted requests to the server, causing it to disclose memory bits in response. This can be used by an attacker to expose sensitive data from the Bluetooth process that may also contain encryption keys of Bluetooth communications.
+
+
+
+All Linux devices from version 3.3-rc1 (released in October 2011) are affected by the remote code execution vulnerability (CVE-2017-1000251).
+
+This vulnerability was found in the Bluetooth stack of the Linux Kernel, which is the very core of the operating system. An internal flaw in the L2CAP (Logical Link Control and Adaptation Protocol) that is used to connect between two devices causes a memory corruption. An attacker can use this memory corruption to gain full control of the device.
+
+
+
+Fix:
+
+Microsoft issued has security patches to all supported Windows versions on July 11, 2017, with coordinated notification on Tuesday, September 12.
+
+A kpatch for customers running Red Hat Enterprise Linux 7.2 or greater will be available. Please open a support case with Red-Hat to gain access to the kpatch. You can also use the below script to check if your Linux servers are vulnerable.
+
+https://access.redhat.com/sites/default/files/cve-2017-1000251-1.sh
+</html>
 
         </section>
 
@@ -185,15 +198,15 @@ Ref: http://osxdaily.com/2013/06/19/copy-file-folder-path-mac-os-x/
 
             <section class="share">
                 <h4>Share this post</h4>
-                <a class="icon-twitter" href="http://twitter.com/share?text=Mac Shortcuts&amp;url=http://hellodk.in/mac_shortcuts"
+                <a class="icon-twitter" href="http://twitter.com/share?text=Fancy Bear DDoS for Ransom&amp;url=http://hellodk.in/blue_borne"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="hidden">Twitter</span>
                 </a>
-                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://hellodk.in/mac_shortcuts"
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://hellodk.in/blue_borne"
                     onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                     <span class="hidden">Facebook</span>
                 </a>
-                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://hellodk.in/mac_shortcuts"
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://hellodk.in/blue_borne"
                    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <span class="hidden">Google+</span>
                 </a>
@@ -233,20 +246,20 @@ var disqus_config = function () {
 
     <!-- [[! next_post ]] -->
     
-        <a class="read-next-story " style="background-image: url(/assets/images/rethinkdb/rethinkdb3.png)" href="/overexposed_photos">
+        <a class="read-next-story " style="background-image: url(/assets/images/rethinkdb/rethinkdb3.png)" href="/fancy_bear_ddos">
             <section class="post">
-                <h2>Over Exposed Photos</h2>
-                <p><h2><u>Introduction</u></h2> <h5>Installing HA proxy</h5> <h5>Configuring HAProxy</h5> <p> Configuration file format: </p> There are 3 major...</p>
+                <h2>Fancy Bear DDoS for Ransom</h2>
+                <p><html> Threat Summary : ERT Threat Alert - Fancy Bear DDoS for Ransom Radware’s Emergency...</p>
             </section>
         </a>
     
     <!-- [[! /next_post ]] -->
     <!-- [[! prev_post ]] -->
     
-        <a class="read-next-story prev " style="background-image: url(/assets/images/http1.png)" href="/yum_commands_quick_reference">
+        <a class="read-next-story prev " style="background-image: url(/assets/images/rethinkdb/rethinkdb3.png)" href="/blue_borne">
             <section class="post">
-                <h2>Yum Commands - A quick jist</h2>
-                <p><ol> <li><h5>To make a search of some package or term in the data base in...</p>
+                <h2>Fancy Bear DDoS for Ransom</h2>
+                <p><html> Threat Summary: Decyphering the Noise Around ‘Meltdown’ and ‘Spectre’ The McAfee Advanced Threat Research...</p>
             </section>
         </a>
     

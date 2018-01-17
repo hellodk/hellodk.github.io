@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- [[! Page Meta ]] -->
-    <title>Mac Shortcuts</title>
+    <title>RethinkDb Installation on Ubuntu-14.04</title>
     <meta name="description" content="Curosity is the most powerful thing you own - A beautiful narrative written over an elegant publishing platform. The story begins here..." />
 
     <meta name="HandheldFriendly" content="True" />
@@ -110,10 +110,10 @@
     <article class="post tag-tutorials">
 
         <header class="post-header">
-            <h1 class="post-title">Mac Shortcuts</h1>
+            <h1 class="post-title">RethinkDb Installation on Ubuntu-14.04</h1>
             <section class="post-meta">
             <!-- <a href='/'>Deepak Gupta</a> -->
-            <time class="post-date" datetime="2017-07-05">05 Jul 2017</time>
+            <time class="post-date" datetime="2016-09-21">21 Sep 2016</time>
                 <!-- [[tags prefix=" on "]] -->
                  
                 on 
@@ -128,33 +128,37 @@
 
         <section class="post-content">
             
-            <h3>Keyboard Tips</h3>
-<ol>
-<li>The Delete key works like Backspace if you are from other platforms. To delete on the other direction, press Fn + Delete</li>
-<li>The Backspace will feel slow by default. This can be changed in Keyboard Preferences by making "Key Repeat" fast & "Delay Until Repeat" short. Ref: http://forums.macrumors.com/showthread.php?t=508385 </li>
-<li>If you are missing Home & End keys, it is Command+ Left Arrow & Command + Right Arrow</li>
-<li>If you are missing Page Up & Down keys, it is Command+ Up Arrow & Command + Down Arrow</li>
- 
-<h3>Mouse/Trackpad Tips:</h3>
-To Drag something, Select Text, you can press the mouse button and drag it. If you are familiar with Double Tap & Drag like in Windows, Linux, You can have the same settings enabled in System Preferences > Universal Access > Mouse & Trackpad >Trackpad Options -> Enable Dragging Without Lock. Ref: http://chris.dziemborowicz.com/blog/2012/07/04/enable-double-tap-to-drag-in-mac-os-x-lion/
- 
-Navigation:
-Command+Down To Open a Folder/File or to launch an application from keyboard
-Command + Up   To go one level up in finder
-Ctrl + Up             To Bring Mission Control
-Command + tilde  To Switch windows of same App
-Command + h       To hide the window
-/                          To enter/paste a path in Finder Window (Open, Save Dialog boxes)
- 
-Terminal:
-Ctrl+a  To go to the beginning of line, Ctrl+e to go the end of line. The Link has more shortcuts: http://apple.stackexchange.com/questions/12997/can-home-and-end-keys-be-mapped-when-using-terminal
-Tweaks:
-Show Full Path in the title bar:
-defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
-killall Finder
- Ref: http://osxdaily.com/2007/12/02/show-full-directory-path-in-finder-window-title-bars/
-Copy Path of selected Folder/File:
-Ref: http://osxdaily.com/2013/06/19/copy-file-folder-path-mac-os-x/
+            <html>
+Differences between the A, CNAME, ALIAS and URL records
+
+A, CNAME, ALIAS and URL records are all possible solutions to point a host name (name hereafter) to your site. However, they have some small differences that affect how the client will reach your site.
+
+Before going further into the details, it’s important to know that A and CNAME records are standard DNS records, whilst ALIAS and URL records are custom DNS records provided by DNSimple’s DNS hosting. Both of them are translated internally into A records to ensure compatibility with the DNS protocol.
+
+Understanding the differences
+
+Here’s the main differences:
+
+The A record maps a name to one or more IP addresses, when the IP are known and stable.
+The CNAME record maps a name to another name. It should only be used when there are no other records on that name.
+The ALIAS record maps a name to another name, but in turns it can coexist with other records on that name.
+The URL record redirects the name to the target name using the HTTP 301 status code.
+Some important rules to keep in mind:
+
+The A, CNAME, ALIAS records causes a name to resolve to an IP. Vice-versa, the URL record redirects the name to a destination. The URL record is simple and effective way to apply a redirect for a name to another name, for example to redirect www.example.com to example.com.
+The A name must resolve to an IP, the CNAME and ALIAS record must point to a name.
+Which one to use
+
+Understanding the difference between the A name and the CNAME records will help you to decide.
+
+The general rule is:
+
+use an A record if you manage what IP addresses are assigned to a particular machine or if the IP are fixed (this is the most common case)
+use a CNAME record if you want to alias a name to another name, and you don’t need other records (such as MX records for emails) for the same name
+use an ALIAS record if you are trying to alias the root domain (apex zone) or if you need other records for the same name
+use the URL record if you want the name to redirect (change address) instead of resolving to a destination.
+You should never use a CNAME record for your root domain name (i.e. example.com).
+</html>
 
         </section>
 
@@ -185,15 +189,15 @@ Ref: http://osxdaily.com/2013/06/19/copy-file-folder-path-mac-os-x/
 
             <section class="share">
                 <h4>Share this post</h4>
-                <a class="icon-twitter" href="http://twitter.com/share?text=Mac Shortcuts&amp;url=http://hellodk.in/mac_shortcuts"
+                <a class="icon-twitter" href="http://twitter.com/share?text=RethinkDb Installation on Ubuntu-14.04&amp;url=http://hellodk.in/understanding_dns"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="hidden">Twitter</span>
                 </a>
-                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://hellodk.in/mac_shortcuts"
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://hellodk.in/understanding_dns"
                     onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                     <span class="hidden">Facebook</span>
                 </a>
-                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://hellodk.in/mac_shortcuts"
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://hellodk.in/understanding_dns"
                    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <span class="hidden">Google+</span>
                 </a>
@@ -233,9 +237,9 @@ var disqus_config = function () {
 
     <!-- [[! next_post ]] -->
     
-        <a class="read-next-story " style="background-image: url(/assets/images/rethinkdb/rethinkdb3.png)" href="/overexposed_photos">
+        <a class="read-next-story " style="background-image: url(/assets/images/rethinkdb/rethinkdb3.png)" href="/ha_proxy_for_beginners">
             <section class="post">
-                <h2>Over Exposed Photos</h2>
+                <h2>HA Proxy for Beginners</h2>
                 <p><h2><u>Introduction</u></h2> <h5>Installing HA proxy</h5> <h5>Configuring HAProxy</h5> <p> Configuration file format: </p> There are 3 major...</p>
             </section>
         </a>
@@ -243,10 +247,10 @@ var disqus_config = function () {
     <!-- [[! /next_post ]] -->
     <!-- [[! prev_post ]] -->
     
-        <a class="read-next-story prev " style="background-image: url(/assets/images/http1.png)" href="/yum_commands_quick_reference">
+        <a class="read-next-story prev " style="background-image: url(/assets/images/rethinkdb/rethinkdb3.png)" href="/rethinkdb_installation_ubuntu14">
             <section class="post">
-                <h2>Yum Commands - A quick jist</h2>
-                <p><ol> <li><h5>To make a search of some package or term in the data base in...</p>
+                <h2>RethinkDb Installation on Ubuntu-14.04</h2>
+                <p>Let's get some hands on rethinkdb today and find it out yourself. </br> </br> So...</p>
             </section>
         </a>
     

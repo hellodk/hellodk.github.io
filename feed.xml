@@ -5,9 +5,358 @@
     <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
     <link>http://hellodk.in///</link>
     <atom:link href="http://hellodk.in///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 09 Oct 2017 17:15:56 +0530</pubDate>
-    <lastBuildDate>Mon, 09 Oct 2017 17:15:56 +0530</lastBuildDate>
+    <pubDate>Wed, 17 Jan 2018 15:35:20 +0530</pubDate>
+    <lastBuildDate>Wed, 17 Jan 2018 15:35:20 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Fancy Bear DDoS for Ransom</title>
+        <description>&lt;html&gt;
+Threat Summary : ERT Threat Alert - Fancy Bear DDoS for Ransom
+ 
+Radware’s Emergency Response Team (ERT) has identified an emerging
+ransom denial-of-service (RDoS) campaign from a group identifying itself as Fancy Bear. The group has been distributing extortion emails to payment processing vendors in multiple locations across the globe.
+In RDoS attacks, the perpetrators send a letter threatening to attack an organization—rendering its business, operations or capability unavailable—unless a ransom is paid by the deadline. This extortion method has grown in popularity every year since 2010 and typically come in the form of a volumetric distributed denial-of-service (DDoS) attack. However, it is increasingly in vogue to find techniques that are more piercing and more efficient without generating large volumes. The most advanced attacks combine both volumetric and non-volumetric cyber-attack techniques.
+At the end of April, a group claiming to be Fancy Bear began sending out extortion attempts. The extortionist behind this campaign attempted to intimidate their victims by using the name of APT28 (Fancy Bear) and an infamous cyber-espionage group. APT28 is believed to be a nation state-level attacker that uses zero-day exploits and spear phishing attacks to spread malware.
+ 
+Who are affected?
+The group claiming to be Fancy Bear is targeting a limited number of financial services organizations – payment processers under the threat of an attack from the Mirai Botnet. Each letter contains a unique bitcoin address. In the note, Fancy Bear listed the IP address of the victim and targeted them with a sample attack.
+ 
+Threat Summary : World&#39;s Biggest Botnet Just Sent 12.5 Million Emails With Scarab Ransomware
+ 
+A massive malicious email campaign that stems from the world&#39;s largest spam botnet Necurs is spreading a new strain of ransomware at the rate of over 2 million emails per hour and hitting computers across the globe.
+The popular malspam botnet Necrus which has previously found distributing Dridex banking trojan, Trickbot banking trojan, Locky ransomware, and Jaff ransomware, has now started spreading a new version of Scarab ransomware.
+According to F-Secure, Necurs botnet is the most prominent deliverer of spam emails with five to six million infected hosts online monthly and is responsible for the biggest single malware spam campaigns.
+Scarab ransomware is a relatively new ransomware family that was initially spotted by ID Ransomware creator Michael Gillespie in June this year.
+ 
+According to the security firm Forcepoint, the massive email campaign spreading Scarab ransomware virus started at approximately 07:30 UTC on 23 November (Thursday) and sent about 12.5 million emails in just six hours.
+The Forcepoint researchers said &quot;the majority of the traffic is being sent to the .com top-level domain (TLD). However, this was followed by region-specific TLDs for the United Kingdom, Australia, France, and Germany.&quot;
+The spam email contains a malicious VBScript downloader compressed with 7zip that pulls down the final payload, with one of these subject lines:
+Scanned from Lexmark
+Scanned from Epson
+Scanned from HP
+Scanned from Canon
+As with previous Necurs botnet campaigns, the VBScript contained a number of references to the widely watched series Game of Thrones, like the strings &#39;Samwell&#39; and &#39;JohnSnow.&#39;
+The final payload is the latest version of Scarab ransomware with no change in filenames, but it appends a new file extension with &quot;.[suupport@protonmail.com].scarab&quot; to the encrypted files.
+Once done with the encryption, the ransomware then drops a ransom note with the filename &quot;IF YOU WANT TO GET ALL YOUR FILES BACK, PLEASE READ THIS.TXT&quot; within each affected directory.
+The ransom note does not specify the amount being demanded by the criminals; instead, it merely states that &quot;the price depends on how fast you [the victim] write to us.&quot;
+However, Scarab ransomware offers to decrypt three files for free to prove the decryption will work: &quot;Before paying you can send us up to 3 files for free decryption.&quot;
+ 
+How to Protect Yourself:
+Keep a good backup routine in place that makes their copies to an external storage device that is not always connected to your PC in order to always have a tight grip on all your important files and documents.
+Always be suspicious of any uninvited document sent over an email and should never click on links provided in those documents unless verifying the source.
+ 
+ 
+Threat Summary : FortiOS web GUI login disclaimer redir parameter XSS vulnerability
+ 
+A reflected XSS vulnerability exists in FortiOS web GUI &quot;Login Disclaimer&quot; redir parameter. It is potentially exploitable by a remote unauthenticated attacker, via sending a maliciously crafted URL to a victim who has an open session on the web GUI. Visiting that malicious URL may cause the execution of arbitrary javascript code in the security context of the victim&#39;s browser.
+ 
+Impact:
+Cross-site scripting (XSS)
+ 
+Who are affected?
+Firmware Version 5.6: FortiOS 5.6.0
+Firmware Version 5.4: FortiOS 5.4.0 to 5.4.5
+Other Firmware Version are not affected
+ 
+How to Protect Yourself:
+Firmware Version 5.6: Upgrade to FortiOS 5.6.1 or above
+Firmware Version 5.4: Upgrade to FortiOS 5.4.6 or above.
+ 
+Reference:
+http://fortiguard.com/psirt/FG-IR-17-113
+ 
+Threat Summary : FortiClient privilege escalation vulnerability
+ 
+A low privileged user may be able to execute arbitrary code by exploiting a FortiClient Named Pipe vulnerability.
+ 
+Impact:
+Privilege escalation
+ 
+Who are affected?
+FortiClient Windows 5.4.1, 5.4.2.
+ 
+How to Protect Yourself:
+Upgrade to FortiClient Windows: 5.4.3 or 5.6.0
+ 
+Reference:
+http://fortiguard.com/psirt/FG-IR-16-095
+&lt;/html&gt;</description>
+        <pubDate>Fri, 15 Dec 2017 19:10:00 +0530</pubDate>
+        <link>http://hellodk.in///fancy_bear_ddos</link>
+        <guid isPermaLink="true">http://hellodk.in///fancy_bear_ddos</guid>
+        
+        <category>tutorials</category>
+        
+        
+        <category>dk</category>
+        
+      </item>
+    
+      <item>
+        <title>Fancy Bear DDoS for Ransom</title>
+        <description>&lt;html&gt;
+Threat Summary : The IoT Attack Vector “BlueBorne” Exposes Almost Every Connected Device
+
+
+Armis Labs revealed a new attack vector endangering major desktop, and IoT operating systems, including Windows, and Linux, and the devices using them. The new vector is dubbed “BlueBorne”, as it spread through the air (airborne) and attacks devices via Bluetooth. BlueBorne allows attackers to take control of devices, access corporate data and networks, penetrate secure “air-gapped” networks, and spread malware laterally to adjacent devices. BlueBorne is an attack vector by which hackers can leverage Bluetooth connections to penetrate and take complete control over targeted devices. The attack does not require the targeted device to be paired to the attacker’s device, or even to be set on discoverable mode. The BlueBorne attack vector can be used to conduct a large range of offenses, including remote code execution as well as Man-in-The-Middle attacks.
+
+
+
+Impact:
+
+The BlueBorne attack vector requires no user interaction, is compatible to all software versions, and does not require any preconditions or configurations aside of the Bluetooth being active. Unlike the common misconception, Bluetooth enabled devices are constantly searching for incoming connections from any devices, and not only those they have been paired with. This means a Bluetooth connection can be established without pairing the devices at all. This makes BlueBorne one of the most broad potential attacks found in recent years, and allows an attacker to strike completely undetected.
+
+
+
+Who are affected?
+
+Windows - All Windows computers since Windows Vista are affected by the “Bluetooth Pineapple” vulnerability which allows an attacker to perform a Man-in-The-Middle attack (CVE-2017-8628). This vulnerability resides in the Bluetooth stack, and enables the attacker to create a malicious  network interface on the victim’s device, re-configure IP routing and force the device to transmit all communication through it. This attack does not require any user interaction, authentication or pairing, making it also practically invisible.
+
+
+
+Linux -  Linux is the underlying operating system for a wide range of devices. The most commercial, and consumer-oriented platform based on Linux is the Tizen OS. All Linux devices running BlueZ are affected by the information leak vulnerability (CVE-2017-1000250).
+
+This vulnerability resides in the SDP server responsible for identifying other services using Bluetooth around the device. The flaw allows the attacker to send a set of crafted requests to the server, causing it to disclose memory bits in response. This can be used by an attacker to expose sensitive data from the Bluetooth process that may also contain encryption keys of Bluetooth communications.
+
+
+
+All Linux devices from version 3.3-rc1 (released in October 2011) are affected by the remote code execution vulnerability (CVE-2017-1000251).
+
+This vulnerability was found in the Bluetooth stack of the Linux Kernel, which is the very core of the operating system. An internal flaw in the L2CAP (Logical Link Control and Adaptation Protocol) that is used to connect between two devices causes a memory corruption. An attacker can use this memory corruption to gain full control of the device.
+
+
+
+Fix:
+
+Microsoft issued has security patches to all supported Windows versions on July 11, 2017, with coordinated notification on Tuesday, September 12.
+
+A kpatch for customers running Red Hat Enterprise Linux 7.2 or greater will be available. Please open a support case with Red-Hat to gain access to the kpatch. You can also use the below script to check if your Linux servers are vulnerable.
+
+https://access.redhat.com/sites/default/files/cve-2017-1000251-1.sh
+&lt;/html&gt;</description>
+        <pubDate>Fri, 15 Dec 2017 19:10:00 +0530</pubDate>
+        <link>http://hellodk.in///blue_borne</link>
+        <guid isPermaLink="true">http://hellodk.in///blue_borne</guid>
+        
+        <category>tutorials</category>
+        
+        
+        <category>dk</category>
+        
+      </item>
+    
+      <item>
+        <title>Fancy Bear DDoS for Ransom</title>
+        <description>&lt;html&gt;
+Threat Summary: Decyphering the Noise Around ‘Meltdown’ and ‘Spectre’
+
+ 
+
+The McAfee Advanced Threat Research (ATR) Team has closely followed the attack techniques that have been named Meltdown and Spectre throughout the lead-up to their announcement on January 3.
+
+ 
+
+The vulnerabilities been categorized into two attacks, Meltdown (CVE-2017-5754) and Spectre (CVE-2017-5753 and CVE-2017-5715), which could allow attackers to steal sensitive data which is currently processed on the computer.
+
+Both attacks take advantage of a feature in chips known as &quot;speculative execution,&quot; a technique used by most modern CPUs to optimize performance.
+
+&quot;In order to improve performance, many CPUs may choose to speculatively execute instructions based on assumptions that are considered likely to be true. During speculative execution, the processor is verifying these assumptions; if they are valid, then the execution continues. If they are invalid, then the execution is unwound. Therefore, it is possible for such speculative execution to have &quot;side effects which are not restored when the CPU state is unwound and can lead to information disclosure,&quot; which can be accessed using side-channel attacks.
+
+Meltdown Attack: Meltdown attack allows attackers to read not only kernel memory but also the entire physical memory of the target machines, and therefore all secrets of other programs and the operating system. Meltdown uses speculative execution to break the isolation between user applications and the operating system, allowing any application to access all system memory, including memory allocated for the kernel.
+
+Spectre Attack: Spectre attack breaks the isolation between different applications, allowing the attacker-controlled program to trick error-free programs into leaking their secrets by forcing them into accessing arbitrary portions of its memory, which can then be read through a side channel.
+
+Spectre attacks can be used to leak information from the kernel to user programs, as well as from virtualization hypervisors to guest systems.
+
+ 
+
+Who are affected?
+
+This vulnerability impacts almost every system, including desktops, laptops, cloud servers, as well as smartphones—powered by Intel, AMD, and ARM chips.
+
+ 
+
+How to Protect Yourself:
+
+There is no single fix for both the attacks since each requires protection independently.
+
+·         Windows — Microsoft has issued an out-of-band patch update for Windows 10, while other versions of Windows will be patched on the traditional Patch Tuesday on January 9, 2018
+
+·         MacOS — Apple had already fixed most of these security holes in macOS High Sierra 10.13.2 last month, but MacOS 10.13.3 will enhance or complete these mitigations.
+
+·         Linux — Linux kernel developers have also released patches by implementing kernel page-table isolation (KPTI) to move the kernel into an entirely separate address space.
+
+·         Android — Google has released security patches for Pixel/Nexus users as part of the Android January security patch update.  Other users have to wait for their device manufacturers to release a compatible security update.
+
+·         Allow scripting languages to execute only from trusted sites.
+
+·         Anti Virus vendors like McAfee have some detection capabilities around these threats,  . McAfee Windows Security Suite or McAfee Endpoint Security (ENS) can provide warnings if you visit a known dangerous site.McAfee products can also provide an alternate script-execution engine that prevents known malicious scripts from executing.
+
+ 
+
+Reference:
+
+https://thehackernews.com/2018/01/meltdown-spectre-vulnerability.html
+
+https://securingtomorrow.mcafee.com/mcafee-labs/decyphering-the-noise-around-meltdown-and-spectre/
+&lt;/html&gt;</description>
+        <pubDate>Fri, 15 Dec 2017 19:10:00 +0530</pubDate>
+        <link>http://hellodk.in///blue_borne</link>
+        <guid isPermaLink="true">http://hellodk.in///blue_borne</guid>
+        
+        <category>tutorials</category>
+        
+        
+        <category>dk</category>
+        
+      </item>
+    
+      <item>
+        <title>Bad_rabbit_attack</title>
+        <description>&lt;html&gt;
+Threat Summary : Bad Rabbit: New Ransomware Attack Rapidly Spreading
+ 
+A new widespread ransomware attack is spreading like wildfire around Europe and has already affected over 200 major organisations, primarily in Russia, Ukraine, Turkey and Germany, in the past few hours.
+Dubbed &quot;Bad Rabbit,&quot; is reportedly a new Petya-like targeted ransomware attack against corporate networks, demanding 0.05 bitcoin (~ $285) as ransom from victims to unlock their systems.
+According to an initial analysis provided by the Kaspersky, the ransomware was distributed via drive-by download attacks, using fake Adobe Flash players installer to lure victims&#39; in to install malware unwittingly.
+&quot;No exploits were used, so the victim would have to manually execute the malware dropper, which pretends to be an Adobe Flash installer. We’ve detected a number of compromised websites, all of which were news or media websites.&quot; Kaspersky Lab said.
+However, security researchers at ESET have detected Bad Rabbit malware as &#39;Win32/Diskcoder.D&#39; — a new variant of Petya ransomware, also known as Petrwrap, NotPetya, exPetr and GoldenEye.
+Bad Rabbit ransomware uses DiskCryptor, an open source full drive encryption software, to encrypt files on infected computers with RSA 2048 keys. Bad Rabbit does not use EternalBlue but does leverage EternalRomance RCE exploit to spread across victims&#39; networks.
+Microsoft and F-Secure have also confirmed the presence of the exploit in the Bad Rabbit ransomware. EternalRomance is a remote code execution exploit that takes advantage of a flaw (CVE-2017-0145) in Microsoft&#39;s Windows Server Message Block (SMB), a protocol for transferring data between connected Windows computers, to bypass security over file-sharing connections, thereby enabling remote code execution on Windows clients and servers.
+ 
+Impact:
+Bad Rabbit
+ first scans the internal network for open SMB shares, tries a hardcoded list of commonly used credentials
+ to drop malware, and also uses Mimikatz
+ post-exploitation tool to extract credentials from the affected systems. Bad Rabbit can also exploit the Windows Management Instrumentation Command-line (WMIC) scripting interface in an attempt to execute code on other Windows systems on the network remotely, noted
+ EndGame. However, according to Cisco&#39;s Talos, Bad Rabbit also carries a code that uses EternalRomance, which allows remote hackers to propagate from an infected computer to other targets more efficiently.
+ 
+How to Protect Yourself:
+In order to protect yourself from Bad Rabbit, users are advised to disable WMI service to prevent the malware from spreading over your network.
+Update your systems regularly and keep a good and effective anti-virus security suite on your system.
+Since most ransomware spread through phishing emails, malicious adverts on websites, and third-party apps and programs, you should always exercise caution before falling for any of these.
+Most importantly, to always have a tight grip on your valuable data, keep a good backup routine in place that makes and saves copies of your files to an external storage device that isn&#39;t always connected to your PC.
+ 
+Reference:
+https://thehackernews.com/2017/10/bad-rabbit-ransomware-attack.html
+&lt;/html&gt;</description>
+        <pubDate>Fri, 15 Dec 2017 00:00:00 +0530</pubDate>
+        <link>http://hellodk.in///bad_rabbit_attack</link>
+        <guid isPermaLink="true">http://hellodk.in///bad_rabbit_attack</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>REST API Best Practices</title>
+        <description>&lt;html&gt;
+REST API ARCHITECTURE – BEST PRACTICES
+
+SOA(Service Oriented Architecture) has become a foundation for the most of the application that are developed today. A service oriented architecture is an architectural pattern which enables collection of services to communicate with external/internal parties to pass data or for services coordinating. Let’s start from what’s a service.
+What’s a Service/API
+A service is a function that is well-defined, self-contained, and does not depend on the context or state of other services.
+In other words an interface used by software components to communicate with each other. Let understand the difference between API and Web Services. A Web Service is a type of API, almost always one that operates over HTTP. In the modern world there are two types of web services that are used.
+SOAP
+REST
+We can’t compare REST and SOAP since SOAP is a protocol and REST is an architectural pattern. People mostly get confused when selecting one for their application. If you are wondering what’s the difference between these two you can get a good start from here and here.
+Our today’s focus is on REST. How we can implement a perfect REST API? What are the best practices? Let’s get down to business.
+REST Best Practices 101
+1. Abstract vs Concrete
+When designing a REST API you should consider to make API concrete as possible. It will make the API less confusing to the consumers.
+Abstract vs Concrete 
+Abstract vs Concrete
+2. CRUD Operations
+There are four available methods when designing a REST API which are GET, POST, PUT and DELETE. Below is the proposed methodology to implement CRUD operations in a REST API. Note that this is suggested by me and you can alter this as per your requirement.
+Resource	POST	GET	PUT	DELETE
+/dog	Create a new dog	List dogs	Replace dogs with new dogs(Bulk update)	 Delete all dogs
+/dog/1234	Error	 Show dog	If exist update dog else ERROR	 Delete dog
+ 
+I know there is a confusion resolve around PUT and DELETE. Read more here and here to clarify.
+3. Error Handling
+Error handling is one that get less attention but most important part of the any REST API. You must give hints as possible for the API consumers about the error and why it has occurred. Also make you that through the API you should provide granular level error messages. You can format it as follows.
+
+{
+   &quot;status&quot;: 401,
+   &quot;error_code&quot;: 2005,
+   &quot;error_message&quot;: &quot;Authentication token has expired&quot;,
+   &quot;more_info&quot;: &quot;http://dasunhegoda.com/api/doc/token_error&quot;
+}
+1
+2
+3
+4
+5
+6
+{
+   &quot;status&quot;: 401,
+   &quot;error_code&quot;: 2005,
+   &quot;error_message&quot;: &quot;Authentication token has expired&quot;,
+   &quot;more_info&quot;: &quot;http://dasunhegoda.com/api/doc/token_error&quot;
+}
+You can make use of HTTP status code for this purpose.
+4. API Versioning
+In any given API API version is mandatory to maintain consistency. It can be done in many way but below is the preferred methods by me.
+Method 1
+You can use the letter ‘v’ in the URL to denote the API version as below.
+
+http://dasunhegoda.com/api/v2/dog/1234
+1
+http://dasunhegoda.com/api/v2/dog/1234
+Method 2
+You can use the addional parameter at the end of the URL.
+
+http://dasunhegoda.com/api/dog/1234?v=2.0
+1
+http://dasunhegoda.com/api/dog/1234?v=2.0
+Different people have different opinion on API version. You can read more here.
+5. Filtering
+Don’t provide unnecessary data to the API consumers. It will clutter you REST API unnecessarily. Let the developer choose what he needs. For this we can use filtering methods in our APIs.
+
+/dogs/1234?value1,value2,value3,value4
+1
+/dogs/1234?value1,value2,value3,value4
+Also you can use pagination for this purpose as well where you don’t have to return all the results at once. Below query will be familiar to you since it operates same as MySQL works.
+
+/dogs?limit=25&amp;offset=20
+
+You can read more &lt;a href=&quot;http://stackoverflow.com/questions/5020704/how-to-design-restful-search-filtering&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.
+1
+2
+3
+/dogs?limit=25&amp;offset=20
+ 
+You can read more &lt;a href=&quot;http://stackoverflow.com/questions/5020704/how-to-design-restful-search-filtering&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.
+6. Security
+Security is one of the major concerns when compared to SOAP because still there are no standards such as ws-security defined for REST.
+You can use HTTPS across your APIs.
+Don’t forget to include timestamp in each and every API request and response. Make sure to log them all. In case of a dispute you can refer them.
+Use a access_token to make sure that API is invoked by the trust parties. Beforehand you have to deliver the access_token whereas only API consumers have an access_token can invoke the API. Read more.
+7. Analytics
+Once you start logging each and every API request and response you can build a analytical platform on top of that. If the number of records are high you might have to consider technologies such as BigData. Having analytics in your REST API will give you a good insight of what’s happening your API.
+8. Documentation
+Proper Documentation is vital for the API. It doesn’t matter how great your API design is if the API consumers can’t used it properly. You can use tools such as apidocjs for this purpose. It’s really easy to get started.
+9. Stability and Consistency
+Depending on your requirement you should consider highly available architecture for you REST API. If you are wondering how to implement high availability in your REST API I have an article written on the subject. Please refer here.
+10. URL Structure
+You have to structure the URL in manner it’s intuitive. Select a domain which is easy for marking as well. eg :- api.yourdomain.com. When structuring your REST API you can use the following format.
+GET tasks/5/messages – Retrieves list of messages for task #5
+GET tasks/5/messages/10 – Retrieves the 10th messages for task #5
+POST tasks/5/messages – Create a new message for task #5
+DELETE tasks/5/messages/10 – Delete the 10th messages of task #5
+PUT tasks/5/messages/12 – Update the 12th messages of task #5
+If you have developed your REST API properly you should have above features in it. In other words above should be kept in mind when designing your REST API. So that’s it about REST API architecture. If you have any questions let me know in the comments below. Your feedback is highly appreciated(happy-face)
+&lt;/html&gt;</description>
+        <pubDate>Thu, 14 Dec 2017 09:48:00 +0530</pubDate>
+        <link>http://hellodk.in///travel_diaries</link>
+        <guid isPermaLink="true">http://hellodk.in///travel_diaries</guid>
+        
+        <category>travel</category>
+        
+        
+        <category>dk</category>
+        
+      </item>
     
       <item>
         <title>Python regex Simplified</title>
@@ -188,561 +537,6 @@ Example: &lt;code&gt;yum search httpd&lt;/code&gt;
         <pubDate>Wed, 26 Apr 2017 18:48:00 +0530</pubDate>
         <link>http://hellodk.in///configure_multiple_ssh_identities_for_gitbash_mac_linux</link>
         <guid isPermaLink="true">http://hellodk.in///configure_multiple_ssh_identities_for_gitbash_mac_linux</guid>
-        
-        <category>tutorials</category>
-        
-        
-        <category>dk</category>
-        
-      </item>
-    
-      <item>
-        <title>RabbitMQ - Detecting Dead TCP Connections with Heartbeats</title>
-        <description>&lt;p&gt;
-In some types of network failure, packet loss can mean that disrupted TCP connections take a moderately long time (about 11 minutes with default configuration on Linux, for example) to be detected by the operating system. AMQP 0-9-1 offers a heartbeat feature to ensure that the application layer promptly finds out about disrupted connections (and also completely unresponsive peers). Heartbeats also defend against certain network equipment which may terminate &quot;idle&quot; TCP connections. See Heartbeats for details.
-&lt;/p&gt;
-
-&lt;h4&gt;&lt;u&gt;At the Broker&lt;/u&gt;&lt;/h4&gt;
-&lt;p&gt;
-In order to avoid losing messages in the broker we need to cope with broker restarts, broker hardware failure and in extremis even broker crashes.
-&lt;/p&gt;
-&lt;p&gt;
-To ensure that messages and broker definitions survive restarts, we need to ensure that they are on disk. The AMQP standard has a concept of durability for exchanges, queues and of persistent messages, requiring that a durable object or persistent message will survive a restart. More details about specific flags pertaining to durability and persistence can be found in the AMQP Concepts Guide.
-&lt;/p&gt;
-&lt;h4&gt;&lt;u&gt;Clustering and High Availability&lt;/u&gt;&lt;/h4&gt;
-&lt;p&gt;
-If we need to ensure that our broker survives hardware failure, we can use RabbitMQ&#39;s clustering. In a RabbitMQ cluster, all definitions (of exchanges, bindings, users, etc) are mirrored across the entire cluster. Queues behave differently, by default residing only on a single node, but optionally being mirrored across several or all nodes. Queues remain visible and reachable from all nodes regardless of where they are located.
-&lt;/p&gt;
-&lt;p&gt;
-Mirrored queues replicate their contents across all configured cluster nodes, tolerating node failures seamlessly and without message loss (although see this note on unsynchronised slaves). However, consuming applications need to be aware that when queues fail their consumers will be cancelled and they will need to reconsume - see the documentation for more details.
-&lt;/p&gt;
-At the Producer
-&lt;p&gt;
-When using confirms, producers recovering from a channel or connection failure should retransmit any messages for which an acknowledgement has not been received from the broker. There is a possibility of message duplication here, because the broker might have sent a confirmation that never reached the producer (due to network failures, etc). Therefore consumer applications will need to perform deduplication or handle incoming messages in an idempotent manner.
-&lt;/p&gt;
-&lt;h4&gt;&lt;u&gt;Ensuring Messages are Routed&lt;/u&gt;&lt;/h4&gt;
-&lt;p&gt;
-In some circumstances it can be important for producers to ensure that their messages are being routed to queues (although not always - in the case of a pub-sub system producers will just publish and if no consumers are interested it is correct for messages to be dropped).
-&lt;/p&gt;
-&lt;p&gt;
-To ensure messages are routed to a single known queue, the producer can just declare a destination queue and publish directly to it. If messages may be routed in more complex ways but the producer still needs to know if they reached at least one queue, it can set the mandatory flag on a basic.publish, ensuring that a basic.return (containing a reply code and some textual explanation) will be sent back to the client if no queues were appropriately bound.
-&lt;/p&gt;
-&lt;p&gt;
-Producers should also be aware that when publishing to a clustered node, if one or more destination queues that are bound to the exchange have mirrors in the cluster, it&#39;s possible to incur delays in the face of network failures between nodes, due to flow control between replicas and the master queue process. See here for more details.
-&lt;/p&gt;
-&lt;h4&gt;&lt;u&gt;At the Consumer&lt;/u&gt;&lt;/h4&gt;
-&lt;p&gt;
-In the event of network failure (or a node crashing), messages can be duplicated, and consumers must be prepared to handle them. If possible, the simplest way to handle this is to ensure that your consumers handle messages in an idempotent way rather than explicitly deal with deduplication.
-&lt;/p&gt;
-&lt;p&gt;
-If a message is delivered to a consumer and then requeued (because it was not acknowledged before the consumer connection dropped, for example) then RabbitMQ will set the redelivered flag on it when it is delivered again (whether to the same consumer or a different one). This is a hint that a consumer may have seen this message before (although that&#39;s not guaranteed, the message may have made it out of the broker but not into a consumer before the connection dropped). Conversely if the redelivered flag is not set then it is guaranteed that the message has not been seen before. Therefore if a consumer finds it more expensive to deduplicate messages or process them in an idempotent manner, it can do this only for messages with the redelivered flag set.
-&lt;/p&gt;
-&lt;h4&gt;&lt;u&gt;Consumer Cancel Notification&lt;/u&gt;&lt;/h4&gt;
-&lt;p&gt;
-Under some circumstances the server needs to be able to cancel a consumer - since the queue it was consuming from has been deleted, or has failed over. In this case the consumer should consume again but be aware that it may see messages again which it has already seen.
-&lt;/p&gt;
-&lt;code&gt;Note that consumer cancel notification is a RabbitMQ extension to AMQP, and as such may not be supported by all clients.&lt;/code&gt;
-&lt;/br&gt;&lt;/br&gt;
-&lt;h4&gt;&lt;u&gt;Messages That Cannot Be Processed&lt;/u&gt;&lt;/h4&gt;
-&lt;p&gt;
-If a consumer determines that it cannot handle a message then it can reject it using basic.reject (or basic.nack), either asking the server to requeue it, or not (in which case the server might be configured to dead-letter it instead.
-&lt;/p&gt;
-&lt;h4&gt;&lt;u&gt;Distributed RabbitMQ&lt;/u&gt;&lt;/h4&gt;
-&lt;p&gt;
-Rabbit provides two plugins to assist with distributing nodes over unreliable networks: federation and the shovel. Both are implemented as AMQP clients, so if you configure them to use confirms and acknowledgements, they will retransmit when necessary. Both will use confirms and acknowledgements by default.
-&lt;/p&gt;
-&lt;p&gt;
-When connecting clusters with federation or the shovel, it is desirable to ensure that the federation links and shovels tolerate node failures. Federation will automatically distribute links across the downstream cluster and fail them over on failure of a downstream node. In order to connect to a new upstream when an upstream node fails you can specify multiple redundant URIs for an upstream, or connect via a TCP load balancer.
-&lt;/p&gt;
-&lt;p&gt;
-When using the shovel, it is possible to specify redundant brokers in a source or destination clause; however it is not currently possible to make the shovel itself redundant. We hope to improve this situation in the future; in the mean time a new node can be brought up manually to run a shovel if the node it was originally running on fails.
-&lt;/p&gt;</description>
-        <pubDate>Mon, 24 Apr 2017 17:48:00 +0530</pubDate>
-        <link>http://hellodk.in///detecting-dead-tcp-connections</link>
-        <guid isPermaLink="true">http://hellodk.in///detecting-dead-tcp-connections</guid>
-        
-        <category>tutorials</category>
-        
-        
-        <category>dk</category>
-        
-      </item>
-    
-      <item>
-        <title>HTTP Quick Reference - A Quick reminder about HTTP</title>
-        <description>In this tutorial we will cover the basics of an HTTP request and see how it works.
-&lt;/br&gt;
-&lt;h2&gt;&lt;u&gt;HTTP Transaction Model:&lt;/u&gt;&lt;/h2&gt;
-&lt;p&gt;The HTTP protocol is transaction-driven. This means that each request will lead
-to one and only one response. Traditionally, a TCP connection is established
-from the client to the server, a request is sent by the client on the
-connection, the server responds and the connection is closed. A new request
-will involve a new connection :&lt;/p&gt;
-
-&lt;code&gt;  [CON1] [REQ1] ... [RESP1] [CLO1] [CON2] [REQ2] ... [RESP2] [CLO2] ... &lt;/code&gt;
-&lt;/br&gt;&lt;/br&gt;
-
-&lt;p&gt;In this mode, called the &quot;HTTP close&quot; mode, there are as many connection
-establishments as there are HTTP transactions. Since the connection is closed
-by the server after the response, the client does not need to know the content
-length.&lt;/p&gt;
-
-&lt;p&gt;Due to the transactional nature of the protocol, it was possible to improve it
-to avoid closing a connection between two subsequent transactions. In this mode
-however, it is mandatory that the server indicates the content length for each
-response so that the client does not wait indefinitely. For this, a special
-header is used: &quot;Content-length&quot;. This mode is called the &quot;keep-alive&quot; mode :&lt;/p&gt;
-
-  &lt;code&gt;[CON] [REQ1] ... [RESP1] [REQ2] ... [RESP2] [CLO] ...&lt;/code&gt;
-&lt;/br&gt;&lt;/br&gt;
-&lt;p&gt;Its advantages are a reduced latency between transactions, and less processing
-power required on the server side. It is generally better than the close mode,
-but not always because the clients often limit their concurrent connections to
-a smaller value.&lt;/p&gt;
-
-&lt;p&gt;A last improvement in the communications is the pipelining mode. It still uses
-keep-alive, but the client does not wait for the first response to send the
-second request. This is useful for fetching large number of images composing a
-page :&lt;/p&gt;
-
-&lt;code&gt;  [CON] [REQ1] [REQ2] ... [RESP1] [RESP2] [CLO] ...&lt;/code&gt;
-&lt;/br&gt;&lt;/br&gt;
-
-&lt;p&gt;This can obviously have a tremendous benefit on performance because the network
-latency is eliminated between subsequent requests. Many HTTP agents do not
-correctly support pipelining since there is no way to associate a response with
-the corresponding request in HTTP. For this reason, it is mandatory for the
-server to reply in the exact same order as the requests were received.&lt;/p&gt;
-
-  &lt;h2&gt;&lt;u&gt;HTTP Request&lt;/u&gt;&lt;/h2&gt;
-  &lt;p&gt;First, let&#39;s consider this HTTP request :&lt;/p&gt;
-  
-  &lt;table id=&quot;t01&quot;&gt;
-  &lt;tr&gt;
-    &lt;th&gt;Line Number&lt;/th&gt;
-    &lt;th&gt;Contents&lt;/th&gt; 
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;1&lt;/td&gt;
-    &lt;td&gt;GET /serv/login.php?lang=en&amp;profile=2 HTTP/1.1&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;2&lt;/td&gt;
-    &lt;td&gt;Host: www.mydomain.com&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;3&lt;/td&gt;
-    &lt;td&gt;User-agent: my small browser&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;4&lt;/td&gt;
-    &lt;td&gt;Accept: image/jpeg, image/gif&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;5&lt;/td&gt;
-    &lt;td&gt;Accept: image/png&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;h3&gt;&lt;u&gt;The Request line&lt;/u&gt;&lt;/h3&gt;
-
-&lt;p&gt;Line 1 is the &quot;request line&quot;. It is always composed of 3 fields :&lt;/p&gt;
-&lt;li&gt;METHOD      : GET&lt;/li&gt;
-&lt;li&gt;URI         : /serv/login.php?lang=en&amp;profile=2&lt;/li&gt;
-&lt;li&gt;Version tag : HTTP/1.1&lt;/li&gt;
-&lt;/br/&gt;
-&lt;p&gt;
-All of them are delimited by what the standard calls LWS (linear white spaces),
-which are commonly spaces, but can also be tabs or line feeds/carriage returns
-followed by spaces/tabs. The method itself cannot contain any colon (&#39;:&#39;) and
-is limited to alphabetic letters.
-&lt;/p&gt;
-
-The URI itself can have several forms :
-&lt;/br&gt;
-&lt;li&gt;A &quot;relative URI&quot; : (&lt;code&gt;/serv/login.php?lang=en&amp;profile=2&lt;/code&gt;)
-    It is a complete URL without the host part. This is generally what is received by servers, reverse proxies and transparent proxies.
-&lt;/li&gt;
-&lt;li&gt;An &quot;absolute URI&quot;, also called a &quot;URL&quot; : (&lt;code&gt;http://192.168.0.12:8080/serv/login.php?lang=en&amp;profile=2&lt;/code&gt;)
-    It is composed of a &quot;scheme&quot; (the protocol name followed by &#39;://&#39;), a host
-    name or address, optionally a colon (&#39;:&#39;) followed by a port number, then
-    a relative URI beginning at the first slash (&#39;/&#39;) after the address part.
-    This is generally what proxies receive, but a server supporting HTTP/1.1
-    must accept this form too.
-&lt;/li&gt;
-&lt;li&gt;A &quot;star&quot; : &lt;code&gt;(&#39;*&#39;)&lt;/code&gt; This form is only accepted in association with the OPTIONS
-    method and is not relayable. It is used to inquiry a next hop&#39;s capabilities.
-&lt;/li&gt;
-&lt;li&gt;An address:port combination : (&lt;code&gt;192.168.0.12:80&lt;/code&gt;)
-    This is used with the CONNECT method, which is used to establish TCP
-    tunnels through HTTP proxies, generally for HTTPS, but sometimes for
-    other protocols too.
-&lt;/li&gt;
-&lt;/code&gt;
-&lt;/br&gt;
-&lt;p&gt;
-In a relative URI, two sub-parts are identified. The part before the question
-mark is called the &quot;path&quot;. It is typically the relative path to static objects
-on the server. The part after the question mark is called the &quot;query string&quot;.
-It is mostly used with GET requests sent to dynamic scripts and is very
-specific to the language, framework or application in use.
-&lt;/p&gt;
-&lt;/br&gt;
-&lt;h2&gt;&lt;u&gt;The request headers&lt;/u&gt;&lt;/h2&gt;
-&lt;p&gt;
-The headers start at the second line and are composed of a name at the
-beginning of the line, immediately followed by a colon &lt;code&gt;(&#39;:&#39;)&lt;/code&gt;. Traditionally,
-an LWS is added after the colon but that&#39;s not required. Then come the values.
-Multiple identical headers may be folded into one single line, delimiting the
-values with commas, provided that their order is respected. This is commonly
-encountered in the &quot;Cookie:&quot; field. A header may span over multiple lines if
-the subsequent lines begin with an LWS. In the example in 1.2, lines 4 and 5
-define a total of 3 values for the &quot;Accept:&quot; header.
-&lt;/p&gt;
-
-&lt;p&gt;
-Contrary to a common mis-conception, header names are not case-sensitive, and
-their values are not either if they refer to other header names (such as the
-&quot;Connection:&quot; header).
-&lt;/p&gt;
-&lt;p&gt;
-The end of the headers is indicated by the first empty line. People often say
-that it&#39;s a double line feed, which is not exact, even if a double line feed
-is one valid form of empty line.
-&lt;/p&gt;
-
-&lt;h2&gt;&lt;u&gt;HTTP response&lt;/u&gt;&lt;/h2&gt;
-&lt;p&gt;An HTTP response looks very much like an HTTP request. Both are called HTTP
-messages. Let&#39;s consider this HTTP response :
-
-&lt;table&gt;
-&lt;tr&gt;
-&lt;th&gt;Line&lt;/th&gt;
-&lt;th&gt;Contents&lt;/th&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;HTTP/1.1 200 OK&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;Content-length: 350&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td&gt;Content-Type: text/html&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;   
-&lt;/p&gt;
-
-&lt;p&gt;
-As a special case, HTTP supports so called &quot;Informational responses&quot; as status
-codes 1xx. These messages are special in that they don&#39;t convey any part of the
-response, they&#39;re just used as sort of a signaling message to ask a client to
-continue to post its request for instance.
-&lt;/p&gt;
-&lt;p&gt;
-In the case of a status 100 response
-the requested information will be carried by the next non-100 response message
-following the informational one. This implies that multiple responses may be
-sent to a single request, and that this only works when keep-alive is enabled
-(1xx messages are HTTP/1.1 only).
-&lt;/p&gt;
-
-&lt;h2&gt;&lt;u&gt;The Response line&lt;/u&gt;&lt;/h2&gt;
-&lt;p&gt;Line 1 is the &quot;response line&quot;. It is always composed of 3 fields :
-
-&lt;table&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th&gt;Value(can be different at times)&lt;/th&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Version tag&lt;/td&gt;
-&lt;td&gt;HTTP/1.1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Status code&lt;/td&gt;
-&lt;td&gt;200&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Reason&lt;/td&gt;
-&lt;td&gt;OK&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;/p&gt;
-The status code is always 3-digit. The first digit indicates a general status :
-&lt;table&gt;
-&lt;tr&gt;
-&lt;th&gt;Code&lt;/th&gt;
-&lt;th&gt;Message&lt;/th&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
- &lt;td&gt;1xx&lt;/td&gt;
- &lt;td&gt;informational message to be skipped (eg: 100, 101)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
- &lt;td&gt;2xx&lt;/td&gt;
- &lt;td&gt;OK, content is following   (eg: 200, 206)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
- &lt;td&gt;3xx&lt;/td&gt;
- &lt;td&gt;OK, no content following   (eg: 302, 304)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
- &lt;td&gt;4xx&lt;/td&gt;
- &lt;td&gt;error caused by the client (eg: 401, 403, 404)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
- &lt;td&gt;5xx&lt;/td&gt;
- &lt;td&gt;error caused by the server (eg: 500, 502, 503)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-
-You can also refer to RFC2616 for the detailed meaning of all such codes. The
-&quot;reason&quot; field is just a hint, but is not parsed by clients. Anything can be
-found there, but it&#39;s a common practice to respect the well-established
-messages. It can be composed of one or multiple words, such as &quot;OK&quot;, &quot;Found&quot;,
-or &quot;Authentication Required&quot;.
-
-Below is the table depicting the basic interpretation of HTTP status codes:
-
-&lt;table&gt;
-&lt;tr&gt;
-  &lt;th&gt;Code&lt;/th&gt;
-  &lt;th&gt;When / reason&lt;/th&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-   &lt;td&gt;200&lt;/td&gt;
-   &lt;td&gt;access to stats page, and when replying to monitoring requests&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-   &lt;td&gt;301&lt;/td&gt;
-   &lt;td&gt;when performing a redirection, depending on the configured code&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-   &lt;td&gt;302&lt;/td&gt;
-   &lt;td&gt;when performing a redirection, depending on the configured code&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-   &lt;td&gt;303&lt;/td&gt;
-   &lt;td&gt;when performing a redirection, depending on the configured code&lt;/td&gt;
-   &lt;/tr&gt;
-&lt;tr&gt;
-   &lt;td&gt;307&lt;/td&gt;
-   &lt;td&gt;when performing a redirection, depending on the configured code&lt;/td&gt;
-   &lt;/tr&gt;
-&lt;tr&gt;
-   &lt;td&gt;308&lt;/td&gt;
-   &lt;td&gt;when performing a redirection, depending on the configured code&lt;/td&gt;
-   &lt;/tr&gt;
-&lt;tr&gt;
-   &lt;td&gt;400&lt;/td&gt;
-   &lt;td&gt;for an invalid or too large request&lt;/td&gt;
-   &lt;/tr&gt;
-&lt;tr&gt;
-   &lt;td&gt;401&lt;/td&gt;
-   &lt;td&gt;when an authentication is required to perform the action (when accessing the stats page)&lt;/td&gt;
-   &lt;/tr&gt;
-&lt;tr&gt;
-   &lt;td&gt;403&lt;/td&gt;
-   &lt;td&gt;when a request is forbidden by a &quot;block&quot; ACL or &quot;reqdeny&quot; filter&lt;/td&gt;
-   &lt;/tr&gt;
-&lt;tr&gt;
-   &lt;td&gt;408&lt;/td&gt;
-   &lt;td&gt;when the request timeout strikes before the request is complete&lt;/td&gt;
-   &lt;/tr&gt;
-&lt;tr&gt;
-   &lt;td&gt;500&lt;/td&gt;
-   &lt;td&gt;when haproxy encounters an unrecoverable internal error, such as a memory allocation failure, which should never happen&lt;/td&gt;
-   &lt;/tr&gt;
-&lt;tr&gt;
-   &lt;td&gt;502&lt;/td&gt;
-   &lt;td&gt;when the server returns an empty, invalid or incomplete response, or when an &quot;rspdeny&quot; filter blocks the response.&lt;/td&gt;
-   &lt;/tr&gt;
-&lt;tr&gt;
-   &lt;td&gt;503&lt;/td&gt;
-   &lt;td&gt;when no server was available to handle the request, or in response to monitoring requests which match the &quot;monitor fail&quot; condition&lt;/td&gt;
-   &lt;/tr&gt;
-&lt;tr&gt;
-   &lt;td&gt;504&lt;/td&gt;
-   &lt;td&gt;when the response timeout strikes before the server responds&lt;/td&gt;
-   &lt;/tr&gt;
-&lt;/table&gt;
-&lt;/br&gt;
-
-&lt;h2&gt;&lt;u&gt;The response headers&lt;/u&gt;&lt;/h2&gt;
-&lt;p&gt;Response headers work exactly like request headers.&lt;/p&gt;</description>
-        <pubDate>Thu, 20 Apr 2017 18:00:00 +0530</pubDate>
-        <link>http://hellodk.in///http_quick_reference</link>
-        <guid isPermaLink="true">http://hellodk.in///http_quick_reference</guid>
-        
-        <category>tutorials</category>
-        
-        
-        <category>dk</category>
-        
-      </item>
-    
-      <item>
-        <title>HA Proxy for Beginners</title>
-        <description>&lt;h2&gt;&lt;u&gt;Introduction&lt;/u&gt;&lt;/h2&gt;
-
-&lt;h5&gt;Installing HA proxy&lt;/h5&gt;
-&lt;h5&gt;Configuring HAProxy&lt;/h5&gt;
-&lt;p&gt;
-Configuration file format:
-&lt;/p&gt;
-
-There are 3 major parameters in HA Proxy&#39;s configuration:
-
-1. Command Line Arguments, 
-HAProxy&#39;s configuration process involves 3 major sources of parameters :
-
-  - the arguments from the command-line, which always take precedence
-  - the &quot;global&quot; section, which sets process-wide parameters
-  - the proxies sections which can take form of &quot;defaults&quot;, &quot;listen&quot;,
-    &quot;frontend&quot; and &quot;backend&quot;.
-
-The configuration file syntax consists in lines beginning with a keyword
-referenced in this manual, optionally followed by one or several parameters
-delimited by spaces. If spaces have to be entered in strings, then they must be
-preceded by a backslash (&#39;\&#39;) to be escaped. Backslashes also have to be
-escaped by doubling them.
-</description>
-        <pubDate>Thu, 20 Apr 2017 18:00:00 +0530</pubDate>
-        <link>http://hellodk.in///ha_proxy_for_beginners</link>
-        <guid isPermaLink="true">http://hellodk.in///ha_proxy_for_beginners</guid>
-        
-        <category>tutorials</category>
-        
-        
-        <category>dk</category>
-        
-      </item>
-    
-      <item>
-        <title>lune de miel à andaman</title>
-        <description>While looking for a light yet powerful Configuration Management tool, I was going through some of the various available tools, and came across Ansible. After having a quick look at the features, something which caught my attention: &quot;Ansible is agent-less&quot;, hence I decided to give it a try. Having used Ansible for some around more than 8+ months configuration management, I personally feel...Ansible is awesome!!
-So what is Ansible? Well, it is a configuration management tool, and it empowers you to configure/orchestrate multiple systems at great ease, saving a lot of downtime and resources.
-So how does it does that? The answer lies with ssh keys based agent forwarding. Ansible uses ssh for logging to the remote system, and can execute package installation, shell commands, install/update package management systems, clone git and anything under the sun you need for configuration management.
-So why don&#39;t you try your hands on Ansible and experience it&#39;s awesomeness....all you need to do is to install it on your host system.
-
-Ansible does not have it&#39;s own process, and unlike other configuration tolls available, it is agent-less!!
-
-Ansible ships in 2 forms:
-1. Core Ansible
-2. Ansible Tower
-
-Installation:
-1. OS package manager:
-sudo apt-get install software-properties-common
-sudo apt-add-repository ppa:ansible/ansiblesudo apt-get update
-sudo apt-get install ansible
-2. Via python pip:
-sudo pip install ansible
-
-Ansible uses a configuration file, called host files for doing ssh to the remote machines. By default it is located in /etc/ansible/hosts
-All you need to do is to add the host ip and the ssh_username to the file, and the public key of your host to the remote machine and you are all set to go!!
-
-Commands:
-ansible all -i ansible_hosts -m ping
-ansible all -m ping -u deepak
-ansible -m shell -a &#39;free -m&#39; host1
-ansible all -m shell -a &#39;free -m&#39; -u dk
-
-Playbooks are Ansible’s configuration, deployment, and orchestration language. They can describe a policy you want your remote systems to enforce, or a set of steps in a general IT process.
-
-Playbooks are written in YAML language, and comprises of Plays
-
-Running a Playbook in Ansible:
-ansible-playbook playbook.yml -f 10</description>
-        <pubDate>Wed, 01 Mar 2017 09:48:00 +0530</pubDate>
-        <link>http://hellodk.in///travel_diaries</link>
-        <guid isPermaLink="true">http://hellodk.in///travel_diaries</guid>
-        
-        <category>travel</category>
-        
-        
-        <category>dk</category>
-        
-      </item>
-    
-      <item>
-        <title>RethinkDb Installation on Ubuntu-14.04</title>
-        <description>Let&#39;s get some hands on rethinkdb today and find it out yourself. &lt;/br&gt;
-&lt;/br&gt;
-So what is rethinkdb?
-&lt;/br&gt;&lt;/br&gt;
-Rethinkdb is an open-source, scalable JSON database built from the ground up for the realtime web.
-&lt;/br&gt;RethinkDB inverts the traditional database architecture by exposing an exciting new access model – instead of polling for changes, the developer can tell RethinkDB to continuously push updated query results to applications in realtime. RethinkDB’s realtime push architecture dramatically reduces the time and effort necessary to build scalable realtime apps. RethinkDB also offers a flexible query language, intuitive operations and monitoring APIs, and is easy to setup and learn. Just like any other database solution, rethinkdb ships as a client-server component model. The installation process for both the server and the client are illustrated below:
-
-&lt;p&gt;How to Install RethinkDb:&lt;/p&gt;
-1. Add the RethinkDB PPA to your list of repositories : 
-&lt;br&gt;&lt;/br&gt;
-&lt;code&gt;source /etc/lsb-release &amp;&amp; echo &quot;deb http://download.rethinkdb.com/apt $DISTRIB_CODENAME main&quot; | sudo tee /etc/apt/sources.list.d/rethinkdb.list&lt;/code&gt;
-&lt;br&gt;&lt;/br&gt;
-2. Add the keys:&lt;br&gt;&lt;/br&gt;
-
-&lt;code&gt;wget -qO- http://download.rethinkdb.com/apt/pubkey.gpg | sudo apt-key add -&lt;/code&gt;
-&lt;br&gt;&lt;/br&gt;
-3. Update the repository:
-&lt;br&gt;&lt;/br&gt;
-&lt;code&gt;sudo apt-get update&lt;/code&gt;
-&lt;br&gt;&lt;/br&gt;
-4. Install the rethinkdb server via apt-get:
-&lt;br&gt;&lt;/br&gt;
-&lt;code&gt;sudo apt-get -y install rethinkdb&lt;/code&gt;
-&lt;br&gt;&lt;/br&gt;
-Install rethinkdb client:
-&lt;br&gt;&lt;/br&gt;
-1. Install the python-pip package:
-&lt;br&gt;&lt;/br&gt;
-&lt;code&gt;sudo apt-get install python-pip&lt;/code&gt;
-&lt;br&gt;&lt;/br&gt;
-2. Install the rethinkdb python client:
-&lt;br&gt;&lt;/br&gt;
-&lt;code&gt;sudo pip install rethinkdb&lt;/code&gt;
-&lt;br&gt;&lt;/br&gt;
-The above steps ensure that rethinkdb is installed on the system, while it does not ensures that this will start the rethinkdb service on system startup. You still need to start the rethinkdb service using the below command
-&lt;br&gt;&lt;/br&gt;
-&lt;code&gt;rethinkdb&lt;/code&gt;
-&lt;br&gt;&lt;/br&gt;
-The above command will ensure that rethinkdb is running as a terminal process, and will exit once the terminal is closed, or the process is killed, in short it will not run rethinkdb as a background service.
-&lt;br&gt;&lt;/br&gt;
-To start rethinkdb as a service, please follow the below steps:
-&lt;br&gt;&lt;/br&gt;
-1.  Move to the directory /etc/rethinkdb
-&lt;br&gt;&lt;/br&gt;&lt;code&gt;cd /etc/rethinkdb&lt;/code&gt;
-&lt;br&gt;&lt;/br&gt;
-2. Copy the file to /etc/rethinkdb/instances.d and rename the file as per your requirements ensuring the extension is .conf only. Say for example the file name is rethinkdb1.conf
-&lt;br&gt;&lt;/br&gt;&lt;code&gt;cp default.conf.sample rethinkdb1.conf&lt;/code&gt;
-&lt;br&gt;&lt;/br&gt;
-3. Now open the file /etc/rethinkdb/instances.d/rethinkdb1.conf and modify the paramaters as per your requirements.
-&lt;br&gt;&lt;/br&gt;&lt;code&gt;vim rethinkdb1.conf&lt;/code&gt;
-&lt;br&gt;&lt;/br&gt;
-4. If setting up a cluster, we suggest do change the server-name to somethink like &#39;rethinkdb-primary&#39; or &#39;rethinkdb-1&#39; or &#39;master&#39; or &#39;slave&#39;. This will ensure that we have a meaningful naming convention for our cluster.
-&lt;br&gt;&lt;/br&gt;
-5. The default port details are :
-&lt;br&gt;&lt;/br&gt;
-&lt;code&gt;29015 :&lt;/code&gt; Rethinkdb listens for intracluster connections
-&lt;/br&gt;
-&lt;code&gt;28015 :&lt;/code&gt; Rethinkdb listens for client driver connections
-&lt;/br&gt;
-&lt;code&gt;8080  :&lt;/code&gt; Rethinkdb listens for administrative HTTP connections
-&lt;/br&gt;
-&lt;code&gt;22    :&lt;/code&gt; For SSH. The server uses public key authentication.
-&lt;/br&gt;
-&lt;code&gt;80    :&lt;/code&gt; For HTTP. It is used during the setup process but otherwise redirects to HTTPS.
-&lt;/br&gt;
-&lt;code&gt;443   :&lt;/code&gt; For HTTPS. An Nginx server sits between RethinkDB and the world and provides basic HTTP authentication and secure HTTPS connections for the web UI
-&lt;br&gt;&lt;/br&gt;
-&lt;/body&gt;
-&lt;/html&gt;</description>
-        <pubDate>Wed, 21 Sep 2016 15:48:00 +0530</pubDate>
-        <link>http://hellodk.in///rethinkdb_installation_ubuntu14</link>
-        <guid isPermaLink="true">http://hellodk.in///rethinkdb_installation_ubuntu14</guid>
         
         <category>tutorials</category>
         
