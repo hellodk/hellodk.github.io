@@ -12,6 +12,28 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>A Failed Trek to Everest Base Camp</title>
+	  <link>//failed_trek_to_everest_base_camp</link>
+	  <author>Deepak Gupta</author>
+	  <pubDate>2018-03-02T06:48:00+05:30</pubDate>
+	  <guid>//failed_trek_to_everest_base_camp</guid>
+	  <description><![CDATA[
+	     
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>just landed in Malaysia - Truly Asia</title>
+	  <link>//just_landed_in_malaysia</link>
+	  <author>Deepak Gupta</author>
+	  <pubDate>2018-02-24T12:00:00+05:30</pubDate>
+	  <guid>//just_landed_in_malaysia</guid>
+	  <description><![CDATA[
+	     
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>REST API Best Practices</title>
 	  <link>//travel_diaries</link>
 	  <author>Deepak Gupta</author>
@@ -115,6 +137,17 @@ DELETE tasks/5/messages/10 – Delete the 10th messages of task #5
 PUT tasks/5/messages/12 – Update the 12th messages of task #5
 If you have developed your REST API properly you should have above features in it. In other words above should be kept in mind when designing your REST API. So that’s it about REST API architecture. If you have any questions let me know in the comments below. Your feedback is highly appreciated(happy-face)
 </html>
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>lune de miel à andaman</title>
+	  <link>//5_lune_de_miel_%C3%A0_andaman</link>
+	  <author>Deepak Gupta</author>
+	  <pubDate>2016-01-28T15:48:00+05:30</pubDate>
+	  <guid>//5_lune_de_miel_%C3%A0_andaman</guid>
+	  <description><![CDATA[
+	     
 	  ]]></description>
 	</item>
 

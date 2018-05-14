@@ -73,6 +73,8 @@
         <li class="nav-speeches " role="presentation"><a href="/tag/speeches">Speeches</a></li>
         <li class="nav-fiction " role="presentation"><a href="/tag/fiction">Fiction</a></li-->
         <li class="nav-travel " role="presentation"><a href="/tag/travel">Travel</a></li>
+        <li class="nav-resume " role="presentation"><a href="/resume">resume</a></li>
+
 
         <li class="nav-tutorials " role="presentation"><a href="/tag/tutorials">Tutorials</a></li>
 
@@ -129,44 +131,57 @@
         <section class="post-content">
             
             <html>
-Threat Summary : The IoT Attack Vector “BlueBorne” Exposes Almost Every Connected Device
+Threat Summary: Decyphering the Noise Around ‘Meltdown’ and ‘Spectre’
 
+ 
 
-Armis Labs revealed a new attack vector endangering major desktop, and IoT operating systems, including Windows, and Linux, and the devices using them. The new vector is dubbed “BlueBorne”, as it spread through the air (airborne) and attacks devices via Bluetooth. BlueBorne allows attackers to take control of devices, access corporate data and networks, penetrate secure “air-gapped” networks, and spread malware laterally to adjacent devices. BlueBorne is an attack vector by which hackers can leverage Bluetooth connections to penetrate and take complete control over targeted devices. The attack does not require the targeted device to be paired to the attacker’s device, or even to be set on discoverable mode. The BlueBorne attack vector can be used to conduct a large range of offenses, including remote code execution as well as Man-in-The-Middle attacks.
+The McAfee Advanced Threat Research (ATR) Team has closely followed the attack techniques that have been named Meltdown and Spectre throughout the lead-up to their announcement on January 3.
 
+ 
 
+The vulnerabilities been categorized into two attacks, Meltdown (CVE-2017-5754) and Spectre (CVE-2017-5753 and CVE-2017-5715), which could allow attackers to steal sensitive data which is currently processed on the computer.
 
-Impact:
+Both attacks take advantage of a feature in chips known as "speculative execution," a technique used by most modern CPUs to optimize performance.
 
-The BlueBorne attack vector requires no user interaction, is compatible to all software versions, and does not require any preconditions or configurations aside of the Bluetooth being active. Unlike the common misconception, Bluetooth enabled devices are constantly searching for incoming connections from any devices, and not only those they have been paired with. This means a Bluetooth connection can be established without pairing the devices at all. This makes BlueBorne one of the most broad potential attacks found in recent years, and allows an attacker to strike completely undetected.
+"In order to improve performance, many CPUs may choose to speculatively execute instructions based on assumptions that are considered likely to be true. During speculative execution, the processor is verifying these assumptions; if they are valid, then the execution continues. If they are invalid, then the execution is unwound. Therefore, it is possible for such speculative execution to have "side effects which are not restored when the CPU state is unwound and can lead to information disclosure," which can be accessed using side-channel attacks.
 
+Meltdown Attack: Meltdown attack allows attackers to read not only kernel memory but also the entire physical memory of the target machines, and therefore all secrets of other programs and the operating system. Meltdown uses speculative execution to break the isolation between user applications and the operating system, allowing any application to access all system memory, including memory allocated for the kernel.
 
+Spectre Attack: Spectre attack breaks the isolation between different applications, allowing the attacker-controlled program to trick error-free programs into leaking their secrets by forcing them into accessing arbitrary portions of its memory, which can then be read through a side channel.
+
+Spectre attacks can be used to leak information from the kernel to user programs, as well as from virtualization hypervisors to guest systems.
+
+ 
 
 Who are affected?
 
-Windows - All Windows computers since Windows Vista are affected by the “Bluetooth Pineapple” vulnerability which allows an attacker to perform a Man-in-The-Middle attack (CVE-2017-8628). This vulnerability resides in the Bluetooth stack, and enables the attacker to create a malicious  network interface on the victim’s device, re-configure IP routing and force the device to transmit all communication through it. This attack does not require any user interaction, authentication or pairing, making it also practically invisible.
+This vulnerability impacts almost every system, including desktops, laptops, cloud servers, as well as smartphones—powered by Intel, AMD, and ARM chips.
 
+ 
 
+How to Protect Yourself:
 
-Linux -  Linux is the underlying operating system for a wide range of devices. The most commercial, and consumer-oriented platform based on Linux is the Tizen OS. All Linux devices running BlueZ are affected by the information leak vulnerability (CVE-2017-1000250).
+There is no single fix for both the attacks since each requires protection independently.
 
-This vulnerability resides in the SDP server responsible for identifying other services using Bluetooth around the device. The flaw allows the attacker to send a set of crafted requests to the server, causing it to disclose memory bits in response. This can be used by an attacker to expose sensitive data from the Bluetooth process that may also contain encryption keys of Bluetooth communications.
+·         Windows — Microsoft has issued an out-of-band patch update for Windows 10, while other versions of Windows will be patched on the traditional Patch Tuesday on January 9, 2018
 
+·         MacOS — Apple had already fixed most of these security holes in macOS High Sierra 10.13.2 last month, but MacOS 10.13.3 will enhance or complete these mitigations.
 
+·         Linux — Linux kernel developers have also released patches by implementing kernel page-table isolation (KPTI) to move the kernel into an entirely separate address space.
 
-All Linux devices from version 3.3-rc1 (released in October 2011) are affected by the remote code execution vulnerability (CVE-2017-1000251).
+·         Android — Google has released security patches for Pixel/Nexus users as part of the Android January security patch update.  Other users have to wait for their device manufacturers to release a compatible security update.
 
-This vulnerability was found in the Bluetooth stack of the Linux Kernel, which is the very core of the operating system. An internal flaw in the L2CAP (Logical Link Control and Adaptation Protocol) that is used to connect between two devices causes a memory corruption. An attacker can use this memory corruption to gain full control of the device.
+·         Allow scripting languages to execute only from trusted sites.
 
+·         Anti Virus vendors like McAfee have some detection capabilities around these threats,  . McAfee Windows Security Suite or McAfee Endpoint Security (ENS) can provide warnings if you visit a known dangerous site.McAfee products can also provide an alternate script-execution engine that prevents known malicious scripts from executing.
 
+ 
 
-Fix:
+Reference:
 
-Microsoft issued has security patches to all supported Windows versions on July 11, 2017, with coordinated notification on Tuesday, September 12.
+https://thehackernews.com/2018/01/meltdown-spectre-vulnerability.html
 
-A kpatch for customers running Red Hat Enterprise Linux 7.2 or greater will be available. Please open a support case with Red-Hat to gain access to the kpatch. You can also use the below script to check if your Linux servers are vulnerable.
-
-https://access.redhat.com/sites/default/files/cve-2017-1000251-1.sh
+https://securingtomorrow.mcafee.com/mcafee-labs/decyphering-the-noise-around-meltdown-and-spectre/
 </html>
 
         </section>
@@ -259,7 +274,7 @@ var disqus_config = function () {
         <a class="read-next-story prev " style="background-image: url(/assets/images/rethinkdb/rethinkdb3.png)" href="/blue_borne">
             <section class="post">
                 <h2>Fancy Bear DDoS for Ransom</h2>
-                <p><html> Threat Summary: Decyphering the Noise Around ‘Meltdown’ and ‘Spectre’ The McAfee Advanced Threat Research...</p>
+                <p><html> Threat Summary : The IoT Attack Vector “BlueBorne” Exposes Almost Every Connected Device Armis...</p>
             </section>
         </a>
     

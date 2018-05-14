@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- [[! Page Meta ]] -->
-    <title>REST API Best Practices</title>
+    <title>lune de miel à andaman</title>
     <meta name="description" content="Curosity is the most powerful thing you own - A beautiful narrative written over an elegant publishing platform. The story begins here..." />
 
     <meta name="HandheldFriendly" content="True" />
@@ -72,7 +72,7 @@
         <!--li class="nav-fables " role="presentation"><a href="/tag/fables">Fables</a></li>
         <li class="nav-speeches " role="presentation"><a href="/tag/speeches">Speeches</a></li>
         <li class="nav-fiction " role="presentation"><a href="/tag/fiction">Fiction</a></li-->
-        <li class="nav-travel  nav-current" role="presentation"><a href="/tag/travel">Travel</a></li>
+        <li class="nav-travel " role="presentation"><a href="/tag/travel">Travel</a></li>
         <li class="nav-resume " role="presentation"><a href="/resume">resume</a></li>
 
 
@@ -98,7 +98,7 @@
 <!-- Everything inside the #post tags pulls data from the post -->
 <!-- #post -->
 
-<header class="main-header post-head " style="background-image: url(/assets/images/travel/travel_cover.jpg) ">
+<header class="main-header post-head " style="background-image: url(/assets/images/cover4.jpg) ">
     <nav class="main-nav  overlay  clearfix">
         
         
@@ -109,13 +109,13 @@
 
 <main class="content" role="main">
 
-    <article class="post tag-travel">
+    <article class="post tag-tutorials">
 
         <header class="post-header">
-            <h1 class="post-title">REST API Best Practices</h1>
+            <h1 class="post-title">lune de miel à andaman</h1>
             <section class="post-meta">
             <!-- <a href='/'>Deepak Gupta</a> -->
-            <time class="post-date" datetime="2017-12-14">14 Dec 2017</time>
+            <time class="post-date" datetime="2016-01-28">28 Jan 2016</time>
                 <!-- [[tags prefix=" on "]] -->
                  
                 on 
@@ -130,103 +130,7 @@
 
         <section class="post-content">
             
-            <html>
-REST API ARCHITECTURE – BEST PRACTICES
-
-SOA(Service Oriented Architecture) has become a foundation for the most of the application that are developed today. A service oriented architecture is an architectural pattern which enables collection of services to communicate with external/internal parties to pass data or for services coordinating. Let’s start from what’s a service.
-What’s a Service/API
-A service is a function that is well-defined, self-contained, and does not depend on the context or state of other services.
-In other words an interface used by software components to communicate with each other. Let understand the difference between API and Web Services. A Web Service is a type of API, almost always one that operates over HTTP. In the modern world there are two types of web services that are used.
-SOAP
-REST
-We can’t compare REST and SOAP since SOAP is a protocol and REST is an architectural pattern. People mostly get confused when selecting one for their application. If you are wondering what’s the difference between these two you can get a good start from here and here.
-Our today’s focus is on REST. How we can implement a perfect REST API? What are the best practices? Let’s get down to business.
-REST Best Practices 101
-1. Abstract vs Concrete
-When designing a REST API you should consider to make API concrete as possible. It will make the API less confusing to the consumers.
-Abstract vs Concrete 
-Abstract vs Concrete
-2. CRUD Operations
-There are four available methods when designing a REST API which are GET, POST, PUT and DELETE. Below is the proposed methodology to implement CRUD operations in a REST API. Note that this is suggested by me and you can alter this as per your requirement.
-Resource	POST	GET	PUT	DELETE
-/dog	Create a new dog	List dogs	Replace dogs with new dogs(Bulk update)	 Delete all dogs
-/dog/1234	Error	 Show dog	If exist update dog else ERROR	 Delete dog
- 
-I know there is a confusion resolve around PUT and DELETE. Read more here and here to clarify.
-3. Error Handling
-Error handling is one that get less attention but most important part of the any REST API. You must give hints as possible for the API consumers about the error and why it has occurred. Also make you that through the API you should provide granular level error messages. You can format it as follows.
-
-{
-   "status": 401,
-   "error_code": 2005,
-   "error_message": "Authentication token has expired",
-   "more_info": "http://dasunhegoda.com/api/doc/token_error"
-}
-1
-2
-3
-4
-5
-6
-{
-   "status": 401,
-   "error_code": 2005,
-   "error_message": "Authentication token has expired",
-   "more_info": "http://dasunhegoda.com/api/doc/token_error"
-}
-You can make use of HTTP status code for this purpose.
-4. API Versioning
-In any given API API version is mandatory to maintain consistency. It can be done in many way but below is the preferred methods by me.
-Method 1
-You can use the letter ‘v’ in the URL to denote the API version as below.
-
-http://dasunhegoda.com/api/v2/dog/1234
-1
-http://dasunhegoda.com/api/v2/dog/1234
-Method 2
-You can use the addional parameter at the end of the URL.
-
-http://dasunhegoda.com/api/dog/1234?v=2.0
-1
-http://dasunhegoda.com/api/dog/1234?v=2.0
-Different people have different opinion on API version. You can read more here.
-5. Filtering
-Don’t provide unnecessary data to the API consumers. It will clutter you REST API unnecessarily. Let the developer choose what he needs. For this we can use filtering methods in our APIs.
-
-/dogs/1234?value1,value2,value3,value4
-1
-/dogs/1234?value1,value2,value3,value4
-Also you can use pagination for this purpose as well where you don’t have to return all the results at once. Below query will be familiar to you since it operates same as MySQL works.
-
-/dogs?limit=25&offset=20
-
-You can read more <a href="http://stackoverflow.com/questions/5020704/how-to-design-restful-search-filtering" target="_blank">here</a>.
-1
-2
-3
-/dogs?limit=25&offset=20
- 
-You can read more <a href="http://stackoverflow.com/questions/5020704/how-to-design-restful-search-filtering" target="_blank">here</a>.
-6. Security
-Security is one of the major concerns when compared to SOAP because still there are no standards such as ws-security defined for REST.
-You can use HTTPS across your APIs.
-Don’t forget to include timestamp in each and every API request and response. Make sure to log them all. In case of a dispute you can refer them.
-Use a access_token to make sure that API is invoked by the trust parties. Beforehand you have to deliver the access_token whereas only API consumers have an access_token can invoke the API. Read more.
-7. Analytics
-Once you start logging each and every API request and response you can build a analytical platform on top of that. If the number of records are high you might have to consider technologies such as BigData. Having analytics in your REST API will give you a good insight of what’s happening your API.
-8. Documentation
-Proper Documentation is vital for the API. It doesn’t matter how great your API design is if the API consumers can’t used it properly. You can use tools such as apidocjs for this purpose. It’s really easy to get started.
-9. Stability and Consistency
-Depending on your requirement you should consider highly available architecture for you REST API. If you are wondering how to implement high availability in your REST API I have an article written on the subject. Please refer here.
-10. URL Structure
-You have to structure the URL in manner it’s intuitive. Select a domain which is easy for marking as well. eg :- api.yourdomain.com. When structuring your REST API you can use the following format.
-GET tasks/5/messages – Retrieves list of messages for task #5
-GET tasks/5/messages/10 – Retrieves the 10th messages for task #5
-POST tasks/5/messages – Create a new message for task #5
-DELETE tasks/5/messages/10 – Delete the 10th messages of task #5
-PUT tasks/5/messages/12 – Update the 12th messages of task #5
-If you have developed your REST API properly you should have above features in it. In other words above should be kept in mind when designing your REST API. So that’s it about REST API architecture. If you have any questions let me know in the comments below. Your feedback is highly appreciated(happy-face)
-</html>
+            
 
         </section>
 
@@ -257,15 +161,15 @@ If you have developed your REST API properly you should have above features in i
 
             <section class="share">
                 <h4>Share this post</h4>
-                <a class="icon-twitter" href="http://twitter.com/share?text=REST API Best Practices&amp;url=http://hellodk.in/travel_diaries"
+                <a class="icon-twitter" href="http://twitter.com/share?text=lune de miel à andaman&amp;url=http://hellodk.in/5_lune_de_miel_%C3%A0_andaman"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="hidden">Twitter</span>
                 </a>
-                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://hellodk.in/travel_diaries"
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://hellodk.in/5_lune_de_miel_%C3%A0_andaman"
                     onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                     <span class="hidden">Facebook</span>
                 </a>
-                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://hellodk.in/travel_diaries"
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://hellodk.in/5_lune_de_miel_%C3%A0_andaman"
                    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <span class="hidden">Google+</span>
                 </a>
@@ -305,20 +209,20 @@ var disqus_config = function () {
 
     <!-- [[! next_post ]] -->
     
-        <a class="read-next-story " style="background-image: url(/assets/images/rethinkdb/rethinkdb3.png)" href="/bad_rabbit_attack">
+        <a class="read-next-story " style="background-image: url(/assets/images/cassandra/astronaut_on_the_moon.jpg)" href="/getting_familiar_with_cassandra">
             <section class="post">
-                <h2>Bad Rabbit - New Ransomware Attack</h2>
-                <p><html> Threat Summary : Bad Rabbit: New Ransomware Attack Rapidly Spreading A new widespread ransomware...</p>
+                <h2>Getting started with Cassandra</h2>
+                <p><p>The Growth of Big Data - Big Data is one of the key forces driving...</p>
             </section>
         </a>
     
     <!-- [[! /next_post ]] -->
     <!-- [[! prev_post ]] -->
     
-        <a class="read-next-story prev " style="background-image: url(/assets/images/rethinkdb/rethinkdb3.png)" href="/python_regex_simplified">
+        <a class="read-next-story prev " style="background-image: url(/assets/images/cover4.jpg)" href="/5_interesting_cloud_predictions_2016">
             <section class="post">
-                <h2>Python regex Simplified</h2>
-                <p><h2><u>Introduction</u></h2> <h3>Python regex metacharacters</h3> . ^ $ * + ? { } [ ] \...</p>
+                <h2>5 interesting cloud predictions for 2016</h2>
+                <p><ol> <li>It&#39;s time for IOT-</li> </ol> <p>The IOT or the Internet of Things has been...</p>
             </section>
         </a>
     

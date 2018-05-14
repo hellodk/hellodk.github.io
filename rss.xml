@@ -8,7 +8,34 @@
     <title>Curosity is the most powerful thing you own</title>
     <link>http://hellodk.in/</link>
     <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
-    <pubDate>Fri, 15 Dec 2017 19:10:00 +0530</pubDate>
+    <pubDate>Tue, 10 Apr 2018 13:48:37 +0530</pubDate>
+    <item>
+      <title>Resume for Deepak</title>
+      <link>http://hellodk.in//resume</link>
+      <description>
+
+</description>
+      <pubDate>Tue, 10 Apr 2018 13:48:37 +0530</pubDate>
+      <dc:date>2018-04-10T13:48:37+05:30</dc:date>
+    </item>
+    <item>
+      <title>A Failed Trek to Everest Base Camp</title>
+      <link>http://hellodk.in//failed_trek_to_everest_base_camp</link>
+      <description>
+
+</description>
+      <pubDate>Fri, 02 Mar 2018 06:48:00 +0530</pubDate>
+      <dc:date>2018-03-02T06:48:00+05:30</dc:date>
+    </item>
+    <item>
+      <title>just landed in Malaysia - Truly Asia</title>
+      <link>http://hellodk.in//just_landed_in_malaysia</link>
+      <description>
+
+</description>
+      <pubDate>Sat, 24 Feb 2018 12:00:00 +0530</pubDate>
+      <dc:date>2018-02-24T12:00:00+05:30</dc:date>
+    </item>
     <item>
       <title>Fancy Bear DDoS for Ransom</title>
       <link>http://hellodk.in//fancy_bear_ddos</link>
@@ -92,7 +119,7 @@ http://fortiguard.com/psirt/FG-IR-16-095
       <title>Fancy Bear DDoS for Ransom</title>
       <link>http://hellodk.in//blue_borne</link>
       <description>&lt;html&gt;
-Threat Summary : The IoT Attack Vector “BlueBorne” Exposes Almost Every Connected Device
+Threat Summary: Decyphering the Noise Around ‘Meltdown’ and ‘Spectre’
 
 </description>
       <pubDate>Fri, 15 Dec 2017 19:10:00 +0530</pubDate>
@@ -102,14 +129,14 @@ Threat Summary : The IoT Attack Vector “BlueBorne” Exposes Almost Every Conn
       <title>Fancy Bear DDoS for Ransom</title>
       <link>http://hellodk.in//blue_borne</link>
       <description>&lt;html&gt;
-Threat Summary: Decyphering the Noise Around ‘Meltdown’ and ‘Spectre’
+Threat Summary : The IoT Attack Vector “BlueBorne” Exposes Almost Every Connected Device
 
 </description>
       <pubDate>Fri, 15 Dec 2017 19:10:00 +0530</pubDate>
       <dc:date>2017-12-15T19:10:00+05:30</dc:date>
     </item>
     <item>
-      <title>Bad_rabbit_attack</title>
+      <title>Bad Rabbit - New Ransomware Attack</title>
       <link>http://hellodk.in//bad_rabbit_attack</link>
       <description>&lt;html&gt;
 Threat Summary : Bad Rabbit: New Ransomware Attack Rapidly Spreading
@@ -140,8 +167,8 @@ https://thehackernews.com/2017/10/bad-rabbit-ransomware-attack.html
 &lt;/html&gt;
 
 </description>
-      <pubDate>Fri, 15 Dec 2017 00:00:00 +0530</pubDate>
-      <dc:date>2017-12-15T00:00:00+05:30</dc:date>
+      <pubDate>Fri, 15 Dec 2017 19:10:00 +0530</pubDate>
+      <dc:date>2017-12-15T19:10:00+05:30</dc:date>
     </item>
     <item>
       <title>REST API Best Practices</title>
@@ -352,6 +379,15 @@ Master-master replication (more generally -- multi-master replication) conceptua
       <dc:date>2016-01-28T15:48:00+05:30</dc:date>
     </item>
     <item>
+      <title>lune de miel à andaman</title>
+      <link>http://hellodk.in//5_lune_de_miel_%C3%A0_andaman</link>
+      <description>
+
+</description>
+      <pubDate>Thu, 28 Jan 2016 15:48:00 +0530</pubDate>
+      <dc:date>2016-01-28T15:48:00+05:30</dc:date>
+    </item>
+    <item>
       <title>5 interesting cloud predictions for 2016</title>
       <link>http://hellodk.in//5_interesting_cloud_predictions_2016</link>
       <description>1. It's time for IOT-
@@ -410,6 +446,6 @@ So why don't you try your hands on Ansible and experience it's awesomeness....al
       <pubDate>Wed, 28 Aug 1963 15:48:00 +0530</pubDate>
       <dc:date>1963-08-28T15:48:00+05:30</dc:date>
     </item>
-    <dc:date>2017-12-15T19:10:00+05:30</dc:date>
+    <dc:date>2018-04-10T13:48:37+05:30</dc:date>
   </channel>
 </rss>

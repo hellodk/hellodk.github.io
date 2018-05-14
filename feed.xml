@@ -5,9 +5,51 @@
     <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
     <link>http://hellodk.in///</link>
     <atom:link href="http://hellodk.in///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 17 Jan 2018 15:35:20 +0530</pubDate>
-    <lastBuildDate>Wed, 17 Jan 2018 15:35:20 +0530</lastBuildDate>
+    <pubDate>Tue, 10 Apr 2018 12:31:29 +0530</pubDate>
+    <lastBuildDate>Tue, 10 Apr 2018 12:31:29 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Resume for Deepak</title>
+        <description></description>
+        <pubDate>Tue, 10 Apr 2018 13:48:37 +0530</pubDate>
+        <link>http://hellodk.in///resume</link>
+        <guid isPermaLink="true">http://hellodk.in///resume</guid>
+        
+        <category>resume</category>
+        
+        
+        <category>dk</category>
+        
+      </item>
+    
+      <item>
+        <title>A Failed Trek to Everest Base Camp</title>
+        <description></description>
+        <pubDate>Fri, 02 Mar 2018 06:48:00 +0530</pubDate>
+        <link>http://hellodk.in///failed_trek_to_everest_base_camp</link>
+        <guid isPermaLink="true">http://hellodk.in///failed_trek_to_everest_base_camp</guid>
+        
+        <category>travel</category>
+        
+        
+        <category>dk</category>
+        
+      </item>
+    
+      <item>
+        <title>just landed in Malaysia - Truly Asia</title>
+        <description></description>
+        <pubDate>Sat, 24 Feb 2018 12:00:00 +0530</pubDate>
+        <link>http://hellodk.in///just_landed_in_malaysia</link>
+        <guid isPermaLink="true">http://hellodk.in///just_landed_in_malaysia</guid>
+        
+        <category>travel</category>
+        
+        
+        <category>dk</category>
+        
+      </item>
     
       <item>
         <title>Fancy Bear DDoS for Ransom</title>
@@ -213,7 +255,7 @@ https://securingtomorrow.mcafee.com/mcafee-labs/decyphering-the-noise-around-mel
       </item>
     
       <item>
-        <title>Bad_rabbit_attack</title>
+        <title>Bad Rabbit - New Ransomware Attack</title>
         <description>&lt;html&gt;
 Threat Summary : Bad Rabbit: New Ransomware Attack Rapidly Spreading
  
@@ -241,10 +283,14 @@ Most importantly, to always have a tight grip on your valuable data, keep a good
 Reference:
 https://thehackernews.com/2017/10/bad-rabbit-ransomware-attack.html
 &lt;/html&gt;</description>
-        <pubDate>Fri, 15 Dec 2017 00:00:00 +0530</pubDate>
+        <pubDate>Fri, 15 Dec 2017 19:10:00 +0530</pubDate>
         <link>http://hellodk.in///bad_rabbit_attack</link>
         <guid isPermaLink="true">http://hellodk.in///bad_rabbit_attack</guid>
         
+        <category>tutorials</category>
+        
+        
+        <category>dk</category>
         
       </item>
     
@@ -446,99 +492,6 @@ escaped by doubling them.
         <guid isPermaLink="true">http://hellodk.in///overexposed_photos</guid>
         
         <category>photography</category>
-        
-        
-        <category>dk</category>
-        
-      </item>
-    
-      <item>
-        <title>Mac Shortcuts</title>
-        <description>&lt;h3&gt;Keyboard Tips&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;The Delete key works like Backspace if you are from other platforms. To delete on the other direction, press Fn + Delete&lt;/li&gt;
-&lt;li&gt;The Backspace will feel slow by default. This can be changed in Keyboard Preferences by making &quot;Key Repeat&quot; fast &amp; &quot;Delay Until Repeat&quot; short. Ref: http://forums.macrumors.com/showthread.php?t=508385 &lt;/li&gt;
-&lt;li&gt;If you are missing Home &amp; End keys, it is Command+ Left Arrow &amp; Command + Right Arrow&lt;/li&gt;
-&lt;li&gt;If you are missing Page Up &amp; Down keys, it is Command+ Up Arrow &amp; Command + Down Arrow&lt;/li&gt;
- 
-&lt;h3&gt;Mouse/Trackpad Tips:&lt;/h3&gt;
-To Drag something, Select Text, you can press the mouse button and drag it. If you are familiar with Double Tap &amp; Drag like in Windows, Linux, You can have the same settings enabled in System Preferences &gt; Universal Access &gt; Mouse &amp; Trackpad &gt;Trackpad Options -&gt; Enable Dragging Without Lock. Ref: http://chris.dziemborowicz.com/blog/2012/07/04/enable-double-tap-to-drag-in-mac-os-x-lion/
- 
-Navigation:
-Command+Down To Open a Folder/File or to launch an application from keyboard
-Command + Up   To go one level up in finder
-Ctrl + Up             To Bring Mission Control
-Command + tilde  To Switch windows of same App
-Command + h       To hide the window
-/                          To enter/paste a path in Finder Window (Open, Save Dialog boxes)
- 
-Terminal:
-Ctrl+a  To go to the beginning of line, Ctrl+e to go the end of line. The Link has more shortcuts: http://apple.stackexchange.com/questions/12997/can-home-and-end-keys-be-mapped-when-using-terminal
-Tweaks:
-Show Full Path in the title bar:
-defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
-killall Finder
- Ref: http://osxdaily.com/2007/12/02/show-full-directory-path-in-finder-window-title-bars/
-Copy Path of selected Folder/File:
-Ref: http://osxdaily.com/2013/06/19/copy-file-folder-path-mac-os-x/</description>
-        <pubDate>Wed, 05 Jul 2017 15:48:00 +0530</pubDate>
-        <link>http://hellodk.in///mac_shortcuts</link>
-        <guid isPermaLink="true">http://hellodk.in///mac_shortcuts</guid>
-        
-        <category>tutorials</category>
-        
-        
-        <category>dk</category>
-        
-      </item>
-    
-      <item>
-        <title>Yum Commands - A quick jist</title>
-        <description>&lt;ol&gt;
-&lt;li&gt;&lt;h5&gt;To make a search of some package or term in the data base in some of the formed deposits yum in the system:&lt;/h5&gt;&lt;/li&gt;
-&lt;/br&gt;
-&lt;p&gt;Syntax: &lt;span style=&quot;font-family: courier new,courier;&quot;&gt;yum search any-package&lt;/span&gt;&lt;/p&gt;
-Example: &lt;code&gt;yum search httpd&lt;/code&gt;
-&lt;h5&gt;To consult the information contained in a package in individual:&lt;/h5&gt;
-&lt;/br&gt;yum info any-package
-&lt;/br&gt;Example: yum info httpd
-&lt;/br&gt;&lt;/br&gt;Uninstalling packages. Desinstalación of packages along with everything what it depends on these:
-&lt;/br&gt;yum remove any-package
-&lt;/br&gt;Example: yum remove gkrellm
-&lt;/br&gt;The following thing will list all the packages available in the data base yum and that can settle:
-&lt;/br&gt;available yum list|less
-&lt;/br&gt;The following thing will list all the packages installed in the system:
-&lt;/br&gt;yum list installed|less
-&lt;/br&gt;The following thing will list all the packages installed in the system and that can (they must) be updated:
-&lt;/br&gt;yum list updates|less
-&lt;/br&gt;Cleaning of the system.
-&lt;/br&gt;
-&lt;p&gt;&lt;span style=&quot;font-family: courier new,courier;&quot;&gt;Yum leaves as result of its use heads and packages RPM stored in the interior of the directory located in the route /var/cache/yum/. Particularly the packages RPM that have settled can occupy much space and is by such reason agrees to eliminate them once no longer they have utility. Also it agrees to do the same with the old heads of packages that no longer are in the data base. In order to make the &lt;/br&gt;corresponding cleaning, the following thing can be executed:&lt;/span&gt;&lt;/p&gt;s
-&lt;/br&gt;
-&lt;/br&gt;&lt;code&gt;yum clean all&lt;/code&gt;
-&lt;/br&gt;Group install:
-&lt;/br&gt;&lt;code&gt;yum groupinstall &quot;groupname&quot;&lt;/code&gt;
-&lt;/ol&gt;</description>
-        <pubDate>Sat, 10 Jun 2017 17:50:00 +0530</pubDate>
-        <link>http://hellodk.in///yum_commands_quick_reference</link>
-        <guid isPermaLink="true">http://hellodk.in///yum_commands_quick_reference</guid>
-        
-        <category>tutorials</category>
-        
-        
-        <category>dk</category>
-        
-      </item>
-    
-      <item>
-        <title>Configure multiple SSH identities for GitBash, Mac OSX, &amp; Linux</title>
-        <description>&lt;p&gt;
-&lt;/p&gt;</description>
-        <pubDate>Wed, 26 Apr 2017 18:48:00 +0530</pubDate>
-        <link>http://hellodk.in///configure_multiple_ssh_identities_for_gitbash_mac_linux</link>
-        <guid isPermaLink="true">http://hellodk.in///configure_multiple_ssh_identities_for_gitbash_mac_linux</guid>
-        
-        <category>tutorials</category>
         
         
         <category>dk</category>
