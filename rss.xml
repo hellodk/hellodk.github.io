@@ -15,6 +15,7 @@
       <description>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
+	&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/hr_tag.css&quot; /&gt;
 	&lt;title&gt;Curriculum Vitae&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
