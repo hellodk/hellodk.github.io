@@ -8,7 +8,30 @@
     <title>Curosity is the most powerful thing you own</title>
     <link>http://hellodk.in/</link>
     <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
-    <pubDate>Mon, 09 Apr 2018 00:00:00 +0530</pubDate>
+    <pubDate>Tue, 15 Jan 2019 00:00:00 +0530</pubDate>
+    <item>
+      <title>Resume</title>
+      <link>http://hellodk.in//resume</link>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Curriculum Vitae&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Deepak Gupta&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Email: hello.dk@outlook.com&lt;/li&gt;
+&lt;li&gt;About.me: &lt;a href=&quot;https://about.me/hellodk&quot;&gt;https://about.me/hellodk&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href=&quot;https://www.hellodk.in&quot;&gt;https://www.hellodk.in&lt;/a&gt;&lt;/li&gt;&lt;/li&gt;
+&lt;li&gt;Github: &lt;a href=&quot;https://github.com/hellodk&quot;&gt;https://github.com/hellodk&lt;/a&gt;&lt;/li&gt;&lt;/li&gt;
+&lt;li&gt;LinkedIn: &lt;a href=&quot;https://www.linkedin.com/in/hellodk&quot;&gt;https://www.linkedin.com/in/hellodk&lt;/a&gt;&lt;/li&gt;&lt;/li&gt;
+&lt;li&gt;Docker Hub: &lt;a href=&quot;https://hub.docker.com/r/hellodk&quot;&gt;https://hub.docker.com/r/hellodk&lt;/a&gt;&lt;/li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+      <pubDate>Tue, 15 Jan 2019 00:00:00 +0530</pubDate>
+      <dc:date>2019-01-15T00:00:00+05:30</dc:date>
+    </item>
     <item>
       <title>Resume</title>
       <link>http://hellodk.in//resume</link>
@@ -452,6 +475,6 @@ So why don't you try your hands on Ansible and experience it's awesomeness....al
       <pubDate>Wed, 28 Aug 1963 10:18:00 +0000</pubDate>
       <dc:date>1963-08-28T10:18:00+00:00</dc:date>
     </item>
-    <dc:date>2018-04-09T00:00:00+05:30</dc:date>
+    <dc:date>2019-01-15T00:00:00+05:30</dc:date>
   </channel>
 </rss>
