@@ -8,21 +8,21 @@
     <title>Curosity is the most powerful thing you own</title>
     <link>http://hellodk.in/</link>
     <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
-    <pubDate>Wed, 16 Jan 2019 13:48:37 +0530</pubDate>
+    <pubDate>Mon, 09 Apr 2018 00:00:00 +0530</pubDate>
     <item>
-      <title>curriculum vitae</title>
+      <title>Resume</title>
       <link>http://hellodk.in//resume</link>
-      <description>###### Deepak Gupta
-https://about.me/hellodk
+      <description>#### Deepak Gupta
 - Email: hello.dk@outlook.com
-- Blog: https://www.hellodk.in
-- Github: https://github.com/hellodk
-- LinkedIn: https://www.linkedin.com/in/hellodk
-- Docker Hub: https://hub.docker.com/r/hellodk
+- About.me: [&lt;span style=&quot;color:blue&quot;&gt;https://about.me/hellodk&lt;/span&gt;] ()
+- Blog: [&lt;span style=&quot;color:blue&quot;&gt;https://www.hellodk.in&lt;/span&gt;] ()
+- Github: [&lt;span style=&quot;color:blue&quot;&gt;https://github.com/hellodk&lt;/span&gt;] ()
+- LinkedIn: [&lt;span style=&quot;color:blue&quot;&gt;https://www.linkedin.com/in/hellodk&lt;/span&gt;] ()
+- Docker Hub: [&lt;span style=&quot;color:blue&quot;&gt;https://hub.docker.com/r/hellodk&lt;/span&gt;] ()
 
 </description>
-      <pubDate>Wed, 16 Jan 2019 13:48:37 +0530</pubDate>
-      <dc:date>2019-01-16T13:48:37+05:30</dc:date>
+      <pubDate>Mon, 09 Apr 2018 00:00:00 +0530</pubDate>
+      <dc:date>2018-04-09T00:00:00+05:30</dc:date>
     </item>
     <item>
       <title>A Failed Trek to Everest Base Camp</title>
@@ -452,6 +452,6 @@ So why don't you try your hands on Ansible and experience it's awesomeness....al
       <pubDate>Wed, 28 Aug 1963 10:18:00 +0000</pubDate>
       <dc:date>1963-08-28T10:18:00+00:00</dc:date>
     </item>
-    <dc:date>2019-01-16T13:48:37+05:30</dc:date>
+    <dc:date>2018-04-09T00:00:00+05:30</dc:date>
   </channel>
 </rss>
