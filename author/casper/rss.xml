@@ -15,7 +15,7 @@
 	  <title>About</title>
 	  <link>//about</link>
 	  <author>Deepak Gupta</author>
-	  <pubDate>2015-12-28T15:48:00+05:30</pubDate>
+	  <pubDate>2015-12-28T10:18:00+00:00</pubDate>
 	  <guid>//about</guid>
 	  <description><![CDATA[
 	     <p>Too often we under-estimate the power of a touch, a smile, a kind word, a listening ear, an honest compliment, or the smallest act of caring, all of which have the potential to turn a life around. 
@@ -28,7 +28,7 @@ The idea behind writing this blog/website is to conect to people and share my ex
 	  <title>Creating a Highly Available Distributed Messaging System</title>
 	  <link>//Creating-a-Highly-Available-Distributed-Messaging-Queue-Cluster-with-RabbitMQ-3.5.6</link>
 	  <author>Deepak Gupta</author>
-	  <pubDate>2015-12-19T15:48:00+05:30</pubDate>
+	  <pubDate>2015-12-19T10:18:00+00:00</pubDate>
 	  <guid>//Creating-a-Highly-Available-Distributed-Messaging-Queue-Cluster-with-RabbitMQ-3.5.6</guid>
 	  <description><![CDATA[
 	     <p>Creating a Highly Available Distributed Messaging Queue Cluster with RabbitMQ-3.5.6
@@ -133,7 +133,7 @@ sudo rabbitmqctl set</em>permissions -p / <user id> &quot;.<em>&quot; &quot;.</e
 	  <title>Camera Basics</title>
 	  <link>//camera-basics</link>
 	  <author>Deepak Gupta</author>
-	  <pubDate>1963-08-28T15:48:00+05:30</pubDate>
+	  <pubDate>1963-08-28T10:18:00+00:00</pubDate>
 	  <guid>//camera-basics</guid>
 	  <description><![CDATA[
 	     <p>A basic tutorial on handling a DSLR for beginners.</p>

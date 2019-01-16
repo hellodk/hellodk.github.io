@@ -8,15 +8,21 @@
     <title>Curosity is the most powerful thing you own</title>
     <link>http://hellodk.in/</link>
     <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
-    <pubDate>Tue, 10 Apr 2018 13:48:37 +0530</pubDate>
+    <pubDate>Wed, 16 Jan 2019 13:48:37 +0530</pubDate>
     <item>
-      <title>Resume for Deepak</title>
+      <title>curriculum vitae</title>
       <link>http://hellodk.in//resume</link>
-      <description>
+      <description>###### Deepak Gupta
+https://about.me/hellodk
+- Email: hello.dk@outlook.com
+- Blog: https://www.hellodk.in
+- Github: https://github.com/hellodk
+- LinkedIn: https://www.linkedin.com/in/hellodk
+- Docker Hub: https://hub.docker.com/r/hellodk
 
 </description>
-      <pubDate>Tue, 10 Apr 2018 13:48:37 +0530</pubDate>
-      <dc:date>2018-04-10T13:48:37+05:30</dc:date>
+      <pubDate>Wed, 16 Jan 2019 13:48:37 +0530</pubDate>
+      <dc:date>2019-01-16T13:48:37+05:30</dc:date>
     </item>
     <item>
       <title>A Failed Trek to Everest Base Camp</title>
@@ -24,8 +30,8 @@
       <description>
 
 </description>
-      <pubDate>Fri, 02 Mar 2018 06:48:00 +0530</pubDate>
-      <dc:date>2018-03-02T06:48:00+05:30</dc:date>
+      <pubDate>Fri, 02 Mar 2018 01:18:00 +0000</pubDate>
+      <dc:date>2018-03-02T01:18:00+00:00</dc:date>
     </item>
     <item>
       <title>just landed in Malaysia - Truly Asia</title>
@@ -33,8 +39,8 @@
       <description>
 
 </description>
-      <pubDate>Sat, 24 Feb 2018 12:00:00 +0530</pubDate>
-      <dc:date>2018-02-24T12:00:00+05:30</dc:date>
+      <pubDate>Sat, 24 Feb 2018 06:30:00 +0000</pubDate>
+      <dc:date>2018-02-24T06:30:00+00:00</dc:date>
     </item>
     <item>
       <title>Fancy Bear DDoS for Ransom</title>
@@ -112,18 +118,8 @@ http://fortiguard.com/psirt/FG-IR-16-095
 &lt;/html&gt;
 
 </description>
-      <pubDate>Fri, 15 Dec 2017 19:10:00 +0530</pubDate>
-      <dc:date>2017-12-15T19:10:00+05:30</dc:date>
-    </item>
-    <item>
-      <title>Fancy Bear DDoS for Ransom</title>
-      <link>http://hellodk.in//blue_borne</link>
-      <description>&lt;html&gt;
-Threat Summary: Decyphering the Noise Around ‘Meltdown’ and ‘Spectre’
-
-</description>
-      <pubDate>Fri, 15 Dec 2017 19:10:00 +0530</pubDate>
-      <dc:date>2017-12-15T19:10:00+05:30</dc:date>
+      <pubDate>Fri, 15 Dec 2017 13:40:00 +0000</pubDate>
+      <dc:date>2017-12-15T13:40:00+00:00</dc:date>
     </item>
     <item>
       <title>Fancy Bear DDoS for Ransom</title>
@@ -132,8 +128,18 @@ Threat Summary: Decyphering the Noise Around ‘Meltdown’ and ‘Spectre’
 Threat Summary : The IoT Attack Vector “BlueBorne” Exposes Almost Every Connected Device
 
 </description>
-      <pubDate>Fri, 15 Dec 2017 19:10:00 +0530</pubDate>
-      <dc:date>2017-12-15T19:10:00+05:30</dc:date>
+      <pubDate>Fri, 15 Dec 2017 13:40:00 +0000</pubDate>
+      <dc:date>2017-12-15T13:40:00+00:00</dc:date>
+    </item>
+    <item>
+      <title>Fancy Bear DDoS for Ransom</title>
+      <link>http://hellodk.in//blue_borne</link>
+      <description>&lt;html&gt;
+Threat Summary: Decyphering the Noise Around ‘Meltdown’ and ‘Spectre’
+
+</description>
+      <pubDate>Fri, 15 Dec 2017 13:40:00 +0000</pubDate>
+      <dc:date>2017-12-15T13:40:00+00:00</dc:date>
     </item>
     <item>
       <title>Bad Rabbit - New Ransomware Attack</title>
@@ -167,8 +173,8 @@ https://thehackernews.com/2017/10/bad-rabbit-ransomware-attack.html
 &lt;/html&gt;
 
 </description>
-      <pubDate>Fri, 15 Dec 2017 19:10:00 +0530</pubDate>
-      <dc:date>2017-12-15T19:10:00+05:30</dc:date>
+      <pubDate>Fri, 15 Dec 2017 13:40:00 +0000</pubDate>
+      <dc:date>2017-12-15T13:40:00+00:00</dc:date>
     </item>
     <item>
       <title>REST API Best Practices</title>
@@ -177,8 +183,8 @@ https://thehackernews.com/2017/10/bad-rabbit-ransomware-attack.html
 REST API ARCHITECTURE – BEST PRACTICES
 
 </description>
-      <pubDate>Thu, 14 Dec 2017 09:48:00 +0530</pubDate>
-      <dc:date>2017-12-14T09:48:00+05:30</dc:date>
+      <pubDate>Thu, 14 Dec 2017 04:18:00 +0000</pubDate>
+      <dc:date>2017-12-14T04:18:00+00:00</dc:date>
     </item>
     <item>
       <title>Python regex Simplified</title>
@@ -186,8 +192,8 @@ REST API ARCHITECTURE – BEST PRACTICES
       <description>&lt;h2&gt;&lt;u&gt;Introduction&lt;/u&gt;&lt;/h2&gt;
 
 </description>
-      <pubDate>Thu, 13 Jul 2017 09:00:00 +0530</pubDate>
-      <dc:date>2017-07-13T09:00:00+05:30</dc:date>
+      <pubDate>Thu, 13 Jul 2017 03:30:00 +0000</pubDate>
+      <dc:date>2017-07-13T03:30:00+00:00</dc:date>
     </item>
     <item>
       <title>Over Exposed Photos</title>
@@ -195,8 +201,8 @@ REST API ARCHITECTURE – BEST PRACTICES
       <description>&lt;h2&gt;&lt;u&gt;Introduction&lt;/u&gt;&lt;/h2&gt;
 
 </description>
-      <pubDate>Wed, 12 Jul 2017 18:00:00 +0530</pubDate>
-      <dc:date>2017-07-12T18:00:00+05:30</dc:date>
+      <pubDate>Wed, 12 Jul 2017 12:30:00 +0000</pubDate>
+      <dc:date>2017-07-12T12:30:00+00:00</dc:date>
     </item>
     <item>
       <title>Mac Shortcuts</title>
@@ -230,8 +236,8 @@ Copy Path of selected Folder/File:
 Ref: http://osxdaily.com/2013/06/19/copy-file-folder-path-mac-os-x/
 
 </description>
-      <pubDate>Wed, 05 Jul 2017 15:48:00 +0530</pubDate>
-      <dc:date>2017-07-05T15:48:00+05:30</dc:date>
+      <pubDate>Wed, 05 Jul 2017 10:18:00 +0000</pubDate>
+      <dc:date>2017-07-05T10:18:00+00:00</dc:date>
     </item>
     <item>
       <title>Yum Commands - A quick jist</title>
@@ -263,8 +269,8 @@ Example: &lt;code&gt;yum search httpd&lt;/code&gt;
 &lt;/ol&gt;
 
 </description>
-      <pubDate>Sat, 10 Jun 2017 17:50:00 +0530</pubDate>
-      <dc:date>2017-06-10T17:50:00+05:30</dc:date>
+      <pubDate>Sat, 10 Jun 2017 12:20:00 +0000</pubDate>
+      <dc:date>2017-06-10T12:20:00+00:00</dc:date>
     </item>
     <item>
       <title>Configure multiple SSH identities for GitBash, Mac OSX, &amp; Linux</title>
@@ -273,8 +279,8 @@ Example: &lt;code&gt;yum search httpd&lt;/code&gt;
 &lt;/p&gt;
 
 </description>
-      <pubDate>Wed, 26 Apr 2017 18:48:00 +0530</pubDate>
-      <dc:date>2017-04-26T18:48:00+05:30</dc:date>
+      <pubDate>Wed, 26 Apr 2017 13:18:00 +0000</pubDate>
+      <dc:date>2017-04-26T13:18:00+00:00</dc:date>
     </item>
     <item>
       <title>RabbitMQ - Detecting Dead TCP Connections with Heartbeats</title>
@@ -284,8 +290,8 @@ In some types of network failure, packet loss can mean that disrupted TCP connec
 &lt;/p&gt;
 
 </description>
-      <pubDate>Mon, 24 Apr 2017 17:48:00 +0530</pubDate>
-      <dc:date>2017-04-24T17:48:00+05:30</dc:date>
+      <pubDate>Mon, 24 Apr 2017 12:18:00 +0000</pubDate>
+      <dc:date>2017-04-24T12:18:00+00:00</dc:date>
     </item>
     <item>
       <title>HTTP Quick Reference - A Quick reminder about HTTP</title>
@@ -300,8 +306,8 @@ connection, the server responds and the connection is closed. A new request
 will involve a new connection :&lt;/p&gt;
 
 </description>
-      <pubDate>Thu, 20 Apr 2017 18:00:00 +0530</pubDate>
-      <dc:date>2017-04-20T18:00:00+05:30</dc:date>
+      <pubDate>Thu, 20 Apr 2017 12:30:00 +0000</pubDate>
+      <dc:date>2017-04-20T12:30:00+00:00</dc:date>
     </item>
     <item>
       <title>HA Proxy for Beginners</title>
@@ -309,8 +315,8 @@ will involve a new connection :&lt;/p&gt;
       <description>&lt;h2&gt;&lt;u&gt;Introduction&lt;/u&gt;&lt;/h2&gt;
 
 </description>
-      <pubDate>Thu, 20 Apr 2017 18:00:00 +0530</pubDate>
-      <dc:date>2017-04-20T18:00:00+05:30</dc:date>
+      <pubDate>Thu, 20 Apr 2017 12:30:00 +0000</pubDate>
+      <dc:date>2017-04-20T12:30:00+00:00</dc:date>
     </item>
     <item>
       <title>RethinkDb Installation on Ubuntu-14.04</title>
@@ -319,8 +325,8 @@ will involve a new connection :&lt;/p&gt;
 Differences between the A, CNAME, ALIAS and URL records
 
 </description>
-      <pubDate>Wed, 21 Sep 2016 15:48:00 +0530</pubDate>
-      <dc:date>2016-09-21T15:48:00+05:30</dc:date>
+      <pubDate>Wed, 21 Sep 2016 10:18:00 +0000</pubDate>
+      <dc:date>2016-09-21T10:18:00+00:00</dc:date>
     </item>
     <item>
       <title>RethinkDb Installation on Ubuntu-14.04</title>
@@ -333,8 +339,8 @@ Rethinkdb is an open-source, scalable JSON database built from the ground up for
 &lt;/br&gt;RethinkDB inverts the traditional database architecture by exposing an exciting new access model – instead of polling for changes, the developer can tell RethinkDB to continuously push updated query results to applications in realtime. RethinkDB’s realtime push architecture dramatically reduces the time and effort necessary to build scalable realtime apps. RethinkDB also offers a flexible query language, intuitive operations and monitoring APIs, and is easy to setup and learn. Just like any other database solution, rethinkdb ships as a client-server component model. The installation process for both the server and the client are illustrated below:
 
 </description>
-      <pubDate>Wed, 21 Sep 2016 15:48:00 +0530</pubDate>
-      <dc:date>2016-09-21T15:48:00+05:30</dc:date>
+      <pubDate>Wed, 21 Sep 2016 10:18:00 +0000</pubDate>
+      <dc:date>2016-09-21T10:18:00+00:00</dc:date>
     </item>
     <item>
       <title>MySQL multi master replication fundas</title>
@@ -344,8 +350,8 @@ Rethinkdb is an open-source, scalable JSON database built from the ground up for
 Master-master replication (more generally -- multi-master replication) conceptually works by assuming that conflicts are not common and only keeping the entire system loosely consistent, asynchonously communication updates between masters, which ends up violating basic ACID properties.
 
 </description>
-      <pubDate>Wed, 21 Sep 2016 15:48:00 +0530</pubDate>
-      <dc:date>2016-09-21T15:48:00+05:30</dc:date>
+      <pubDate>Wed, 21 Sep 2016 10:18:00 +0000</pubDate>
+      <dc:date>2016-09-21T10:18:00+00:00</dc:date>
     </item>
     <item>
       <title>The UNIX Time-Sharing System</title>
@@ -375,8 +381,8 @@ Master-master replication (more generally -- multi-master replication) conceptua
 &lt;/p&gt;
 
 </description>
-      <pubDate>Thu, 28 Jan 2016 15:48:00 +0530</pubDate>
-      <dc:date>2016-01-28T15:48:00+05:30</dc:date>
+      <pubDate>Thu, 28 Jan 2016 10:18:00 +0000</pubDate>
+      <dc:date>2016-01-28T10:18:00+00:00</dc:date>
     </item>
     <item>
       <title>lune de miel à andaman</title>
@@ -384,8 +390,8 @@ Master-master replication (more generally -- multi-master replication) conceptua
       <description>
 
 </description>
-      <pubDate>Thu, 28 Jan 2016 15:48:00 +0530</pubDate>
-      <dc:date>2016-01-28T15:48:00+05:30</dc:date>
+      <pubDate>Thu, 28 Jan 2016 10:18:00 +0000</pubDate>
+      <dc:date>2016-01-28T10:18:00+00:00</dc:date>
     </item>
     <item>
       <title>5 interesting cloud predictions for 2016</title>
@@ -393,8 +399,8 @@ Master-master replication (more generally -- multi-master replication) conceptua
       <description>1. It's time for IOT-
 
 </description>
-      <pubDate>Thu, 28 Jan 2016 15:48:00 +0530</pubDate>
-      <dc:date>2016-01-28T15:48:00+05:30</dc:date>
+      <pubDate>Thu, 28 Jan 2016 10:18:00 +0000</pubDate>
+      <dc:date>2016-01-28T10:18:00+00:00</dc:date>
     </item>
     <item>
       <title>About</title>
@@ -403,8 +409,8 @@ Master-master replication (more generally -- multi-master replication) conceptua
 The idea behind writing this blog/website is to conect to people and share my experiences with them.
 
 </description>
-      <pubDate>Mon, 28 Dec 2015 15:48:00 +0530</pubDate>
-      <dc:date>2015-12-28T15:48:00+05:30</dc:date>
+      <pubDate>Mon, 28 Dec 2015 10:18:00 +0000</pubDate>
+      <dc:date>2015-12-28T10:18:00+00:00</dc:date>
     </item>
     <item>
       <title>Creating a Highly Available Distributed Messaging System</title>
@@ -413,8 +419,8 @@ The idea behind writing this blog/website is to conect to people and share my ex
 What is rabbitmq?
 
 </description>
-      <pubDate>Sat, 19 Dec 2015 15:48:00 +0530</pubDate>
-      <dc:date>2015-12-19T15:48:00+05:30</dc:date>
+      <pubDate>Sat, 19 Dec 2015 10:18:00 +0000</pubDate>
+      <dc:date>2015-12-19T10:18:00+00:00</dc:date>
     </item>
     <item>
       <title>Understanding Git-Flow</title>
@@ -434,8 +440,8 @@ So how does it does that? The answer lies with ssh keys based agent forwarding. 
 So why don't you try your hands on Ansible and experience it's awesomeness....all you need to do is to install it on your host system.
 
 </description>
-      <pubDate>Mon, 06 Apr 2015 15:48:00 +0530</pubDate>
-      <dc:date>2015-04-06T15:48:00+05:30</dc:date>
+      <pubDate>Mon, 06 Apr 2015 10:18:00 +0000</pubDate>
+      <dc:date>2015-04-06T10:18:00+00:00</dc:date>
     </item>
     <item>
       <title>Camera Basics</title>
@@ -443,9 +449,9 @@ So why don't you try your hands on Ansible and experience it's awesomeness....al
       <description>A basic tutorial on handling a DSLR for beginners.
 
 </description>
-      <pubDate>Wed, 28 Aug 1963 15:48:00 +0530</pubDate>
-      <dc:date>1963-08-28T15:48:00+05:30</dc:date>
+      <pubDate>Wed, 28 Aug 1963 10:18:00 +0000</pubDate>
+      <dc:date>1963-08-28T10:18:00+00:00</dc:date>
     </item>
-    <dc:date>2018-04-10T13:48:37+05:30</dc:date>
+    <dc:date>2019-01-16T13:48:37+05:30</dc:date>
   </channel>
 </rss>
