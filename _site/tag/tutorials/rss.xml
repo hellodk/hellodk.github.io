@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>http://hellodk.in/</title>
+   
+   <link>http://hellodk.in/</link>
+   <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
+   <language>en-uk</language>
+   <managingEditor> Deepak Gupta</managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>Fancy Bear DDoS for Ransom</title>
+	  <link>//fancy_bear_ddos</link>
+	  <author>Deepak Gupta</author>
+	  <pubDate>2017-12-15T13:40:00+00:00</pubDate>
+	  <guid>//fancy_bear_ddos</guid>
+	  <description><![CDATA[
+	     <html>
+Threat Summary : ERT Threat Alert - Fancy Bear DDoS for Ransom
+ 
+Radware’s Emergency Response Team (ERT) has identified an emerging
+ransom denial-of-service (RDoS) campaign from a group identifying itself as Fancy Bear. The group has been distributing extortion emails to payment processing vendors in multiple locations across the globe.
+In RDoS attacks, the perpetrators send a letter threatening to attack an organization—rendering its business, operations or capability unavailable—unless a ransom is paid by the deadline. This extortion method has grown in popularity every year since 2010 and typically come in the form of a volumetric distributed denial-of-service (DDoS) attack. However, it is increasingly in vogue to find techniques that are more piercing and more efficient without generating large volumes. The most advanced attacks combine both volumetric and non-volumetric cyber-attack techniques.
+At the end of April, a group claiming to be Fancy Bear began sending out extortion attempts. The extortionist behind this campaign attempted to intimidate their victims by using the name of APT28 (Fancy Bear) and an infamous cyber-espionage group. APT28 is believed to be a nation state-level attacker that uses zero-day exploits and spear phishing attacks to spread malware.
+ 
+Who are affected?
+The group claiming to be Fancy Bear is targeting a limited number of financial services organizations – payment processers under the threat of an attack from the Mirai Botnet. Each letter contains a unique bitcoin address. In the note, Fancy Bear listed the IP address of the victim and targeted them with a sample attack.
+ 
+Threat Summary : World's Biggest Botnet Just Sent 12.5 Million Emails With Scarab Ransomware
+ 
+A massive malicious email campaign that stems from the world's largest spam botnet Necurs is spreading a new strain of ransomware at the rate of over 2 million emails per hour and hitting computers across the globe.
+The popular malspam botnet Necrus which has previously found distributing Dridex banking trojan, Trickbot banking trojan, Locky ransomware, and Jaff ransomware, has now started spreading a new version of Scarab ransomware.
+According to F-Secure, Necurs botnet is the most prominent deliverer of spam emails with five to six million infected hosts online monthly and is responsible for the biggest single malware spam campaigns.
+Scarab ransomware is a relatively new ransomware family that was initially spotted by ID Ransomware creator Michael Gillespie in June this year.
+ 
+According to the security firm Forcepoint, the massive email campaign spreading Scarab ransomware virus started at approximately 07:30 UTC on 23 November (Thursday) and sent about 12.5 million emails in just six hours.
+The Forcepoint researchers said "the majority of the traffic is being sent to the .com top-level domain (TLD). However, this was followed by region-specific TLDs for the United Kingdom, Australia, France, and Germany."
+The spam email contains a malicious VBScript downloader compressed with 7zip that pulls down the final payload, with one of these subject lines:
+Scanned from Lexmark
+Scanned from Epson
+Scanned from HP
+Scanned from Canon
+As with previous Necurs botnet campaigns, the VBScript contained a number of references to the widely watched series Game of Thrones, like the strings 'Samwell' and 'JohnSnow.'
+The final payload is the latest version of Scarab ransomware with no change in filenames, but it appends a new file extension with ".[suupport@protonmail.com].scarab" to the encrypted files.
+Once done with the encryption, the ransomware then drops a ransom note with the filename "IF YOU WANT TO GET ALL YOUR FILES BACK, PLEASE READ THIS.TXT" within each affected directory.
+The ransom note does not specify the amount being demanded by the criminals; instead, it merely states that "the price depends on how fast you [the victim] write to us."
+However, Scarab ransomware offers to decrypt three files for free to prove the decryption will work: "Before paying you can send us up to 3 files for free decryption."
+ 
+How to Protect Yourself:
+Keep a good backup routine in place that makes their copies to an external storage device that is not always connected to your PC in order to always have a tight grip on all your important files and documents.
+Always be suspicious of any uninvited document sent over an email and should never click on links provided in those documents unless verifying the source.
+ 
+ 
+Threat Summary : FortiOS web GUI login disclaimer redir parameter XSS vulnerability
+ 
+A reflected XSS vulnerability exists in FortiOS web GUI "Login Disclaimer" redir parameter. It is potentially exploitable by a remote unauthenticated attacker, via sending a maliciously crafted URL to a victim who has an open session on the web GUI. Visiting that malicious URL may cause the execution of arbitrary javascript code in the security context of the victim's browser.
+ 
+Impact:
+Cross-site scripting (XSS)
+ 
+Who are affected?
+Firmware Version 5.6: FortiOS 5.6.0
+Firmware Version 5.4: FortiOS 5.4.0 to 5.4.5
+Other Firmware Version are not affected
+ 
+How to Protect Yourself:
+Firmware Version 5.6: Upgrade to FortiOS 5.6.1 or above
+Firmware Version 5.4: Upgrade to FortiOS 5.4.6 or above.
+ 
+Reference:
+http://fortiguard.com/psirt/FG-IR-17-113
+ 
+Threat Summary : FortiClient privilege escalation vulnerability
+ 
+A low privileged user may be able to execute arbitrary code by exploiting a FortiClient Named Pipe vulnerability.
+ 
+Impact:
+Privilege escalation
+ 
+Who are affected?
+FortiClient Windows 5.4.1, 5.4.2.
+ 
+How to Protect Yourself:
+Upgrade to FortiClient Windows: 5.4.3 or 5.6.0
+ 
+Reference:
+http://fortiguard.com/psirt/FG-IR-16-095
+</html>
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>Fancy Bear DDoS for Ransom</title>
+	  <link>//blue_borne</link>
+	  <author>Deepak Gupta</author>
+	  <pubDate>2017-12-15T13:40:00+00:00</pubDate>
+	  <guid>//blue_borne</guid>
+	  <description><![CDATA[
+	     <html>
+Threat Summary : The IoT Attack Vector “BlueBorne” Exposes Almost Every Connected Device
+
+
+Armis Labs revealed a new attack vector endangering major desktop, and IoT operating systems, including Windows, and Linux, and the devices using them. The new vector is dubbed “BlueBorne”, as it spread through the air (airborne) and attacks devices via Bluetooth. BlueBorne allows attackers to take control of devices, access corporate data and networks, penetrate secure “air-gapped” networks, and spread malware laterally to adjacent devices. BlueBorne is an attack vector by which hackers can leverage Bluetooth connections to penetrate and take complete control over targeted devices. The attack does not require the targeted device to be paired to the attacker’s device, or even to be set on discoverable mode. The BlueBorne attack vector can be used to conduct a large range of offenses, including remote code execution as well as Man-in-The-Middle attacks.
+
+
+
+Impact:
+
+The BlueBorne attack vector requires no user interaction, is compatible to all software versions, and does not require any preconditions or configurations aside of the Bluetooth being active. Unlike the common misconception, Bluetooth enabled devices are constantly searching for incoming connections from any devices, and not only those they have been paired with. This means a Bluetooth connection can be established without pairing the devices at all. This makes BlueBorne one of the most broad potential attacks found in recent years, and allows an attacker to strike completely undetected.
+
+
+
+Who are affected?
+
+Windows - All Windows computers since Windows Vista are affected by the “Bluetooth Pineapple” vulnerability which allows an attacker to perform a Man-in-The-Middle attack (CVE-2017-8628). This vulnerability resides in the Bluetooth stack, and enables the attacker to create a malicious  network interface on the victim’s device, re-configure IP routing and force the device to transmit all communication through it. This attack does not require any user interaction, authentication or pairing, making it also practically invisible.
+
+
+
+Linux -  Linux is the underlying operating system for a wide range of devices. The most commercial, and consumer-oriented platform based on Linux is the Tizen OS. All Linux devices running BlueZ are affected by the information leak vulnerability (CVE-2017-1000250).
+
+This vulnerability resides in the SDP server responsible for identifying other services using Bluetooth around the device. The flaw allows the attacker to send a set of crafted requests to the server, causing it to disclose memory bits in response. This can be used by an attacker to expose sensitive data from the Bluetooth process that may also contain encryption keys of Bluetooth communications.
+
+
+
+All Linux devices from version 3.3-rc1 (released in October 2011) are affected by the remote code execution vulnerability (CVE-2017-1000251).
+
+This vulnerability was found in the Bluetooth stack of the Linux Kernel, which is the very core of the operating system. An internal flaw in the L2CAP (Logical Link Control and Adaptation Protocol) that is used to connect between two devices causes a memory corruption. An attacker can use this memory corruption to gain full control of the device.
+
+
+
+Fix:
+
+Microsoft issued has security patches to all supported Windows versions on July 11, 2017, with coordinated notification on Tuesday, September 12.
+
+A kpatch for customers running Red Hat Enterprise Linux 7.2 or greater will be available. Please open a support case with Red-Hat to gain access to the kpatch. You can also use the below script to check if your Linux servers are vulnerable.
+
+https://access.redhat.com/sites/default/files/cve-2017-1000251-1.sh
+</html>
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>Fancy Bear DDoS for Ransom</title>
+	  <link>//blue_borne</link>
+	  <author>Deepak Gupta</author>
+	  <pubDate>2017-12-15T13:40:00+00:00</pubDate>
+	  <guid>//blue_borne</guid>
+	  <description><![CDATA[
+	     <html>
+Threat Summary: Decyphering the Noise Around ‘Meltdown’ and ‘Spectre’
+
+ 
+
+The McAfee Advanced Threat Research (ATR) Team has closely followed the attack techniques that have been named Meltdown and Spectre throughout the lead-up to their announcement on January 3.
+
+ 
+
+The vulnerabilities been categorized into two attacks, Meltdown (CVE-2017-5754) and Spectre (CVE-2017-5753 and CVE-2017-5715), which could allow attackers to steal sensitive data which is currently processed on the computer.
+
+Both attacks take advantage of a feature in chips known as "speculative execution," a technique used by most modern CPUs to optimize performance.
+
+"In order to improve performance, many CPUs may choose to speculatively execute instructions based on assumptions that are considered likely to be true. During speculative execution, the processor is verifying these assumptions; if they are valid, then the execution continues. If they are invalid, then the execution is unwound. Therefore, it is possible for such speculative execution to have "side effects which are not restored when the CPU state is unwound and can lead to information disclosure," which can be accessed using side-channel attacks.
+
+Meltdown Attack: Meltdown attack allows attackers to read not only kernel memory but also the entire physical memory of the target machines, and therefore all secrets of other programs and the operating system. Meltdown uses speculative execution to break the isolation between user applications and the operating system, allowing any application to access all system memory, including memory allocated for the kernel.
+
+Spectre Attack: Spectre attack breaks the isolation between different applications, allowing the attacker-controlled program to trick error-free programs into leaking their secrets by forcing them into accessing arbitrary portions of its memory, which can then be read through a side channel.
+
+Spectre attacks can be used to leak information from the kernel to user programs, as well as from virtualization hypervisors to guest systems.
+
+ 
+
+Who are affected?
+
+This vulnerability impacts almost every system, including desktops, laptops, cloud servers, as well as smartphones—powered by Intel, AMD, and ARM chips.
+
+ 
+
+How to Protect Yourself:
+
+There is no single fix for both the attacks since each requires protection independently.
+
+·         Windows — Microsoft has issued an out-of-band patch update for Windows 10, while other versions of Windows will be patched on the traditional Patch Tuesday on January 9, 2018
+
+·         MacOS — Apple had already fixed most of these security holes in macOS High Sierra 10.13.2 last month, but MacOS 10.13.3 will enhance or complete these mitigations.
+
+·         Linux — Linux kernel developers have also released patches by implementing kernel page-table isolation (KPTI) to move the kernel into an entirely separate address space.
+
+·         Android — Google has released security patches for Pixel/Nexus users as part of the Android January security patch update.  Other users have to wait for their device manufacturers to release a compatible security update.
+
+·         Allow scripting languages to execute only from trusted sites.
+
+·         Anti Virus vendors like McAfee have some detection capabilities around these threats,  . McAfee Windows Security Suite or McAfee Endpoint Security (ENS) can provide warnings if you visit a known dangerous site.McAfee products can also provide an alternate script-execution engine that prevents known malicious scripts from executing.
+
+ 
+
+Reference:
+
+https://thehackernews.com/2018/01/meltdown-spectre-vulnerability.html
+
+https://securingtomorrow.mcafee.com/mcafee-labs/decyphering-the-noise-around-meltdown-and-spectre/
+</html>
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>Bad Rabbit - New Ransomware Attack</title>
+	  <link>//bad_rabbit_attack</link>
+	  <author>Deepak Gupta</author>
+	  <pubDate>2017-12-15T13:40:00+00:00</pubDate>
+	  <guid>//bad_rabbit_attack</guid>
+	  <description><![CDATA[
+	     <html>
+Threat Summary : Bad Rabbit: New Ransomware Attack Rapidly Spreading
+ 
+A new widespread ransomware attack is spreading like wildfire around Europe and has already affected over 200 major organisations, primarily in Russia, Ukraine, Turkey and Germany, in the past few hours.
+Dubbed "Bad Rabbit," is reportedly a new Petya-like targeted ransomware attack against corporate networks, demanding 0.05 bitcoin (~ $285) as ransom from victims to unlock their systems.
+According to an initial analysis provided by the Kaspersky, the ransomware was distributed via drive-by download attacks, using fake Adobe Flash players installer to lure victims' in to install malware unwittingly.
+"No exploits were used, so the victim would have to manually execute the malware dropper, which pretends to be an Adobe Flash installer. We’ve detected a number of compromised websites, all of which were news or media websites." Kaspersky Lab said.
+However, security researchers at ESET have detected Bad Rabbit malware as 'Win32/Diskcoder.D' — a new variant of Petya ransomware, also known as Petrwrap, NotPetya, exPetr and GoldenEye.
+Bad Rabbit ransomware uses DiskCryptor, an open source full drive encryption software, to encrypt files on infected computers with RSA 2048 keys. Bad Rabbit does not use EternalBlue but does leverage EternalRomance RCE exploit to spread across victims' networks.
+Microsoft and F-Secure have also confirmed the presence of the exploit in the Bad Rabbit ransomware. EternalRomance is a remote code execution exploit that takes advantage of a flaw (CVE-2017-0145) in Microsoft's Windows Server Message Block (SMB), a protocol for transferring data between connected Windows computers, to bypass security over file-sharing connections, thereby enabling remote code execution on Windows clients and servers.
+ 
+Impact:
+Bad Rabbit
+ first scans the internal network for open SMB shares, tries a hardcoded list of commonly used credentials
+ to drop malware, and also uses Mimikatz
+ post-exploitation tool to extract credentials from the affected systems. Bad Rabbit can also exploit the Windows Management Instrumentation Command-line (WMIC) scripting interface in an attempt to execute code on other Windows systems on the network remotely, noted
+ EndGame. However, according to Cisco's Talos, Bad Rabbit also carries a code that uses EternalRomance, which allows remote hackers to propagate from an infected computer to other targets more efficiently.
+ 
+How to Protect Yourself:
+In order to protect yourself from Bad Rabbit, users are advised to disable WMI service to prevent the malware from spreading over your network.
+Update your systems regularly and keep a good and effective anti-virus security suite on your system.
+Since most ransomware spread through phishing emails, malicious adverts on websites, and third-party apps and programs, you should always exercise caution before falling for any of these.
+Most importantly, to always have a tight grip on your valuable data, keep a good backup routine in place that makes and saves copies of your files to an external storage device that isn't always connected to your PC.
+ 
+Reference:
+https://thehackernews.com/2017/10/bad-rabbit-ransomware-attack.html
+</html>
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>Python regex Simplified</title>
+	  <link>//python_regex_simplified</link>
+	  <author>Deepak Gupta</author>
+	  <pubDate>2017-07-13T03:30:00+00:00</pubDate>
+	  <guid>//python_regex_simplified</guid>
+	  <description><![CDATA[
+	     <h2><u>Introduction</u></h2>
+
+<h3>Python regex metacharacters</h3>
+. ^ $ * + ? { } [ ] \ | ( )
+
+<p>
+
+1. [] - 
+
+Negate - ^
+
+Escape Character - \
+
+
+The first metacharacters we’ll look at are [ and ]. They’re used for specifying a character class, which is a set of characters that you wish to match. Characters can be listed individually, or a range of characters can be indicated by giving two characters and separating them by a '-'. For example, [abc] will match any of the characters a, b, or c; this is the same as [a-c], which uses a range to express the same set of characters. If you wanted to match only lowercase letters, your RE would be [a-z].
+
+Metacharacters are not active inside classes. For example, [akm$] will match any of the characters 'a', 'k', 'm', or '$'; '$' is usually a metacharacter, but inside a character class it’s stripped of its special nature.
+
+You can match the characters not listed within the class by complementing the set. This is indicated by including a '^' as the first character of the class; '^' outside a character class will simply match the '^' character. For example, [^5] will match any character except '5'.
+
+Perhaps the most important metacharacter is the backslash, \. As in Python string literals, the backslash can be followed by various characters to signal various special sequences. It’s also used to escape all the metacharacters so you can still match them in patterns; for example, if you need to match a [ or \, you can precede them with a backslash to remove their special meaning: \[ or \\.
+
+Some of the special sequences beginning with '\' represent predefined sets of characters that are often useful, such as the set of digits, the set of letters, or the set of anything that isn’t whitespace.
+
+Let’s take an example: \w matches any alphanumeric character. If the regex pattern is expressed in bytes, this is equivalent to the class [a-zA-Z0-9_]. If the regex pattern is a string, \w will match all the characters marked as letters in the Unicode database provided by the unicodedata module. You can use the more restricted definition of \w in a string pattern by supplying the re.ASCII flag when compiling the regular expression.
+
+The following list of special sequences isn’t complete. For a complete list of sequences and expanded class definitions for Unicode string patterns, see the last part of Regular Expression Syntax in the Standard Library reference. In general, the Unicode versions match any character that’s in the appropriate category in the Unicode database.
+
+\d
+Matches any decimal digit; this is equivalent to the class [0-9].
+\D
+Matches any non-digit character; this is equivalent to the class [^0-9].
+\s
+Matches any whitespace character; this is equivalent to the class [ \t\n\r\f\v].
+\S
+Matches any non-whitespace character; this is equivalent to the class [^ \t\n\r\f\v].
+\w
+Matches any alphanumeric character; this is equivalent to the class [a-zA-Z0-9_].
+\W
+Matches any non-alphanumeric character; this is equivalent to the class [^a-zA-Z0-9_].
+These sequences can be included inside a character class. For example, [\s,.] is a character class that will match any whitespace character, or ',' or '.'.
+
+The final metacharacter in this section is .. It matches anything except a newline character, and there’s an alternate mode (re.DOTALL) where it will match even a newline. '.' is often used where you want to match “any character”.
+</p>
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>Mac Shortcuts</title>
+	  <link>//mac_shortcuts</link>
+	  <author>Deepak Gupta</author>
+	  <pubDate>2017-07-05T10:18:00+00:00</pubDate>
+	  <guid>//mac_shortcuts</guid>
+	  <description><![CDATA[
+	     <h3>Keyboard Tips</h3>
+<ol>
+<li>The Delete key works like Backspace if you are from other platforms. To delete on the other direction, press Fn + Delete</li>
+<li>The Backspace will feel slow by default. This can be changed in Keyboard Preferences by making "Key Repeat" fast & "Delay Until Repeat" short. Ref: http://forums.macrumors.com/showthread.php?t=508385 </li>
+<li>If you are missing Home & End keys, it is Command+ Left Arrow & Command + Right Arrow</li>
+<li>If you are missing Page Up & Down keys, it is Command+ Up Arrow & Command + Down Arrow</li>
+ 
+<h3>Mouse/Trackpad Tips:</h3>
+To Drag something, Select Text, you can press the mouse button and drag it. If you are familiar with Double Tap & Drag like in Windows, Linux, You can have the same settings enabled in System Preferences > Universal Access > Mouse & Trackpad >Trackpad Options -> Enable Dragging Without Lock. Ref: http://chris.dziemborowicz.com/blog/2012/07/04/enable-double-tap-to-drag-in-mac-os-x-lion/
+ 
+Navigation:
+Command+Down To Open a Folder/File or to launch an application from keyboard
+Command + Up   To go one level up in finder
+Ctrl + Up             To Bring Mission Control
+Command + tilde  To Switch windows of same App
+Command + h       To hide the window
+/                          To enter/paste a path in Finder Window (Open, Save Dialog boxes)
+ 
+Terminal:
+Ctrl+a  To go to the beginning of line, Ctrl+e to go the end of line. The Link has more shortcuts: http://apple.stackexchange.com/questions/12997/can-home-and-end-keys-be-mapped-when-using-terminal
+Tweaks:
+Show Full Path in the title bar:
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
+killall Finder
+ Ref: http://osxdaily.com/2007/12/02/show-full-directory-path-in-finder-window-title-bars/
+Copy Path of selected Folder/File:
+Ref: http://osxdaily.com/2013/06/19/copy-file-folder-path-mac-os-x/
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>Yum Commands - A quick jist</title>
+	  <link>//yum_commands_quick_reference</link>
+	  <author>Deepak Gupta</author>
+	  <pubDate>2017-06-10T12:20:00+00:00</pubDate>
+	  <guid>//yum_commands_quick_reference</guid>
+	  <description><![CDATA[
+	     <ol>
+<li><h5>To make a search of some package or term in the data base in some of the formed deposits yum in the system:</h5></li>
+</br>
+<p>Syntax: <span style="font-family: courier new,courier;">yum search any-package</span></p>
+Example: <code>yum search httpd</code>
+<h5>To consult the information contained in a package in individual:</h5>
+</br>yum info any-package
+</br>Example: yum info httpd
+</br></br>Uninstalling packages. Desinstalación of packages along with everything what it depends on these:
+</br>yum remove any-package
+</br>Example: yum remove gkrellm
+</br>The following thing will list all the packages available in the data base yum and that can settle:
+</br>available yum list|less
+</br>The following thing will list all the packages installed in the system:
+</br>yum list installed|less
+</br>The following thing will list all the packages installed in the system and that can (they must) be updated:
+</br>yum list updates|less
+</br>Cleaning of the system.
+</br>
+<p><span style="font-family: courier new,courier;">Yum leaves as result of its use heads and packages RPM stored in the interior of the directory located in the route /var/cache/yum/. Particularly the packages RPM that have settled can occupy much space and is by such reason agrees to eliminate them once no longer they have utility. Also it agrees to do the same with the old heads of packages that no longer are in the data base. In order to make the </br>corresponding cleaning, the following thing can be executed:</span></p>s
+</br>
+</br><code>yum clean all</code>
+</br>Group install:
+</br><code>yum groupinstall "groupname"</code>
+</ol>
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>Configure multiple SSH identities for GitBash, Mac OSX, & Linux</title>
+	  <link>//configure_multiple_ssh_identities_for_gitbash_mac_linux</link>
+	  <author>Deepak Gupta</author>
+	  <pubDate>2017-04-26T13:18:00+00:00</pubDate>
+	  <guid>//configure_multiple_ssh_identities_for_gitbash_mac_linux</guid>
+	  <description><![CDATA[
+	     <p>
+</p>
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>RabbitMQ - Detecting Dead TCP Connections with Heartbeats</title>
+	  <link>//detecting-dead-tcp-connections</link>
+	  <author>Deepak Gupta</author>
+	  <pubDate>2017-04-24T12:18:00+00:00</pubDate>
+	  <guid>//detecting-dead-tcp-connections</guid>
+	  <description><![CDATA[
+	     <p>
+In some types of network failure, packet loss can mean that disrupted TCP connections take a moderately long time (about 11 minutes with default configuration on Linux, for example) to be detected by the operating system. AMQP 0-9-1 offers a heartbeat feature to ensure that the application layer promptly finds out about disrupted connections (and also completely unresponsive peers). Heartbeats also defend against certain network equipment which may terminate "idle" TCP connections. See Heartbeats for details.
+</p>
+
+<h4><u>At the Broker</u></h4>
+<p>
+In order to avoid losing messages in the broker we need to cope with broker restarts, broker hardware failure and in extremis even broker crashes.
+</p>
+<p>
+To ensure that messages and broker definitions survive restarts, we need to ensure that they are on disk. The AMQP standard has a concept of durability for exchanges, queues and of persistent messages, requiring that a durable object or persistent message will survive a restart. More details about specific flags pertaining to durability and persistence can be found in the AMQP Concepts Guide.
+</p>
+<h4><u>Clustering and High Availability</u></h4>
+<p>
+If we need to ensure that our broker survives hardware failure, we can use RabbitMQ's clustering. In a RabbitMQ cluster, all definitions (of exchanges, bindings, users, etc) are mirrored across the entire cluster. Queues behave differently, by default residing only on a single node, but optionally being mirrored across several or all nodes. Queues remain visible and reachable from all nodes regardless of where they are located.
+</p>
+<p>
+Mirrored queues replicate their contents across all configured cluster nodes, tolerating node failures seamlessly and without message loss (although see this note on unsynchronised slaves). However, consuming applications need to be aware that when queues fail their consumers will be cancelled and they will need to reconsume - see the documentation for more details.
+</p>
+At the Producer
+<p>
+When using confirms, producers recovering from a channel or connection failure should retransmit any messages for which an acknowledgement has not been received from the broker. There is a possibility of message duplication here, because the broker might have sent a confirmation that never reached the producer (due to network failures, etc). Therefore consumer applications will need to perform deduplication or handle incoming messages in an idempotent manner.
+</p>
+<h4><u>Ensuring Messages are Routed</u></h4>
+<p>
+In some circumstances it can be important for producers to ensure that their messages are being routed to queues (although not always - in the case of a pub-sub system producers will just publish and if no consumers are interested it is correct for messages to be dropped).
+</p>
+<p>
+To ensure messages are routed to a single known queue, the producer can just declare a destination queue and publish directly to it. If messages may be routed in more complex ways but the producer still needs to know if they reached at least one queue, it can set the mandatory flag on a basic.publish, ensuring that a basic.return (containing a reply code and some textual explanation) will be sent back to the client if no queues were appropriately bound.
+</p>
+<p>
+Producers should also be aware that when publishing to a clustered node, if one or more destination queues that are bound to the exchange have mirrors in the cluster, it's possible to incur delays in the face of network failures between nodes, due to flow control between replicas and the master queue process. See here for more details.
+</p>
+<h4><u>At the Consumer</u></h4>
+<p>
+In the event of network failure (or a node crashing), messages can be duplicated, and consumers must be prepared to handle them. If possible, the simplest way to handle this is to ensure that your consumers handle messages in an idempotent way rather than explicitly deal with deduplication.
+</p>
+<p>
+If a message is delivered to a consumer and then requeued (because it was not acknowledged before the consumer connection dropped, for example) then RabbitMQ will set the redelivered flag on it when it is delivered again (whether to the same consumer or a different one). This is a hint that a consumer may have seen this message before (although that's not guaranteed, the message may have made it out of the broker but not into a consumer before the connection dropped). Conversely if the redelivered flag is not set then it is guaranteed that the message has not been seen before. Therefore if a consumer finds it more expensive to deduplicate messages or process them in an idempotent manner, it can do this only for messages with the redelivered flag set.
+</p>
+<h4><u>Consumer Cancel Notification</u></h4>
+<p>
+Under some circumstances the server needs to be able to cancel a consumer - since the queue it was consuming from has been deleted, or has failed over. In this case the consumer should consume again but be aware that it may see messages again which it has already seen.
+</p>
+<code>Note that consumer cancel notification is a RabbitMQ extension to AMQP, and as such may not be supported by all clients.</code>
+</br></br>
+<h4><u>Messages That Cannot Be Processed</u></h4>
+<p>
+If a consumer determines that it cannot handle a message then it can reject it using basic.reject (or basic.nack), either asking the server to requeue it, or not (in which case the server might be configured to dead-letter it instead.
+</p>
+<h4><u>Distributed RabbitMQ</u></h4>
+<p>
+Rabbit provides two plugins to assist with distributing nodes over unreliable networks: federation and the shovel. Both are implemented as AMQP clients, so if you configure them to use confirms and acknowledgements, they will retransmit when necessary. Both will use confirms and acknowledgements by default.
+</p>
+<p>
+When connecting clusters with federation or the shovel, it is desirable to ensure that the federation links and shovels tolerate node failures. Federation will automatically distribute links across the downstream cluster and fail them over on failure of a downstream node. In order to connect to a new upstream when an upstream node fails you can specify multiple redundant URIs for an upstream, or connect via a TCP load balancer.
+</p>
+<p>
+When using the shovel, it is possible to specify redundant brokers in a source or destination clause; however it is not currently possible to make the shovel itself redundant. We hope to improve this situation in the future; in the mean time a new node can be brought up manually to run a shovel if the node it was originally running on fails.
+</p>
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>Setting up a Kubernetes Cluster on Vagrant</title>
+	  <link>//kubernetes_cluster_vagrant</link>
+	  <author>Deepak Gupta</author>
+	  <pubDate>2017-04-20T12:30:00+00:00</pubDate>
+	  <guid>//kubernetes_cluster_vagrant</guid>
+	  <description><![CDATA[
+	     In this tutorial we will cover the installatoin of a Kubernetes Cluster over Vagrant
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>

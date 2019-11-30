@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- [[! Document Settings ]] -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- [[! Page Meta ]] -->
+    <title>The UNIX Time-Sharing System</title>
+    <meta name="description" content="Curosity is the most powerful thing you own - A beautiful narrative written over an elegant publishing platform. The story begins here..." />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" >
+
+    <!-- [[! Styles'n'Scripts ]] -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" type="text/css"
+          href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/syntax.css" />
+    
+    <!-- [[! Ghost outputs important style and meta data with this tag ]] -->
+        <link rel="canonical" href="/" />
+    <meta name="referrer" content="origin" />
+    <link rel="next" href="/page2/" />
+
+    <meta property="og:site_name" content="Curosity is the most powerful thing you own" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Curosity is the most powerful thing you own" />
+    <meta property="og:description" content="A beautiful narrative written over an elegant publishing platform. The story begins here..." />
+    <meta property="og:url" content="/" />
+    <meta property="og:image" content="/assets/images/cover1.jpg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Curosity is the most powerful thing you own" />
+    <meta name="twitter:description" content="A beautiful narrative written over an elegant publishing platform. The story begins here..." />
+    <meta name="twitter:url" content="/" />
+    <meta name="twitter:image:src" content="/assets/images/cover1.jpg" />
+
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Website",
+    "publisher": "Finding The Way Home head.html",
+    "url": "/",
+    "image": "/assets/images/cover1.jpg",
+    "description": "A beautiful narrative written over an elegant publishing platform. The story begins here..."
+}
+    </script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-8500052818415151",
+    enable_page_level_ads: true
+  });
+</script>
+    <meta name="generator" content="Jekyll 3.0.0" />
+    <link rel="alternate" type="application/rss+xml" title="Curosity is the most powerful thing you own" href="/rss.xml" />
+
+</head>
+<body class="post-template nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        <li class="nav-home " role="presentation"><a href="/">Home</a></li>
+        <li class="nav-about " role="presentation"><a href="/about">About</a></li>
+        <!--li class="nav-fables " role="presentation"><a href="/tag/fables">Fables</a></li>
+        <li class="nav-speeches " role="presentation"><a href="/tag/speeches">Speeches</a></li>
+        <li class="nav-fiction " role="presentation"><a href="/tag/fiction">Fiction</a></li-->
+        <li class="nav-travel " role="presentation"><a href="/tag/travel">Travel</a></li>
+        <li class="nav-resume " role="presentation"><a href="/resume">Resume</a></li>
+
+
+        <li class="nav-tutorials " role="presentation"><a href="/tag/tutorials">Tutorials</a></li>
+
+
+        <li class="nav-photography " role="presentation"><a href="/tag/photography">Photography</a></li>
+
+        <li class="nav-author " role="presentation"><a href="/author/casper">Author</a></li>
+    </ul>
+    <a class="subscribe-button icon-feed" href="/rss.xml">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+    <div class="site-wrapper">
+
+        <!-- [[! Everything else gets inserted here ]] -->
+        <!-- < default -->
+
+<!-- The comment above "< default" means - insert everything in this file into -->
+    <!-- the [body] of the default.hbs template, which contains our header/footer. -->
+
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
+
+<header class="main-header post-head " style="background-image: url(/assets/images/unix_time_sharing/unix-wallpaper.png) ">
+    <nav class="main-nav  overlay  clearfix">
+        
+        
+            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+        
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post tag-fiction">
+
+        <header class="post-header">
+            <h1 class="post-title">The UNIX Time-Sharing System</h1>
+            <section class="post-meta">
+            <!-- <a href='/'>Deepak Gupta</a> -->
+            <time class="post-date" datetime="2016-02-01">01 Feb 2016</time>
+                <!-- [[tags prefix=" on "]] -->
+                 
+                on 
+                
+                    
+                       <a href='/tag/tutorials'>Tutorials</a>
+                       
+                
+                
+            </section>
+        </header>
+
+        <section class="post-content">
+            
+            <div class="highlight"><pre><code class="language-text" data-lang="text">                          Drafted By
+
+                        D. M. Ritchie
+</code></pre></div>
+<h3>Introduction</h3>
+
+<p>UNIX is a general-purpose, multi-user time sharing system implemented on several Digital Equipment Corporation PDP series machines.</p>
+
+<p>UNIX was written by K. L. Thompson, who also wrote many of the command programs. The author of this memorandum contributed several of the major commands, including the assembler and the debugger. The file system was originally designed by Thompson, the author, and R. H. Canaday.</p>
+
+<p>There are two versions of UNIX. The first, which has been in existence about a year, runs on the PDP-7 and -9 computers; a more modern version, a few months old, uses the PDP-11. This document describes UNIX-11, since it is more modern and many of the differences between it and UNIX-7 result from redesign of features found to be deficient or lacking in the earlier system. Although the PDP-7 and PDP-11 are both small computers, the design of UNIX is amenable to expansion for use on more powerful machines. Indeed, UNIX contains a number of features very seldom offered even by larger systems, including</p>
+
+<p>A versatile, convenient file system with complete integration between disk files and I/O devices;</p>
+
+<p>The ability to initiate asynchrously running processes.</p>
+
+<p>It must be said, however, that the most important features of UNIX are its simplicity, elegance, and ease of use.</p>
+
+<p>Besides the system proper, the major programs available under UNIX are an assembler, a text editor based on QED, a symbolic debugger for examining and patching faulty programs, and &quot;B&quot;, a higher level language resembling BCPL. UNIX-7 also has a version of the compiler writing language TMGL contributed by M. D. McIlroy, and besides its own assembler, there is a PDP-11 assembler which was used to write UNIX-11. On the PDP-11 there is a version of BASIC [reference] adapted from the one supplied by DEC [reference]. All but the last of these programs were written locally, and except for the very first versions of the editor and assembler, using UNIX itself.</p>
+
+<p>Hardware
+The PDP-11 on which UNIX is implemented is a 16-bit 12K computer, and UNIX occupies 8K words. More than half of this space, however, is utilized for a variable number of disk buffers; with some loss of speed the number of buffers could be cut significantly.</p>
+
+<p>The PDP-11 has a 256K word disk, almost all of which is used for file system storage. It is equipped with DECTAPE, a variety of magnetic tape facility in which individual records may be addressed and rewritten at will. Also available are a high-speed paper tape reader and punch. Besides the standard Teletype, there are several variable-speed communications interfaces.</p>
+
+<p>The File System
+The most important role of UNIX is to provide a file system. From the point of view of the user, there are three kinds of files: ordinary disk files, directories, and special files.</p>
+
+<h4>Ordinary Files</h4>
+
+<p>A file contains whatever information the user places there, for example symbolic or binary (object) programs. No particular structuring is expected by the system. Files of text ordinarily consist simply of a string of characters, with lines demarcated by the new-line character. Binary programs are sequences of words as they will appear in core memory when the program starts executing. A few user programs generate and expect files with more structure; for example, the assembler generates, and the debugger expects, a name list file in a particular format; however, the structure of files is controlled solely by the programs which use them, not by the system.</p>
+
+<h4>Directories</h4>
+
+<p>Directories (sometimes, &quot;catalogs&quot;), provide the mapping between the names of files and the files themselves, and thus induce a structure on the file system as a whole. Each user has a directory of his own files; he may also create subdirectories to contain groups of files conveniently treated together.</p>
+
+<p>A directory is exactly like an ordinary file except that it cannot be written on by user programs, so that the system controls the contents of directories. However, anyone with appropriate permission may read a directory just like any other file.</p>
+
+<p>The system maintains several directories for its own use. One of these is the root directory. All files in the system can be found by tracing a path through a chain of directories until the desired file is reached. The starting point for such searches is often the root, which contains an entry for each user&#39;s master directory. Another system directory contains all the programs provided as part of the system; that is, all the commands (elsewhere, &quot;subsystems&quot;). As will be seen, however, it is by no means necessary that a program reside in this directory for it to be used as a command.</p>
+
+<p>Files and directories are named by sequences of eight or fewer characters. When the name of a file is specified to the system, it may be in the form of a path name, which is a sequence of directory names separated by slashes and ending in a file name. If the sequence begins with a slash, the search begins in the root directory. The name &quot;/a/b/c&quot; causes the system to search the root for directory &quot;a&quot;; then to search &quot;a&quot; for &quot;b&quot;, and then to find &quot;c&quot; in &quot;b&quot;. &quot;c&quot; may be an ordinary file, a directory, or a special file. As a limiting case, the name &quot;/&quot; refers to the root itself.</p>
+
+<p>The same non-directory file may appear in several directories under possibly different names. This feature is called &quot;linking&quot;; a directory entry for a file is sometimes called a link. UNIX differs from other systems in which linking is permitted in that all links to a file have equal status. That is, a file does not exist within a particular directory; the directory entry for a file consists merely of its name and a pointer to the information actually describing the file. Thus a file exists independently of any directory entry, although in practice a file is made to disappear along with the last link to it.</p>
+
+<p>When a user logs into UNIX, he is assigned a default current directory, but he may change to any directory readable by him. A path name not starting with &quot;/&quot; causes the system to begin the search in the userâ€™s current directory. Thus, the name &quot;a/b&quot; specifies the file named &quot;b&quot; in directory &quot;a&quot;, which is found in the current working directory. The simplest kind of name, for example &quot;a&quot;, refers to a file which itself is found in the working directory.</p>
+
+<p>Each directory always has at least two entries. The name &quot;.&quot; in each directory refers to the directory itself. Thus a program may read the current directory under the name &quot;.&quot; without knowing its actual path name. The name &quot;..&quot; by convention refers to the parent of the directory in which it appears; that is, the directory in which it was first created.</p>
+
+<p>The directory structure is constrained to have the form of a rooted tree. Except for the special entries &quot;.&quot; and &quot;..&quot;, each directory must appear as an entry in exactly one other, which is its parent. The reason for this is to simplify the writing of programs which visit subtrees of the directory structure, and more important, to avoid the separation of portions of the hierarchy. If arbitrary links to directories were permitted, it would be quite difficult to detect when the last connection from the root to a directory was severed.</p>
+
+<h4>Special Files</h4>
+
+<p>Special files constitute the most unusual feature of the UNIX file system. Each I/O device supported by UNIX is associated with at least one special file. Special files are read and written just like ordinary disk files, but the result is activation of the associated device. Entries for all special files reside in the root directory, so they may all be referred to by &quot;/&quot; followed by the appropriate name.</p>
+
+<p>The special files are discussed further in section 6 below.</p>
+
+<h4>Protection</h4>
+
+<p>The protection scheme in UNIX is quite simple. Each user of the system is assigned a unique user number. When a file-is created, it is marked with the number of its creator. Also given for new files is a set of protection bits. Four of these specify independently permission to read or write for the owner of the file and for all other users. A fifth bit indicates permission to execute the file as a program. If the sixth bit is on, the system will temporarily change the user identification of the current user to that of the creator of the file whenever the file is executed as a program. This feature provides for privileged programs which may use files which should neither be read nor changed by other users. If the set-user-identification bit is on for a program, the accounting file may be accessed during the programâ€™s execution but not otherwise.</p>
+
+<h4>System I/O Calls</h4>
+
+<p>The system calls to do I/O are designed to eliminate the differences between the various devices and styles of access. There is no distinction between &quot;random&quot; and sequential I/O, nor is any logical or physical record size imposed by the system. The size of a file on the disk is determined by the location of the last piece of information written on it; no predetermination of the size of a file is necessary. In UNIX-11, the unit of information is the 8-bit byte, since the PDP-11 is a byte-oriented machine.</p>
+
+<p>To illustrate the essentials of I/O in UNIX, the basic calls are summarized below in an anonymous higher level language which will indicate the needed parameters without getting into the complexities of machine language programming. (All system calls are also described in Appendix 1 in their actual form.) Each call to the system may potentially result in an error return, which for simplicity is not represented in the calling sequence.</p>
+
+<h5>Open</h5>
+
+<p>To read or write a file assumed to exist already, it must be Opened by the following call:</p>
+
+<p>filep = open(name, flag)
+Name indicates the name of the file. An arbitrary path name may be given. The flag argument indicates whether the file is to be read or written. If the file is to be &quot;updated&quot;, that is read and written simultaneously, it may be opened twice, once for reading and once for writing.</p>
+
+<p>The returned argument filep is called a file descriptor. It is used to identify the file in subsequent calls to read, write or otherwise manipulate the file.</p>
+
+<p>There are no locks in the file system, nor is there any restriction on the number of users who may have a file open for reading or writing. Although one may imagine situations in which this fact is unfortunate, in practice difficulties are quite rare.</p>
+
+<h5>Create</h5>
+
+<p>To create a new file, the following call is used.</p>
+
+<p>filep = create(name, mode)
+Here filep and name are as before. If the file already existed, it is truncated to zero length. Creation of a file implies opening for writing as well. The mode argument indicates the permissions which are to be placed on the file by the protection mechanism. To create a file, the user must have write permission in the directory in which the file is being created.</p>
+
+<h5>Write</h5>
+
+<p>Except as indicated below, reading and writing are sequential. This means that if a particular byte in the file was the last byte written (or read), the next I/O call implicitly refers to the first following byte. For each Open file there is a pointer, maintained by the system, which always indicates the next byte to be read or written. If n bytes are read, the pointer advances by n bytes.</p>
+
+<p>Once a file is open for writing, the following call may be used.</p>
+
+<p>nwritten = write(filep, buffer, count)
+Buffer is the address of count sequentially stored bytes (words in UNIX-7) which will be written onto the file. nwritten is the number of bytes actually written; except in rare cases it is the same as count. Occasionally, an error may be indicated; for example if paper tape is being written, an error occurs if the tape runs out.</p>
+
+<p>For disk files which already existed (that is, were opened by open, not create) the bytes written affect only those implied by the position of the write pointer and the number of bytes written; no other part of the file is changed.</p>
+
+<h5>Read</h5>
+
+<p>To read, the call is</p>
+
+<p>nread = read(filep, buffer, count)
+Up to count bytes are read from the file into buffer. The number actually read is returned as nread. Every program must be prepared for the possibility that nread is less than count. If the read pointer is so near the end of the file that reading count characters would cause reading beyond the end, only sufficient bytes are transmitted to reach the end of the file. Furthermore, devices like the typewriters work in units of lines. Suppose, for example, that before anything has been typed a program tries to read 128 characters from the console. This forces the program to wait, since nothing has been typed. The user now types a line consisting, say, of 10 characters and hits the &quot;new line&quot; key. At this point the read call would return indicating 11 characters read (including the new line). On the other hand, it is permissible to read fewer characters than were typed without losing information; for example bytes may be picked up one at a time.</p>
+
+<p>When the read call returns with nread equal to zero, it indicates the end of the file. For disk files this occurs when the read pointer becomes equal to the current size of the file. It is possible to generate an end-of-file from a typewriter by use of an escape sequence which depends on the device used.</p>
+
+<h5>Seek</h5>
+
+<p>To do &quot;random&quot;, that is, direct access I/O it is only necessary to move the read or write pointer to the appropriate location in the file.</p>
+
+<p>seek(filep, base, offset)
+The read pointer (respectively write pointer) associated with filep is moved to a position offset words from the beginning, from the current position of the pointer, or from the end of the file, depending on whether base is O, 1, or 2. Offset may he negative to move the pointer backwards. For some devices (e.g. paper tape and typewriters) seek calls are meaningless and are ignored.</p>
+
+<h5>Tell</h5>
+
+<p>The current position of the pointer may be discovered as follows:</p>
+
+<p>offset = tell(filep, base)
+As with seek, filep is the file descriptor for an open file, and base specifies whether the desired offset is to be measured from the beginning of the file, from the current position of the pointer, or from the end. In the second case, of course, the result is always zero.</p>
+
+<p>Implementation of the File System
+As mentioned in section 3.2 above, a directory entry contains only a name for the associated file and a pointer to the file itself. This pointer is an integer called the i-number (for identification number) of the file. When the file is accessed, its i-number is looked up in a system table stored in a known part of the disk. The entry thereby found (the file&#39;s i-node) contains the description of the file:</p>
+
+<ol>
+<li>its owner;</li>
+<li>its protection bits;</li>
+<li>the physical disk addresses for the file contents;</li>
+<li>its size;</li>
+<li>times of creation and last modification;</li>
+<li>the number of links to the file; that is, the number of
+ times it appears in a directory;</li>
+<li>bits indicating whether the file is a directory and whether
+ it is special (in which case the size and disk addresses
+ are meaningless);</li>
+<li>a bit indicating whether the file is &quot;large&quot; or &quot;small.&quot;
+There is space in each i-node for eight disk addresses. A file which fits into eight or fewer 64-word (128-byte) blocks is considered small; in this case the addresses of the blocks themselves are stored. For large files, each of the eight disk addresses may point to an indirect block of 64 words containing the addresses of the blocks constituting the file itself. Thus files may be as large as 864128, or 65,536 bytes.</li>
+</ol>
+
+<p>When the number of links to a file drops to zero, its contents are freed and its i-node is marked unused.</p>
+
+<p>To the user, both reading and writing of files appears to be synchronous and unbuffered. That is, immediately after return from a read call the data is available, and conversely after a write the user&#39;s workspace may be reused. In fact the system maintains, unseen by the user, a rather complicated buffering mechanism. Suppose a write call is made specifying transmission of a single byte. UNIX will search its own buffers to see whether the affected disk block currently resides in its own buffers; if not, it will be read in from the disk. Then the affected byte is replaced in the buffer and an entry is made in a list of blocks to be written on the disk. The return from the write call may then take place, although the actual I/O may not be completed until a later time. Conversely, if a single byte is read, the system determines whether the disk block in which the byte is located is already in one of the system&#39;s buffers; if so, the byte can be returned immediately. If not, the block is read into a buffer and the byte picked out. Because sequential reading of a file is so common, UNIX attempts to optimize this situation by prereading the disk block following the one in which the requested byte is found. This strategy tends to minimize and in some cases eliminate disk latency delays.</p>
+
+<p>A program which reads or writes files in units of 128 bytes has an advantage over a program which reads or writes a single byte at a time, but the gain is not immense. As an example, the editor ed (8.9 and A2.4 below) was originally written, for simplicity, to do I/O one character at a time; it increased its speed by a factor of about two when it was rewritten to use 128-byte units. Because the system attempts to retain copies of the most recently used disk blocks in core, the speed gain in dealing with large units comes principally from elimination of system overhead, not from latency delays.</p>
+
+
+        </section>
+
+        <footer class="post-footer">
+
+            <!-- Everything inside the #author tags pulls data from the author -->
+            <!-- #author-->
+
+            
+            <figure class="author-image">
+                <a class="img" href="/author/casper" style="background-image: url(/assets/images/casper.png)"><span class="hidden">'s Picture</span></a>
+            </figure>
+            
+
+            <section class="author">
+                <h4><a href="/author/casper">Deepak Gupta</a></h4>
+                
+                
+                    <p> A full time technologist cum foodie. He spends most of the time playing with open source tools and prefers hanging out with friends. Deepak has been a taveller since ages, besides being a hardcore biker and loves doing photogrpahy as hobby.</p>
+                
+                <div class="author-meta">
+                    <span class="author-location icon-location"> Bangalore, INDIA</span> 
+                    <span class="author-link icon-link"><a href="http://hellodk.in/"> http://hellodk.in/</a></span> 
+                </div>
+            </section>
+
+            <!-- /author  -->
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="http://twitter.com/share?text=The UNIX Time-Sharing System&amp;url=http://hellodk.in/unix_time_sharing_system"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://hellodk.in/unix_time_sharing_system"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://hellodk.in/unix_time_sharing_system"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+            
+            <!-- Add Disqus Comments -->
+            
+                <div id="disqus_thread"></div>
+<script>
+
+/**
+ *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+ *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
+
+var disqus_config = function () {
+    this.page.url = hellodk.in;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = document.URL; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = '//http-hellodk-in.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            
+            
+        </footer>
+
+    </article>
+
+</main>
+
+<aside class="read-next">
+
+    <!-- [[! next_post ]] -->
+    
+        <a class="read-next-story " style="background-image: url(/assets/images/rethinkdb/rethinkdb3.png)" href="/mysql_master_master_replication_insights">
+            <section class="post">
+                <h2>MySQL multi master replication fundas</h2>
+                <p><html> <p> Master-master replication (more generally -- multi-master replication) conceptually works by assuming that conflicts...</p>
+            </section>
+        </a>
+    
+    <!-- [[! /next_post ]] -->
+    <!-- [[! prev_post ]] -->
+    
+        <a class="read-next-story prev " style="background-image: url(/assets/images/cover1.jpg)" href="/mark_down_cheatsheet">
+            <section class="post">
+                <h2>Markdown cheat-sheets</h2>
+                <p><p>Source : https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet</p> <h1>H1 - # H1</h1> <h2>H2 - ## H2</h2> <h3>H3 - ### H3</h3>...</p>
+            </section>
+        </a>
+    
+    <!-- [[! /prev_post ]] -->
+</aside>
+
+<!-- /post -->
+
+
+        <footer class="site-footer clearfix">
+          <section class="copyright"><a href="/">Curosity is the most powerful thing you own</a> &copy; 2019</section>
+          <section class="poweredby">Published by <a href="https://github.com/hellodk">hellodk</a></section>
+        </footer>
+    </div>
+    <!-- [[! Ghost outputs important scripts and data with this tag ]] -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- [[! The main JavaScript file for Casper ]] -->
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/assets/js/index.js"></script>
+
+    <!-- Add Google Analytics  -->
+        <!-- Google Analytics Tracking code -->
+     <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-84547172-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+<!--script>
+	    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	    ga('create', '', 'auto');
+	    ga('send', 'pageview');
+
+     </script-->   
+</body>
+</html>
