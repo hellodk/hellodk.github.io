@@ -60,7 +60,9 @@
     <item>
       <title>just landed in Malaysia - Truly Asia</title>
       <link>http://hellodk.in//just_landed_in_malaysia</link>
-      <description>
+      <description>&lt;html&gt;
+Hello
+&lt;/html&gt;
 
 </description>
       <pubDate>Sat, 24 Feb 2018 06:30:00 +0000</pubDate>
@@ -316,6 +318,15 @@ In some types of network failure, packet loss can mean that disrupted TCP connec
 </description>
       <pubDate>Mon, 24 Apr 2017 12:18:00 +0000</pubDate>
       <dc:date>2017-04-24T12:18:00+00:00</dc:date>
+    </item>
+    <item>
+      <title>Setting up a Kubernetes Cluster on Vagrant</title>
+      <link>http://hellodk.in//kubernetes_cluster_vagrant</link>
+      <description>In this tutorial we will cover the installatoin of a Kubernetes Cluster over Vagrant
+
+</description>
+      <pubDate>Thu, 20 Apr 2017 12:30:00 +0000</pubDate>
+      <dc:date>2017-04-20T12:30:00+00:00</dc:date>
     </item>
     <item>
       <title>HTTP Quick Reference - A Quick reminder about HTTP</title>

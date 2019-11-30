@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- [[! Page Meta ]] -->
-    <title>Curosity is the most powerful thing you own</title>
+    <title>Setting up a Kubernetes Cluster on Vagrant</title>
     <meta name="description" content="Curosity is the most powerful thing you own - A beautiful narrative written over an elegant publishing platform. The story begins here..." />
 
     <meta name="HandheldFriendly" content="True" />
@@ -59,7 +59,7 @@
     <link rel="alternate" type="application/rss+xml" title="Curosity is the most powerful thing you own" href="/rss.xml" />
 
 </head>
-<body class="tag-template nav-closed">
+<body class="post-template nav-closed">
 
     <div class="nav">
     <h3 class="nav-title">Menu</h3>
@@ -90,87 +90,147 @@
     <div class="site-wrapper">
 
         <!-- [[! Everything else gets inserted here ]] -->
-        <!-- < dynamically overriding backgrounds for tags as well as descriptions -->
+        <!-- < default -->
 
+<!-- The comment above "< default" means - insert everything in this file into -->
+    <!-- the [body] of the default.hbs template, which contains our header/footer. -->
 
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
 
-
-<!-- < default}} -->
-<!-- The tag above means - insert everything in this file into the [body] of the default.hbs template -->
-
-<!-- If we have a tag cover, display that - else blog cover - else nothing -->
-<header class="main-header tag-head " style="background-image: url(/assets/images/cover2.jpg) ">
-    <nav class="main-nav overlay clearfix">
+<header class="main-header post-head " style="background-image: url(/assets/images/http1.png) ">
+    <nav class="main-nav  overlay  clearfix">
         <a class="blog-logo" href="/"><img src="/assets/images/ghost.png" alt="Blog Logo" /></a>
         
             <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
         
     </nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">About</h1>
-            <h2 class="page-description">
-            
-			    A 1-post collection
-            
-            </h2>
-        </div>
-    </div>
 </header>
 
-<!-- The main content area on the homepage -->
-<main id="content" class="content" role="main">
+<main class="content" role="main">
 
-    <!-- The tag below includes the post loop - partials/loop.hbs -->
-        <!-- Previous/next page links - only displayed on page 2+ -->
-    <div class="extra-pagination inner">
-        
-            <nav class="pagination" role="pagination">
-    
-    <span class="page-number"> Page 1 of 1 </span>
-     
-</nav>
-        
-    </div>
+    <article class="post tag-tutorials">
 
-    <!-- This is the post loop - each post will be output using this markup -->
-    
-    <article class="post">
         <header class="post-header">
-            <h2 class="post-title"><a href="/about">About</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p><p>Too often we under-estimate the power of a touch, a smile, a kind word, a listening ear, an honest compliment, or the smallest act of caring,... <a class="read-more" href="/about">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            <img class="author-thumb" src="/assets/images/casper.png" alt="Author image" nopin="nopin" />
-            <!-- author -->
-            <a href='/author/casper'>Deepak Gupta</a>
-            <!-- [[tags prefix=" on "]] -->
-             
+            <h1 class="post-title">Setting up a Kubernetes Cluster on Vagrant</h1>
+            <section class="post-meta">
+            <!-- <a href='/'>Deepak Gupta</a> -->
+            <time class="post-date" datetime="2017-04-20">20 Apr 2017</time>
+                <!-- [[tags prefix=" on "]] -->
+                 
                 on 
                 
                     
-                       <a href='/tag/about'>About</a>
+                       <a href='/tag/tutorials'>Tutorials</a>
                        
                 
+                
+            </section>
+        </header>
+
+        <section class="post-content">
             
-            <time class="post-date" datetime="2015-12-28">28 Dec 2015</time>
+            In this tutorial we will cover the installatoin of a Kubernetes Cluster over Vagrant
+
+        </section>
+
+        <footer class="post-footer">
+
+            <!-- Everything inside the #author tags pulls data from the author -->
+            <!-- #author-->
+
+            
+            <figure class="author-image">
+                <a class="img" href="/author/casper" style="background-image: url(/assets/images/casper.png)"><span class="hidden">'s Picture</span></a>
+            </figure>
+            
+
+            <section class="author">
+                <h4><a href="/author/casper">Deepak Gupta</a></h4>
+                
+                
+                    <p> A full time technologist cum foodie. He spends most of the time playing with open source tools and prefers hanging out with friends. Deepak has been a taveller since ages, besides being a hardcore biker and loves doing photogrpahy as hobby.</p>
+                
+                <div class="author-meta">
+                    <span class="author-location icon-location"> Bangalore, INDIA</span> 
+                    <span class="author-link icon-link"><a href="http://hellodk.in/"> http://hellodk.in/</a></span> 
+                </div>
+            </section>
+
+            <!-- /author  -->
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="http://twitter.com/share?text=Setting up a Kubernetes Cluster on Vagrant&amp;url=http://hellodk.in/kubernetes_cluster_vagrant"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://hellodk.in/kubernetes_cluster_vagrant"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://hellodk.in/kubernetes_cluster_vagrant"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+            
+            <!-- Add Disqus Comments -->
+            
+                <div id="disqus_thread"></div>
+<script>
+
+/**
+ *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+ *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
+
+var disqus_config = function () {
+    this.page.url = hellodk.in;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = document.URL; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = '//http-hellodk-in.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            
+            
         </footer>
+
     </article>
-    
-
-    <!-- Previous/next page links - displayed on every page -->
-    
-        <nav class="pagination" role="pagination">
-    
-    <span class="page-number"> Page 1 of 1 </span>
-     
-</nav>
-    
-
 
 </main>
+
+<aside class="read-next">
+
+    <!-- [[! next_post ]] -->
+    
+        <a class="read-next-story " style="background-image: url(/assets/images/cassandra/astronaut_on_the_moon.jpg)" href="/detecting-dead-tcp-connections">
+            <section class="post">
+                <h2>RabbitMQ - Detecting Dead TCP Connections with Heartbeats</h2>
+                <p><p> In some types of network failure, packet loss can mean that disrupted TCP connections...</p>
+            </section>
+        </a>
+    
+    <!-- [[! /next_post ]] -->
+    <!-- [[! prev_post ]] -->
+    
+        <a class="read-next-story prev " style="background-image: url(/assets/images/http1.png)" href="/http_quick_reference">
+            <section class="post">
+                <h2>HTTP Quick Reference - A Quick reminder about HTTP</h2>
+                <p>In this tutorial we will cover the basics of an HTTP request and see how...</p>
+            </section>
+        </a>
+    
+    <!-- [[! /prev_post ]] -->
+</aside>
+
+<!-- /post -->
+
 
         <footer class="site-footer clearfix">
           <section class="copyright"><a href="/">Curosity is the most powerful thing you own</a> &copy; 2019</section>

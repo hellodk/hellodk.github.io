@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- [[! Page Meta ]] -->
-    <title>cylon</title>
+    <title>Author</title>
     <meta name="description" content="Curosity is the most powerful thing you own - A beautiful narrative written over an elegant publishing platform. The story begins here..." />
 
     <meta name="HandheldFriendly" content="True" />
@@ -59,7 +59,7 @@
     <link rel="alternate" type="application/rss+xml" title="Curosity is the most powerful thing you own" href="/rss.xml" />
 
 </head>
-<body class="home-template nav-closed">
+<body class="author-template nav-closed">
 
     <div class="nav">
     <h3 class="nav-title">Menu</h3>
@@ -67,7 +67,7 @@
         <span class="hidden">Close</span>
     </a>
     <ul>
-        <li class="nav-home  nav-current" role="presentation"><a href="/">Home</a></li>
+        <li class="nav-home " role="presentation"><a href="/">Home</a></li>
         <li class="nav-about " role="presentation"><a href="/about">About</a></li>
         <!--li class="nav-fables " role="presentation"><a href="/tag/fables">Fables</a></li>
         <li class="nav-speeches " role="presentation"><a href="/tag/speeches">Speeches</a></li>
@@ -81,7 +81,7 @@
 
         <li class="nav-photography " role="presentation"><a href="/tag/photography">Photography</a></li>
 
-        <li class="nav-author " role="presentation"><a href="/author/casper">Author</a></li>
+        <li class="nav-author  nav-current" role="presentation"><a href="/author/casper">Author</a></li>
     </ul>
     <a class="subscribe-button icon-feed" href="/rss.xml">Subscribe</a>
 </div>
@@ -90,39 +90,55 @@
     <div class="site-wrapper">
 
         <!-- [[! Everything else gets inserted here ]] -->
-        <!-- < default -->
+        <!-- < default}} -->
 <!-- The tag above means - insert everything in this file into the [body] of the default.hbs template -->
 
-<!-- The big featured header  -->
-<header class="main-header "
-        style="background-image: url(/assets/images/cover1.jpg) ">
-    <nav class="main-nav overlay clearfix">
+<!-- The big featured header -->
+
+<!-- Everything inside the #author tags pulls data from the author -->
+<!-- #author  -->
+    <header class="main-header author-head " style="background-image: url(/assets/images/cover4.jpg) ">
+        <nav class="main-nav overlay clearfix">
+            <a class="blog-logo" href="/"><img src="/assets/images/ghost.png" alt="Blog Logo" /></a>
+            
+                <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+            
+        </nav>
+    </header>
+
+    <section class="author-profile inner">
         
+        <figure class="author-image">
+            <div class="img" style="background-image: url(/assets/images/casper.png)"><span class="hidden">Deepak Gupta's Picture</span></div>
+        </figure>
         
-            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+        <h1 class="author-title">Deepak Gupta</h1>
         
-    </nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">Curosity is the most powerful thing you own</h1>
-            <h2 class="page-description">A beautiful narrative written over an elegant publishing platform. The story begins here...</h2>
+            <h2 class="author-bio">A full time technologist cum foodie. He spends most of the time playing with open source tools and prefers hanging out with friends. Deepak has been a taveller since ages, besides being a hardcore biker and loves doing photogrpahy as hobby.</h2>
+        
+        <div class="author-meta">
+            <span class="author-location icon-location">Bangalore, INDIA</span>
+            <span class="author-link icon-link"><a href="http://hellodk.in/">http://hellodk.in/</a></span>
+            <!-- <span class="author-stats"><i class="icon-stats"></i> [[plural ../pagination.total empty='No posts' singular='% post' plural='% posts']]</span> -->
+            <span class="author-stats"><i class="icon-stats"></i>26 posts</span>
         </div>
-    </div>
-    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
-</header>
+    </section>
+<!-- /author -->
 
 <!-- The main content area on the homepage -->
 <main id="content" class="content" role="main">
 
-    <!-- The tag below includes the post loop - partials/loop.hbs -->
+    <!-- The tag below includes the post loop - partials/loop.hbs  -->
         <!-- Previous/next page links - only displayed on page 2+ -->
     <div class="extra-pagination inner">
         
             <nav class="pagination" role="pagination">
     
-    <span class="page-number"> Page 1 of 7 </span>
-     
-        <a class="older-posts" href="/page2/" title="Next Page">Older Posts &raquo;</a>
+        
+            <a class="newer-posts" href="/author/casper/page5/" title="Previous Page">&laquo; Newer Posts</a>
+      
+    
+    <span class="page-number"> Page 6 of 6 </span>
      
 </nav>
         
@@ -132,94 +148,10 @@
     
     <article class="post">
         <header class="post-header">
-            <h2 class="post-title"><a href="/resume">Resume</a></h2>
+            <h2 class="post-title"><a href="/going_agentless_with_ansible">Going Agntless with Ansible</a></h2>
         </header>
         <section class="post-excerpt">
-            <p><!DOCTYPE html> <html> <head> <link rel="stylesheet" href="/assets/css/hr_tag.css" /> <title>Curriculum Vitae</title> </head> <body> <h1>Deepak Gupta</h1> <ol> <li>Email: hello.dk@outlook.com</li> <li>About.me: <a href="https://about.me/hellodk">https://about.me/hellodk</a></li> <li>Blog: <a href="https://www.hellodk.in">https://www.hellodk.in</a></li></li> <li>Github: <a href="https://github.com/hellodk">https://github.com/hellodk</a></li></li>... <a class="read-more" href="/resume">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            <img class="author-thumb" src="/assets/images/casper.png" alt="Author image" nopin="nopin" />
-            <!-- author -->
-            <a href='/author/casper'>Deepak Gupta</a>
-            <!-- [[tags prefix=" on "]] -->
-            
-            <time class="post-date" datetime="2019-01-15">15 Jan 2019</time>
-        </footer>
-    </article>
-    
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="/resume">Resume</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p><h4>Deepak Gupta</h4> <ul> <li>Email: hello.dk@outlook.com</li> <li>About.me: <a href=""><span style="color:blue">https://about.me/hellodk</span></a></li> <li>Blog: <a href=""><span style="color:blue">https://www.hellodk.in</span></a></li> <li>Github: <a href=""><span style="color:blue">https://github.com/hellodk</span></a></li> <li>LinkedIn: <a href=""><span style="color:blue">https://www.linkedin.com/in/hellodk</span></a></li> <li>Docker Hub: <a href=""><span style="color:blue">https://hub.docker.com/r/hellodk</span></a></li>... <a class="read-more" href="/resume">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            <img class="author-thumb" src="/assets/images/casper.png" alt="Author image" nopin="nopin" />
-            <!-- author -->
-            <a href='/author/casper'>Deepak Gupta</a>
-            <!-- [[tags prefix=" on "]] -->
-            
-            <time class="post-date" datetime="2018-04-09">09 Apr 2018</time>
-        </footer>
-    </article>
-    
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="/failed_trek_to_everest_base_camp">A Failed Trek to Everest Base Camp</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p> <a class="read-more" href="/failed_trek_to_everest_base_camp">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            <img class="author-thumb" src="/assets/images/casper.png" alt="Author image" nopin="nopin" />
-            <!-- author -->
-            <a href='/author/casper'>Deepak Gupta</a>
-            <!-- [[tags prefix=" on "]] -->
-             
-                on 
-                
-                    
-                       <a href='/tag/travel'>Travel</a>
-                       
-                
-            
-            <time class="post-date" datetime="2018-03-02">02 Mar 2018</time>
-        </footer>
-    </article>
-    
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="/just_landed_in_malaysia">just landed in Malaysia - Truly Asia</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p><html>
-Hello
-</html> <a class="read-more" href="/just_landed_in_malaysia">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            <img class="author-thumb" src="/assets/images/casper.png" alt="Author image" nopin="nopin" />
-            <!-- author -->
-            <a href='/author/casper'>Deepak Gupta</a>
-            <!-- [[tags prefix=" on "]] -->
-             
-                on 
-                
-                    
-                       <a href='/tag/travel'>Travel</a>
-                       
-                
-            
-            <time class="post-date" datetime="2018-02-24">24 Feb 2018</time>
-        </footer>
-    </article>
-    
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="/fancy_bear_ddos">Fancy Bear DDoS for Ransom</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p><html> Threat Summary : ERT Threat Alert - Fancy Bear DDoS for Ransom Radware’s Emergency Response Team (ERT) has identified an emerging ransom denial-of-service (RDoS) campaign... <a class="read-more" href="/fancy_bear_ddos">&raquo;</a></p>
+            <p><p>While looking for a light yet powerful Configuration Management tool, I was going through some of the various available tools, and came across Ansible. After having... <a class="read-more" href="/going_agentless_with_ansible">&raquo;</a></p>
         </section>
         <footer class="post-meta">
             <img class="author-thumb" src="/assets/images/casper.png" alt="Author image" nopin="nopin" />
@@ -234,7 +166,7 @@ Hello
                        
                 
             
-            <time class="post-date" datetime="2017-12-15">15 Dec 2017</time>
+            <time class="post-date" datetime="2015-04-06">06 Apr 2015</time>
         </footer>
     </article>
     
@@ -243,9 +175,11 @@ Hello
     
         <nav class="pagination" role="pagination">
     
-    <span class="page-number"> Page 1 of 7 </span>
-     
-        <a class="older-posts" href="/page2/" title="Next Page">Older Posts &raquo;</a>
+        
+            <a class="newer-posts" href="/author/casper/page5/" title="Previous Page">&laquo; Newer Posts</a>
+      
+    
+    <span class="page-number"> Page 6 of 6 </span>
      
 </nav>
     
