@@ -1,9 +1,0 @@
-@charset "utf-8";
-
-.bigHr {
-    background-color: dimgrey !important;
-    color: dimgrey !important;
-    border: solid 1px dimgrey !important;
-    height: 2px !important;
-    width: 1000px !important;
-}

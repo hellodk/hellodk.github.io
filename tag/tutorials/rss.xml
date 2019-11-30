@@ -12,237 +12,6 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
-	  <title>Fancy Bear DDoS for Ransom</title>
-	  <link>//fancy_bear_ddos</link>
-	  <author>Deepak Gupta</author>
-	  <pubDate>2017-12-15T13:40:00+00:00</pubDate>
-	  <guid>//fancy_bear_ddos</guid>
-	  <description><![CDATA[
-	     <html>
-Threat Summary : ERT Threat Alert - Fancy Bear DDoS for Ransom
- 
-Radware’s Emergency Response Team (ERT) has identified an emerging
-ransom denial-of-service (RDoS) campaign from a group identifying itself as Fancy Bear. The group has been distributing extortion emails to payment processing vendors in multiple locations across the globe.
-In RDoS attacks, the perpetrators send a letter threatening to attack an organization—rendering its business, operations or capability unavailable—unless a ransom is paid by the deadline. This extortion method has grown in popularity every year since 2010 and typically come in the form of a volumetric distributed denial-of-service (DDoS) attack. However, it is increasingly in vogue to find techniques that are more piercing and more efficient without generating large volumes. The most advanced attacks combine both volumetric and non-volumetric cyber-attack techniques.
-At the end of April, a group claiming to be Fancy Bear began sending out extortion attempts. The extortionist behind this campaign attempted to intimidate their victims by using the name of APT28 (Fancy Bear) and an infamous cyber-espionage group. APT28 is believed to be a nation state-level attacker that uses zero-day exploits and spear phishing attacks to spread malware.
- 
-Who are affected?
-The group claiming to be Fancy Bear is targeting a limited number of financial services organizations – payment processers under the threat of an attack from the Mirai Botnet. Each letter contains a unique bitcoin address. In the note, Fancy Bear listed the IP address of the victim and targeted them with a sample attack.
- 
-Threat Summary : World's Biggest Botnet Just Sent 12.5 Million Emails With Scarab Ransomware
- 
-A massive malicious email campaign that stems from the world's largest spam botnet Necurs is spreading a new strain of ransomware at the rate of over 2 million emails per hour and hitting computers across the globe.
-The popular malspam botnet Necrus which has previously found distributing Dridex banking trojan, Trickbot banking trojan, Locky ransomware, and Jaff ransomware, has now started spreading a new version of Scarab ransomware.
-According to F-Secure, Necurs botnet is the most prominent deliverer of spam emails with five to six million infected hosts online monthly and is responsible for the biggest single malware spam campaigns.
-Scarab ransomware is a relatively new ransomware family that was initially spotted by ID Ransomware creator Michael Gillespie in June this year.
- 
-According to the security firm Forcepoint, the massive email campaign spreading Scarab ransomware virus started at approximately 07:30 UTC on 23 November (Thursday) and sent about 12.5 million emails in just six hours.
-The Forcepoint researchers said "the majority of the traffic is being sent to the .com top-level domain (TLD). However, this was followed by region-specific TLDs for the United Kingdom, Australia, France, and Germany."
-The spam email contains a malicious VBScript downloader compressed with 7zip that pulls down the final payload, with one of these subject lines:
-Scanned from Lexmark
-Scanned from Epson
-Scanned from HP
-Scanned from Canon
-As with previous Necurs botnet campaigns, the VBScript contained a number of references to the widely watched series Game of Thrones, like the strings 'Samwell' and 'JohnSnow.'
-The final payload is the latest version of Scarab ransomware with no change in filenames, but it appends a new file extension with ".[suupport@protonmail.com].scarab" to the encrypted files.
-Once done with the encryption, the ransomware then drops a ransom note with the filename "IF YOU WANT TO GET ALL YOUR FILES BACK, PLEASE READ THIS.TXT" within each affected directory.
-The ransom note does not specify the amount being demanded by the criminals; instead, it merely states that "the price depends on how fast you [the victim] write to us."
-However, Scarab ransomware offers to decrypt three files for free to prove the decryption will work: "Before paying you can send us up to 3 files for free decryption."
- 
-How to Protect Yourself:
-Keep a good backup routine in place that makes their copies to an external storage device that is not always connected to your PC in order to always have a tight grip on all your important files and documents.
-Always be suspicious of any uninvited document sent over an email and should never click on links provided in those documents unless verifying the source.
- 
- 
-Threat Summary : FortiOS web GUI login disclaimer redir parameter XSS vulnerability
- 
-A reflected XSS vulnerability exists in FortiOS web GUI "Login Disclaimer" redir parameter. It is potentially exploitable by a remote unauthenticated attacker, via sending a maliciously crafted URL to a victim who has an open session on the web GUI. Visiting that malicious URL may cause the execution of arbitrary javascript code in the security context of the victim's browser.
- 
-Impact:
-Cross-site scripting (XSS)
- 
-Who are affected?
-Firmware Version 5.6: FortiOS 5.6.0
-Firmware Version 5.4: FortiOS 5.4.0 to 5.4.5
-Other Firmware Version are not affected
- 
-How to Protect Yourself:
-Firmware Version 5.6: Upgrade to FortiOS 5.6.1 or above
-Firmware Version 5.4: Upgrade to FortiOS 5.4.6 or above.
- 
-Reference:
-http://fortiguard.com/psirt/FG-IR-17-113
- 
-Threat Summary : FortiClient privilege escalation vulnerability
- 
-A low privileged user may be able to execute arbitrary code by exploiting a FortiClient Named Pipe vulnerability.
- 
-Impact:
-Privilege escalation
- 
-Who are affected?
-FortiClient Windows 5.4.1, 5.4.2.
- 
-How to Protect Yourself:
-Upgrade to FortiClient Windows: 5.4.3 or 5.6.0
- 
-Reference:
-http://fortiguard.com/psirt/FG-IR-16-095
-</html>
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Fancy Bear DDoS for Ransom</title>
-	  <link>//blue_borne</link>
-	  <author>Deepak Gupta</author>
-	  <pubDate>2017-12-15T13:40:00+00:00</pubDate>
-	  <guid>//blue_borne</guid>
-	  <description><![CDATA[
-	     <html>
-Threat Summary : The IoT Attack Vector “BlueBorne” Exposes Almost Every Connected Device
-
-
-Armis Labs revealed a new attack vector endangering major desktop, and IoT operating systems, including Windows, and Linux, and the devices using them. The new vector is dubbed “BlueBorne”, as it spread through the air (airborne) and attacks devices via Bluetooth. BlueBorne allows attackers to take control of devices, access corporate data and networks, penetrate secure “air-gapped” networks, and spread malware laterally to adjacent devices. BlueBorne is an attack vector by which hackers can leverage Bluetooth connections to penetrate and take complete control over targeted devices. The attack does not require the targeted device to be paired to the attacker’s device, or even to be set on discoverable mode. The BlueBorne attack vector can be used to conduct a large range of offenses, including remote code execution as well as Man-in-The-Middle attacks.
-
-
-
-Impact:
-
-The BlueBorne attack vector requires no user interaction, is compatible to all software versions, and does not require any preconditions or configurations aside of the Bluetooth being active. Unlike the common misconception, Bluetooth enabled devices are constantly searching for incoming connections from any devices, and not only those they have been paired with. This means a Bluetooth connection can be established without pairing the devices at all. This makes BlueBorne one of the most broad potential attacks found in recent years, and allows an attacker to strike completely undetected.
-
-
-
-Who are affected?
-
-Windows - All Windows computers since Windows Vista are affected by the “Bluetooth Pineapple” vulnerability which allows an attacker to perform a Man-in-The-Middle attack (CVE-2017-8628). This vulnerability resides in the Bluetooth stack, and enables the attacker to create a malicious  network interface on the victim’s device, re-configure IP routing and force the device to transmit all communication through it. This attack does not require any user interaction, authentication or pairing, making it also practically invisible.
-
-
-
-Linux -  Linux is the underlying operating system for a wide range of devices. The most commercial, and consumer-oriented platform based on Linux is the Tizen OS. All Linux devices running BlueZ are affected by the information leak vulnerability (CVE-2017-1000250).
-
-This vulnerability resides in the SDP server responsible for identifying other services using Bluetooth around the device. The flaw allows the attacker to send a set of crafted requests to the server, causing it to disclose memory bits in response. This can be used by an attacker to expose sensitive data from the Bluetooth process that may also contain encryption keys of Bluetooth communications.
-
-
-
-All Linux devices from version 3.3-rc1 (released in October 2011) are affected by the remote code execution vulnerability (CVE-2017-1000251).
-
-This vulnerability was found in the Bluetooth stack of the Linux Kernel, which is the very core of the operating system. An internal flaw in the L2CAP (Logical Link Control and Adaptation Protocol) that is used to connect between two devices causes a memory corruption. An attacker can use this memory corruption to gain full control of the device.
-
-
-
-Fix:
-
-Microsoft issued has security patches to all supported Windows versions on July 11, 2017, with coordinated notification on Tuesday, September 12.
-
-A kpatch for customers running Red Hat Enterprise Linux 7.2 or greater will be available. Please open a support case with Red-Hat to gain access to the kpatch. You can also use the below script to check if your Linux servers are vulnerable.
-
-https://access.redhat.com/sites/default/files/cve-2017-1000251-1.sh
-</html>
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Fancy Bear DDoS for Ransom</title>
-	  <link>//blue_borne</link>
-	  <author>Deepak Gupta</author>
-	  <pubDate>2017-12-15T13:40:00+00:00</pubDate>
-	  <guid>//blue_borne</guid>
-	  <description><![CDATA[
-	     <html>
-Threat Summary: Decyphering the Noise Around ‘Meltdown’ and ‘Spectre’
-
- 
-
-The McAfee Advanced Threat Research (ATR) Team has closely followed the attack techniques that have been named Meltdown and Spectre throughout the lead-up to their announcement on January 3.
-
- 
-
-The vulnerabilities been categorized into two attacks, Meltdown (CVE-2017-5754) and Spectre (CVE-2017-5753 and CVE-2017-5715), which could allow attackers to steal sensitive data which is currently processed on the computer.
-
-Both attacks take advantage of a feature in chips known as "speculative execution," a technique used by most modern CPUs to optimize performance.
-
-"In order to improve performance, many CPUs may choose to speculatively execute instructions based on assumptions that are considered likely to be true. During speculative execution, the processor is verifying these assumptions; if they are valid, then the execution continues. If they are invalid, then the execution is unwound. Therefore, it is possible for such speculative execution to have "side effects which are not restored when the CPU state is unwound and can lead to information disclosure," which can be accessed using side-channel attacks.
-
-Meltdown Attack: Meltdown attack allows attackers to read not only kernel memory but also the entire physical memory of the target machines, and therefore all secrets of other programs and the operating system. Meltdown uses speculative execution to break the isolation between user applications and the operating system, allowing any application to access all system memory, including memory allocated for the kernel.
-
-Spectre Attack: Spectre attack breaks the isolation between different applications, allowing the attacker-controlled program to trick error-free programs into leaking their secrets by forcing them into accessing arbitrary portions of its memory, which can then be read through a side channel.
-
-Spectre attacks can be used to leak information from the kernel to user programs, as well as from virtualization hypervisors to guest systems.
-
- 
-
-Who are affected?
-
-This vulnerability impacts almost every system, including desktops, laptops, cloud servers, as well as smartphones—powered by Intel, AMD, and ARM chips.
-
- 
-
-How to Protect Yourself:
-
-There is no single fix for both the attacks since each requires protection independently.
-
-·         Windows — Microsoft has issued an out-of-band patch update for Windows 10, while other versions of Windows will be patched on the traditional Patch Tuesday on January 9, 2018
-
-·         MacOS — Apple had already fixed most of these security holes in macOS High Sierra 10.13.2 last month, but MacOS 10.13.3 will enhance or complete these mitigations.
-
-·         Linux — Linux kernel developers have also released patches by implementing kernel page-table isolation (KPTI) to move the kernel into an entirely separate address space.
-
-·         Android — Google has released security patches for Pixel/Nexus users as part of the Android January security patch update.  Other users have to wait for their device manufacturers to release a compatible security update.
-
-·         Allow scripting languages to execute only from trusted sites.
-
-·         Anti Virus vendors like McAfee have some detection capabilities around these threats,  . McAfee Windows Security Suite or McAfee Endpoint Security (ENS) can provide warnings if you visit a known dangerous site.McAfee products can also provide an alternate script-execution engine that prevents known malicious scripts from executing.
-
- 
-
-Reference:
-
-https://thehackernews.com/2018/01/meltdown-spectre-vulnerability.html
-
-https://securingtomorrow.mcafee.com/mcafee-labs/decyphering-the-noise-around-meltdown-and-spectre/
-</html>
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Bad Rabbit - New Ransomware Attack</title>
-	  <link>//bad_rabbit_attack</link>
-	  <author>Deepak Gupta</author>
-	  <pubDate>2017-12-15T13:40:00+00:00</pubDate>
-	  <guid>//bad_rabbit_attack</guid>
-	  <description><![CDATA[
-	     <html>
-Threat Summary : Bad Rabbit: New Ransomware Attack Rapidly Spreading
- 
-A new widespread ransomware attack is spreading like wildfire around Europe and has already affected over 200 major organisations, primarily in Russia, Ukraine, Turkey and Germany, in the past few hours.
-Dubbed "Bad Rabbit," is reportedly a new Petya-like targeted ransomware attack against corporate networks, demanding 0.05 bitcoin (~ $285) as ransom from victims to unlock their systems.
-According to an initial analysis provided by the Kaspersky, the ransomware was distributed via drive-by download attacks, using fake Adobe Flash players installer to lure victims' in to install malware unwittingly.
-"No exploits were used, so the victim would have to manually execute the malware dropper, which pretends to be an Adobe Flash installer. We’ve detected a number of compromised websites, all of which were news or media websites." Kaspersky Lab said.
-However, security researchers at ESET have detected Bad Rabbit malware as 'Win32/Diskcoder.D' — a new variant of Petya ransomware, also known as Petrwrap, NotPetya, exPetr and GoldenEye.
-Bad Rabbit ransomware uses DiskCryptor, an open source full drive encryption software, to encrypt files on infected computers with RSA 2048 keys. Bad Rabbit does not use EternalBlue but does leverage EternalRomance RCE exploit to spread across victims' networks.
-Microsoft and F-Secure have also confirmed the presence of the exploit in the Bad Rabbit ransomware. EternalRomance is a remote code execution exploit that takes advantage of a flaw (CVE-2017-0145) in Microsoft's Windows Server Message Block (SMB), a protocol for transferring data between connected Windows computers, to bypass security over file-sharing connections, thereby enabling remote code execution on Windows clients and servers.
- 
-Impact:
-Bad Rabbit
- first scans the internal network for open SMB shares, tries a hardcoded list of commonly used credentials
- to drop malware, and also uses Mimikatz
- post-exploitation tool to extract credentials from the affected systems. Bad Rabbit can also exploit the Windows Management Instrumentation Command-line (WMIC) scripting interface in an attempt to execute code on other Windows systems on the network remotely, noted
- EndGame. However, according to Cisco's Talos, Bad Rabbit also carries a code that uses EternalRomance, which allows remote hackers to propagate from an infected computer to other targets more efficiently.
- 
-How to Protect Yourself:
-In order to protect yourself from Bad Rabbit, users are advised to disable WMI service to prevent the malware from spreading over your network.
-Update your systems regularly and keep a good and effective anti-virus security suite on your system.
-Since most ransomware spread through phishing emails, malicious adverts on websites, and third-party apps and programs, you should always exercise caution before falling for any of these.
-Most importantly, to always have a tight grip on your valuable data, keep a good backup routine in place that makes and saves copies of your files to an external storage device that isn't always connected to your PC.
- 
-Reference:
-https://thehackernews.com/2017/10/bad-rabbit-ransomware-attack.html
-</html>
-	  ]]></description>
-	</item>
-
-	<item>
 	  <title>Python regex Simplified</title>
 	  <link>//python_regex_simplified</link>
 	  <author>Deepak Gupta</author>
@@ -457,6 +226,474 @@ When using the shovel, it is possible to specify redundant brokers in a source o
 	  <guid>//kubernetes_cluster_vagrant</guid>
 	  <description><![CDATA[
 	     In this tutorial we will cover the installatoin of a Kubernetes Cluster over Vagrant
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>HTTP Quick Reference - A Quick reminder about HTTP</title>
+	  <link>//http_quick_reference</link>
+	  <author>Deepak Gupta</author>
+	  <pubDate>2017-04-20T12:30:00+00:00</pubDate>
+	  <guid>//http_quick_reference</guid>
+	  <description><![CDATA[
+	     In this tutorial we will cover the basics of an HTTP request and see how it works.
+</br>
+<h2><u>HTTP Transaction Model:</u></h2>
+<p>The HTTP protocol is transaction-driven. This means that each request will lead
+to one and only one response. Traditionally, a TCP connection is established
+from the client to the server, a request is sent by the client on the
+connection, the server responds and the connection is closed. A new request
+will involve a new connection :</p>
+
+<code>  [CON1] [REQ1] ... [RESP1] [CLO1] [CON2] [REQ2] ... [RESP2] [CLO2] ... </code>
+</br></br>
+
+<p>In this mode, called the "HTTP close" mode, there are as many connection
+establishments as there are HTTP transactions. Since the connection is closed
+by the server after the response, the client does not need to know the content
+length.</p>
+
+<p>Due to the transactional nature of the protocol, it was possible to improve it
+to avoid closing a connection between two subsequent transactions. In this mode
+however, it is mandatory that the server indicates the content length for each
+response so that the client does not wait indefinitely. For this, a special
+header is used: "Content-length". This mode is called the "keep-alive" mode :</p>
+
+  <code>[CON] [REQ1] ... [RESP1] [REQ2] ... [RESP2] [CLO] ...</code>
+</br></br>
+<p>Its advantages are a reduced latency between transactions, and less processing
+power required on the server side. It is generally better than the close mode,
+but not always because the clients often limit their concurrent connections to
+a smaller value.</p>
+
+<p>A last improvement in the communications is the pipelining mode. It still uses
+keep-alive, but the client does not wait for the first response to send the
+second request. This is useful for fetching large number of images composing a
+page :</p>
+
+<code>  [CON] [REQ1] [REQ2] ... [RESP1] [RESP2] [CLO] ...</code>
+</br></br>
+
+<p>This can obviously have a tremendous benefit on performance because the network
+latency is eliminated between subsequent requests. Many HTTP agents do not
+correctly support pipelining since there is no way to associate a response with
+the corresponding request in HTTP. For this reason, it is mandatory for the
+server to reply in the exact same order as the requests were received.</p>
+
+  <h2><u>HTTP Request</u></h2>
+  <p>First, let's consider this HTTP request :</p>
+  
+  <table id="t01">
+  <tr>
+    <th>Line Number</th>
+    <th>Contents</th> 
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>GET /serv/login.php?lang=en&profile=2 HTTP/1.1</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Host: www.mydomain.com</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>User-agent: my small browser</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Accept: image/jpeg, image/gif</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Accept: image/png</td>
+  </tr>
+</table>
+
+<h3><u>The Request line</u></h3>
+
+<p>Line 1 is the "request line". It is always composed of 3 fields :</p>
+<li>METHOD      : GET</li>
+<li>URI         : /serv/login.php?lang=en&profile=2</li>
+<li>Version tag : HTTP/1.1</li>
+</br/>
+<p>
+All of them are delimited by what the standard calls LWS (linear white spaces),
+which are commonly spaces, but can also be tabs or line feeds/carriage returns
+followed by spaces/tabs. The method itself cannot contain any colon (':') and
+is limited to alphabetic letters.
+</p>
+
+The URI itself can have several forms :
+</br>
+<li>A "relative URI" : (<code>/serv/login.php?lang=en&profile=2</code>)
+    It is a complete URL without the host part. This is generally what is received by servers, reverse proxies and transparent proxies.
+</li>
+<li>An "absolute URI", also called a "URL" : (<code>http://192.168.0.12:8080/serv/login.php?lang=en&profile=2</code>)
+    It is composed of a "scheme" (the protocol name followed by '://'), a host
+    name or address, optionally a colon (':') followed by a port number, then
+    a relative URI beginning at the first slash ('/') after the address part.
+    This is generally what proxies receive, but a server supporting HTTP/1.1
+    must accept this form too.
+</li>
+<li>A "star" : <code>('*')</code> This form is only accepted in association with the OPTIONS
+    method and is not relayable. It is used to inquiry a next hop's capabilities.
+</li>
+<li>An address:port combination : (<code>192.168.0.12:80</code>)
+    This is used with the CONNECT method, which is used to establish TCP
+    tunnels through HTTP proxies, generally for HTTPS, but sometimes for
+    other protocols too.
+</li>
+</code>
+</br>
+<p>
+In a relative URI, two sub-parts are identified. The part before the question
+mark is called the "path". It is typically the relative path to static objects
+on the server. The part after the question mark is called the "query string".
+It is mostly used with GET requests sent to dynamic scripts and is very
+specific to the language, framework or application in use.
+</p>
+</br>
+<h2><u>The request headers</u></h2>
+<p>
+The headers start at the second line and are composed of a name at the
+beginning of the line, immediately followed by a colon <code>(':')</code>. Traditionally,
+an LWS is added after the colon but that's not required. Then come the values.
+Multiple identical headers may be folded into one single line, delimiting the
+values with commas, provided that their order is respected. This is commonly
+encountered in the "Cookie:" field. A header may span over multiple lines if
+the subsequent lines begin with an LWS. In the example in 1.2, lines 4 and 5
+define a total of 3 values for the "Accept:" header.
+</p>
+
+<p>
+Contrary to a common mis-conception, header names are not case-sensitive, and
+their values are not either if they refer to other header names (such as the
+"Connection:" header).
+</p>
+<p>
+The end of the headers is indicated by the first empty line. People often say
+that it's a double line feed, which is not exact, even if a double line feed
+is one valid form of empty line.
+</p>
+
+<h2><u>HTTP response</u></h2>
+<p>An HTTP response looks very much like an HTTP request. Both are called HTTP
+messages. Let's consider this HTTP response :
+
+<table>
+<tr>
+<th>Line</th>
+<th>Contents</th>
+</tr>
+<tr>
+<td>1</td>
+<td>HTTP/1.1 200 OK</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Content-length: 350</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Content-Type: text/html</td>
+</tr>
+</table>   
+</p>
+
+<p>
+As a special case, HTTP supports so called "Informational responses" as status
+codes 1xx. These messages are special in that they don't convey any part of the
+response, they're just used as sort of a signaling message to ask a client to
+continue to post its request for instance.
+</p>
+<p>
+In the case of a status 100 response
+the requested information will be carried by the next non-100 response message
+following the informational one. This implies that multiple responses may be
+sent to a single request, and that this only works when keep-alive is enabled
+(1xx messages are HTTP/1.1 only).
+</p>
+
+<h2><u>The Response line</u></h2>
+<p>Line 1 is the "response line". It is always composed of 3 fields :
+
+<table>
+<tr>
+<th>Name</th>
+<th>Value(can be different at times)</th>
+</tr>
+<tr>
+<td>Version tag</td>
+<td>HTTP/1.1</td>
+</tr>
+<tr>
+<td>Status code</td>
+<td>200</td>
+</tr>
+<tr>
+<td>Reason</td>
+<td>OK</td>
+</tr>
+</table>
+
+</p>
+The status code is always 3-digit. The first digit indicates a general status :
+<table>
+<tr>
+<th>Code</th>
+<th>Message</th>
+</tr>
+<tr>
+ <td>1xx</td>
+ <td>informational message to be skipped (eg: 100, 101)</td>
+</tr>
+<tr>
+ <td>2xx</td>
+ <td>OK, content is following   (eg: 200, 206)</td>
+</tr>
+<tr>
+ <td>3xx</td>
+ <td>OK, no content following   (eg: 302, 304)</td>
+</tr>
+<tr>
+ <td>4xx</td>
+ <td>error caused by the client (eg: 401, 403, 404)</td>
+</tr>
+<tr>
+ <td>5xx</td>
+ <td>error caused by the server (eg: 500, 502, 503)</td>
+</tr>
+</table>
+
+You can also refer to RFC2616 for the detailed meaning of all such codes. The
+"reason" field is just a hint, but is not parsed by clients. Anything can be
+found there, but it's a common practice to respect the well-established
+messages. It can be composed of one or multiple words, such as "OK", "Found",
+or "Authentication Required".
+
+Below is the table depicting the basic interpretation of HTTP status codes:
+
+<table>
+<tr>
+  <th>Code</th>
+  <th>When / reason</th>
+</tr>
+<tr>
+   <td>200</td>
+   <td>access to stats page, and when replying to monitoring requests</td>
+</tr>
+<tr>
+   <td>301</td>
+   <td>when performing a redirection, depending on the configured code</td>
+</tr>
+<tr>
+   <td>302</td>
+   <td>when performing a redirection, depending on the configured code</td>
+</tr>
+<tr>
+   <td>303</td>
+   <td>when performing a redirection, depending on the configured code</td>
+   </tr>
+<tr>
+   <td>307</td>
+   <td>when performing a redirection, depending on the configured code</td>
+   </tr>
+<tr>
+   <td>308</td>
+   <td>when performing a redirection, depending on the configured code</td>
+   </tr>
+<tr>
+   <td>400</td>
+   <td>for an invalid or too large request</td>
+   </tr>
+<tr>
+   <td>401</td>
+   <td>when an authentication is required to perform the action (when accessing the stats page)</td>
+   </tr>
+<tr>
+   <td>403</td>
+   <td>when a request is forbidden by a "block" ACL or "reqdeny" filter</td>
+   </tr>
+<tr>
+   <td>408</td>
+   <td>when the request timeout strikes before the request is complete</td>
+   </tr>
+<tr>
+   <td>500</td>
+   <td>when haproxy encounters an unrecoverable internal error, such as a memory allocation failure, which should never happen</td>
+   </tr>
+<tr>
+   <td>502</td>
+   <td>when the server returns an empty, invalid or incomplete response, or when an "rspdeny" filter blocks the response.</td>
+   </tr>
+<tr>
+   <td>503</td>
+   <td>when no server was available to handle the request, or in response to monitoring requests which match the "monitor fail" condition</td>
+   </tr>
+<tr>
+   <td>504</td>
+   <td>when the response timeout strikes before the server responds</td>
+   </tr>
+</table>
+</br>
+
+<h2><u>The response headers</u></h2>
+<p>Response headers work exactly like request headers.</p>
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>HA Proxy for Beginners</title>
+	  <link>//ha_proxy_for_beginners</link>
+	  <author>Deepak Gupta</author>
+	  <pubDate>2017-04-20T12:30:00+00:00</pubDate>
+	  <guid>//ha_proxy_for_beginners</guid>
+	  <description><![CDATA[
+	     <h2><u>Introduction</u></h2>
+
+<h5>Installing HA proxy</h5>
+<h5>Configuring HAProxy</h5>
+<p>
+Configuration file format:
+</p>
+
+There are 3 major parameters in HA Proxy's configuration:
+
+1. Command Line Arguments, 
+HAProxy's configuration process involves 3 major sources of parameters :
+
+  - the arguments from the command-line, which always take precedence
+  - the "global" section, which sets process-wide parameters
+  - the proxies sections which can take form of "defaults", "listen",
+    "frontend" and "backend".
+
+The configuration file syntax consists in lines beginning with a keyword
+referenced in this manual, optionally followed by one or several parameters
+delimited by spaces. If spaces have to be entered in strings, then they must be
+preceded by a backslash ('\') to be escaped. Backslashes also have to be
+escaped by doubling them.
+
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>RethinkDb Installation on Ubuntu-14.04</title>
+	  <link>//understanding_dns</link>
+	  <author>Deepak Gupta</author>
+	  <pubDate>2016-09-21T10:18:00+00:00</pubDate>
+	  <guid>//understanding_dns</guid>
+	  <description><![CDATA[
+	     <html>
+Differences between the A, CNAME, ALIAS and URL records
+
+A, CNAME, ALIAS and URL records are all possible solutions to point a host name (name hereafter) to your site. However, they have some small differences that affect how the client will reach your site.
+
+Before going further into the details, it’s important to know that A and CNAME records are standard DNS records, whilst ALIAS and URL records are custom DNS records provided by DNSimple’s DNS hosting. Both of them are translated internally into A records to ensure compatibility with the DNS protocol.
+
+Understanding the differences
+
+Here’s the main differences:
+
+The A record maps a name to one or more IP addresses, when the IP are known and stable.
+The CNAME record maps a name to another name. It should only be used when there are no other records on that name.
+The ALIAS record maps a name to another name, but in turns it can coexist with other records on that name.
+The URL record redirects the name to the target name using the HTTP 301 status code.
+Some important rules to keep in mind:
+
+The A, CNAME, ALIAS records causes a name to resolve to an IP. Vice-versa, the URL record redirects the name to a destination. The URL record is simple and effective way to apply a redirect for a name to another name, for example to redirect www.example.com to example.com.
+The A name must resolve to an IP, the CNAME and ALIAS record must point to a name.
+Which one to use
+
+Understanding the difference between the A name and the CNAME records will help you to decide.
+
+The general rule is:
+
+use an A record if you manage what IP addresses are assigned to a particular machine or if the IP are fixed (this is the most common case)
+use a CNAME record if you want to alias a name to another name, and you don’t need other records (such as MX records for emails) for the same name
+use an ALIAS record if you are trying to alias the root domain (apex zone) or if you need other records for the same name
+use the URL record if you want the name to redirect (change address) instead of resolving to a destination.
+You should never use a CNAME record for your root domain name (i.e. example.com).
+</html>
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>RethinkDb Installation on Ubuntu-14.04</title>
+	  <link>//rethinkdb_installation_ubuntu14</link>
+	  <author>Deepak Gupta</author>
+	  <pubDate>2016-09-21T10:18:00+00:00</pubDate>
+	  <guid>//rethinkdb_installation_ubuntu14</guid>
+	  <description><![CDATA[
+	     Let's get some hands on rethinkdb today and find it out yourself. </br>
+</br>
+So what is rethinkdb?
+</br></br>
+Rethinkdb is an open-source, scalable JSON database built from the ground up for the realtime web.
+</br>RethinkDB inverts the traditional database architecture by exposing an exciting new access model – instead of polling for changes, the developer can tell RethinkDB to continuously push updated query results to applications in realtime. RethinkDB’s realtime push architecture dramatically reduces the time and effort necessary to build scalable realtime apps. RethinkDB also offers a flexible query language, intuitive operations and monitoring APIs, and is easy to setup and learn. Just like any other database solution, rethinkdb ships as a client-server component model. The installation process for both the server and the client are illustrated below:
+
+<p>How to Install RethinkDb:</p>
+1. Add the RethinkDB PPA to your list of repositories : 
+<br></br>
+<code>source /etc/lsb-release && echo "deb http://download.rethinkdb.com/apt $DISTRIB_CODENAME main" | sudo tee /etc/apt/sources.list.d/rethinkdb.list</code>
+<br></br>
+2. Add the keys:<br></br>
+
+<code>wget -qO- http://download.rethinkdb.com/apt/pubkey.gpg | sudo apt-key add -</code>
+<br></br>
+3. Update the repository:
+<br></br>
+<code>sudo apt-get update</code>
+<br></br>
+4. Install the rethinkdb server via apt-get:
+<br></br>
+<code>sudo apt-get -y install rethinkdb</code>
+<br></br>
+Install rethinkdb client:
+<br></br>
+1. Install the python-pip package:
+<br></br>
+<code>sudo apt-get install python-pip</code>
+<br></br>
+2. Install the rethinkdb python client:
+<br></br>
+<code>sudo pip install rethinkdb</code>
+<br></br>
+The above steps ensure that rethinkdb is installed on the system, while it does not ensures that this will start the rethinkdb service on system startup. You still need to start the rethinkdb service using the below command
+<br></br>
+<code>rethinkdb</code>
+<br></br>
+The above command will ensure that rethinkdb is running as a terminal process, and will exit once the terminal is closed, or the process is killed, in short it will not run rethinkdb as a background service.
+<br></br>
+To start rethinkdb as a service, please follow the below steps:
+<br></br>
+1.  Move to the directory /etc/rethinkdb
+<br></br><code>cd /etc/rethinkdb</code>
+<br></br>
+2. Copy the file to /etc/rethinkdb/instances.d and rename the file as per your requirements ensuring the extension is .conf only. Say for example the file name is rethinkdb1.conf
+<br></br><code>cp default.conf.sample rethinkdb1.conf</code>
+<br></br>
+3. Now open the file /etc/rethinkdb/instances.d/rethinkdb1.conf and modify the paramaters as per your requirements.
+<br></br><code>vim rethinkdb1.conf</code>
+<br></br>
+4. If setting up a cluster, we suggest do change the server-name to somethink like 'rethinkdb-primary' or 'rethinkdb-1' or 'master' or 'slave'. This will ensure that we have a meaningful naming convention for our cluster.
+<br></br>
+5. The default port details are :
+<br></br>
+<code>29015 :</code> Rethinkdb listens for intracluster connections
+</br>
+<code>28015 :</code> Rethinkdb listens for client driver connections
+</br>
+<code>8080  :</code> Rethinkdb listens for administrative HTTP connections
+</br>
+<code>22    :</code> For SSH. The server uses public key authentication.
+</br>
+<code>80    :</code> For HTTP. It is used during the setup process but otherwise redirects to HTTPS.
+</br>
+<code>443   :</code> For HTTPS. An Nginx server sits between RethinkDB and the world and provides basic HTTP authentication and secure HTTPS connections for the web UI
+<br></br>
+</body>
+</html>
 	  ]]></description>
 	</item>
 
