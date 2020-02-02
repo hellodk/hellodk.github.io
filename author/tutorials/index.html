@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- [[! Page Meta ]] -->
-    <title>Curosity is the most powerful thing you own</title>
+    <title>Author</title>
     <meta name="description" content="Curosity is the most powerful thing you own - A beautiful narrative written over an elegant publishing platform. The story begins here..." />
 
     <meta name="HandheldFriendly" content="True" />
@@ -59,7 +59,7 @@
     <link rel="alternate" type="application/rss+xml" title="Curosity is the most powerful thing you own" href="/rss.xml" />
 
 </head>
-<body class="tag-template nav-closed">
+<body class="author-template nav-closed">
 
     <div class="nav">
     <h3 class="nav-title">Menu</h3>
@@ -76,7 +76,7 @@
         <li class="nav-resume " role="presentation"><a href="/resume">Resume</a></li>
         <li class="nav-tutorials  nav-current" role="presentation"><a href="/tag/tutorials">Tutorials</a></li>
         <li class="nav-photography " role="presentation"><a href="/tag/photography">Photography</a></li>
-        <li class="nav-author " role="presentation"><a href="/author/casper">Author</a></li>
+        <li class="nav-author  nav-current" role="presentation"><a href="/author/casper">Author</a></li>
     </ul>
     <a class="subscribe-button icon-feed" href="/rss.xml">Subscribe</a>
 </div>
@@ -85,81 +85,57 @@
     <div class="site-wrapper">
 
         <!-- [[! Everything else gets inserted here ]] -->
-        <!-- < dynamically overriding backgrounds for tags as well as descriptions -->
-
-   
-   
-
-
-
-
-<!-- < default}} -->
+        <!-- < default}} -->
 <!-- The tag above means - insert everything in this file into the [body] of the default.hbs template -->
 
-<!-- If we have a tag cover, display that - else blog cover - else nothing -->
-<header class="main-header tag-head " style="background-image: url(/assets/images/cover7.jpg) ">
-    <nav class="main-nav overlay clearfix">
-        <a class="blog-logo" href="/"><img src="/assets/images/utilities/home_icon.png" alt="Blog Logo" /></a>
-        
-            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
-        
-    </nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">Tutorials</h1>
-            <h2 class="page-description">
+<!-- The big featured header -->
+
+<!-- Everything inside the #author tags pulls data from the author -->
+<!-- #author  -->
+    <header class="main-header author-head " style="background-image: url(/assets/images/cover5.jpg) ">
+        <nav class="main-nav overlay clearfix">
+            <a class="blog-logo" href="/"><img src="/assets/images/utilities/home_icon.png" alt="Blog Logo" /></a>
             
-                A series of short tutorials.
+                <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
             
-            </h2>
+        </nav>
+    </header>
+
+    <section class="author-profile inner">
+        
+        <figure class="author-image">
+            <div class="img" style="background-image: url(/assets/images/resume/dk.jpg)"><span class="hidden">Deepak Gupta's Picture</span></div>
+        </figure>
+        
+        <h1 class="author-title">Deepak Gupta</h1>
+        
+            <h2 class="author-bio">A full time technologist cum foodieeeeeee... I spend most of my time playing with open source tools and technologies. I prefer hanging out most of the time, and have been a taveller since ages, besides being a biker at heart I do love to practice photography in my liesure.</h2>
+        
+        <div class="author-meta">
+            <span class="author-location icon-location">Bangalore, INDIA</span>
+            <span class="author-link icon-link"><a href="http://hellodk.in/">https://hellodk.in/</a></span>
+            <!-- <span class="author-stats"><i class="icon-stats"></i> [[plural ../pagination.total empty='No posts' singular='% post' plural='% posts']]</span> -->
+            <span class="author-stats"><i class="icon-stats"></i>1 post</span>
         </div>
-    </div>
-</header>
+    </section>
+<!-- /author -->
 
 <!-- The main content area on the homepage -->
 <main id="content" class="content" role="main">
 
-    <!-- The tag below includes the post loop - partials/loop.hbs -->
+    <!-- The tag below includes the post loop - partials/loop.hbs  -->
         <!-- Previous/next page links - only displayed on page 2+ -->
     <div class="extra-pagination inner">
         
             <nav class="pagination" role="pagination">
     
-        
-            <a class="newer-posts" href="/tag/tutorials/page3/" title="Previous Page">&laquo; Newer Posts</a>
-      
-    
-    <span class="page-number"> Page 4 of 4 </span>
+    <span class="page-number"> Page 1 of 1 </span>
      
 </nav>
         
     </div>
 
     <!-- This is the post loop - each post will be output using this markup -->
-    
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="/5_interesting_cloud_predictions_2016">5 interesting cloud predictions for 2016</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p><ol> <li>It&#39;s time for IOT-</li> </ol> <p>The IOT or the Internet of Things has been a buzzword around for quite some time. And finally the time... <a class="read-more" href="/5_interesting_cloud_predictions_2016">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            <img class="author-thumb" src="/assets/images/resume/dk.jpg" alt="Author image" nopin="nopin" />
-            <!-- author -->
-            <a href='/author/casper'>Deepak Gupta</a>
-            <!-- [[tags prefix=" on "]] -->
-             
-                on 
-                
-                    
-                       <a href='/tag/tutorials'>Tutorials</a>
-                       
-                
-            
-            <time class="post-date" datetime="2016-01-28">28 Jan 2016</time>
-        </footer>
-    </article>
     
     <article class="post">
         <header class="post-header">
@@ -185,99 +161,19 @@
         </footer>
     </article>
     
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="/understanding_git_flow">Understanding Git-Flow</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p><p>Understanding Git Flow for(ubuntu-14.04):</p> <p>what is git flow? Usage? How can it be helpful?</p> <p>Install git flow using the below command:</p> <p>sudo apt-get install git-flow</p> <p>Starting... <a class="read-more" href="/understanding_git_flow">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            <img class="author-thumb" src="/assets/images/resume/dk.jpg" alt="Author image" nopin="nopin" />
-            <!-- author -->
-            <a href='/author/casper'>Deepak Gupta</a>
-            <!-- [[tags prefix=" on "]] -->
-             
-                on 
-                
-                    
-                       <a href='/tag/tutorials'>Tutorials</a>
-                       
-                
-            
-            <time class="post-date" datetime="2015-11-09">09 Nov 2015</time>
-        </footer>
-    </article>
-    
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="/going_agentless_with_ansible">Going Agentless with Ansible</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p><p>While looking for a light yet powerful Configuration Management tool, I was going through some of the various available tools, and came across Ansible. After having... <a class="read-more" href="/going_agentless_with_ansible">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            <img class="author-thumb" src="/assets/images/resume/dk.jpg" alt="Author image" nopin="nopin" />
-            <!-- author -->
-            <a href='/author/casper'>Deepak Gupta</a>
-            <!-- [[tags prefix=" on "]] -->
-             
-                on 
-                
-                    
-                       <a href='/tag/tutorials'>Tutorials</a>
-                       
-                
-            
-            <time class="post-date" datetime="2015-04-06">06 Apr 2015</time>
-        </footer>
-    </article>
-    
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="/camera-basics">Camera Basics</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p><p>A basic tutorial on handling a DSLR for beginners.</p>
- <a class="read-more" href="/camera-basics">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            <img class="author-thumb" src="/assets/images/resume/dk.jpg" alt="Author image" nopin="nopin" />
-            <!-- author -->
-            <a href='/author/casper'>Deepak Gupta</a>
-            <!-- [[tags prefix=" on "]] -->
-             
-                on 
-                
-                    
-                       <a href='/tag/tutorials'>Tutorials</a>,
-                       
-                
-                    
-                       <a href='/tag/photography'>Photography</a>
-                       
-                
-            
-            <time class="post-date" datetime="1963-08-28">28 Aug 1963</time>
-        </footer>
-    </article>
-    
 
     <!-- Previous/next page links - displayed on every page -->
     
         <nav class="pagination" role="pagination">
     
-        
-            <a class="newer-posts" href="/tag/tutorials/page3/" title="Previous Page">&laquo; Newer Posts</a>
-      
-    
-    <span class="page-number"> Page 4 of 4 </span>
+    <span class="page-number"> Page 1 of 1 </span>
      
 </nav>
     
 
 
 </main>
+
 
         <footer class="site-footer clearfix">
           <section class="copyright"><a href="/">Curosity is the most powerful thing you own</a> &copy; 2020</section>

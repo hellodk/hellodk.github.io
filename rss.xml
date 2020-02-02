@@ -22,7 +22,7 @@
     <item>
       <title>A Failed Trek to Everest Base Camp</title>
       <link>http://hellodk.in//failed_trek_to_everest_base_camp</link>
-      <description>
+      <description>&lt;h1&gt;STAY TUNED WORK IN PROGRESS&lt;/h1&gt;
 
 </description>
       <pubDate>Fri, 02 Mar 2018 01:18:00 +0000</pubDate>
@@ -32,7 +32,7 @@
       <title>just landed in Malaysia - Truly Asia</title>
       <link>http://hellodk.in//just_landed_in_malaysia</link>
       <description>&lt;html&gt;
-Hello
+HELLO..WORK IN PROGRESS
 &lt;/html&gt;
 
 </description>
@@ -61,7 +61,7 @@ REST API ARCHITECTURE – BEST PRACTICES
     <item>
       <title>Over Exposed Photos</title>
       <link>http://hellodk.in//overexposed_photos</link>
-      <description>&lt;h2&gt;&lt;u&gt;Introduction&lt;/u&gt;&lt;/h2&gt;
+      <description>&lt;h1&gt;UPDATING SOON&lt;/h1&gt;
 
 </description>
       <pubDate>Wed, 12 Jul 2017 12:30:00 +0000</pubDate>
@@ -278,7 +278,7 @@ Master-master replication (more generally -- multi-master replication) conceptua
       <title>About</title>
       <link>http://hellodk.in//about</link>
       <description>Too often we under-estimate the power of a touch, a smile, a kind word, a listening ear, an honest compliment, or the smallest act of caring, all of which have the potential to turn a life around. 
-The idea behind writing this blog/website is to conect to people and share my experiences with them.
+The idea behind writing this blog/website is to connect to people and share my experiences with them.
 
 </description>
       <pubDate>Mon, 28 Dec 2015 10:18:00 +0000</pubDate>
@@ -304,7 +304,7 @@ What is rabbitmq?
       <dc:date>2015-11-09T00:00:00+05:30</dc:date>
     </item>
     <item>
-      <title>Going Agntless with Ansible</title>
+      <title>Going Agentless with Ansible</title>
       <link>http://hellodk.in//going_agentless_with_ansible</link>
       <description>While looking for a light yet powerful Configuration Management tool, I was going through some of the various available tools, and came across Ansible. After having a quick look at the features, something which caught my attention: &quot;Ansible is agent-less&quot;, hence I decided to give it a try. Having used Ansible for some around more than 8+ months configuration management, I personally feel...Ansible is awesome!!
 So what is Ansible? Well, it is a configuration management tool, and it empowers you to configure/orchestrate multiple systems at great ease, saving a lot of downtime and resources.

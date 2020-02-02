@@ -3,7 +3,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
    
-      <title>http://hellodk.in/</title>
+      <title>https://hellodk.in/</title>
    
    <link>http://hellodk.in/</link>
    <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
@@ -18,7 +18,7 @@
 	  <pubDate>2018-03-02T01:18:00+00:00</pubDate>
 	  <guid>//failed_trek_to_everest_base_camp</guid>
 	  <description><![CDATA[
-	     
+	     <h1>STAY TUNED WORK IN PROGRESS</h1>
 	  ]]></description>
 	</item>
 
@@ -30,7 +30,7 @@
 	  <guid>//just_landed_in_malaysia</guid>
 	  <description><![CDATA[
 	     <html>
-Hello
+HELLO..WORK IN PROGRESS
 </html>
 	  ]]></description>
 	</item>
@@ -252,30 +252,7 @@ The final metacharacter in this section is .. It matches anything except a newli
 	  <pubDate>2017-07-12T12:30:00+00:00</pubDate>
 	  <guid>//overexposed_photos</guid>
 	  <description><![CDATA[
-	     <h2><u>Introduction</u></h2>
-
-<h5>Installing HA proxy</h5>
-<h5>Configuring HAProxy</h5>
-<p>
-Configuration file format:
-</p>
-
-There are 3 major parameters in HA Proxy's configuration:
-
-1. Command Line Arguments, 
-HAProxy's configuration process involves 3 major sources of parameters :
-
-  - the arguments from the command-line, which always take precedence
-  - the "global" section, which sets process-wide parameters
-  - the proxies sections which can take form of "defaults", "listen",
-    "frontend" and "backend".
-
-The configuration file syntax consists in lines beginning with a keyword
-referenced in this manual, optionally followed by one or several parameters
-delimited by spaces. If spaces have to be entered in strings, then they must be
-preceded by a backslash ('\') to be escaped. Backslashes also have to be
-escaped by doubling them.
-
+	     <h1>UPDATING SOON</h1>
 	  ]]></description>
 	</item>
 

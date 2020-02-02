@@ -5,8 +5,8 @@
     <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
     <link>http://hellodk.in///</link>
     <atom:link href="http://hellodk.in///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 03 Feb 2020 01:02:53 +0530</pubDate>
-    <lastBuildDate>Mon, 03 Feb 2020 01:02:53 +0530</lastBuildDate>
+    <pubDate>Mon, 03 Feb 2020 02:09:37 +0530</pubDate>
+    <lastBuildDate>Mon, 03 Feb 2020 02:09:37 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -337,7 +337,7 @@ Certifications:
     
       <item>
         <title>A Failed Trek to Everest Base Camp</title>
-        <description></description>
+        <description>&lt;h1&gt;STAY TUNED WORK IN PROGRESS&lt;/h1&gt;</description>
         <pubDate>Fri, 02 Mar 2018 01:18:00 +0000</pubDate>
         <link>http://hellodk.in///failed_trek_to_everest_base_camp</link>
         <guid isPermaLink="true">http://hellodk.in///failed_trek_to_everest_base_camp</guid>
@@ -352,7 +352,7 @@ Certifications:
       <item>
         <title>just landed in Malaysia - Truly Asia</title>
         <description>&lt;html&gt;
-Hello
+HELLO..WORK IN PROGRESS
 &lt;/html&gt;</description>
         <pubDate>Sat, 24 Feb 2018 06:30:00 +0000</pubDate>
         <link>http://hellodk.in///just_landed_in_malaysia</link>
@@ -583,30 +583,7 @@ The final metacharacter in this section is .. It matches anything except a newli
     
       <item>
         <title>Over Exposed Photos</title>
-        <description>&lt;h2&gt;&lt;u&gt;Introduction&lt;/u&gt;&lt;/h2&gt;
-
-&lt;h5&gt;Installing HA proxy&lt;/h5&gt;
-&lt;h5&gt;Configuring HAProxy&lt;/h5&gt;
-&lt;p&gt;
-Configuration file format:
-&lt;/p&gt;
-
-There are 3 major parameters in HA Proxy&#39;s configuration:
-
-1. Command Line Arguments, 
-HAProxy&#39;s configuration process involves 3 major sources of parameters :
-
-  - the arguments from the command-line, which always take precedence
-  - the &quot;global&quot; section, which sets process-wide parameters
-  - the proxies sections which can take form of &quot;defaults&quot;, &quot;listen&quot;,
-    &quot;frontend&quot; and &quot;backend&quot;.
-
-The configuration file syntax consists in lines beginning with a keyword
-referenced in this manual, optionally followed by one or several parameters
-delimited by spaces. If spaces have to be entered in strings, then they must be
-preceded by a backslash (&#39;\&#39;) to be escaped. Backslashes also have to be
-escaped by doubling them.
-</description>
+        <description>&lt;h1&gt;UPDATING SOON&lt;/h1&gt;</description>
         <pubDate>Wed, 12 Jul 2017 12:30:00 +0000</pubDate>
         <link>http://hellodk.in///overexposed_photos</link>
         <guid isPermaLink="true">http://hellodk.in///overexposed_photos</guid>
