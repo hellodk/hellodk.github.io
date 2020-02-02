@@ -5,66 +5,85 @@
     <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
     <link>http://hellodk.in///</link>
     <atom:link href="http://hellodk.in///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 30 Nov 2019 08:12:33 +0530</pubDate>
-    <lastBuildDate>Sat, 30 Nov 2019 08:12:33 +0530</lastBuildDate>
+    <pubDate>Sun, 02 Feb 2020 19:17:38 +0530</pubDate>
+    <lastBuildDate>Sun, 02 Feb 2020 19:17:38 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
         <title>Resume</title>
         <description>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
+
+&lt;style&gt;
+.tab-1 {position:absolute;left:180px; }
+
+.tab-2 {position:absolute;left:300px; }
+
+p.small {
+  line-height: 0.7;
+}
+
+p.big {
+  line-height: 1.8;
+}
+&lt;/style&gt;
+
 &lt;head&gt;
 	&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/hr_tag.css&quot; /&gt;
 	&lt;title&gt;Curriculum Vitae&lt;/title&gt;
 &lt;/head&gt;
+
 &lt;body&gt;
+
 &lt;h1&gt;Deepak Gupta&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;Email: hello.dk@outlook.com&lt;/li&gt;
-&lt;li&gt;About.me: &lt;a href=&quot;https://about.me/hellodk&quot;&gt;https://about.me/hellodk&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Blog: &lt;a href=&quot;https://www.hellodk.in&quot;&gt;https://www.hellodk.in&lt;/a&gt;&lt;/li&gt;&lt;/li&gt;
-&lt;li&gt;Github: &lt;a href=&quot;https://github.com/hellodk&quot;&gt;https://github.com/hellodk&lt;/a&gt;&lt;/li&gt;&lt;/li&gt;
-&lt;li&gt;LinkedIn: &lt;a href=&quot;https://www.linkedin.com/in/hellodk&quot;&gt;https://www.linkedin.com/in/hellodk&lt;/a&gt;&lt;/li&gt;&lt;/li&gt;
-&lt;li&gt;Docker Hub: &lt;a href=&quot;https://hub.docker.com/r/hellodk&quot;&gt;https://hub.docker.com/r/hellodk&lt;/a&gt;&lt;/li&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&lt;!---h4&gt;Technologist| Traveler | Photographer&lt;/h4---&gt;
 
-&lt;h3&gt;
-	Professional Summary:
-&lt;/h3&gt;
-&lt;p&gt;
-Armed with the drive, motivation and self-determination to succeed, I have continually provided above average results while also learning and developing along the way. I work extremely well independently as well as within a team to deliver measurable results based on the business goals. I am a responsible, self-motivated, smart working, dedicated and always considerate of others.
-&lt;/p&gt;
-&lt;p&gt;
-I come from a Java background where I have been developing several tools and solutions over Java and it&#39;s associated frameworks like Spring/Struts using the Agile methodology.
-&lt;/p&gt;
-I have primarily been building tools for SysOps/DevOps which can vary from automating tools to monitoring services, web applications, exposing restful API&#39;s or creating interfaces using CORBA to facilitate communication between systems deployed over diverse platforms and have also extensively worked with messaging queue services like Rabbitmq and Apache Kafka. I was responsible for the setup, clustering and monitoring/maintaining the entire fleet of messaging services(both RabbitMQ and Kafka) which served as a mechanism for intercommunication to over 300 microservices in HA mode without downtime.
-Besides I have also been working on Blockchain Technology and have developed a few projects on Blockchain and created own cryptocurrency for testing/learning purpose.
-&lt;/p&gt;
-&lt;p&gt;
-Implemented Disaster Recovery management system over Docker and Kubernetes and also migrated existing pre-prod and staging environments over Docker.
-I also have also contributed extensively in making different dashboards as part of key performance indicators for multiple clients and have architectured scalable cloud-based(AWS/Azure) applications with extensive use of load balancing tools like HA Proxy, Nginx.
-&lt;/p&gt;
-&lt;p&gt;
-Currently, I am working as a Corporate Trainer, where I train people from various organisations across the globe primarily on DevOps tools and techniques.
-&lt;/p&gt;
-&lt;hr class=&quot;bigHr&quot;&gt;
-&lt;h3&gt;
-Work Experience:
-&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Email: &lt;span class=&quot;tab-1&quot;&gt;hello.dk@outlook.com&lt;/li&gt;
+&lt;li&gt;About.me: &lt;span class=&quot;tab-1&quot;&gt;&lt;a href=&quot;https://about.me/hellodk&quot;&gt;about.me/hellodk&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;span class=&quot;tab-1&quot;&gt;&lt;a href=&quot;https://www.hellodk.in&quot;&gt;hellodk.io&lt;/a&gt;&lt;/li&gt;&lt;/li&gt;
+&lt;li&gt;Github: &lt;span class=&quot;tab-1&quot;&gt;&lt;a href=&quot;https://github.com/hellodk&quot;&gt;github.com/hellodk&lt;/a&gt;&lt;/li&gt;&lt;/li&gt;
+&lt;li&gt;LinkedIn: &lt;span class=&quot;tab-1&quot;&gt;&lt;a href=&quot;https://www.linkedin.com/in/hellodk&quot;&gt;linkedin.com/in/hellodk&lt;/a&gt;&lt;/li&gt;&lt;/li&gt;
+&lt;li&gt;Docker Hub: &lt;span class=&quot;tab-1&quot;&gt;&lt;a href=&quot;https://hub.docker.com/r/hellodk&quot;&gt;hub.docker.com/r/hellodk&lt;/a&gt;&lt;/li&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;ol&gt;
-&lt;li&gt;Freelancer (June 2018 onwards)&lt;/li&gt;
-&lt;li&gt;DevOps Lead, MoveinSync Solutions (January 2018 - June 2018)&lt;/li&gt;
-&lt;li&gt;Systems/DevOps Engineer, Myntra Designs(June 2016 - January 2018)&lt;/li&gt;
-&lt;li&gt;DevOps Engineer, Knowlarity Communications(February 2015 - May 2016)&lt;/li&gt;
-&lt;li&gt;Software Engineer - Wipro Technologies(November 2011 - January 2015)&lt;/li&gt;
-&lt;/ol&gt;
 &lt;hr class=&quot;bigHr&quot;&gt;
-&lt;h3&gt;
-	Software Skills:
-&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Programming: 	Python, Java, Golang, Nodejs, C(Agile/Kanban Methodology)&lt;/li&gt;
+
+&lt;h2&gt;Work Experience:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;h3&gt;DevOps Consultant/Trainer, Bengaluru&lt;/h3&gt;&lt;/li&gt;
+&lt;h5&gt;June 2018 - PRESENT&lt;/h5&gt;
+&lt;p&gt;I&#39;ve helped organisations adopt DevOps tooling/practices, scaling strategies &amp; have delivered 200+ corporate trainings on DevOps tools across the globe to a broad set of audiences(Developers/Sysadmins, Freshers, Architects, CTO&#39;s, VP) with nearabout 95% success rate.&lt;/p&gt;
+
+&lt;li&gt;&lt;h3&gt;DevOps Lead - Moveinsync Technology, Bengaluru&lt;/h3&gt;&lt;/li&gt;
+&lt;h5&gt;January 2018 - June 2018&lt;/h5&gt;
+&lt;p&gt;Moveinsync is India&#39;s chief employee transportation management solution. I had lead the DevOps team at Moveinsync to build &amp; monitor a highly scalable multi-tenant application on cloud.
+I&#39;ve contributed to VAPT, Implementing DR and achieve government certification which helped us to secure more clients.&lt;/p&gt;
+
+&lt;li&gt;&lt;h3&gt;Systems Engineer - Myntra Designs, Bengaluru&lt;/h3&gt;&lt;/li&gt;
+&lt;h5&gt;June 2016 - January 2018&lt;/h5&gt;
+&lt;p&gt;Myntra Designs is the biggest Indian fashion e-commerce organisation in India.
+I was a part of the sysadmin team managing 99.9999% uptime of infrastructure(Datacenter, AWS &amp; Azure), monitoring microservices, API calls, revenue metrics, on-calls, writing internal tools, automating deployments,  database maintenance etc.
+&lt;/p&gt;
+
+&lt;li&gt;&lt;h3&gt;DevOps Engineer - Knowlarity Communications, Bengaluru&lt;/h3&gt;&lt;/li&gt;
+&lt;h5&gt;January 2015 - May 2016&lt;/h5&gt;
+&lt;p&gt;Knowlarity Communications works on AI enabled cloud telephony.
+My primary responsibilities were to automate deployments, maintain databases and write API&#39;s to scrub data upto 440 million records, take care of the Billing framework model, creating grafana dashboards, backup and recovery, maintain rabbitmq clusters.
+&lt;/p&gt;
+
+&lt;li&gt;&lt;h3&gt;Project Engineer - Wipro Technologies, Bengaluru&lt;/h3&gt;&lt;/li&gt;
+&lt;h5&gt;November 2011 - January 2015&lt;/h5&gt;
+&lt;p&gt;Wipro Technologies is an Indian MNC providing IT consulting &amp; services.
+I was primarily responsible to write applications in Java for telecom OSS and also creating API&#39;s for Openstack implementation.&lt;/p&gt;
+&lt;/br&gt;
+&lt;/ul&gt;
+
+&lt;hr class=&quot;bigHr&quot;&gt;
+&lt;h2&gt;Software Skills:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;!---li&gt;Programming: 	Python, Java, Golang, Nodejs, C(Agile/Kanban Methodology)&lt;/li&gt;
 &lt;li&gt;Web Frameworks: Django, Spring Boot, Flask, Falcon, Spring Cloud&lt;/li&gt;
 &lt;li&gt;RDBMS:			MySQL, Postgresql, MariaDB&lt;/li&gt;
 &lt;li&gt;NoSQL: Cassandra, Dynamodb, Rethinkdb, MongoDB, Redis, CouchDB&lt;/li&gt;
@@ -78,13 +97,24 @@ Work Experience:
 &lt;li&gt;Protocols/ Architectures:	REST, CORBA, SNMP, HTTP, TCP/IP, SIP, Wireshark&lt;/li&gt;
 &lt;li&gt;Cloud/ Virtualizations: AWS, Azure, Heroku, OpenStack, Vagrant, KVM, Docker&lt;/li&gt;
 &lt;li&gt;Visualizations: Grafana, D3, Kibana, Talend&lt;/li&gt;
-&lt;li&gt;Others: RaspberryPi, Spartan 3E, AVR, Elasticsearch, Induino, Arduino, MOSHELL, Debian Packaging, freeswitch, WCDMA, LTE, 3PP, NMS, EMS, FCAPS, RNC, RBS, Scribe, Logstash, Fluentd,heka&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;Others: RaspberryPi, Spartan 3E, AVR, Elasticsearch, Induino, Arduino, MOSHELL, Debian Packaging, freeswitch, WCDMA, LTE, 3PP, NMS, EMS, FCAPS, RNC, RBS, Scribe, Logstash, Fluentd,heka&lt;/li---&gt;
+&lt;li&gt;Cloud Computing: &lt;span class=&quot;tab-2&quot;&gt;  AWS, Azure, Heroku, Openstack&lt;/li&gt;
+&lt;li&gt;Container Technologies: &lt;span class=&quot;tab-2&quot;&gt;  Docker, Kubernetes&lt;/li&gt;
+&lt;li&gt;Monitoring Tools: &lt;span class=&quot;tab-2&quot;&gt;  Zabbix, Nagios, Icinga2&lt;/li&gt;
+&lt;li&gt;SQL Databases: &lt;span class=&quot;tab-2&quot;&gt;  MySQL, PostgreSQL, MariaDB&lt;/li&gt;
+&lt;li&gt;NoSQL Databases: &lt;span class=&quot;tab-2&quot;&gt;  MongoDB, Cassandra, Redis&lt;/li&gt;
+&lt;li&gt;Web Server/Load Balancers: &lt;span class=&quot;tab-2&quot;&gt;  Nginx, HA Proxy&lt;/li&gt;
+&lt;li&gt;Messaging Tools: &lt;span class=&quot;tab-2&quot;&gt;  RabbitMQ, Kafka&lt;/li&gt;
+&lt;li&gt;Configuration Management: &lt;span class=&quot;tab-2&quot;&gt;  Ansible, Terraform, Chef, Puppet&lt;/li&gt;
+&lt;li&gt;Programming: &lt;span class=&quot;tab-2&quot;&gt;  Java, Python, Golang&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Visualizations: &lt;span class=&quot;tab-2&quot;&gt;  Grafana, D3, Kibana, Talend&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;hr class=&quot;bigHr&quot;&gt;
 &lt;h2&gt;
 	Projects Summary:
 &lt;/h2&gt;
-&lt;ol&gt;
+&lt;ul&gt;
 	&lt;li&gt;
 &lt;h3&gt;Disaster Recovery
 &lt;/h3&gt;&lt;/li&gt;
@@ -158,24 +188,19 @@ Setup monitoring for our infrastructure(hybrid) over Icinga2/Zabbix and Talend
 Ensured High Availability of Services
 &lt;/p&gt;
 
-&lt;li&gt;
-	&lt;h3&gt;
-	Daily Operations
-&lt;/h3&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;h3&gt;Daily Operations - A usual day in the life of a DevOps&lt;/h3&gt;&lt;/li&gt;
 &lt;p&gt;
-	Day to day operations
-Developing new features over Java/Python/Golang
-Security Audit - Implemented IDS, DDOS mitigation via fail2ban
-packet tracing/filtering using Wireshark
-Recovered security vulnerabilities in infrastructure
-Implemented key rotation policy
-Implemented HA and reliable RabbitMQ cluster in the infrastructure which served as a backbone for intercommunication between microservices(close to 200+ microservices) with 0 downtime
-DNS, LDAP, Monitoring, Load Balancing over Nginx/HA Proxy
-setup network planning for infrastructure migration
-reduce data transfer costs &amp; improved performance
-subnet planning helped reduce the complexity of whitelisting services/IP’s
-Helped setup Azure account with basic services like DNS, LDAP, monitoring
+Developing tools over C++/Java/Python/Golang&lt;/br&gt;
+Security Audit - Implemented IDS, DDOS mitigation via fail2ban&lt;/br&gt;
+Packet tracing/filtering using customized tool &amp; Wireshark&lt;/br&gt;
+Fixing security vulnerabilities in infrastructure&lt;/br&gt;
+Implemented key rotation policy&lt;/br&gt;
+Implemented HA and reliable RabbitMQ cluster in the infrastructure which served as a backbone for intercommunication between microservices(close to 400+ microservices) with 99.99999% SLA&lt;/br&gt;
+DNS, LDAP, Monitoring, Load Balancing over Nginx/HA Proxy&lt;/br&gt;
+Reduce data transfer costs &amp; improved performance&lt;/br&gt;
+Subnet planning helped reduce the complexity of whitelisting services/IP’s&lt;/br&gt;
+Network planning for infrastructure migration&lt;/br&gt;
+Helped setup Azure account with basic services like DNS, LDAP, monitoring&lt;/br&gt;
 &lt;/p&gt;
 
 &lt;li&gt;
@@ -230,12 +255,12 @@ Being a telemarketer, we can call only to non-dnd registered numbers
 TRAI only provides dnd data in form of CSV(500 million rows)
 Challenge was to develop our own NDNC scrubbing solution and keep it updated using Spring Boot
 Requirement gathering, UML/flow diagrams getting the NDNC data, feeding the data into our database, writing API&#39;s, automated product deployment automation, performance tuning etc. using Python/Falcon and RethinkDB
-&lt;/p&gt;&lt;/ol&gt;
+&lt;/p&gt;&lt;/ul&gt;
 &lt;hr class=&quot;bigHr&quot;&gt;
 &lt;h3&gt;
 	Side Projects
 &lt;/h3&gt;
-&lt;ol&gt;
+&lt;ul&gt;
 &lt;p&gt;
 &lt;li&gt;Developed several multiplayer games in Python, e.g. Stopwatch, Pong, Memory, Spaceship, Blackjack &amp; Rice Rocks Full Game
 &lt;/li&gt;
@@ -275,7 +300,7 @@ Asset tracking mechanism in a decentralized fashion. Each action, event, alerts 
 Developed an own cryptocurrency for testing purpose using Litecoin
 &lt;/li&gt;
 &lt;/p&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 
 &lt;hr class=&quot;bigHr&quot;&gt;
 
@@ -283,10 +308,10 @@ Developed an own cryptocurrency for testing purpose using Litecoin
 	Awards &amp; Achievements:
 &lt;/h3&gt;
 
-&lt;ol&gt;
+&lt;ul&gt;
 &lt;li&gt;Maestro Award for Making a Difference in the Account&lt;/li&gt;
 &lt;li&gt;High Flyer Award for individual contribution in the Account&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 
 &lt;hr class=&quot;bigHr&quot;&gt;
 
@@ -294,12 +319,12 @@ Developed an own cryptocurrency for testing purpose using Litecoin
 Certifications:
 &lt;/h3&gt;
 
-&lt;ol&gt;
+&lt;ul&gt;
 	&lt;li&gt;Big Data, Cloud Computing, &amp; CDN Emerging Technologies&lt;/li&gt;
 	&lt;li&gt;Blockchain for Developers&lt;/li&gt;
 	&lt;li&gt;Interfacing with the Raspberry Pi&lt;/li&gt;
 	&lt;li&gt;An Introduction to Interactive Programming with Python(RICE University)&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 
 &lt;/body&gt;
 &lt;/html&gt;</description>
@@ -311,7 +336,7 @@ Certifications:
       </item>
     
       <item>
-        <title>Resume</title>
+        <title>Resume_md</title>
         <description>&lt;h4&gt;Deepak Gupta&lt;/h4&gt;
 
 &lt;ul&gt;
@@ -319,6 +344,7 @@ Certifications:
 &lt;li&gt;About.me: &lt;a href=&quot;&quot;&gt;&lt;span style=&quot;color:blue&quot;&gt;https://about.me/hellodk&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Blog: &lt;a href=&quot;&quot;&gt;&lt;span style=&quot;color:blue&quot;&gt;https://www.hellodk.in&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Github: &lt;a href=&quot;&quot;&gt;&lt;span style=&quot;color:blue&quot;&gt;https://github.com/hellodk&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;I&amp;#39;m testing here as md: &lt;a href=&quot;&quot;&gt;&lt;span style=&quot;color:blue&quot;&gt;https://github.com/hellodk&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;LinkedIn: &lt;a href=&quot;&quot;&gt;&lt;span style=&quot;color:blue&quot;&gt;https://www.linkedin.com/in/hellodk&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Docker Hub: &lt;a href=&quot;&quot;&gt;&lt;span style=&quot;color:blue&quot;&gt;https://hub.docker.com/r/hellodk&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -459,8 +485,8 @@ Interfacing with the Raspberry Pi
 An Introduction to Interactive Programming with Python(RICE University)&lt;/p&gt;
 </description>
         <pubDate>Mon, 09 Apr 2018 00:00:00 +0530</pubDate>
-        <link>http://hellodk.in///resume</link>
-        <guid isPermaLink="true">http://hellodk.in///resume</guid>
+        <link>http://hellodk.in///resume_md</link>
+        <guid isPermaLink="true">http://hellodk.in///resume_md</guid>
         
         
       </item>
@@ -500,28 +526,46 @@ Hello
         <description>&lt;html&gt;
 REST API ARCHITECTURE – BEST PRACTICES
 
-SOA(Service Oriented Architecture) has become a foundation for the most of the application that are developed today. A service oriented architecture is an architectural pattern which enables collection of services to communicate with external/internal parties to pass data or for services coordinating. Let’s start from what’s a service.
+SOA(Service Oriented Architecture) has become a foundation for the most of the application that are developed today&lt;/br&gt;
+A service oriented architecture is an architectural pattern which enables collection of services to communicate with external/internal parties to pass data or for services coordinating&lt;/br&gt;
+Let’s start from what’s a service.
 What’s a Service/API
 A service is a function that is well-defined, self-contained, and does not depend on the context or state of other services.
-In other words an interface used by software components to communicate with each other. Let understand the difference between API and Web Services. A Web Service is a type of API, almost always one that operates over HTTP. In the modern world there are two types of web services that are used.
+In other words an interface used by software components to communicate with each other&lt;/br&gt;
+Let understand the difference between API and Web Services&lt;/br&gt;
+A Web Service is a type of API, almost always one that operates over HTTP&lt;/br&gt;
+In the modern world there are two types of web services that are used.
 SOAP
 REST
-We can’t compare REST and SOAP since SOAP is a protocol and REST is an architectural pattern. People mostly get confused when selecting one for their application. If you are wondering what’s the difference between these two you can get a good start from here and here.
-Our today’s focus is on REST. How we can implement a perfect REST API? What are the best practices? Let’s get down to business.
+We can’t compare REST and SOAP since SOAP is a protocol and REST is an architectural pattern&lt;/br&gt;
+People mostly get confused when selecting one for their application&lt;/br&gt;
+If you are wondering what’s the difference between these two you can get a good start from here and here.
+Our today’s focus is on REST&lt;/br&gt;
+How we can implement a perfect REST API? What are the best practices? Let’s get down to business.
 REST Best Practices 101
-1. Abstract vs Concrete
-When designing a REST API you should consider to make API concrete as possible. It will make the API less confusing to the consumers.
+1&lt;/br&gt;
+Abstract vs Concrete
+When designing a REST API you should consider to make API concrete as possible&lt;/br&gt;
+It will make the API less confusing to the consumers.
 Abstract vs Concrete 
 Abstract vs Concrete
-2. CRUD Operations
-There are four available methods when designing a REST API which are GET, POST, PUT and DELETE. Below is the proposed methodology to implement CRUD operations in a REST API. Note that this is suggested by me and you can alter this as per your requirement.
+2&lt;/br&gt;
+CRUD Operations
+There are four available methods when designing a REST API which are GET, POST, PUT and DELETE&lt;/br&gt;
+Below is the proposed methodology to implement CRUD operations in a REST API&lt;/br&gt;
+Note that this is suggested by me and you can alter this as per your requirement.
 Resource	POST	GET	PUT	DELETE
 /dog	Create a new dog	List dogs	Replace dogs with new dogs(Bulk update)	 Delete all dogs
 /dog/1234	Error	 Show dog	If exist update dog else ERROR	 Delete dog
  
-I know there is a confusion resolve around PUT and DELETE. Read more here and here to clarify.
-3. Error Handling
-Error handling is one that get less attention but most important part of the any REST API. You must give hints as possible for the API consumers about the error and why it has occurred. Also make you that through the API you should provide granular level error messages. You can format it as follows.
+I know there is a confusion resolve around PUT and DELETE&lt;/br&gt;
+Read more here and here to clarify.
+3&lt;/br&gt;
+Error Handling
+Error handling is one that get less attention but most important part of the any REST API&lt;/br&gt;
+You must give hints as possible for the API consumers about the error and why it has occurred&lt;/br&gt;
+Also make you that through the API you should provide granular level error messages&lt;/br&gt;
+You can format it as follows.
 
 {
    &quot;status&quot;: 401,
@@ -542,8 +586,10 @@ Error handling is one that get less attention but most important part of the any
    &quot;more_info&quot;: &quot;http://dasunhegoda.com/api/doc/token_error&quot;
 }
 You can make use of HTTP status code for this purpose.
-4. API Versioning
-In any given API API version is mandatory to maintain consistency. It can be done in many way but below is the preferred methods by me.
+4&lt;/br&gt;
+API Versioning
+In any given API API version is mandatory to maintain consistency&lt;/br&gt;
+It can be done in many way but below is the preferred methods by me.
 Method 1
 You can use the letter ‘v’ in the URL to denote the API version as below.
 
@@ -556,14 +602,20 @@ You can use the addional parameter at the end of the URL.
 http://dasunhegoda.com/api/dog/1234?v=2.0
 1
 http://dasunhegoda.com/api/dog/1234?v=2.0
-Different people have different opinion on API version. You can read more here.
-5. Filtering
-Don’t provide unnecessary data to the API consumers. It will clutter you REST API unnecessarily. Let the developer choose what he needs. For this we can use filtering methods in our APIs.
+Different people have different opinion on API version&lt;/br&gt;
+You can read more here.
+5&lt;/br&gt;
+Filtering
+Don’t provide unnecessary data to the API consumers&lt;/br&gt;
+It will clutter you REST API unnecessarily&lt;/br&gt;
+Let the developer choose what he needs&lt;/br&gt;
+For this we can use filtering methods in our APIs.
 
 /dogs/1234?value1,value2,value3,value4
 1
 /dogs/1234?value1,value2,value3,value4
-Also you can use pagination for this purpose as well where you don’t have to return all the results at once. Below query will be familiar to you since it operates same as MySQL works.
+Also you can use pagination for this purpose as well where you don’t have to return all the results at once&lt;/br&gt;
+Below query will be familiar to you since it operates same as MySQL works.
 
 /dogs?limit=25&amp;offset=20
 
@@ -574,25 +626,48 @@ You can read more &lt;a href=&quot;http://stackoverflow.com/questions/5020704/ho
 /dogs?limit=25&amp;offset=20
  
 You can read more &lt;a href=&quot;http://stackoverflow.com/questions/5020704/how-to-design-restful-search-filtering&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.
-6. Security
+6&lt;/br&gt;
+Security
 Security is one of the major concerns when compared to SOAP because still there are no standards such as ws-security defined for REST.
 You can use HTTPS across your APIs.
-Don’t forget to include timestamp in each and every API request and response. Make sure to log them all. In case of a dispute you can refer them.
-Use a access_token to make sure that API is invoked by the trust parties. Beforehand you have to deliver the access_token whereas only API consumers have an access_token can invoke the API. Read more.
-7. Analytics
-Once you start logging each and every API request and response you can build a analytical platform on top of that. If the number of records are high you might have to consider technologies such as BigData. Having analytics in your REST API will give you a good insight of what’s happening your API.
-8. Documentation
-Proper Documentation is vital for the API. It doesn’t matter how great your API design is if the API consumers can’t used it properly. You can use tools such as apidocjs for this purpose. It’s really easy to get started.
-9. Stability and Consistency
-Depending on your requirement you should consider highly available architecture for you REST API. If you are wondering how to implement high availability in your REST API I have an article written on the subject. Please refer here.
-10. URL Structure
-You have to structure the URL in manner it’s intuitive. Select a domain which is easy for marking as well. eg :- api.yourdomain.com. When structuring your REST API you can use the following format.
+Don’t forget to include timestamp in each and every API request and response&lt;/br&gt;
+Make sure to log them all&lt;/br&gt;
+In case of a dispute you can refer them.
+Use a access_token to make sure that API is invoked by the trust parties&lt;/br&gt;
+Beforehand you have to deliver the access_token whereas only API consumers have an access_token can invoke the API&lt;/br&gt;
+Read more.
+7&lt;/br&gt;
+Analytics
+Once you start logging each and every API request and response you can build a analytical platform on top of that&lt;/br&gt;
+If the number of records are high you might have to consider technologies such as BigData&lt;/br&gt;
+Having analytics in your REST API will give you a good insight of what’s happening your API.
+8&lt;/br&gt;
+Documentation
+Proper Documentation is vital for the API&lt;/br&gt;
+It doesn’t matter how great your API design is if the API consumers can’t used it properly&lt;/br&gt;
+You can use tools such as apidocjs for this purpose&lt;/br&gt;
+It’s really easy to get started.
+9&lt;/br&gt;
+Stability and Consistency
+Depending on your requirement you should consider highly available architecture for you REST API&lt;/br&gt;
+If you are wondering how to implement high availability in your REST API I have an article written on the subject&lt;/br&gt;
+Please refer here.
+10&lt;/br&gt;
+URL Structure
+You have to structure the URL in manner it’s intuitive&lt;/br&gt;
+Select a domain which is easy for marking as well&lt;/br&gt;
+eg :- api.yourdomain.com&lt;/br&gt;
+When structuring your REST API you can use the following format.
 GET tasks/5/messages – Retrieves list of messages for task #5
 GET tasks/5/messages/10 – Retrieves the 10th messages for task #5
 POST tasks/5/messages – Create a new message for task #5
 DELETE tasks/5/messages/10 – Delete the 10th messages of task #5
 PUT tasks/5/messages/12 – Update the 12th messages of task #5
-If you have developed your REST API properly you should have above features in it. In other words above should be kept in mind when designing your REST API. So that’s it about REST API architecture. If you have any questions let me know in the comments below. Your feedback is highly appreciated(happy-face)
+If you have developed your REST API properly you should have above features in it&lt;/br&gt;
+In other words above should be kept in mind when designing your REST API&lt;/br&gt;
+So that’s it about REST API architecture&lt;/br&gt;
+If you have any questions let me know in the comments below&lt;/br&gt;
+Your feedback is highly appreciated(happy-face)
 &lt;/html&gt;</description>
         <pubDate>Thu, 14 Dec 2017 04:18:00 +0000</pubDate>
         <link>http://hellodk.in///travel_diaries</link>

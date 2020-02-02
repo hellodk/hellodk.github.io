@@ -225,7 +225,7 @@ When using the shovel, it is possible to specify redundant brokers in a source o
 	  <pubDate>2017-04-20T12:30:00+00:00</pubDate>
 	  <guid>//kubernetes_cluster_vagrant</guid>
 	  <description><![CDATA[
-	     In this tutorial we will cover the installatoin of a Kubernetes Cluster over Vagrant
+	     In this tutorial we will cover the installation of a Kubernetes Cluster over Vagrant
 	  ]]></description>
 	</item>
 

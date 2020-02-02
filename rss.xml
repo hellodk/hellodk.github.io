@@ -14,33 +14,20 @@
       <link>http://hellodk.in//resume</link>
       <description>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
-&lt;head&gt;
-	&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/hr_tag.css&quot; /&gt;
-	&lt;title&gt;Curriculum Vitae&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;h1&gt;Deepak Gupta&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;Email: hello.dk@outlook.com&lt;/li&gt;
-&lt;li&gt;About.me: &lt;a href=&quot;https://about.me/hellodk&quot;&gt;https://about.me/hellodk&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Blog: &lt;a href=&quot;https://www.hellodk.in&quot;&gt;https://www.hellodk.in&lt;/a&gt;&lt;/li&gt;&lt;/li&gt;
-&lt;li&gt;Github: &lt;a href=&quot;https://github.com/hellodk&quot;&gt;https://github.com/hellodk&lt;/a&gt;&lt;/li&gt;&lt;/li&gt;
-&lt;li&gt;LinkedIn: &lt;a href=&quot;https://www.linkedin.com/in/hellodk&quot;&gt;https://www.linkedin.com/in/hellodk&lt;/a&gt;&lt;/li&gt;&lt;/li&gt;
-&lt;li&gt;Docker Hub: &lt;a href=&quot;https://hub.docker.com/r/hellodk&quot;&gt;https://hub.docker.com/r/hellodk&lt;/a&gt;&lt;/li&gt;&lt;/li&gt;
-&lt;/ol&gt;
 
 </description>
       <pubDate>Tue, 15 Jan 2019 00:00:00 +0530</pubDate>
       <dc:date>2019-01-15T00:00:00+05:30</dc:date>
     </item>
     <item>
-      <title>Resume</title>
-      <link>http://hellodk.in//resume</link>
+      <title>Resume_md</title>
+      <link>http://hellodk.in//resume_md</link>
       <description>#### Deepak Gupta
 - Email: hello.dk@outlook.com
 - About.me: [&lt;span style=&quot;color:blue&quot;&gt;https://about.me/hellodk&lt;/span&gt;] ()
 - Blog: [&lt;span style=&quot;color:blue&quot;&gt;https://www.hellodk.in&lt;/span&gt;] ()
 - Github: [&lt;span style=&quot;color:blue&quot;&gt;https://github.com/hellodk&lt;/span&gt;] ()
+- I'm testing here as md: [&lt;span style=&quot;color:blue&quot;&gt;https://github.com/hellodk&lt;/span&gt;] ()
 - LinkedIn: [&lt;span style=&quot;color:blue&quot;&gt;https://www.linkedin.com/in/hellodk&lt;/span&gt;] ()
 - Docker Hub: [&lt;span style=&quot;color:blue&quot;&gt;https://hub.docker.com/r/hellodk&lt;/span&gt;] ()
 
@@ -188,7 +175,7 @@ In some types of network failure, packet loss can mean that disrupted TCP connec
     <item>
       <title>Setting up a Kubernetes Cluster on Vagrant</title>
       <link>http://hellodk.in//kubernetes_cluster_vagrant</link>
-      <description>In this tutorial we will cover the installatoin of a Kubernetes Cluster over Vagrant
+      <description>In this tutorial we will cover the installation of a Kubernetes Cluster over Vagrant
 
 </description>
       <pubDate>Thu, 20 Apr 2017 12:30:00 +0000</pubDate>
