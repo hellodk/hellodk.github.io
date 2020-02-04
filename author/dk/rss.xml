@@ -33,6 +33,9 @@ p.small {
 p.big {
   line-height: 1.8;
 }
+
+
+
 </style>
 
 <head>
@@ -41,7 +44,12 @@ p.big {
 </head>
 
 <body>
-<h1>Deepak Gupta</h1>
+
+<a href="/" class="home_icon">
+	<img src="/assets/images/utilities/home_icon.png" alt="Blog Logo" style="cursor: pointer;width: 40px; height: 40px;   float: right;" />
+</a>
+
+<h1 >Deepak Gupta</h1>
 <ul>
 <li>Email: <span class="tab-1">hello.dk@outlook.com</li>
 <li>About.me: <span class="tab-1"><a href="https://about.me/hellodk">about.me/hellodk</a></li>
@@ -336,400 +344,122 @@ Certifications:
 	</item>
 
 	<item>
-	  <title>A Failed Trek to Everest Base Camp</title>
-	  <link>//failed_trek_to_everest_base_camp</link>
+	  <title>Kubernetes Cluster on Vagrant</title>
+	  <link>//kubernetes_cluster_vagrant</link>
 	  <author>Deepak Gupta</author>
-	  <pubDate>2018-03-02T01:18:00+00:00</pubDate>
-	  <guid>//failed_trek_to_everest_base_camp</guid>
+	  <pubDate>2017-04-20T12:30:00+00:00</pubDate>
+	  <guid>//kubernetes_cluster_vagrant</guid>
 	  <description><![CDATA[
-	     <h1>STAY TUNED WORK IN PROGRESS</h1>
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>just landed in Malaysia - Truly Asia</title>
-	  <link>//just_landed_in_malaysia</link>
-	  <author>Deepak Gupta</author>
-	  <pubDate>2018-02-24T06:30:00+00:00</pubDate>
-	  <guid>//just_landed_in_malaysia</guid>
-	  <description><![CDATA[
-	     <html>
-HELLO..WORK IN PROGRESS
-</html>
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>REST API Best Practices</title>
-	  <link>//travel_diaries</link>
-	  <author>Deepak Gupta</author>
-	  <pubDate>2017-12-14T04:18:00+00:00</pubDate>
-	  <guid>//travel_diaries</guid>
-	  <description><![CDATA[
-	     <html>
-REST API ARCHITECTURE – BEST PRACTICES
-
-SOA(Service Oriented Architecture) has become a foundation for the most of the application that are developed today</br>
-A service oriented architecture is an architectural pattern which enables collection of services to communicate with external/internal parties to pass data or for services coordinating</br>
-Let’s start from what’s a service.
-What’s a Service/API
-A service is a function that is well-defined, self-contained, and does not depend on the context or state of other services.
-In other words an interface used by software components to communicate with each other</br>
-Let understand the difference between API and Web Services</br>
-A Web Service is a type of API, almost always one that operates over HTTP</br>
-In the modern world there are two types of web services that are used.
-SOAP
-REST
-We can’t compare REST and SOAP since SOAP is a protocol and REST is an architectural pattern</br>
-People mostly get confused when selecting one for their application</br>
-If you are wondering what’s the difference between these two you can get a good start from here and here.
-Our today’s focus is on REST</br>
-How we can implement a perfect REST API? What are the best practices? Let’s get down to business.
-REST Best Practices 101
-1</br>
-Abstract vs Concrete
-When designing a REST API you should consider to make API concrete as possible</br>
-It will make the API less confusing to the consumers.
-Abstract vs Concrete 
-Abstract vs Concrete
-2</br>
-CRUD Operations
-There are four available methods when designing a REST API which are GET, POST, PUT and DELETE</br>
-Below is the proposed methodology to implement CRUD operations in a REST API</br>
-Note that this is suggested by me and you can alter this as per your requirement.
-Resource	POST	GET	PUT	DELETE
-/dog	Create a new dog	List dogs	Replace dogs with new dogs(Bulk update)	 Delete all dogs
-/dog/1234	Error	 Show dog	If exist update dog else ERROR	 Delete dog
- 
-I know there is a confusion resolve around PUT and DELETE</br>
-Read more here and here to clarify.
-3</br>
-Error Handling
-Error handling is one that get less attention but most important part of the any REST API</br>
-You must give hints as possible for the API consumers about the error and why it has occurred</br>
-Also make you that through the API you should provide granular level error messages</br>
-You can format it as follows.
-
-{
-   "status": 401,
-   "error_code": 2005,
-   "error_message": "Authentication token has expired",
-   "more_info": "http://dasunhegoda.com/api/doc/token_error"
-}
-1
-2
-3
-4
-5
-6
-{
-   "status": 401,
-   "error_code": 2005,
-   "error_message": "Authentication token has expired",
-   "more_info": "http://dasunhegoda.com/api/doc/token_error"
-}
-You can make use of HTTP status code for this purpose.
-4</br>
-API Versioning
-In any given API API version is mandatory to maintain consistency</br>
-It can be done in many way but below is the preferred methods by me.
-Method 1
-You can use the letter ‘v’ in the URL to denote the API version as below.
-
-http://dasunhegoda.com/api/v2/dog/1234
-1
-http://dasunhegoda.com/api/v2/dog/1234
-Method 2
-You can use the addional parameter at the end of the URL.
-
-http://dasunhegoda.com/api/dog/1234?v=2.0
-1
-http://dasunhegoda.com/api/dog/1234?v=2.0
-Different people have different opinion on API version</br>
-You can read more here.
-5</br>
-Filtering
-Don’t provide unnecessary data to the API consumers</br>
-It will clutter you REST API unnecessarily</br>
-Let the developer choose what he needs</br>
-For this we can use filtering methods in our APIs.
-
-/dogs/1234?value1,value2,value3,value4
-1
-/dogs/1234?value1,value2,value3,value4
-Also you can use pagination for this purpose as well where you don’t have to return all the results at once</br>
-Below query will be familiar to you since it operates same as MySQL works.
-
-/dogs?limit=25&offset=20
-
-You can read more <a href="http://stackoverflow.com/questions/5020704/how-to-design-restful-search-filtering" target="_blank">here</a>.
-1
-2
-3
-/dogs?limit=25&offset=20
- 
-You can read more <a href="http://stackoverflow.com/questions/5020704/how-to-design-restful-search-filtering" target="_blank">here</a>.
-6</br>
-Security
-Security is one of the major concerns when compared to SOAP because still there are no standards such as ws-security defined for REST.
-You can use HTTPS across your APIs.
-Don’t forget to include timestamp in each and every API request and response</br>
-Make sure to log them all</br>
-In case of a dispute you can refer them.
-Use a access_token to make sure that API is invoked by the trust parties</br>
-Beforehand you have to deliver the access_token whereas only API consumers have an access_token can invoke the API</br>
-Read more.
-7</br>
-Analytics
-Once you start logging each and every API request and response you can build a analytical platform on top of that</br>
-If the number of records are high you might have to consider technologies such as BigData</br>
-Having analytics in your REST API will give you a good insight of what’s happening your API.
-8</br>
-Documentation
-Proper Documentation is vital for the API</br>
-It doesn’t matter how great your API design is if the API consumers can’t used it properly</br>
-You can use tools such as apidocjs for this purpose</br>
-It’s really easy to get started.
-9</br>
-Stability and Consistency
-Depending on your requirement you should consider highly available architecture for you REST API</br>
-If you are wondering how to implement high availability in your REST API I have an article written on the subject</br>
-Please refer here.
-10</br>
-URL Structure
-You have to structure the URL in manner it’s intuitive</br>
-Select a domain which is easy for marking as well</br>
-eg :- api.yourdomain.com</br>
-When structuring your REST API you can use the following format.
-GET tasks/5/messages – Retrieves list of messages for task #5
-GET tasks/5/messages/10 – Retrieves the 10th messages for task #5
-POST tasks/5/messages – Create a new message for task #5
-DELETE tasks/5/messages/10 – Delete the 10th messages of task #5
-PUT tasks/5/messages/12 – Update the 12th messages of task #5
-If you have developed your REST API properly you should have above features in it</br>
-In other words above should be kept in mind when designing your REST API</br>
-So that’s it about REST API architecture</br>
-If you have any questions let me know in the comments below</br>
-Your feedback is highly appreciated(happy-face)
-</html>
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Python regex Simplified</title>
-	  <link>//python_regex_simplified</link>
-	  <author>Deepak Gupta</author>
-	  <pubDate>2017-07-13T03:30:00+00:00</pubDate>
-	  <guid>//python_regex_simplified</guid>
-	  <description><![CDATA[
-	     <h2><u>Introduction</u></h2>
-
-<h3>Python regex metacharacters</h3>
-. ^ $ * + ? { } [ ] \ | ( )
-
-<p>
-
-1. [] - 
-
-Negate - ^
-
-Escape Character - \
-
-
-The first metacharacters we’ll look at are [ and ]. They’re used for specifying a character class, which is a set of characters that you wish to match. Characters can be listed individually, or a range of characters can be indicated by giving two characters and separating them by a '-'. For example, [abc] will match any of the characters a, b, or c; this is the same as [a-c], which uses a range to express the same set of characters. If you wanted to match only lowercase letters, your RE would be [a-z].
-
-Metacharacters are not active inside classes. For example, [akm$] will match any of the characters 'a', 'k', 'm', or '$'; '$' is usually a metacharacter, but inside a character class it’s stripped of its special nature.
-
-You can match the characters not listed within the class by complementing the set. This is indicated by including a '^' as the first character of the class; '^' outside a character class will simply match the '^' character. For example, [^5] will match any character except '5'.
-
-Perhaps the most important metacharacter is the backslash, \. As in Python string literals, the backslash can be followed by various characters to signal various special sequences. It’s also used to escape all the metacharacters so you can still match them in patterns; for example, if you need to match a [ or \, you can precede them with a backslash to remove their special meaning: \[ or \\.
-
-Some of the special sequences beginning with '\' represent predefined sets of characters that are often useful, such as the set of digits, the set of letters, or the set of anything that isn’t whitespace.
-
-Let’s take an example: \w matches any alphanumeric character. If the regex pattern is expressed in bytes, this is equivalent to the class [a-zA-Z0-9_]. If the regex pattern is a string, \w will match all the characters marked as letters in the Unicode database provided by the unicodedata module. You can use the more restricted definition of \w in a string pattern by supplying the re.ASCII flag when compiling the regular expression.
-
-The following list of special sequences isn’t complete. For a complete list of sequences and expanded class definitions for Unicode string patterns, see the last part of Regular Expression Syntax in the Standard Library reference. In general, the Unicode versions match any character that’s in the appropriate category in the Unicode database.
-
-\d
-Matches any decimal digit; this is equivalent to the class [0-9].
-\D
-Matches any non-digit character; this is equivalent to the class [^0-9].
-\s
-Matches any whitespace character; this is equivalent to the class [ \t\n\r\f\v].
-\S
-Matches any non-whitespace character; this is equivalent to the class [^ \t\n\r\f\v].
-\w
-Matches any alphanumeric character; this is equivalent to the class [a-zA-Z0-9_].
-\W
-Matches any non-alphanumeric character; this is equivalent to the class [^a-zA-Z0-9_].
-These sequences can be included inside a character class. For example, [\s,.] is a character class that will match any whitespace character, or ',' or '.'.
-
-The final metacharacter in this section is .. It matches anything except a newline character, and there’s an alternate mode (re.DOTALL) where it will match even a newline. '.' is often used where you want to match “any character”.
-</p>
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Over Exposed Photos</title>
-	  <link>//overexposed_photos</link>
-	  <author>Deepak Gupta</author>
-	  <pubDate>2017-07-12T12:30:00+00:00</pubDate>
-	  <guid>//overexposed_photos</guid>
-	  <description><![CDATA[
-	     <h1>UPDATING SOON</h1>
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Mac Shortcuts</title>
-	  <link>//mac_shortcuts</link>
-	  <author>Deepak Gupta</author>
-	  <pubDate>2017-07-05T10:18:00+00:00</pubDate>
-	  <guid>//mac_shortcuts</guid>
-	  <description><![CDATA[
-	     <h3>Keyboard Tips</h3>
-<ol>
-<li>The Delete key works like Backspace if you are from other platforms. To delete on the other direction, press Fn + Delete</li>
-<li>The Backspace will feel slow by default. This can be changed in Keyboard Preferences by making "Key Repeat" fast & "Delay Until Repeat" short. Ref: http://forums.macrumors.com/showthread.php?t=508385 </li>
-<li>If you are missing Home & End keys, it is Command+ Left Arrow & Command + Right Arrow</li>
-<li>If you are missing Page Up & Down keys, it is Command+ Up Arrow & Command + Down Arrow</li>
- 
-<h3>Mouse/Trackpad Tips:</h3>
-To Drag something, Select Text, you can press the mouse button and drag it. If you are familiar with Double Tap & Drag like in Windows, Linux, You can have the same settings enabled in System Preferences > Universal Access > Mouse & Trackpad >Trackpad Options -> Enable Dragging Without Lock. Ref: http://chris.dziemborowicz.com/blog/2012/07/04/enable-double-tap-to-drag-in-mac-os-x-lion/
- 
-Navigation:
-Command+Down To Open a Folder/File or to launch an application from keyboard
-Command + Up   To go one level up in finder
-Ctrl + Up             To Bring Mission Control
-Command + tilde  To Switch windows of same App
-Command + h       To hide the window
-/                          To enter/paste a path in Finder Window (Open, Save Dialog boxes)
- 
-Terminal:
-Ctrl+a  To go to the beginning of line, Ctrl+e to go the end of line. The Link has more shortcuts: http://apple.stackexchange.com/questions/12997/can-home-and-end-keys-be-mapped-when-using-terminal
-Tweaks:
-Show Full Path in the title bar:
-defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
-killall Finder
- Ref: http://osxdaily.com/2007/12/02/show-full-directory-path-in-finder-window-title-bars/
-Copy Path of selected Folder/File:
-Ref: http://osxdaily.com/2013/06/19/copy-file-folder-path-mac-os-x/
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Yum Commands - A quick jist</title>
-	  <link>//yum_commands_quick_reference</link>
-	  <author>Deepak Gupta</author>
-	  <pubDate>2017-06-10T12:20:00+00:00</pubDate>
-	  <guid>//yum_commands_quick_reference</guid>
-	  <description><![CDATA[
-	     <ol>
-<li><h5>To make a search of some package or term in the data base in some of the formed deposits yum in the system:</h5></li>
-</br>
-<p>Syntax: <span style="font-family: courier new,courier;">yum search any-package</span></p>
-Example: <code>yum search httpd</code>
-<h5>To consult the information contained in a package in individual:</h5>
-</br>yum info any-package
-</br>Example: yum info httpd
-</br></br>Uninstalling packages. Desinstalación of packages along with everything what it depends on these:
-</br>yum remove any-package
-</br>Example: yum remove gkrellm
-</br>The following thing will list all the packages available in the data base yum and that can settle:
-</br>available yum list|less
-</br>The following thing will list all the packages installed in the system:
-</br>yum list installed|less
-</br>The following thing will list all the packages installed in the system and that can (they must) be updated:
-</br>yum list updates|less
-</br>Cleaning of the system.
-</br>
-<p><span style="font-family: courier new,courier;">Yum leaves as result of its use heads and packages RPM stored in the interior of the directory located in the route /var/cache/yum/. Particularly the packages RPM that have settled can occupy much space and is by such reason agrees to eliminate them once no longer they have utility. Also it agrees to do the same with the old heads of packages that no longer are in the data base. In order to make the </br>corresponding cleaning, the following thing can be executed:</span></p>s
-</br>
-</br><code>yum clean all</code>
-</br>Group install:
-</br><code>yum groupinstall "groupname"</code>
-</ol>
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Configure multiple SSH identities for GitBash, Mac OSX, & Linux</title>
-	  <link>//configure_multiple_ssh_identities_for_gitbash_mac_linux</link>
-	  <author>Deepak Gupta</author>
-	  <pubDate>2017-04-26T13:18:00+00:00</pubDate>
-	  <guid>//configure_multiple_ssh_identities_for_gitbash_mac_linux</guid>
-	  <description><![CDATA[
-	     <p>
-</p>
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>RabbitMQ - Detecting Dead TCP Connections with Heartbeats</title>
-	  <link>//detecting-dead-tcp-connections</link>
-	  <author>Deepak Gupta</author>
-	  <pubDate>2017-04-24T12:18:00+00:00</pubDate>
-	  <guid>//detecting-dead-tcp-connections</guid>
-	  <description><![CDATA[
-	     <p>
-In some types of network failure, packet loss can mean that disrupted TCP connections take a moderately long time (about 11 minutes with default configuration on Linux, for example) to be detected by the operating system. AMQP 0-9-1 offers a heartbeat feature to ensure that the application layer promptly finds out about disrupted connections (and also completely unresponsive peers). Heartbeats also defend against certain network equipment which may terminate "idle" TCP connections. See Heartbeats for details.
+	     <p>In this tutorial we will cover the installation of a Kubernetes Cluster over 3 virtual machines spawned using Virtualbox and Vagrant.
+This can be also useful to install Kubernetes over Bare Metal server or any sort of Virtual Machines as well.
 </p>
 
-<h4><u>At the Broker</u></h4>
-<p>
-In order to avoid losing messages in the broker we need to cope with broker restarts, broker hardware failure and in extremis even broker crashes.
-</p>
-<p>
-To ensure that messages and broker definitions survive restarts, we need to ensure that they are on disk. The AMQP standard has a concept of durability for exchanges, queues and of persistent messages, requiring that a durable object or persistent message will survive a restart. More details about specific flags pertaining to durability and persistence can be found in the AMQP Concepts Guide.
-</p>
-<h4><u>Clustering and High Availability</u></h4>
-<p>
-If we need to ensure that our broker survives hardware failure, we can use RabbitMQ's clustering. In a RabbitMQ cluster, all definitions (of exchanges, bindings, users, etc) are mirrored across the entire cluster. Queues behave differently, by default residing only on a single node, but optionally being mirrored across several or all nodes. Queues remain visible and reachable from all nodes regardless of where they are located.
-</p>
-<p>
-Mirrored queues replicate their contents across all configured cluster nodes, tolerating node failures seamlessly and without message loss (although see this note on unsynchronised slaves). However, consuming applications need to be aware that when queues fail their consumers will be cancelled and they will need to reconsume - see the documentation for more details.
-</p>
-At the Producer
-<p>
-When using confirms, producers recovering from a channel or connection failure should retransmit any messages for which an acknowledgement has not been received from the broker. There is a possibility of message duplication here, because the broker might have sent a confirmation that never reached the producer (due to network failures, etc). Therefore consumer applications will need to perform deduplication or handle incoming messages in an idempotent manner.
-</p>
-<h4><u>Ensuring Messages are Routed</u></h4>
-<p>
-In some circumstances it can be important for producers to ensure that their messages are being routed to queues (although not always - in the case of a pub-sub system producers will just publish and if no consumers are interested it is correct for messages to be dropped).
-</p>
-<p>
-To ensure messages are routed to a single known queue, the producer can just declare a destination queue and publish directly to it. If messages may be routed in more complex ways but the producer still needs to know if they reached at least one queue, it can set the mandatory flag on a basic.publish, ensuring that a basic.return (containing a reply code and some textual explanation) will be sent back to the client if no queues were appropriately bound.
-</p>
-<p>
-Producers should also be aware that when publishing to a clustered node, if one or more destination queues that are bound to the exchange have mirrors in the cluster, it's possible to incur delays in the face of network failures between nodes, due to flow control between replicas and the master queue process. See here for more details.
-</p>
-<h4><u>At the Consumer</u></h4>
-<p>
-In the event of network failure (or a node crashing), messages can be duplicated, and consumers must be prepared to handle them. If possible, the simplest way to handle this is to ensure that your consumers handle messages in an idempotent way rather than explicitly deal with deduplication.
-</p>
-<p>
-If a message is delivered to a consumer and then requeued (because it was not acknowledged before the consumer connection dropped, for example) then RabbitMQ will set the redelivered flag on it when it is delivered again (whether to the same consumer or a different one). This is a hint that a consumer may have seen this message before (although that's not guaranteed, the message may have made it out of the broker but not into a consumer before the connection dropped). Conversely if the redelivered flag is not set then it is guaranteed that the message has not been seen before. Therefore if a consumer finds it more expensive to deduplicate messages or process them in an idempotent manner, it can do this only for messages with the redelivered flag set.
-</p>
-<h4><u>Consumer Cancel Notification</u></h4>
-<p>
-Under some circumstances the server needs to be able to cancel a consumer - since the queue it was consuming from has been deleted, or has failed over. In this case the consumer should consume again but be aware that it may see messages again which it has already seen.
-</p>
-<code>Note that consumer cancel notification is a RabbitMQ extension to AMQP, and as such may not be supported by all clients.</code>
-</br></br>
-<h4><u>Messages That Cannot Be Processed</u></h4>
-<p>
-If a consumer determines that it cannot handle a message then it can reject it using basic.reject (or basic.nack), either asking the server to requeue it, or not (in which case the server might be configured to dead-letter it instead.
-</p>
-<h4><u>Distributed RabbitMQ</u></h4>
-<p>
-Rabbit provides two plugins to assist with distributing nodes over unreliable networks: federation and the shovel. Both are implemented as AMQP clients, so if you configure them to use confirms and acknowledgements, they will retransmit when necessary. Both will use confirms and acknowledgements by default.
-</p>
-<p>
-When connecting clusters with federation or the shovel, it is desirable to ensure that the federation links and shovels tolerate node failures. Federation will automatically distribute links across the downstream cluster and fail them over on failure of a downstream node. In order to connect to a new upstream when an upstream node fails you can specify multiple redundant URIs for an upstream, or connect via a TCP load balancer.
-</p>
-<p>
-When using the shovel, it is possible to specify redundant brokers in a source or destination clause; however it is not currently possible to make the shovel itself redundant. We hope to improve this situation in the future; in the mean time a new node can be brought up manually to run a shovel if the node it was originally running on fails.
-</p>
+<h3>Assumptions</h3>
+<ul>
+	<li>Vagrant and Virtualbox are already installed.</li>
+	<li>We have 3 Centos 7 virtual machines running.</li>
+</ul>
+
+<h3>Pre-requisites</h3>
+<ul>
+<li>Set the host-names for all 3 machines with the below commands</li>
+<ul>
+	<li style="color: #4233ff">sudo hostnamectl set-hostname kubem</li>
+    <li style="color: #4233ff">sudo hostnamectl set-hostname worker1</li>
+    <li style="color: #4233ff">sudo hostnamectl set-hostname worker2</li>
+</ul>
+
+<li>Disable selinux</li>
+<ul>
+    <li style="color: #4233ff">set selinux 0</li>
+    <li>edit the file /etc/sysconfig/selinux and disable selinux</li>
+    or use the below command directly to disable selinux
+    <li style="color: #4233ff">sudo sed -i s/^SELINUX=.*$/SELINUX=disabled/ /etc/selinux/config</li>
+</ul>
+
+<li>Disable swap memory</li>
+<ul>
+	<li style="color: #4233ff">swapoff -a</li>
+	<li>vim /etc/fstab</li>
+	or
+	<li style="color: #4233ff">sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab</li>
+</ul>
+
+<li>Set net bridge  for proper traffic routing</li>
+<ul>
+	<li style="color: #4233ff">cat <<EOF >  /etc/sysctl.d/k8s.conf
+net.bridge.bridge-nf-call-ip6tables = 1
+net.bridge.bridge-nf-call-iptables = 1
+EOF</li>
+</ul>
+
+<li >Reload sysctl</li>
+<ul>
+    <li style="color: #4233ff">sysctl --system</li>
+</ul>
+
+<li>Set DNS entries in /etc/hosts</li>
+<ul>
+	<li style="color: #4233ff">192.168.10.60 kubem</li>
+	<li style="color: #4233ff">192.168.10.61 worker1</li>
+	<li style="color: #4233ff">192.168.10.62 worker2</li>
+</ul>
+
+<li>Docker Installation</li>
+<ul>
+	<li style="color: #4233ff">yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo</li>
+	<li style="color: #4233ff">yum update -y</li>
+	<li style="color: #4233ff">yum install -y yum-utils device-mapper-persistent-data lvm2 -y</li>
+	<li style="color: #4233ff">sudo yum install docker-ce -y</li>
+	<li style="color: #4233ff">sudo yum install docker-ce -y</li>
+	<li style="color: #4233ff">systemctl enable docker</li>
+	<li style="color: #4233ff">systemctl start docker</li>
+	<li style="color: #4233ff">systemctl status docker</li>
+	<li style="color: #4233ff">systemctl status docker</li>
+	<li style="color: #4233ff">docker version</li>
+	<li style="color: #4233ff">docker info</li>
+</ul>
+
+<li>Installing kubelet, kubeadm, kubectl</li>
+<ul>
+<li style="color: #4233ff">cat <<EOF > /etc/yum.repos.d/kubernetes.repo
+[kubernetes]
+name=Kubernetes
+baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+enabled=1
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg
+        https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+EOF
+</li>
+<li style="color: #4233ff">yum install -y kubelet-1.15.1 kubeadm-1.15.1</li>
+<li style="color: #4233ff">systemctl enable kubelet</li>
+<li style="color: #4233ff">systemctl start kubelet</li>
+</ul>
+
+<li>Initialize the kubernetes cluster</li>
+<ul>
+	<li style="color: #4233ff">kubeadm init --apiserver-advertise-address=172.31.19.193 --pod-network-cidr=10.244.0.0/16 --service-cidr=10.244.0.0/12</li>
+</ul>
+
+<li>Become Non-root user</li>
+<ul>
+<li style="color: #4233ff">mkdir -p $HOME/.kube</li>
+<li style="color: #4233ff">sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config</li>
+<li style="color: #4233ff">sudo chown $(id -u):$(id -g) $HOME/.kube/config</li>
+</ul>
+
+<li>Creating the CNI and Dashboard:</li>
+<ul>
+<li style="color: #4233ff">kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml</li>
+<li style="color: #4233ff">kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/aio/deploy/recommended/kubernetes-dashboard.yaml</li>
+<li style="color: #4233ff">kubectl -n kube-system edit service kubernetes-dashboard</li>
+change from ClusterIP to NodePort
+<li style="color: #4233ff">kubectl describe services kubernetes-dashboard -n kube-system</li>
+<li style="color: #4233ff">kubectl -n kube-system get secret</li>
+<li style="color: #4233ff">kubectl -n kube-system describe secret namespace-contoller-token-xyxyx</li>
+now use this token to login to the cluster IP
 	  ]]></description>
 	</item>
 
