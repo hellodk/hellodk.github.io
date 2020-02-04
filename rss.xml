@@ -8,16 +8,16 @@
     <title>Curosity is the most powerful thing you own</title>
     <link>http://hellodk.in/</link>
     <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
-    <pubDate>Tue, 15 Jan 2019 00:00:00 +0530</pubDate>
+    <pubDate>Thu, 02 Apr 2020 00:00:00 +0530</pubDate>
     <item>
-      <title>Resume</title>
+      <title>My Resume Hosted</title>
       <link>http://hellodk.in//resume</link>
       <description>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 
 </description>
-      <pubDate>Tue, 15 Jan 2019 00:00:00 +0530</pubDate>
-      <dc:date>2019-01-15T00:00:00+05:30</dc:date>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0530</pubDate>
+      <dc:date>2020-04-02T00:00:00+05:30</dc:date>
     </item>
     <item>
       <title>A Failed Trek to Everest Base Camp</title>
@@ -324,6 +324,6 @@ So why don't you try your hands on Ansible and experience it's awesomeness....al
       <pubDate>Wed, 28 Aug 1963 10:18:00 +0000</pubDate>
       <dc:date>1963-08-28T10:18:00+00:00</dc:date>
     </item>
-    <dc:date>2019-01-15T00:00:00+05:30</dc:date>
+    <dc:date>2020-04-02T00:00:00+05:30</dc:date>
   </channel>
 </rss>
