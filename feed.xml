@@ -5,8 +5,8 @@
     <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
     <link>http://hellodk.in///</link>
     <atom:link href="http://hellodk.in///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 04 Feb 2020 12:08:17 +0530</pubDate>
-    <lastBuildDate>Tue, 04 Feb 2020 12:08:17 +0530</lastBuildDate>
+    <pubDate>Tue, 04 Feb 2020 18:18:15 +0530</pubDate>
+    <lastBuildDate>Tue, 04 Feb 2020 18:18:15 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -26,17 +26,6 @@ p.small {
 p.big {
   line-height: 1.8;
 }
-
-.header img {
-  float: right;
-  width: 40px;
-  height: 40px;
-}
-
-.header h1 {
-  position: relative;
-}
-
 &lt;/style&gt;
 
 &lt;head&gt;
@@ -45,14 +34,7 @@ p.big {
 &lt;/head&gt;
 
 &lt;body&gt;
-&lt;div class=&quot;header&quot;&gt;
-  &lt;a class=&quot;blog-logo&quot; href=&quot;/&quot;&gt;
-  	&lt;img src=&quot;/assets/images/utilities/home_icon.png&quot;;  width: 40px; height: 40px; alt=&quot;Blog Logo&quot; /&gt;
-  &lt;/a&gt;
-  &lt;h1&gt;Deepak Gupta&lt;/h1&gt;
-&lt;/div&gt;
-
-&lt;!---h4&gt;Technologist| Traveler | Photographer&lt;/h4---&gt;
+&lt;h1&gt;Deepak Gupta&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Email: &lt;span class=&quot;tab-1&quot;&gt;hello.dk@outlook.com&lt;/li&gt;
 &lt;li&gt;About.me: &lt;span class=&quot;tab-1&quot;&gt;&lt;a href=&quot;https://about.me/hellodk&quot;&gt;about.me/hellodk&lt;/a&gt;&lt;/li&gt;
@@ -347,7 +329,7 @@ Certifications:
         <link>http://hellodk.in///resume</link>
         <guid isPermaLink="true">http://hellodk.in///resume</guid>
         
-        <category>resume</category>
+        <category>tutorials</category>
         
         
         <category>dk</category>
