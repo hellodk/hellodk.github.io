@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- [[! Page Meta ]] -->
-    <title>Kubernetes Cluster on Vagrant</title>
+    <title>Getting started with Cassandra</title>
     <meta name="description" content="Curosity is the most powerful thing you own - A beautiful narrative written over an elegant publishing platform. The story begins here..." />
 
     <meta name="HandheldFriendly" content="True" />
@@ -93,7 +93,7 @@
 <!-- Everything inside the #post tags pulls data from the post -->
 <!-- #post -->
 
-<header class="main-header post-head " style="background-image: url(/assets/images/kubernetes/kubernetes_logo.png) ">
+<header class="main-header post-head " style="background-image: url(/assets/images/cassandra/astronaut_on_the_moon.jpg) ">
     <nav class="main-nav  overlay  clearfix">
         <a class="blog-logo" href="/"><img src="/assets/images/utilities/home_icon.png" alt="Blog Logo" /></a>
         
@@ -107,10 +107,10 @@
     <article class="post tag-tutorials">
 
         <header class="post-header">
-            <h1 class="post-title">Kubernetes Cluster on Vagrant</h1>
+            <h1 class="post-title">Getting started with Cassandra</h1>
             <section class="post-meta">
             <!-- <a href='/'>Deepak Gupta</a> -->
-            <time class="post-date" datetime="2016-02-04">04 Feb 2016</time>
+            <time class="post-date" datetime="2016-01-28">28 Jan 2016</time>
                 <!-- [[tags prefix=" on "]] -->
                  
                 on 
@@ -125,116 +125,155 @@
 
         <section class="post-content">
             
-            <p>In this tutorial we will cover the installation of a Kubernetes Cluster over 3 virtual machines spawned using Virtualbox and Vagrant.
-This can be also useful to install Kubernetes over Bare Metal server or any sort of Virtual Machines as well.
+            <p>The Growth of Big Data - Big Data is one of the key forces driving the growth and popularity of NoSQL for business. The almost limitless array of data collection technologies ranging from simple online actions to point of sale systems to GPS tools to smartphones and tablets to sophisticated sensors – and many more – act as force multipliers for data growth.
 </p>
 
-<h3>Assumptions</h3>
-<ul>
-	<li>Vagrant and Virtualbox are already installed.</li>
-	<li>We have 3 Centos 7 virtual machines running.</li>
-</ul>
+In fact, one of the first reasons to use NoSQL is because you have a Big Data project to tackle. A Big Data project is normally typified by:
+<ol>
+  <li><i>High data velocity</i> – lots of data coming in very quickly, possibly from different locations.</li>
+  <li><i>Data variety</i> – storage of data that is structured, semi-structured and unstructured.</li>
+  <li><i>Data volume</i> – data that involves many terabytes or petabytes in size.     </li>
+  <li><i>Data complexity</i> – data that is stored and managed in different locations or data centers.</li>
+</ol>
 
-<h3>Pre-requisites</h3>
-<ul>
-<li>Set the host-names for all 3 machines with the below commands</li>
-<ul>
-	<li style="color: #4233ff">sudo hostnamectl set-hostname kubem</li>
-    <li style="color: #4233ff">sudo hostnamectl set-hostname worker1</li>
-    <li style="color: #4233ff">sudo hostnamectl set-hostname worker2</li>
-</ul>
+<table style="width:100%">
+  <caption>Comparison</caption>
+  <tr>
+    <th>Datamodel</th>
+    <th>Performance</th>
+    <th>Scalability</th>
+    <th>Flexibility</th>
+    <th>Complexity</th>
+    <th>Functionality</th>
+  </tr>
+  <tr>
+    <td>Key-value store</td><td>High</td><td>High</td><td>High</td><td>None</td><td>Variable (None)</td>
+  </tr>
+  <tr>
+    <td>Column Store</td><td>High</td><td>High</td><td>Loq</td><td>Moderate</td><td>Low Minimal</td>
+  </tr>
+  <tr>
+    <td>Document Store</td><td>High</td><td>Variable</td><td>High</td><td>Low</td><td>Variable</td>
+  </tr>
+    <tr>
+    <td>Graph Database</td><td>Variable</td><td>Variable</td><td>High</td><td>High</td><td>Graph Theory</td>
+  </tr>
+</table>
 
-<li>Disable selinux</li>
-<ul>
-    <li style="color: #4233ff">set selinux 0</li>
-    <li>edit the file /etc/sysconfig/selinux and disable selinux</li>
-    or use the below command directly to disable selinux
-    <li style="color: #4233ff">sudo sed -i s/^SELINUX=.*$/SELINUX=disabled/ /etc/selinux/config</li>
-</ul>
+<p>Cassandra is perfect for managing large amounts of structured, semi-structured, and unstructured data across multiple data centers and the cloud. Cassandra delivers continuous availability, linear scalability, and operational simplicity across many commodity servers with no single point of failure, along with a powerful dynamic data model designed for maximum flexibility and fast response times. Built-for-scale architecture means that it is capable of handling petabytes of information and thousands of concurrent users/operations per second.</p>
 
-<li>Disable swap memory</li>
-<ul>
-	<li style="color: #4233ff">swapoff -a</li>
-	<li>vim /etc/fstab</li>
-	or
-	<li style="color: #4233ff">sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab</li>
-</ul>
+<p>An apache Software Foundation project, Cassandra is column oriented database and is an open source distributed database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure. Cassandra does not support joins or subqueries. Rather, Cassandra emphasizes denormalization through features like collections.</p>
 
-<li>Set net bridge  for proper traffic routing</li>
-<ul>
-	<li style="color: #4233ff">cat <<EOF >  /etc/sysctl.d/k8s.conf
-net.bridge.bridge-nf-call-ip6tables = 1
-net.bridge.bridge-nf-call-iptables = 1
-EOF</li>
-</ul>
+Each node in a cluster can accept read and write requests, regardless of where the data is actually located in the cluster.
 
-<li >Reload sysctl</li>
-<ul>
-    <li style="color: #4233ff">sysctl --system</li>
-</ul>
+When a node goes down, read/write requests can be served from other nodes in the network.
 
-<li>Set DNS entries in /etc/hosts</li>
-<ul>
-	<li style="color: #4233ff">192.168.10.60 kubem</li>
-	<li style="color: #4233ff">192.168.10.61 worker1</li>
-	<li style="color: #4233ff">192.168.10.62 worker2</li>
-</ul>
+<p>The key components of Cassandra are as follows:</p>
+1. <code>Node</code> − It is the place where data is stored.
+<br/>
+2. <code>Data center</code> − It is a collection of related nodes.
+<br/>
+3. <code>Cluster</code>− A cluster is a component that contains one or more data centers.
+<br/>
+4. <code>Commit log</code> − The commit log is a crash-recovery mechanism in Cassandra. Every write operation is written to the commit log.
+<br/>
+5. <code>Mem-table</code> − A mem-table is a memory-resident data structure. After commit log, the data will be written to the mem-table. Sometimes, for a single-column family, there will be multiple mem-tables.
+<br/>
+6. <code>SSTable</code> − It is a disk file to which the data is flushed from the mem-table when its contents reach a threshold value.
+<br/>
+7. <code>Bloom filter</code> − These are nothing but quick, nondeterministic, algorithms for testing whether an element is a member of a set. It is a special kind of cache. Bloom filters are accessed after every query.
 
-<li>Docker Installation</li>
-<ul>
-	<li style="color: #4233ff">yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo</li>
-	<li style="color: #4233ff">yum update -y</li>
-	<li style="color: #4233ff">yum install -y yum-utils device-mapper-persistent-data lvm2 -y</li>
-	<li style="color: #4233ff">sudo yum install docker-ce -y</li>
-	<li style="color: #4233ff">sudo yum install docker-ce -y</li>
-	<li style="color: #4233ff">systemctl enable docker</li>
-	<li style="color: #4233ff">systemctl start docker</li>
-	<li style="color: #4233ff">systemctl status docker</li>
-	<li style="color: #4233ff">systemctl status docker</li>
-	<li style="color: #4233ff">docker version</li>
-	<li style="color: #4233ff">docker info</li>
-</ul>
+<br/><br/>
+<h5>Commands:</h5>
+<code>nodetool cfstats :</code> displays statistics for each table and keyspace.
+<br/>
+<code>nodetool cfhistograms :</code> provides statistics about a table, including read/write latency, row size, column count, and number of SSTables.
+<br/>
+<code>nodetool netstats :</code> provides statistics about network operations and connections.
+<br/>
+<code>nodetool tpstats :</code> provides statistics about the number of active, pending, and completed tasks for each stage of Cassandra operations by thread pool.
+<br/>
+<code>nodetool status :</code>
+<br/>
+<code>cqlsh machine_ip</code> -  connects to the machine cqlsh
+<br/>
+<br/>
+<h5><u>cqlsh command list:</u></h5>
+<code>HELP </code> - Displays help topics for all cqlsh commands.
+<br/>
+<code>CAPTURE </code> - Captures the output of a command and adds it to a file.
+<br/>
+<code>CONSISTENCY </code> - Shows the current consistency level, or sets a new consistency level.
+<br/>
+<code>COPY </code> - Copies data to and from Cassandra.
+<br/>
+<code>DESCRIBE </code> - Describes the current cluster of Cassandra and its objects.
+<br/>
+<code>EXPAND </code> - Expands the output of a query vertically.
+<br/>
+<code>EXIT </code> - Using this command, you can terminate cqlsh.
+<br/>
+<code>PAGING </code> - Enables or disables query paging.
+<br/>
+<code>SHOW </code> - Displays the details of current cqlsh session such as Cassandra version, host, or data type assumptions.
+<br/>
+<code>SOURCE -</code> Executes a file that contains CQL statements.
+<br/>
+<code>TRACING -</code> Enables or disables request tracing.
+<br/>
+<br/>
+<h5><u>Upgrading:</u></h5>
+<p>To upgrade an existing cassandra installation, you can follow the below instructions:</p>
+<ol>
+<li><code>mkdir ~/cassandra_backup</code></li>
+<li><code>sudo cp -r /etc/cassandra/* ~/cassandra_backup</code></li>
+<li><code>sudo vi /etc/cassandra/cassandra.yaml</code> and edit num_tokens to 1 and uncomment the initial_token and set it to 1</li>
+<li><code>nodetool upgradesstables</code></li>
+<li><code>nodetool drain</code></li>
+<li><code>sudo service cassandra stop</code></li>
+<li><code>sudo cp -r /etc/cassandra/* ~/cassandra_backup_new</code></li>
+<li><code>sudo apt-get install cassandra=2.1.12</code></li>
+<li>Open the old and new cassandra.yaml files and diff them.</li>
+<li>Merge the diffs by hand, including the partitioner setting, from the old file into the new one.</li>
+<li>Do not use the default partitioner setting in the new cassandra.yaml because it has changed in this release to the Murmur3Partitioner. The Murmur3Partitioner can only be used for new clusters. After data has been added to the cluster, you cannot change the partitioner without reworking tables, which is not practical. Use your old partitioner setting in the new cassandra.yaml file.</li>
+<li>Save the file as cassandra.yaml.
+<br/>Configuration file '/etc/cassandra/cassandra.yaml'
+ ==> Modified (by you or by a script) since installation.
+ ==> Package distributor has shipped an updated version.
+   What would you like to do about it ?  Your options are:
+    Y or I  : install the package maintainer's version
+    N or O  : keep your currently-installed version
+      D     : show the differences between the versions
+      Z     : start a shell to examine the situation
+ The default action is to keep your current version.
+*** cassandra.yaml (Y/I/N/O/D/Z) [default=N] ? </li>
+</ol>
+<h5>Inserting values into tables</h5>
+<code>CREATE KEYSPACE key_space WITH replication = {
+  'class': 'NetworkTopologyStrategy',
+  'cdr_record': '2'
+};</code>
+<br/>
+<code>INSERT INTO key_space.emp (emp_id,emp_city,emp_name,emp_phone,emp_sal) VALUES(3,'Kolkata','Stag1',4412,60);</code>
+<br/>
+<code>UPDATE TABLE emp(
+   emp_id int PRIMARY KEY,
+   emp_name text,
+   emp_city text,
+   emp_sal varint,
+   emp_phone varint);
+</code>
+<br/>
+<code>INSERT INTO TABLE emp(emp_id int,emp_name,emp_city,emp_sal,emp_phone) VALUES(1,'foo','Bangalore',24,1234567);</code>
+<br/>
+<h5>Nodetool Command Set:</h5>
+1. <code>nodetool status</code>
+<br/>
+2. <code>nodetool info</code>
+<br/>
+3. <code>nodetool -host 10.60.8.23 ring</code>
+<br/>
 
-<li>Installing kubelet, kubeadm, kubectl</li>
-<ul>
-<li style="color: #4233ff">cat <<EOF > /etc/yum.repos.d/kubernetes.repo
-[kubernetes]
-name=Kubernetes
-baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
-enabled=1
-gpgcheck=1
-repo_gpgcheck=1
-gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg
-        https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
-EOF
-</li>
-<li style="color: #4233ff">yum install -y kubelet-1.15.1 kubeadm-1.15.1</li>
-<li style="color: #4233ff">systemctl enable kubelet</li>
-<li style="color: #4233ff">systemctl start kubelet</li>
-</ul>
-
-<li>Initialize the kubernetes cluster</li>
-<ul>
-	<li style="color: #4233ff">kubeadm init --apiserver-advertise-address=172.31.19.193 --pod-network-cidr=10.244.0.0/16 --service-cidr=10.244.0.0/12</li>
-</ul>
-
-<li>Become Non-root user</li>
-<ul>
-<li style="color: #4233ff">mkdir -p $HOME/.kube</li>
-<li style="color: #4233ff">sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config</li>
-<li style="color: #4233ff">sudo chown $(id -u):$(id -g) $HOME/.kube/config</li>
-</ul>
-
-<li>Creating the CNI and Dashboard:</li>
-<ul>
-<li style="color: #4233ff">kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml</li>
-<li style="color: #4233ff">kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/aio/deploy/recommended/kubernetes-dashboard.yaml</li>
-<li style="color: #4233ff">kubectl -n kube-system edit service kubernetes-dashboard</li>
-change from ClusterIP to NodePort
-<li style="color: #4233ff">kubectl describe services kubernetes-dashboard -n kube-system</li>
-<li style="color: #4233ff">kubectl -n kube-system get secret</li>
-<li style="color: #4233ff">kubectl -n kube-system describe secret namespace-contoller-token-xyxyx</li>
-now use this token to login to the cluster IP</ul></EOF></li></ul></EOF></li></ul></ul>
 
         </section>
 
@@ -265,15 +304,15 @@ now use this token to login to the cluster IP</ul></EOF></li></ul></EOF></li></u
 
             <section class="share">
                 <h4>Share this post</h4>
-                <a class="icon-twitter" href="http://twitter.com/share?text=Kubernetes Cluster on Vagrant&amp;url=http://hellodk.in/kubernetes_cluster_vagrant"
+                <a class="icon-twitter" href="http://twitter.com/share?text=Getting started with Cassandra&amp;url=http://hellodk.in/getting_familiar_with_cassandra"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="hidden">Twitter</span>
                 </a>
-                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://hellodk.in/kubernetes_cluster_vagrant"
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://hellodk.in/getting_familiar_with_cassandra"
                     onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                     <span class="hidden">Facebook</span>
                 </a>
-                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://hellodk.in/kubernetes_cluster_vagrant"
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://hellodk.in/getting_familiar_with_cassandra"
                    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <span class="hidden">Google+</span>
                 </a>
@@ -313,20 +352,20 @@ var disqus_config = function () {
 
     <!-- [[! next_post ]] -->
     
-        <a class="read-next-story no-cover" href="/resume">
+        <a class="read-next-story " style="background-image: url(/assets/images/rethinkdb/rethinkdb3.png)" href="/rethinkdb_installation_ubuntu14">
             <section class="post">
-                <h2>My Resume Hosted</h2>
-                <p><!DOCTYPE html> <html> <style> .tab-1 {position:absolute;left:180px; } .tab-2 {position:absolute;left:300px; } p.small { line-height: 0.7; }...</p>
+                <h2>RethinkDb Installation on Ubuntu-14.04</h2>
+                <p>Let's get some hands on rethinkdb today and find it out yourself. </br> </br> So...</p>
             </section>
         </a>
     
     <!-- [[! /next_post ]] -->
     <!-- [[! prev_post ]] -->
     
-        <a class="read-next-story prev " style="background-image: url(/assets/images/rethinkdb/rethinkdb3.png)" href="/rethinkdb_installation_ubuntu14">
+        <a class="read-next-story prev " style="background-image: url(/assets/images/cover4.jpg)" href="/5_interesting_cloud_predictions_2016">
             <section class="post">
-                <h2>RethinkDb Installation on Ubuntu-14.04</h2>
-                <p>Let's get some hands on rethinkdb today and find it out yourself. </br> </br> So...</p>
+                <h2>5 interesting cloud predictions for 2016</h2>
+                <p><ol> <li>It&#39;s time for IOT-</li> </ol> <p>The IOT or the Internet of Things has been...</p>
             </section>
         </a>
     

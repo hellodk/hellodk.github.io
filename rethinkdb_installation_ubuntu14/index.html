@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- [[! Page Meta ]] -->
-    <title>Kubernetes Cluster on Vagrant</title>
+    <title>RethinkDb Installation on Ubuntu-14.04</title>
     <meta name="description" content="Curosity is the most powerful thing you own - A beautiful narrative written over an elegant publishing platform. The story begins here..." />
 
     <meta name="HandheldFriendly" content="True" />
@@ -93,7 +93,7 @@
 <!-- Everything inside the #post tags pulls data from the post -->
 <!-- #post -->
 
-<header class="main-header post-head " style="background-image: url(/assets/images/kubernetes/kubernetes_logo.png) ">
+<header class="main-header post-head " style="background-image: url(/assets/images/rethinkdb/rethinkdb3.png) ">
     <nav class="main-nav  overlay  clearfix">
         <a class="blog-logo" href="/"><img src="/assets/images/utilities/home_icon.png" alt="Blog Logo" /></a>
         
@@ -107,7 +107,7 @@
     <article class="post tag-tutorials">
 
         <header class="post-header">
-            <h1 class="post-title">Kubernetes Cluster on Vagrant</h1>
+            <h1 class="post-title">RethinkDb Installation on Ubuntu-14.04</h1>
             <section class="post-meta">
             <!-- <a href='/'>Deepak Gupta</a> -->
             <time class="post-date" datetime="2016-02-04">04 Feb 2016</time>
@@ -125,116 +125,75 @@
 
         <section class="post-content">
             
-            <p>In this tutorial we will cover the installation of a Kubernetes Cluster over 3 virtual machines spawned using Virtualbox and Vagrant.
-This can be also useful to install Kubernetes over Bare Metal server or any sort of Virtual Machines as well.
-</p>
+            Let's get some hands on rethinkdb today and find it out yourself. </br>
+</br>
+So what is rethinkdb?
+</br></br>
+Rethinkdb is an open-source, scalable JSON database built from the ground up for the realtime web.
+</br>RethinkDB inverts the traditional database architecture by exposing an exciting new access model – instead of polling for changes, the developer can tell RethinkDB to continuously push updated query results to applications in realtime. RethinkDB’s realtime push architecture dramatically reduces the time and effort necessary to build scalable realtime apps. RethinkDB also offers a flexible query language, intuitive operations and monitoring APIs, and is easy to setup and learn. Just like any other database solution, rethinkdb ships as a client-server component model. The installation process for both the server and the client are illustrated below:
 
-<h3>Assumptions</h3>
-<ul>
-	<li>Vagrant and Virtualbox are already installed.</li>
-	<li>We have 3 Centos 7 virtual machines running.</li>
-</ul>
+<p>How to Install RethinkDb:</p>
+1. Add the RethinkDB PPA to your list of repositories : 
+<br></br>
+<code>source /etc/lsb-release && echo "deb http://download.rethinkdb.com/apt $DISTRIB_CODENAME main" | sudo tee /etc/apt/sources.list.d/rethinkdb.list</code>
+<br></br>
+2. Add the keys:<br></br>
 
-<h3>Pre-requisites</h3>
-<ul>
-<li>Set the host-names for all 3 machines with the below commands</li>
-<ul>
-	<li style="color: #4233ff">sudo hostnamectl set-hostname kubem</li>
-    <li style="color: #4233ff">sudo hostnamectl set-hostname worker1</li>
-    <li style="color: #4233ff">sudo hostnamectl set-hostname worker2</li>
-</ul>
-
-<li>Disable selinux</li>
-<ul>
-    <li style="color: #4233ff">set selinux 0</li>
-    <li>edit the file /etc/sysconfig/selinux and disable selinux</li>
-    or use the below command directly to disable selinux
-    <li style="color: #4233ff">sudo sed -i s/^SELINUX=.*$/SELINUX=disabled/ /etc/selinux/config</li>
-</ul>
-
-<li>Disable swap memory</li>
-<ul>
-	<li style="color: #4233ff">swapoff -a</li>
-	<li>vim /etc/fstab</li>
-	or
-	<li style="color: #4233ff">sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab</li>
-</ul>
-
-<li>Set net bridge  for proper traffic routing</li>
-<ul>
-	<li style="color: #4233ff">cat <<EOF >  /etc/sysctl.d/k8s.conf
-net.bridge.bridge-nf-call-ip6tables = 1
-net.bridge.bridge-nf-call-iptables = 1
-EOF</li>
-</ul>
-
-<li >Reload sysctl</li>
-<ul>
-    <li style="color: #4233ff">sysctl --system</li>
-</ul>
-
-<li>Set DNS entries in /etc/hosts</li>
-<ul>
-	<li style="color: #4233ff">192.168.10.60 kubem</li>
-	<li style="color: #4233ff">192.168.10.61 worker1</li>
-	<li style="color: #4233ff">192.168.10.62 worker2</li>
-</ul>
-
-<li>Docker Installation</li>
-<ul>
-	<li style="color: #4233ff">yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo</li>
-	<li style="color: #4233ff">yum update -y</li>
-	<li style="color: #4233ff">yum install -y yum-utils device-mapper-persistent-data lvm2 -y</li>
-	<li style="color: #4233ff">sudo yum install docker-ce -y</li>
-	<li style="color: #4233ff">sudo yum install docker-ce -y</li>
-	<li style="color: #4233ff">systemctl enable docker</li>
-	<li style="color: #4233ff">systemctl start docker</li>
-	<li style="color: #4233ff">systemctl status docker</li>
-	<li style="color: #4233ff">systemctl status docker</li>
-	<li style="color: #4233ff">docker version</li>
-	<li style="color: #4233ff">docker info</li>
-</ul>
-
-<li>Installing kubelet, kubeadm, kubectl</li>
-<ul>
-<li style="color: #4233ff">cat <<EOF > /etc/yum.repos.d/kubernetes.repo
-[kubernetes]
-name=Kubernetes
-baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
-enabled=1
-gpgcheck=1
-repo_gpgcheck=1
-gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg
-        https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
-EOF
-</li>
-<li style="color: #4233ff">yum install -y kubelet-1.15.1 kubeadm-1.15.1</li>
-<li style="color: #4233ff">systemctl enable kubelet</li>
-<li style="color: #4233ff">systemctl start kubelet</li>
-</ul>
-
-<li>Initialize the kubernetes cluster</li>
-<ul>
-	<li style="color: #4233ff">kubeadm init --apiserver-advertise-address=172.31.19.193 --pod-network-cidr=10.244.0.0/16 --service-cidr=10.244.0.0/12</li>
-</ul>
-
-<li>Become Non-root user</li>
-<ul>
-<li style="color: #4233ff">mkdir -p $HOME/.kube</li>
-<li style="color: #4233ff">sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config</li>
-<li style="color: #4233ff">sudo chown $(id -u):$(id -g) $HOME/.kube/config</li>
-</ul>
-
-<li>Creating the CNI and Dashboard:</li>
-<ul>
-<li style="color: #4233ff">kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml</li>
-<li style="color: #4233ff">kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/aio/deploy/recommended/kubernetes-dashboard.yaml</li>
-<li style="color: #4233ff">kubectl -n kube-system edit service kubernetes-dashboard</li>
-change from ClusterIP to NodePort
-<li style="color: #4233ff">kubectl describe services kubernetes-dashboard -n kube-system</li>
-<li style="color: #4233ff">kubectl -n kube-system get secret</li>
-<li style="color: #4233ff">kubectl -n kube-system describe secret namespace-contoller-token-xyxyx</li>
-now use this token to login to the cluster IP</ul></EOF></li></ul></EOF></li></ul></ul>
+<code>wget -qO- http://download.rethinkdb.com/apt/pubkey.gpg | sudo apt-key add -</code>
+<br></br>
+3. Update the repository:
+<br></br>
+<code>sudo apt-get update</code>
+<br></br>
+4. Install the rethinkdb server via apt-get:
+<br></br>
+<code>sudo apt-get -y install rethinkdb</code>
+<br></br>
+Install rethinkdb client:
+<br></br>
+1. Install the python-pip package:
+<br></br>
+<code>sudo apt-get install python-pip</code>
+<br></br>
+2. Install the rethinkdb python client:
+<br></br>
+<code>sudo pip install rethinkdb</code>
+<br></br>
+The above steps ensure that rethinkdb is installed on the system, while it does not ensures that this will start the rethinkdb service on system startup. You still need to start the rethinkdb service using the below command
+<br></br>
+<code>rethinkdb</code>
+<br></br>
+The above command will ensure that rethinkdb is running as a terminal process, and will exit once the terminal is closed, or the process is killed, in short it will not run rethinkdb as a background service.
+<br></br>
+To start rethinkdb as a service, please follow the below steps:
+<br></br>
+1.  Move to the directory /etc/rethinkdb
+<br></br><code>cd /etc/rethinkdb</code>
+<br></br>
+2. Copy the file to /etc/rethinkdb/instances.d and rename the file as per your requirements ensuring the extension is .conf only. Say for example the file name is rethinkdb1.conf
+<br></br><code>cp default.conf.sample rethinkdb1.conf</code>
+<br></br>
+3. Now open the file /etc/rethinkdb/instances.d/rethinkdb1.conf and modify the paramaters as per your requirements.
+<br></br><code>vim rethinkdb1.conf</code>
+<br></br>
+4. If setting up a cluster, we suggest do change the server-name to somethink like 'rethinkdb-primary' or 'rethinkdb-1' or 'master' or 'slave'. This will ensure that we have a meaningful naming convention for our cluster.
+<br></br>
+5. The default port details are :
+<br></br>
+<code>29015 :</code> Rethinkdb listens for intracluster connections
+</br>
+<code>28015 :</code> Rethinkdb listens for client driver connections
+</br>
+<code>8080  :</code> Rethinkdb listens for administrative HTTP connections
+</br>
+<code>22    :</code> For SSH. The server uses public key authentication.
+</br>
+<code>80    :</code> For HTTP. It is used during the setup process but otherwise redirects to HTTPS.
+</br>
+<code>443   :</code> For HTTPS. An Nginx server sits between RethinkDB and the world and provides basic HTTP authentication and secure HTTPS connections for the web UI
+<br></br>
+</body>
+</html>
 
         </section>
 
@@ -265,15 +224,15 @@ now use this token to login to the cluster IP</ul></EOF></li></ul></EOF></li></u
 
             <section class="share">
                 <h4>Share this post</h4>
-                <a class="icon-twitter" href="http://twitter.com/share?text=Kubernetes Cluster on Vagrant&amp;url=http://hellodk.in/kubernetes_cluster_vagrant"
+                <a class="icon-twitter" href="http://twitter.com/share?text=RethinkDb Installation on Ubuntu-14.04&amp;url=http://hellodk.in/rethinkdb_installation_ubuntu14"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="hidden">Twitter</span>
                 </a>
-                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://hellodk.in/kubernetes_cluster_vagrant"
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://hellodk.in/rethinkdb_installation_ubuntu14"
                     onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                     <span class="hidden">Facebook</span>
                 </a>
-                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://hellodk.in/kubernetes_cluster_vagrant"
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://hellodk.in/rethinkdb_installation_ubuntu14"
                    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <span class="hidden">Google+</span>
                 </a>
@@ -313,20 +272,20 @@ var disqus_config = function () {
 
     <!-- [[! next_post ]] -->
     
-        <a class="read-next-story no-cover" href="/resume">
+        <a class="read-next-story " style="background-image: url(/assets/images/kubernetes/kubernetes_logo.png)" href="/kubernetes_cluster_vagrant">
             <section class="post">
-                <h2>My Resume Hosted</h2>
-                <p><!DOCTYPE html> <html> <style> .tab-1 {position:absolute;left:180px; } .tab-2 {position:absolute;left:300px; } p.small { line-height: 0.7; }...</p>
+                <h2>Kubernetes Cluster on Vagrant</h2>
+                <p><p>In this tutorial we will cover the installation of a Kubernetes Cluster over 3 virtual...</p>
             </section>
         </a>
     
     <!-- [[! /next_post ]] -->
     <!-- [[! prev_post ]] -->
     
-        <a class="read-next-story prev " style="background-image: url(/assets/images/rethinkdb/rethinkdb3.png)" href="/rethinkdb_installation_ubuntu14">
+        <a class="read-next-story prev " style="background-image: url(/assets/images/cassandra/astronaut_on_the_moon.jpg)" href="/getting_familiar_with_cassandra">
             <section class="post">
-                <h2>RethinkDb Installation on Ubuntu-14.04</h2>
-                <p>Let's get some hands on rethinkdb today and find it out yourself. </br> </br> So...</p>
+                <h2>Getting started with Cassandra</h2>
+                <p><p>The Growth of Big Data - Big Data is one of the key forces driving...</p>
             </section>
         </a>
     

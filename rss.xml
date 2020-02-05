@@ -27,8 +27,41 @@ This can be also useful to install Kubernetes over Bare Metal server or any sort
 &lt;/p&gt;
 
 </description>
-      <pubDate>Thu, 20 Apr 2017 12:30:00 +0000</pubDate>
-      <dc:date>2017-04-20T12:30:00+00:00</dc:date>
+      <pubDate>Thu, 04 Feb 2016 12:30:00 +0000</pubDate>
+      <dc:date>2016-02-04T12:30:00+00:00</dc:date>
+    </item>
+    <item>
+      <title>RethinkDb Installation on Ubuntu-14.04</title>
+      <link>http://hellodk.in//rethinkdb_installation_ubuntu14</link>
+      <description>Let's get some hands on rethinkdb today and find it out yourself. &lt;/br&gt;
+&lt;/br&gt;
+So what is rethinkdb?
+&lt;/br&gt;&lt;/br&gt;
+Rethinkdb is an open-source, scalable JSON database built from the ground up for the realtime web.
+&lt;/br&gt;RethinkDB inverts the traditional database architecture by exposing an exciting new access model – instead of polling for changes, the developer can tell RethinkDB to continuously push updated query results to applications in realtime. RethinkDB’s realtime push architecture dramatically reduces the time and effort necessary to build scalable realtime apps. RethinkDB also offers a flexible query language, intuitive operations and monitoring APIs, and is easy to setup and learn. Just like any other database solution, rethinkdb ships as a client-server component model. The installation process for both the server and the client are illustrated below:
+
+</description>
+      <pubDate>Thu, 04 Feb 2016 10:18:00 +0000</pubDate>
+      <dc:date>2016-02-04T10:18:00+00:00</dc:date>
+    </item>
+    <item>
+      <title>Getting started with Cassandra</title>
+      <link>http://hellodk.in//getting_familiar_with_cassandra</link>
+      <description>&lt;p&gt;The Growth of Big Data - Big Data is one of the key forces driving the growth and popularity of NoSQL for business. The almost limitless array of data collection technologies ranging from simple online actions to point of sale systems to GPS tools to smartphones and tablets to sophisticated sensors – and many more – act as force multipliers for data growth.
+&lt;/p&gt;
+
+</description>
+      <pubDate>Thu, 28 Jan 2016 10:18:00 +0000</pubDate>
+      <dc:date>2016-01-28T10:18:00+00:00</dc:date>
+    </item>
+    <item>
+      <title>5 interesting cloud predictions for 2016</title>
+      <link>http://hellodk.in//5_interesting_cloud_predictions_2016</link>
+      <description>1. It's time for IOT-
+
+</description>
+      <pubDate>Thu, 28 Jan 2016 10:18:00 +0000</pubDate>
+      <dc:date>2016-01-28T10:18:00+00:00</dc:date>
     </item>
     <dc:date>2020-04-02T00:00:00+05:30</dc:date>
   </channel>
