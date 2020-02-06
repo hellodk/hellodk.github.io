@@ -6,12 +6,12 @@
   xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
   <channel>
     <title>Curosity is the most powerful thing you own</title>
-    <link>http://hellodk.in/</link>
+    <link>https://hellodk.io/</link>
     <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
     <pubDate>Thu, 02 Apr 2020 00:00:00 +0530</pubDate>
     <item>
       <title>My Resume Hosted</title>
-      <link>http://hellodk.in//resume</link>
+      <link>https://hellodk.io//resume</link>
       <description>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 
@@ -21,7 +21,7 @@
     </item>
     <item>
       <title>Kubernetes Cluster on Vagrant</title>
-      <link>http://hellodk.in//kubernetes_cluster_vagrant</link>
+      <link>https://hellodk.io//kubernetes_cluster_vagrant</link>
       <description>&lt;p&gt;In this tutorial we will cover the installation of a Kubernetes Cluster over 3 virtual machines spawned using Virtualbox and Vagrant.
 This can be also useful to install Kubernetes over Bare Metal server or any sort of Virtual Machines as well.
 &lt;/p&gt;
@@ -32,7 +32,7 @@ This can be also useful to install Kubernetes over Bare Metal server or any sort
     </item>
     <item>
       <title>RethinkDb Installation on Ubuntu-14.04</title>
-      <link>http://hellodk.in//rethinkdb_installation_ubuntu14</link>
+      <link>https://hellodk.io//rethinkdb_installation_ubuntu14</link>
       <description>Let's get some hands on rethinkdb today and find it out yourself. &lt;/br&gt;
 &lt;/br&gt;
 So what is rethinkdb?
@@ -46,7 +46,7 @@ Rethinkdb is an open-source, scalable JSON database built from the ground up for
     </item>
     <item>
       <title>Getting started with Cassandra</title>
-      <link>http://hellodk.in//getting_familiar_with_cassandra</link>
+      <link>https://hellodk.io//getting_familiar_with_cassandra</link>
       <description>&lt;p&gt;The Growth of Big Data - Big Data is one of the key forces driving the growth and popularity of NoSQL for business. The almost limitless array of data collection technologies ranging from simple online actions to point of sale systems to GPS tools to smartphones and tablets to sophisticated sensors – and many more – act as force multipliers for data growth.
 &lt;/p&gt;
 
@@ -56,7 +56,7 @@ Rethinkdb is an open-source, scalable JSON database built from the ground up for
     </item>
     <item>
       <title>5 interesting cloud predictions for 2016</title>
-      <link>http://hellodk.in//5_interesting_cloud_predictions_2016</link>
+      <link>https://hellodk.io//5_interesting_cloud_predictions_2016</link>
       <description>1. It's time for IOT-
 
 </description>

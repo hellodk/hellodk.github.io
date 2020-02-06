@@ -3,10 +3,10 @@
   <channel>
     <title></title>
     <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
-    <link>http://hellodk.in///</link>
-    <atom:link href="http://hellodk.in///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 05 Feb 2020 15:10:49 +0530</pubDate>
-    <lastBuildDate>Wed, 05 Feb 2020 15:10:49 +0530</lastBuildDate>
+    <link>https://hellodk.io///</link>
+    <atom:link href="https://hellodk.io///feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 06 Feb 2020 10:47:11 +0530</pubDate>
+    <lastBuildDate>Thu, 06 Feb 2020 10:47:11 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -46,7 +46,7 @@ p.big {
 &lt;ul&gt;
 &lt;li&gt;Email: &lt;span class=&quot;tab-1&quot;&gt;hello.dk@outlook.com&lt;/li&gt;
 &lt;li&gt;About.me: &lt;span class=&quot;tab-1&quot;&gt;&lt;a href=&quot;https://about.me/hellodk&quot;&gt;about.me/hellodk&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Blog: &lt;span class=&quot;tab-1&quot;&gt;&lt;a href=&quot;https://www.hellodk.in&quot;&gt;hellodk.io&lt;/a&gt;&lt;/li&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;span class=&quot;tab-1&quot;&gt;&lt;a href=&quot;https://www.hellodk.io&quot;&gt;hellodk.io&lt;/a&gt;&lt;/li&gt;&lt;/li&gt;
 &lt;li&gt;Github: &lt;span class=&quot;tab-1&quot;&gt;&lt;a href=&quot;https://github.com/hellodk&quot;&gt;github.com/hellodk&lt;/a&gt;&lt;/li&gt;&lt;/li&gt;
 &lt;li&gt;LinkedIn: &lt;span class=&quot;tab-1&quot;&gt;&lt;a href=&quot;https://www.linkedin.com/in/hellodk&quot;&gt;linkedin.com/in/hellodk&lt;/a&gt;&lt;/li&gt;&lt;/li&gt;
 &lt;li&gt;Docker Hub: &lt;span class=&quot;tab-1&quot;&gt;&lt;a href=&quot;https://hub.docker.com/r/hellodk&quot;&gt;hub.docker.com/r/hellodk&lt;/a&gt;&lt;/li&gt;&lt;/li&gt;
@@ -336,8 +336,8 @@ Certifications:
 &lt;/body&gt;
 &lt;/html&gt;</description>
         <pubDate>Thu, 02 Apr 2020 00:00:00 +0530</pubDate>
-        <link>http://hellodk.in///resume</link>
-        <guid isPermaLink="true">http://hellodk.in///resume</guid>
+        <link>https://hellodk.io///resume</link>
+        <guid isPermaLink="true">https://hellodk.io///resume</guid>
         
         <category>tutorials</category>
         
@@ -459,8 +459,8 @@ change from ClusterIP to NodePort
 &lt;li style=&quot;color: #4233ff&quot;&gt;kubectl -n kube-system describe secret namespace-contoller-token-xyxyx&lt;/li&gt;
 now use this token to login to the cluster IP&lt;/ul&gt;&lt;/EOF&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/EOF&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;</description>
         <pubDate>Thu, 04 Feb 2016 12:30:00 +0000</pubDate>
-        <link>http://hellodk.in///kubernetes_cluster_vagrant</link>
-        <guid isPermaLink="true">http://hellodk.in///kubernetes_cluster_vagrant</guid>
+        <link>https://hellodk.io///kubernetes_cluster_vagrant</link>
+        <guid isPermaLink="true">https://hellodk.io///kubernetes_cluster_vagrant</guid>
         
         <category>tutorials</category>
         
@@ -541,8 +541,8 @@ To start rethinkdb as a service, please follow the below steps:
 &lt;/body&gt;
 &lt;/html&gt;</description>
         <pubDate>Thu, 04 Feb 2016 10:18:00 +0000</pubDate>
-        <link>http://hellodk.in///rethinkdb_installation_ubuntu14</link>
-        <guid isPermaLink="true">http://hellodk.in///rethinkdb_installation_ubuntu14</guid>
+        <link>https://hellodk.io///rethinkdb_installation_ubuntu14</link>
+        <guid isPermaLink="true">https://hellodk.io///rethinkdb_installation_ubuntu14</guid>
         
         <category>tutorials</category>
         
@@ -703,8 +703,8 @@ When a node goes down, read/write requests can be served from other nodes in the
 &lt;br/&gt;
 </description>
         <pubDate>Thu, 28 Jan 2016 10:18:00 +0000</pubDate>
-        <link>http://hellodk.in///getting_familiar_with_cassandra</link>
-        <guid isPermaLink="true">http://hellodk.in///getting_familiar_with_cassandra</guid>
+        <link>https://hellodk.io///getting_familiar_with_cassandra</link>
+        <guid isPermaLink="true">https://hellodk.io///getting_familiar_with_cassandra</guid>
         
         <category>tutorials</category>
         
@@ -736,8 +736,8 @@ When a node goes down, read/write requests can be served from other nodes in the
 &lt;/ol&gt;
 </description>
         <pubDate>Thu, 28 Jan 2016 10:18:00 +0000</pubDate>
-        <link>http://hellodk.in///5_interesting_cloud_predictions_2016</link>
-        <guid isPermaLink="true">http://hellodk.in///5_interesting_cloud_predictions_2016</guid>
+        <link>https://hellodk.io///5_interesting_cloud_predictions_2016</link>
+        <guid isPermaLink="true">https://hellodk.io///5_interesting_cloud_predictions_2016</guid>
         
         <category>tutorials</category>
         
