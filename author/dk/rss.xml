@@ -12,10 +12,44 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>The Road to Kingdom</title>
+	  <link>//the_road_to_a_kingdom</link>
+	  <author>Deepak Gupta</author>
+	  <pubDate>2020-03-23T20:03:00+00:00</pubDate>
+	  <guid>//the_road_to_a_kingdom</guid>
+	  <description><![CDATA[
+	     <h4>Found somewhere on the media and definitely worth a read....</h4>
+
+<p>There was a road to a kingdom, it had a big piece of rock in the middle of the road. People would pass by, the horses would break their kneels and carts would get blocked, but nobody did anything.
+</p>
+
+<p>One fine day a girl was passing by carrying a caret of beers and she hit the rock really hard and fell. And you guessed it right, the casket fell down and all her brewed beer bottles fell down and broke, dust soaked it all and it was all gone. That was her family's last chance, they were hungry didn't have any money.
+</p>
+
+<p>She sat there and cried but she wondered why the rock was still there for it to hurt someone else. So she dug up the rock in the road with her hands till they bled, used everything she had to pull it out. It took hours and then when she was gonna fill it up, she saw there something else, a bag of gold. The king put that rock in the middle of the road because he knew the person who dug it out - who did something deserves a reward - deserve to have their life changed for the good forever!!
+</p>
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>Exploring Aureport</title>
+	  <link>//working_with_aureport</link>
+	  <author>Deepak Gupta</author>
+	  <pubDate>2020-03-20T12:53:00+00:00</pubDate>
+	  <guid>//working_with_aureport</guid>
+	  <description><![CDATA[
+	     <p>In this tutorial we will talk about the different techniques how we can use aureport to report ssh login attempts.
+</p>
+
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>My Resume Hosted</title>
 	  <link>//resume</link>
 	  <author>Deepak Gupta</author>
-	  <pubDate>2020-04-02T00:00:00+05:30</pubDate>
+	  <pubDate>2020-03-02T00:00:00+05:30</pubDate>
 	  <guid>//resume</guid>
 	  <description><![CDATA[
 	     <!DOCTYPE html>
