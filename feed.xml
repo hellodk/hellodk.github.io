@@ -5,8 +5,8 @@
     <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
     <link>https://hellodk.io///</link>
     <atom:link href="https://hellodk.io///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 24 Mar 2020 12:23:33 +0530</pubDate>
-    <lastBuildDate>Tue, 24 Mar 2020 12:23:33 +0530</lastBuildDate>
+    <pubDate>Tue, 24 Mar 2020 19:44:50 +0530</pubDate>
+    <lastBuildDate>Tue, 24 Mar 2020 19:44:50 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -153,6 +153,7 @@ I was primarily responsible to write applications in Java for telecom OSS and al
 &lt;li&gt;Configuration Management: &lt;span class=&quot;tab-2&quot;&gt;  Ansible, Terraform, Chef, Puppet&lt;/li&gt;
 &lt;li&gt;Programming: &lt;span class=&quot;tab-2&quot;&gt;  Java, Python, Golang&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;Visualizations: &lt;span class=&quot;tab-2&quot;&gt;  Grafana, D3, Kibana, Talend&lt;/li&gt;
+&lt;li&gt;Others: &lt;span class=&quot;tab-2&quot;&gt; Elasticsearch, Fluentd, Kibana, Logstash
 &lt;/ul&gt;
 
 &lt;hr class=&quot;bigHr&quot;&gt;

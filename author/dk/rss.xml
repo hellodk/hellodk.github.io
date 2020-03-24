@@ -154,6 +154,7 @@ I was primarily responsible to write applications in Java for telecom OSS and al
 <li>Configuration Management: <span class="tab-2">  Ansible, Terraform, Chef, Puppet</li>
 <li>Programming: <span class="tab-2">  Java, Python, Golang</span></li>
 <li>Visualizations: <span class="tab-2">  Grafana, D3, Kibana, Talend</li>
+<li>Others: <span class="tab-2"> Elasticsearch, Fluentd, Kibana, Logstash
 </ul>
 
 <hr class="bigHr">
