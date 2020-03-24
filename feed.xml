@@ -5,8 +5,8 @@
     <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
     <link>https://hellodk.io///</link>
     <atom:link href="https://hellodk.io///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 25 Mar 2020 00:25:13 +0530</pubDate>
-    <lastBuildDate>Wed, 25 Mar 2020 00:25:13 +0530</lastBuildDate>
+    <pubDate>Wed, 25 Mar 2020 00:30:33 +0530</pubDate>
+    <lastBuildDate>Wed, 25 Mar 2020 00:30:33 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -222,18 +222,20 @@ Ensured High Availability of Services
 
 &lt;li&gt;&lt;h3&gt;Daily Operations - A usual day in the life of a DevOps&lt;/h3&gt;&lt;/li&gt;
 &lt;p&gt;
-Developing tools over C++/Java/Python/Golang&lt;/br&gt;
-Security Audit - Implemented IDS, DDOS mitigation via fail2ban&lt;/br&gt;
-Packet tracing/filtering using customized tool &amp; Wireshark&lt;/br&gt;
-Fixing security vulnerabilities in infrastructure&lt;/br&gt;
-Log Aggregation and Analytics using Elasticsearch/Solr/Kibana&lt;/br&gt;
-Implemented key rotation policy&lt;/br&gt;
-Implemented HA and reliable RabbitMQ cluster in the infrastructure which served as a backbone for intercommunication between microservices(close to 400+ microservices) with 99.99999% SLA&lt;/br&gt;
-DNS, LDAP, Monitoring, Load Balancing over Nginx/HA Proxy&lt;/br&gt;
-Reduce data transfer costs &amp; improved performance&lt;/br&gt;
-Subnet planning helped reduce the complexity of whitelisting services/IP’s&lt;/br&gt;
-Network planning for infrastructure migration&lt;/br&gt;
-Helped setup Azure account with basic services like DNS, LDAP, monitoring&lt;/br&gt;
+	&lt;ul&gt;
+&lt;li&gt;Developing tools over C++/Java/Python/Golang&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;Security Audit - Implemented IDS, DDOS mitigation via fail2ban&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;Packet tracing/filtering using customized tool &amp; Wireshark&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;Fixing security vulnerabilities in infrastructure&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;Log Aggregation and Analytics using Elasticsearch/Solr/Kibana&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;Implemented key rotation policy&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;Implemented HA RabbitMQ cluster serving as a backbone for intercommunication between microservices(close to 400+ microservices) with 99.99999% SLA&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;DNS, LDAP, Monitoring, Load Balancing over Nginx/HA Proxy&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;Reduce data transfer costs &amp; improved performance&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;Subnet planning helped reduce the complexity of whitelisting services/IP’s&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;Network planning for infrastructure migration&lt;/br&gt;&lt;/li&gt;
+&lt;li&gt;Helped setup Azure account with basic services like DNS, LDAP, monitoring&lt;/br&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/p&gt;
 
 &lt;li&gt;
