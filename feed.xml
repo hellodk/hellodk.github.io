@@ -5,8 +5,8 @@
     <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
     <link>https://hellodk.io///</link>
     <atom:link href="https://hellodk.io///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 24 Mar 2020 19:44:50 +0530</pubDate>
-    <lastBuildDate>Tue, 24 Mar 2020 19:44:50 +0530</lastBuildDate>
+    <pubDate>Tue, 24 Mar 2020 19:56:24 +0530</pubDate>
+    <lastBuildDate>Tue, 24 Mar 2020 19:56:24 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -26,23 +26,6 @@
         <guid isPermaLink="true">https://hellodk.io///the_road_to_a_kingdom</guid>
         
         <category>fiction</category>
-        
-        
-        <category>dk</category>
-        
-      </item>
-    
-      <item>
-        <title>Exploring Aureport</title>
-        <description>&lt;p&gt;In this tutorial we will talk about the different techniques how we can use aureport to report ssh login attempts.
-&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 20 Mar 2020 12:53:00 +0000</pubDate>
-        <link>https://hellodk.io///working_with_aureport</link>
-        <guid isPermaLink="true">https://hellodk.io///working_with_aureport</guid>
-        
-        <category>tutorials</category>
         
         
         <category>dk</category>
@@ -130,9 +113,6 @@ I was primarily responsible to write applications in Java for telecom OSS and al
 &lt;ul&gt;
 &lt;!---li&gt;Programming: 	Python, Java, Golang, Nodejs, C(Agile/Kanban Methodology)&lt;/li&gt;
 &lt;li&gt;Web Frameworks: Django, Spring Boot, Flask, Falcon, Spring Cloud&lt;/li&gt;
-&lt;li&gt;RDBMS:			MySQL, Postgresql, MariaDB&lt;/li&gt;
-&lt;li&gt;NoSQL: Cassandra, Dynamodb, Rethinkdb, MongoDB, Redis, CouchDB&lt;/li&gt;
-&lt;li&gt;Monitoring Tools: Nagios, Shinken, Zabbix, Sensu, Icinga2&lt;/li&gt;
 &lt;li&gt;Build Tools: Jenkins, Jira, Gerrit&lt;/li&gt;
 &lt;li&gt;Cryptocurrency: Blockchain, Bitcoin, Ethereum, Hyperledger&lt;/li&gt;
 &lt;li&gt;Load balancers: HA Proxy, Nginx&lt;/li&gt;
@@ -143,17 +123,23 @@ I was primarily responsible to write applications in Java for telecom OSS and al
 &lt;li&gt;Cloud/ Virtualizations: AWS, Azure, Heroku, OpenStack, Vagrant, KVM, Docker&lt;/li&gt;
 &lt;li&gt;Visualizations: Grafana, D3, Kibana, Talend&lt;/li&gt;
 &lt;li&gt;Others: RaspberryPi, Spartan 3E, AVR, Elasticsearch, Induino, Arduino, MOSHELL, Debian Packaging, freeswitch, WCDMA, LTE, 3PP, NMS, EMS, FCAPS, RNC, RBS, Scribe, Logstash, Fluentd,heka&lt;/li---&gt;
+&lt;li&gt;Programming:
+&lt;ul&gt;
+	&lt;li&gt;Present Proficiency: &lt;span class=&quot;tab-2&quot;&gt; Python, Bash&lt;/li&gt;
+	&lt;li&gt;Past Proficiency: &lt;span class=&quot;tab-2&quot;&gt; Java, Golang, Nodejs, C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;Cloud Computing: &lt;span class=&quot;tab-2&quot;&gt;  AWS, Azure, Heroku, Openstack&lt;/li&gt;
 &lt;li&gt;Container Technologies: &lt;span class=&quot;tab-2&quot;&gt;  Docker, Kubernetes&lt;/li&gt;
-&lt;li&gt;Monitoring Tools: &lt;span class=&quot;tab-2&quot;&gt;  Zabbix, Nagios, Icinga2&lt;/li&gt;
+&lt;li&gt;Monitoring Tools: &lt;span class=&quot;tab-2&quot;&gt;  Zabbix, Nagios, Icinga2, Sensu, Datadog, Iciniga2&lt;/li&gt;
 &lt;li&gt;SQL Databases: &lt;span class=&quot;tab-2&quot;&gt;  MySQL, PostgreSQL, MariaDB&lt;/li&gt;
-&lt;li&gt;NoSQL Databases: &lt;span class=&quot;tab-2&quot;&gt;  MongoDB, Cassandra, Redis&lt;/li&gt;
+&lt;li&gt;NoSQL Databases: &lt;span class=&quot;tab-2&quot;&gt;  MongoDB, Cassandra, Redis, DynamoDB, CouchDB&lt;/li&gt;
 &lt;li&gt;Web Server/Load Balancers: &lt;span class=&quot;tab-2&quot;&gt;  Nginx, HA Proxy&lt;/li&gt;
 &lt;li&gt;Messaging Tools: &lt;span class=&quot;tab-2&quot;&gt;  RabbitMQ, Kafka&lt;/li&gt;
 &lt;li&gt;Configuration Management: &lt;span class=&quot;tab-2&quot;&gt;  Ansible, Terraform, Chef, Puppet&lt;/li&gt;
 &lt;li&gt;Programming: &lt;span class=&quot;tab-2&quot;&gt;  Java, Python, Golang&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;Visualizations: &lt;span class=&quot;tab-2&quot;&gt;  Grafana, D3, Kibana, Talend&lt;/li&gt;
-&lt;li&gt;Others: &lt;span class=&quot;tab-2&quot;&gt; Elasticsearch, Fluentd, Kibana, Logstash
+&lt;li&gt;Others: &lt;span class=&quot;tab-2&quot;&gt; Elasticsearch, Solr, Jenkins
 &lt;/ul&gt;
 
 &lt;hr class=&quot;bigHr&quot;&gt;
@@ -376,9 +362,26 @@ Certifications:
 
 &lt;/body&gt;
 &lt;/html&gt;</description>
-        <pubDate>Mon, 02 Mar 2020 00:00:00 +0530</pubDate>
+        <pubDate>Tue, 24 Mar 2020 00:00:00 +0530</pubDate>
         <link>https://hellodk.io///resume</link>
         <guid isPermaLink="true">https://hellodk.io///resume</guid>
+        
+        <category>tutorials</category>
+        
+        
+        <category>dk</category>
+        
+      </item>
+    
+      <item>
+        <title>Exploring Aureport</title>
+        <description>&lt;p&gt;In this tutorial we will talk about the different techniques how we can use aureport to report ssh login attempts.
+&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 20 Mar 2020 12:53:00 +0000</pubDate>
+        <link>https://hellodk.io///working_with_aureport</link>
+        <guid isPermaLink="true">https://hellodk.io///working_with_aureport</guid>
         
         <category>tutorials</category>
         
