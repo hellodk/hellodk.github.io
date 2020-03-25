@@ -59,7 +59,7 @@
     <link rel="alternate" type="application/rss+xml" title="Curosity is the most powerful thing you own" href="/rss.xml" />
 
 </head>
-<body class="paged archive-template nav-closed">
+<body class="post-template nav-closed">
 
     <div class="nav">
     <h3 class="nav-title">Menu</h3>
@@ -85,126 +85,148 @@
     <div class="site-wrapper">
 
         <!-- [[! Everything else gets inserted here ]] -->
-        <!-- < default}} -->
-<!-- The tag above means - insert everything in this file into the [body] of the default.hbs template -->
+        <!-- < default -->
 
-<!-- The big featured header -->
+<!-- The comment above "< default" means - insert everything in this file into -->
+    <!-- the [body] of the default.hbs template, which contains our header/footer. -->
 
-<!-- Everything inside the #author tags pulls data from the author -->
-<!-- #author  -->
-    <header class="main-header author-head " style="background-image: url(/assets/images/cover5.jpg) ">
-        <nav class="main-nav overlay clearfix">
-            <a class="blog-logo" href="/"><img src="/assets/images/utilities/home_icon.png" alt="Blog Logo" /></a>
-            
-                <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
-            
-        </nav>
-    </header>
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
 
-    <section class="author-profile inner">
+<header class="main-header post-head " style="background-image: url(/assets/images/utilities/IMG_75751.JPG) ">
+    <nav class="main-nav  overlay  clearfix">
+        <a class="blog-logo" href="/"><img src="/assets/images/utilities/home_icon.png" alt="Blog Logo" /></a>
         
-        <figure class="author-image">
-            <div class="img" style="background-image: url(/assets/images/resume/dk.jpg)"><span class="hidden">Deepak Gupta's Picture</span></div>
-        </figure>
+            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
         
-        <h1 class="author-title">Deepak Gupta</h1>
-        
-            <h2 class="author-bio">A full time technologist cum foodieeeeeee... I spend most of my time playing with open source tools and technologies. I prefer hanging out most of the time, and have been a taveller since ages, besides being a biker at heart I do love to practice photography in my liesure.</h2>
-        
-        <div class="author-meta">
-            <span class="author-location icon-location">Bangalore, INDIA</span>
-            <span class="author-link icon-link"><a href="https://hellodk.io/">https://hellodk.io/</a></span>
-            <!-- <span class="author-stats"><i class="icon-stats"></i> [[plural ../pagination.total empty='No posts' singular='% post' plural='% posts']]</span> -->
-            <span class="author-stats"><i class="icon-stats"></i>7 posts</span>
-        </div>
-    </section>
-<!-- /author -->
+    </nav>
+</header>
 
-<!-- The main content area on the homepage -->
-<main id="content" class="content" role="main">
+<main class="content" role="main">
 
-    <!-- The tag below includes the post loop - partials/loop.hbs  -->
-        <!-- Previous/next page links - only displayed on page 2+ -->
-    <div class="extra-pagination inner">
-        
-            <nav class="pagination" role="pagination">
-    
-        
-            <a class="newer-posts" href="/author/casper" title="Previous Page">&laquo; Newer Posts</a>
-        
-    
-    <span class="page-number"> Page 2 of 2 </span>
-     
-</nav>
-        
-    </div>
+    <article class="post tag-tutorials">
 
-    <!-- This is the post loop - each post will be output using this markup -->
-    
-    <article class="post">
         <header class="post-header">
-            <h2 class="post-title"><a href="/getting_familiar_with_cassandra">Getting started with Cassandra</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p><p>The Growth of Big Data - Big Data is one of the key forces driving the growth and popularity of NoSQL for business. The almost limitless... <a class="read-more" href="/getting_familiar_with_cassandra">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            <img class="author-thumb" src="/assets/images/resume/dk.jpg" alt="Author image" nopin="nopin" />
-            <!-- author -->
-            <a href='/author/casper'>Deepak Gupta</a>
-            <!-- [[tags prefix=" on "]] -->
-             
+            <h1 class="post-title">Author</h1>
+            <section class="post-meta">
+            <!-- <a href='/'>Deepak Gupta</a> -->
+            <time class="post-date" datetime="2015-12-28">28 Dec 2015</time>
+                <!-- [[tags prefix=" on "]] -->
+                 
                 on 
                 
                     
-                       <a href='/tag/tutorials'>Tutorials</a>
+                       <a href='/tag/author'>Author</a>
                        
                 
-            
-            <time class="post-date" datetime="2016-01-28">28 Jan 2016</time>
-        </footer>
-    </article>
-    
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="/5_interesting_cloud_predictions_2016">5 interesting cloud predictions for 2016</a></h2>
+                
+            </section>
         </header>
-        <section class="post-excerpt">
-            <p><ol> <li>It&#39;s time for IOT-</li> </ol> <p>The IOT or the Internet of Things has been a buzzword around for quite some time. And finally the time... <a class="read-more" href="/5_interesting_cloud_predictions_2016">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            <img class="author-thumb" src="/assets/images/resume/dk.jpg" alt="Author image" nopin="nopin" />
-            <!-- author -->
-            <a href='/author/casper'>Deepak Gupta</a>
-            <!-- [[tags prefix=" on "]] -->
-             
-                on 
-                
-                    
-                       <a href='/tag/tutorials'>Tutorials</a>
-                       
-                
+
+        <section class="post-content">
             
-            <time class="post-date" datetime="2016-01-28">28 Jan 2016</time>
+            <p>Too often we under-estimate the power of a touch, a smile, a kind word, a listening ear, an honest compliment, or the smallest act of caring, all of which have the potential to turn a life around. 
+The idea behind writing this blog/website is to connect to people and share my experiences with them.</p>
+
+
+        </section>
+
+        <footer class="post-footer">
+
+            <!-- Everything inside the #author tags pulls data from the author -->
+            <!-- #author-->
+
+            
+            <figure class="author-image">
+                <a class="img" href="/author/casper" style="background-image: url(/assets/images/resume/dk.jpg)"><span class="hidden">'s Picture</span></a>
+            </figure>
+            
+
+            <section class="author">
+                <h4><a href="/author/casper">Deepak Gupta</a></h4>
+                
+                
+                    <p> A full time technologist cum foodieeeeeee... I spend most of my time playing with open source tools and technologies. I prefer hanging out most of the time, and have been a taveller since ages, besides being a biker at heart I do love to practice photography in my liesure.</p>
+                
+                <div class="author-meta">
+                    <span class="author-location icon-location"> Bangalore, INDIA</span> 
+                    <span class="author-link icon-link"><a href="https://hellodk.io/"> https://hellodk.io/</a></span> 
+                </div>
+            </section>
+
+            <!-- /author  -->
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="http://twitter.com/share?text=Author&amp;url=https://hellodk.io/author"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://hellodk.io/author"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=https://hellodk.io/author"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+            
+            <!-- Add Disqus Comments -->
+            
+                <div id="disqus_thread"></div>
+<script>
+
+/**
+ *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+ *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
+
+var disqus_config = function () {
+    this.page.url = hellodk.io;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = document.URL; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = '//http-hellodk-in.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            
+            
         </footer>
+
     </article>
-    
-
-    <!-- Previous/next page links - displayed on every page -->
-    
-        <nav class="pagination" role="pagination">
-    
-        
-            <a class="newer-posts" href="/author/casper" title="Previous Page">&laquo; Newer Posts</a>
-        
-    
-    <span class="page-number"> Page 2 of 2 </span>
-     
-</nav>
-    
-
 
 </main>
+
+<aside class="read-next">
+
+    <!-- [[! next_post ]] -->
+    
+        <a class="read-next-story " style="background-image: url(/assets/images/cover4.jpg)" href="/5_interesting_cloud_predictions_2016">
+            <section class="post">
+                <h2>5 interesting cloud predictions for 2016</h2>
+                <p>1. It's time for IOT- The IOT or the Internet of Things has been a...</p>
+            </section>
+        </a>
+    
+    <!-- [[! /next_post ]] -->
+    <!-- [[! prev_post ]] -->
+    
+        <a class="read-next-story prev " style="background-image: url(/assets/images/utilities/IMG_75751.JPG)" href="/about">
+            <section class="post">
+                <h2>About</h2>
+                <p><p>Too often we under-estimate the power of a touch, a smile, a kind word, a...</p>
+            </section>
+        </a>
+    
+    <!-- [[! /prev_post ]] -->
+</aside>
+
+<!-- /post -->
 
 
         <footer class="site-footer clearfix">

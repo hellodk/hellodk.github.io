@@ -5,8 +5,8 @@
     <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
     <link>https://hellodk.io///</link>
     <atom:link href="https://hellodk.io///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 25 Mar 2020 00:30:33 +0530</pubDate>
-    <lastBuildDate>Wed, 25 Mar 2020 00:30:33 +0530</lastBuildDate>
+    <pubDate>Wed, 25 Mar 2020 12:00:22 +0530</pubDate>
+    <lastBuildDate>Wed, 25 Mar 2020 12:00:22 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -790,6 +790,22 @@ When a node goes down, read/write requests can be served from other nodes in the
         
         
         <category>dk</category>
+        
+      </item>
+    
+      <item>
+        <title>Author</title>
+        <description>&lt;p&gt;Too often we under-estimate the power of a touch, a smile, a kind word, a listening ear, an honest compliment, or the smallest act of caring, all of which have the potential to turn a life around. 
+The idea behind writing this blog/website is to connect to people and share my experiences with them.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 28 Dec 2015 10:18:00 +0000</pubDate>
+        <link>https://hellodk.io///author</link>
+        <guid isPermaLink="true">https://hellodk.io///author</guid>
+        
+        <category>author</category>
+        
+        
+        <category>auhtor</category>
         
       </item>
     
