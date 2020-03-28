@@ -5,8 +5,8 @@
     <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
     <link>https://hellodk.io///</link>
     <atom:link href="https://hellodk.io///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 25 Mar 2020 12:02:07 +0530</pubDate>
-    <lastBuildDate>Wed, 25 Mar 2020 12:02:07 +0530</lastBuildDate>
+    <pubDate>Sun, 29 Mar 2020 00:14:09 +0530</pubDate>
+    <lastBuildDate>Sun, 29 Mar 2020 00:14:09 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -368,23 +368,6 @@ Certifications:
         <pubDate>Tue, 24 Mar 2020 00:00:00 +0530</pubDate>
         <link>https://hellodk.io///resume</link>
         <guid isPermaLink="true">https://hellodk.io///resume</guid>
-        
-        <category>tutorials</category>
-        
-        
-        <category>dk</category>
-        
-      </item>
-    
-      <item>
-        <title>Exploring Aureport</title>
-        <description>&lt;p&gt;In this tutorial we will talk about the different techniques how we can use aureport to report ssh login attempts.
-&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 20 Mar 2020 12:53:00 +0000</pubDate>
-        <link>https://hellodk.io///working_with_aureport</link>
-        <guid isPermaLink="true">https://hellodk.io///working_with_aureport</guid>
         
         <category>tutorials</category>
         
@@ -795,9 +778,22 @@ When a node goes down, read/write requests can be served from other nodes in the
     
       <item>
         <title>Author</title>
-        <description>&lt;p&gt;Too often we under-estimate the power of a touch, a smile, a kind word, a listening ear, an honest compliment, or the smallest act of caring, all of which have the potential to turn a life around. 
-The idea behind writing this blog/website is to connect to people and share my experiences with them.&lt;/p&gt;
-</description>
+        <description>Too often we under-estimate the power of a touch, a smile, a kind word, a listening ear, an honest compliment, or the smallest act of caring, all of which have the potential to turn a life around. 
+The idea behind writing this blog/website is to connect to people and share my experiences with them.
+
+&lt;/br&gt;
+&lt;/br&gt;
+You can find my availability here from my calendar
+
+&lt;section class=&quot;post-content&quot; style=&quot;width: 100%; height: 400px;&quot;&gt;
+    &lt;iframe src=&quot;https://calendar.google.com/calendar/embed?src=hcb2b4c4iegm7p70eg2geeu7ck%40group.calendar.google.com&amp;ctz=Asia%2FKolkata&quot; style=&quot;border: 0&quot; width=&quot;100%&quot; height=&quot;100%&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
+&lt;/section&gt;
+&lt;/br&gt;
+&lt;p&gt;Found your slot?
+I&#39;ll be happy to talk as per your schedule and take this forward.
+&lt;a href=&quot;https://calendly.com/hellodk&quot; target=&quot;_blank&quot;&gt;Block Dates using your Google ID(personal/official)&lt;/a&gt;
+&lt;/br&gt;
+&lt;a href=&quot;https://calendar.google.com/calendar/embed?src=hcb2b4c4iegm7p70eg2geeu7ck%40group.calendar.google.com&amp;ctz=Asia%2FKolkata&quot; target=&quot;_blank&quot;&gt; Need a full screen view of the calendar?&lt;/a&gt;</description>
         <pubDate>Mon, 28 Dec 2015 10:18:00 +0000</pubDate>
         <link>https://hellodk.io///author</link>
         <guid isPermaLink="true">https://hellodk.io///author</guid>
@@ -811,8 +807,8 @@ The idea behind writing this blog/website is to connect to people and share my e
     
       <item>
         <title>About</title>
-        <description>&lt;p&gt;Too often we under-estimate the power of a touch, a smile, a kind word, a listening ear, an honest compliment, or the smallest act of caring, all of which have the potential to turn a life around. 
-The idea behind writing this blog/website is to connect to people and share my experiences with them.&lt;/p&gt;
+        <description>Too often we under-estimate the power of a touch, a smile, a kind word, a listening ear, an honest compliment, or the smallest act of caring, all of which have the potential to turn a life around. 
+The idea behind writing this blog/website is to connect to people and share my experiences with them.
 </description>
         <pubDate>Mon, 28 Dec 2015 10:18:00 +0000</pubDate>
         <link>https://hellodk.io///about</link>
