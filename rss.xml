@@ -5,19 +5,10 @@
   xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
   xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
   <channel>
-    <title>Curosity is the most powerful thing you own</title>
+    <title>Curiosity is the most powerful thing you own</title>
     <link>https://hellodk.io/</link>
     <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
-    <pubDate>Mon, 23 Mar 2020 20:03:00 +0000</pubDate>
-    <item>
-      <title>The Road to Kingdom</title>
-      <link>https://hellodk.io//the_road_to_a_kingdom</link>
-      <description>&lt;h4&gt;Found somewhere on the media and definitely worth a read....&lt;/h4&gt;
-
-</description>
-      <pubDate>Mon, 23 Mar 2020 20:03:00 +0000</pubDate>
-      <dc:date>2020-03-23T20:03:00+00:00</dc:date>
-    </item>
+    <pubDate>Tue, 24 Mar 2020 00:00:00 +0530</pubDate>
     <item>
       <title>My Resume Hosted</title>
       <link>https://hellodk.io//resume</link>
@@ -27,6 +18,15 @@
 </description>
       <pubDate>Tue, 24 Mar 2020 00:00:00 +0530</pubDate>
       <dc:date>2020-03-24T00:00:00+05:30</dc:date>
+    </item>
+    <item>
+      <title>The Road to Kingdom</title>
+      <link>https://hellodk.io//the_road_to_a_kingdom</link>
+      <description>&lt;h4&gt;Found somewhere on the media and definitely worth a read....&lt;/h4&gt;
+
+</description>
+      <pubDate>Thu, 23 Mar 2017 20:03:00 +0000</pubDate>
+      <dc:date>2017-03-23T20:03:00+00:00</dc:date>
     </item>
     <item>
       <title>Kubernetes Cluster on Vagrant</title>
@@ -93,6 +93,6 @@ The idea behind writing this blog/website is to connect to people and share my e
       <pubDate>Mon, 28 Dec 2015 10:18:00 +0000</pubDate>
       <dc:date>2015-12-28T10:18:00+00:00</dc:date>
     </item>
-    <dc:date>2020-03-23T20:03:00+00:00</dc:date>
+    <dc:date>2020-03-24T00:00:00+05:30</dc:date>
   </channel>
 </rss>
