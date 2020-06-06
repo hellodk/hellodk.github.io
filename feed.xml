@@ -5,8 +5,8 @@
     <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
     <link>https://hellodk.io///</link>
     <atom:link href="https://hellodk.io///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 31 Mar 2020 15:40:00 +0530</pubDate>
-    <lastBuildDate>Tue, 31 Mar 2020 15:40:00 +0530</lastBuildDate>
+    <pubDate>Sat, 06 Jun 2020 21:52:17 +0530</pubDate>
+    <lastBuildDate>Sat, 06 Jun 2020 21:52:17 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -334,10 +334,21 @@ Certifications:
 &lt;/h3&gt;
 
 &lt;ul&gt;
-	&lt;li&gt;Big Data, Cloud Computing, &amp; CDN Emerging Technologies&lt;/li&gt;
-	&lt;li&gt;Blockchain for Developers&lt;/li&gt;
-	&lt;li&gt;Interfacing with the Raspberry Pi&lt;/li&gt;
-	&lt;li&gt;An Introduction to Interactive Programming with Python(RICE University)&lt;/li&gt;
+	&lt;p&gt;
+		&lt;li&gt;&lt;a href=&quot;https://academy.datastax.com/certs/lookup/2303fe2a-eecb-4db2-abd4-274e17160b6f&quot; target=&quot;_blank&quot;&gt;Apache Cassandra 3.x Administrator Associate&lt;/a&gt;&lt;/li&gt;
+	&lt;/p&gt;
+	&lt;p&gt;
+		&lt;li&gt;&lt;a href=&quot;https://www.coursera.org/account/accomplishments/certificate/S87NC2BJCLZ6&quot; target=&quot;_blank&quot;&gt;Big Data, Cloud Computing, &amp; CDN Emerging Technologies&lt;/a&gt;&lt;/li&gt;
+	&lt;/p&gt;
+	&lt;p&gt;
+		&lt;li&gt;&lt;a href=&quot;https://cert.nobleprog.com/certificate/528869/5fe84&quot; target=&quot;_blank&quot;&gt;Blockchain for Developers&lt;/a&gt;&lt;/li&gt;
+	&lt;/p&gt;
+	&lt;p&gt;
+		&lt;li&gt;&lt;a href=&quot;https://www.coursera.org/account/accomplishments/verify/NS4UB74CKYTX&quot; target=&quot;_blank&quot;&gt;Interfacing with the Raspberry Pi&lt;/a&gt;&lt;/li&gt;
+	&lt;/p&gt;
+	&lt;p&gt;
+		&lt;li&gt;&lt;a href=&quot;https://www.coursera.org/account/accomplishments/verify/BMXZN7BA4Y&quot; target=&quot;_blank&quot;&gt;An Introduction to Interactive Programming with Python(RICE University)&lt;/a&gt;&lt;/li&gt;
+	&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;/body&gt;
