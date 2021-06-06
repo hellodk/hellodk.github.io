@@ -5,16 +5,16 @@
    
       <title>https://hellodk.io/</title>
    
-   <link>http://localhost:4042</link>
+   <link>http://localhost:4000</link>
    <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
    <language>en-uk</language>
-   <managingEditor> </managingEditor>
+   <managingEditor> Deepak Gupta</managingEditor>
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
 	  <title>About</title>
 	  <link>//about</link>
-	  <author></author>
+	  <author>Deepak Gupta</author>
 	  <pubDate>2015-12-28T15:48:00+05:30</pubDate>
 	  <guid>//about</guid>
 	  <description><![CDATA[
