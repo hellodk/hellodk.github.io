@@ -8,6 +8,49 @@
     
       
       <item>
+        <title>Upgrading Sublime Text</title>
+        
+          <description>&lt;h3 id=&quot;upgrade-your-sublime-text-with-the-below-steps&quot;&gt;Upgrade your Sublime Text with the below steps&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;assets/images/upgrade-sublime-text/sublime.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;environment-details&quot;&gt;Environment Details&lt;/h4&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;OS Ubuntu-20.04
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h6 id=&quot;from-the-sublime-official-website-download-the-64-bit-tarball&quot;&gt;From the Sublime official website, download the 64-bit tarball&lt;/h6&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://download.sublimetext.com/sublime_text_build_4113_x64.tar.xz
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;You can point the URL to the latest available Sublime Text package.&lt;/p&gt;
+
+&lt;h6 id=&quot;backup-your-existing-sublime-installation&quot;&gt;Backup your existing Sublime Installation&lt;/h6&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo cp&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; /opt/sublime_text/ /opt/sublime_text_backup
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h6 id=&quot;copy-the-newly-downloaded-sublime-files&quot;&gt;Copy the newly downloaded Sublime files&lt;/h6&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo cp&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; ~/Downloads/sublime_text_build_4113_x64/sublime_text /opt/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h6 id=&quot;remove-the-downloaded-files&quot;&gt;Remove the downloaded files&lt;/h6&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-rf&lt;/span&gt; ~/Downloads/sublime_text_build_4113_x64 ~/Downloads/sublime_text_build_4113_x64.tar.xz
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h6 id=&quot;remove-the-backup-after-a-few-days&quot;&gt;Remove the backup after a few days&lt;/h6&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-rf&lt;/span&gt; /opt/sublime_text_backup
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And we’re done - Enjoy the new upgrade!!&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Fri, 03 Sep 2021 04:18:00 +0530</pubDate>
+        <link>
+        http://localhost:4000/sublime-upgrade</link>
+        <guid isPermaLink="true">http://localhost:4000/sublime-upgrade</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>EKS - The Sins we Committed</title>
         
           <description>

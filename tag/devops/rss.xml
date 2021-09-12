@@ -12,6 +12,47 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>Upgrading Sublime Text</title>
+	  <link>//sublime-upgrade</link>
+	  <author></author>
+	  <pubDate>2021-09-03T04:18:00+05:30</pubDate>
+	  <guid>//sublime-upgrade</guid>
+	  <description><![CDATA[
+	     <h3 id="upgrade-your-sublime-text-with-the-below-steps">Upgrade your Sublime Text with the below steps</h3>
+<p><img src="assets/images/upgrade-sublime-text/sublime.jpeg" alt="" /></p>
+
+<h4 id="environment-details">Environment Details</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>OS Ubuntu-20.04
+</code></pre></div></div>
+
+<h6 id="from-the-sublime-official-website-download-the-64-bit-tarball">From the Sublime official website, download the 64-bit tarball</h6>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://download.sublimetext.com/sublime_text_build_4113_x64.tar.xz
+</code></pre></div></div>
+<p>You can point the URL to the latest available Sublime Text package.</p>
+
+<h6 id="backup-your-existing-sublime-installation">Backup your existing Sublime Installation</h6>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo cp</span> <span class="nt">-r</span> /opt/sublime_text/ /opt/sublime_text_backup
+</code></pre></div></div>
+
+<h6 id="copy-the-newly-downloaded-sublime-files">Copy the newly downloaded Sublime files</h6>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo cp</span> <span class="nt">-r</span> ~/Downloads/sublime_text_build_4113_x64/sublime_text /opt/
+</code></pre></div></div>
+
+<h6 id="remove-the-downloaded-files">Remove the downloaded files</h6>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">rm</span> <span class="nt">-rf</span> ~/Downloads/sublime_text_build_4113_x64 ~/Downloads/sublime_text_build_4113_x64.tar.xz
+</code></pre></div></div>
+
+<h6 id="remove-the-backup-after-a-few-days">Remove the backup after a few days</h6>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo rm</span> <span class="nt">-rf</span> /opt/sublime_text_backup
+</code></pre></div></div>
+
+<p>And we’re done - Enjoy the new upgrade!!</p>
+
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>EKS - The Sins we Committed</title>
 	  <link>//EKS-the-sins-we-commitred</link>
 	  <author></author>
