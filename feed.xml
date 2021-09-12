@@ -222,7 +222,7 @@ Rethinkdb is an open-source, scalable JSON database built from the ground up for
       <item>
         <title>5 interesting cloud predictions for 2016</title>
         
-          <description>&lt;p&gt;####1. It’s time for IOT-&lt;/p&gt;
+          <description>&lt;h4 id=&quot;1-its-time-for-iot-&quot;&gt;1. It’s time for IOT-&lt;/h4&gt;
 
 </description>
         
@@ -237,8 +237,8 @@ Rethinkdb is an open-source, scalable JSON database built from the ground up for
       <item>
         <title>About</title>
         
-          <description>Too often we under-estimate the power of a touch, a smile, a kind word, a listening ear, an honest compliment, or the smallest act of caring, all of which have the potential to turn a life around. 
-The idea behind writing this blog/website is to connect to people and share my experiences with them.
+          <description>&lt;p&gt;Too often we under-estimate the power of a touch, a smile, a kind word, a listening ear, an honest compliment, or the smallest act of caring, all of which have the potential to turn a life around. 
+The idea behind writing this blog/website is to connect to people and share my experiences with them.&lt;/p&gt;
 </description>
         
         <pubDate>Mon, 28 Dec 2015 15:48:00 +0530</pubDate>
