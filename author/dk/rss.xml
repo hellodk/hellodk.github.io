@@ -433,6 +433,176 @@ Certifications:
 	</item>
 
 	<item>
+	  <title>Deploying Kubernetes Cluster on Vagrant</title>
+	  <link>//deploying-kubernetes_cluster_vagrant</link>
+	  <author></author>
+	  <pubDate>2018-12-02T18:00:00+05:30</pubDate>
+	  <guid>//deploying-kubernetes_cluster_vagrant</guid>
+	  <description><![CDATA[
+	     <p>In this blog post we will cover the installation of a Kubernetes Cluster over 3 virtual machines spawned using Virtualbox and Vagrant.</p>
+
+<p>This can be also useful to install Kubernetes over Bare Metal server or any other form of Virtual Machines as well.</p>
+
+<h5 id="assumptions">Assumptions</h5>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Runing on Ubuntu 20.04 or Windows 10 or later
+- If running on Windows 10, disable Hyper-V
+- Vagrant and Virtualbox are already installed.
+- We have 3 Centos 7 virtual machines running.
+</code></pre></div></div>
+
+<h5 id="pre-requisites">Pre-requisites</h5>
+<p>There are a set of pre-requisites before we go ahead and start our Kubernetes Installation. Please follow the below steps for completing the pre-requisites.</p>
+
+<ol>
+  <li>Set the host-names for all 3 machines with the below commands. These hostnames help in node identification and DNS resolutions.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">sudo </span>hostnamectl set-hostname kubem
+ <span class="nb">sudo </span>hostnamectl set-hostname worker1
+ <span class="nb">sudo </span>hostnamectl set-hostname worker2
+</code></pre></div>    </div>
+  </li>
+  <li>Disable selinux
+To avoid the complexities to adding firewall rules, we disable the selinux.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">set </span>selinux 0
+</code></pre></div>    </div>
+    <p>or, edit the file /etc/sysconfig/selinux to permanently disable selinux</p>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo sed</span> <span class="nt">-i</span> s/^SELINUX<span class="o">=</span>.<span class="k">*</span><span class="nv">$/SELINUX</span><span class="o">=</span>disabled/ /etc/selinux/config
+</code></pre></div>    </div>
+  </li>
+  <li>Disable swap memory - Kubernetes does not goes well with Swap, because memory swapping is allowed to occur on a host system, and idea of kubernetes is to tightly pack instances to as close to 100% utilized as possible. Hence if the scheduler sends a pod to a machine it should never use swap at all otherwise it can lead to performance and stability issues within Kubernetes.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>swapoff <span class="nt">-a</span>
+</code></pre></div>    </div>
+    <p>or</p>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo sed</span> <span class="nt">-i</span> <span class="s1">'/ swap / s/^\(.*\)$/#\1/g'</span> /etc/fstab
+</code></pre></div>    </div>
+  </li>
+  <li>Set net bridge  for proper traffic routing
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cat</span> <span class="o">&lt;&lt;</span><span class="no">EOF</span><span class="sh"> &gt;  /etc/sysctl.d/k8s.conf
+net.bridge.bridge-nf-call-ip6tables = 1
+net.bridge.bridge-nf-call-iptables = 1
+</span><span class="no">EOF
+</span></code></pre></div>    </div>
+  </li>
+  <li>Reload sysctl
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sysctl <span class="nt">--system</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Set DNS entries in /etc/hosts - Allows local DNS resolution to speed up things.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>192.168.10.60 kubem
+192.168.10.61 worker1
+192.168.10.62 worker2
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h5 id="docker-installation">Docker Installation</h5>
+<p>Now the pre-requisites are done, let’s go ahead and install docker</p>
+<ol>
+  <li>Add the Docker Repository
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum-config-manager <span class="nt">--add-repo</span> https://download.docker.com/linux/centos/docker-ce.repo
+</code></pre></div>    </div>
+  </li>
+  <li>Update the apt repository
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum update <span class="nt">-y</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Install Docker along with it’s dependencies
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum install -y yum-utils device-mapper-persistent-data lvm2 docker -y
+</code></pre></div>    </div>
+  </li>
+  <li>Use systemctl utility to configure the docker service and verify the status
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl <span class="nb">enable </span>docker
+<span class="nb">sudo </span>systemctl start docker
+</code></pre></div>    </div>
+  </li>
+  <li>Verify Docker service status and version
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl status docker
+docker version
+docker info
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h5 id="installing-kubelet-kubeadm-kubectl">Installing kubelet, kubeadm, kubectl</h5>
+
+<ol>
+  <li>Add Kubernetes Repository
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cat</span> <span class="o">&lt;&lt;</span><span class="no">EOF</span><span class="sh"> &gt; /etc/yum.repos.d/kubernetes.repo
+[kubernetes]
+name=Kubernetes
+baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+enabled=1
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg
+     https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+</span><span class="no">EOF
+</span></code></pre></div>    </div>
+  </li>
+  <li>Install Kubernetes Utilities - kubeadm, kubectl and kubelet
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum <span class="nb">install</span> <span class="nt">-y</span> kubelet kubeadm kubectl
+</code></pre></div>    </div>
+  </li>
+  <li>Using systemctl enable and start the kubelet service
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl <span class="nb">enable </span>kubelet
+<span class="nb">sudo </span>systemctl start kubelet
+</code></pre></div>    </div>
+  </li>
+  <li>Initialize the kubernetes cluster
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubeadm init <span class="nt">--apiserver-advertise-address</span><span class="o">=</span>172.31.19.193 <span class="nt">--pod-network-cidr</span><span class="o">=</span>10.244.0.0/16 <span class="nt">--service-cidr</span><span class="o">=</span>10.244.0.0/12
+</code></pre></div>    </div>
+    <p>Copy the joining token command and we will run the joining token on the worker1 and worker2.</p>
+  </li>
+  <li>Exit out of root user and become any non-root user and execute the below steps
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-p</span> <span class="nv">$HOME</span>/.kube
+<span class="nb">sudo cp</span> <span class="nt">-i</span> /etc/kubernetes/admin.conf <span class="nv">$HOME</span>/.kube/config
+<span class="nb">sudo chown</span> <span class="si">$(</span><span class="nb">id</span> <span class="nt">-u</span><span class="si">)</span>:<span class="si">$(</span><span class="nb">id</span> <span class="nt">-g</span><span class="si">)</span> <span class="nv">$HOME</span>/.kube/config
+</code></pre></div>    </div>
+  </li>
+  <li>Verify kubectl commands
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get nodes
+</code></pre></div>    </div>
+  </li>
+  <li>Creating the CNI and Dashboard
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl apply <span class="nt">-f</span> https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+</code></pre></div>    </div>
+  </li>
+  <li>Verify if all the nodes have become ready in a few minutes
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get nodes
+</code></pre></div>    </div>
+  </li>
+  <li>Deploy the Kubernetes Dashboard
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl create <span class="nt">-f</span> https://raw.githubusercontent.com/kubernetes/dashboard/master/aio/deploy/recommended/kubernetes-dashboard.yaml
+</code></pre></div>    </div>
+  </li>
+  <li>Patch the kubernetes-dashboard service from ClusterIP to NodePort
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl <span class="nt">-n</span> kubernetes-dashboard patch svc kubernetes-dashboard <span class="nt">--type</span><span class="o">=</span><span class="s1">'json'</span> <span class="nt">-p</span> <span class="s1">'[{"op":"replace","path":"/spec/type","value":"NodePort"}]'</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Get the secret toekn to login to the kubernetes dashboard
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl <span class="nt">-n</span> kube-system get secret
+kubectl <span class="nt">-n</span> kube-system describe secret namespace-contoller-token-xyxyx
+</code></pre></div>    </div>
+    <p>Now use this token to login to the cluster
+https://Node IP:NodePORT</p>
+  </li>
+  <li>Verify our kubernetes cluster
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get nodes
+</code></pre></div>    </div>
+  </li>
+  <li>Run some workloads and see if the pods are getting provisioned
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl create deployment nginx <span class="nt">--image</span> nginx <span class="nt">--replicas</span> 4 <span class="nt">--port</span> 80
+</code></pre></div>    </div>
+  </li>
+  <li>Verify if the pods have been created or not
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kubectl get pods <span class="nt">-o</span> wide
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>The Road to Kingdom</title>
 	  <link>//the_road_to_a_kingdom</link>
 	  <author></author>
@@ -449,126 +619,6 @@ Certifications:
 
 <p>She sat there and cried but she wondered why the rock was still there for it to hurt someone else. So she dug up the rock in the road with her hands till they bled, used everything she had to pull it out. It took hours and then when she was gonna fill it up, she saw there something else, a bag of gold. The king put that rock in the middle of the road because he knew the person who dug it out - who did something deserves a reward - deserve to have their life changed for the good forever!!
 </p>
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Kubernetes Cluster on Vagrant</title>
-	  <link>//kubernetes_cluster_vagrant</link>
-	  <author></author>
-	  <pubDate>2016-02-04T18:00:00+05:30</pubDate>
-	  <guid>//kubernetes_cluster_vagrant</guid>
-	  <description><![CDATA[
-	     <p>In this tutorial we will cover the installation of a Kubernetes Cluster over 3 virtual machines spawned using Virtualbox and Vagrant.
-This can be also useful to install Kubernetes over Bare Metal server or any sort of Virtual Machines as well.
-</p>
-
-<h3>Assumptions</h3>
-<ul>
-	<li>Vagrant and Virtualbox are already installed.</li>
-	<li>We have 3 Centos 7 virtual machines running.</li>
-</ul>
-
-<h3>Pre-requisites</h3>
-<ul>
-<li>Set the host-names for all 3 machines with the below commands</li>
-<ul>
-	<li style="color: #4233ff">sudo hostnamectl set-hostname kubem</li>
-    <li style="color: #4233ff">sudo hostnamectl set-hostname worker1</li>
-    <li style="color: #4233ff">sudo hostnamectl set-hostname worker2</li>
-</ul>
-
-<li>Disable selinux</li>
-<ul>
-    <li style="color: #4233ff">set selinux 0</li>
-    <li>edit the file /etc/sysconfig/selinux and disable selinux</li>
-    or use the below command directly to disable selinux
-    <li style="color: #4233ff">sudo sed -i s/^SELINUX=.*$/SELINUX=disabled/ /etc/selinux/config</li>
-</ul>
-
-<li>Disable swap memory</li>
-<ul>
-	<li style="color: #4233ff">swapoff -a</li>
-	<li>vim /etc/fstab</li>
-	or
-	<li style="color: #4233ff">sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab</li>
-</ul>
-
-<li>Set net bridge  for proper traffic routing</li>
-<ul>
-	<li style="color: #4233ff">cat <<EOF >  /etc/sysctl.d/k8s.conf
-net.bridge.bridge-nf-call-ip6tables = 1
-net.bridge.bridge-nf-call-iptables = 1
-EOF</li>
-</ul>
-
-<li >Reload sysctl</li>
-<ul>
-    <li style="color: #4233ff">sysctl --system</li>
-</ul>
-
-<li>Set DNS entries in /etc/hosts</li>
-<ul>
-	<li style="color: #4233ff">192.168.10.60 kubem</li>
-	<li style="color: #4233ff">192.168.10.61 worker1</li>
-	<li style="color: #4233ff">192.168.10.62 worker2</li>
-</ul>
-
-<li>Docker Installation</li>
-<ul>
-	<li style="color: #4233ff">yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo</li>
-	<li style="color: #4233ff">yum update -y</li>
-	<li style="color: #4233ff">yum install -y yum-utils device-mapper-persistent-data lvm2 -y</li>
-	<li style="color: #4233ff">sudo yum install docker-ce -y</li>
-	<li style="color: #4233ff">sudo yum install docker-ce -y</li>
-	<li style="color: #4233ff">systemctl enable docker</li>
-	<li style="color: #4233ff">systemctl start docker</li>
-	<li style="color: #4233ff">systemctl status docker</li>
-	<li style="color: #4233ff">systemctl status docker</li>
-	<li style="color: #4233ff">docker version</li>
-	<li style="color: #4233ff">docker info</li>
-</ul>
-
-<li>Installing kubelet, kubeadm, kubectl</li>
-<ul>
-<li style="color: #4233ff">cat <<EOF > /etc/yum.repos.d/kubernetes.repo
-[kubernetes]
-name=Kubernetes
-baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
-enabled=1
-gpgcheck=1
-repo_gpgcheck=1
-gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg
-        https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
-EOF
-</li>
-<li style="color: #4233ff">yum install -y kubelet-1.15.1 kubeadm-1.15.1</li>
-<li style="color: #4233ff">systemctl enable kubelet</li>
-<li style="color: #4233ff">systemctl start kubelet</li>
-</ul>
-
-<li>Initialize the kubernetes cluster</li>
-<ul>
-	<li style="color: #4233ff">kubeadm init --apiserver-advertise-address=172.31.19.193 --pod-network-cidr=10.244.0.0/16 --service-cidr=10.244.0.0/12</li>
-</ul>
-
-<li>Become Non-root user</li>
-<ul>
-<li style="color: #4233ff">mkdir -p $HOME/.kube</li>
-<li style="color: #4233ff">sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config</li>
-<li style="color: #4233ff">sudo chown $(id -u):$(id -g) $HOME/.kube/config</li>
-</ul>
-
-<li>Creating the CNI and Dashboard:</li>
-<ul>
-<li style="color: #4233ff">kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml</li>
-<li style="color: #4233ff">kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/aio/deploy/recommended/kubernetes-dashboard.yaml</li>
-<li style="color: #4233ff">kubectl -n kube-system edit service kubernetes-dashboard</li>
-change from ClusterIP to NodePort
-<li style="color: #4233ff">kubectl describe services kubernetes-dashboard -n kube-system</li>
-<li style="color: #4233ff">kubectl -n kube-system get secret</li>
-<li style="color: #4233ff">kubectl -n kube-system describe secret namespace-contoller-token-xyxyx</li>
-now use this token to login to the cluster IP</ul></EOF></li></ul></EOF></li></ul></ul>
 	  ]]></description>
 	</item>
 
@@ -648,6 +698,226 @@ To start rethinkdb as a service, please follow the below steps:
 <br></br>
 </body>
 </html>
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>Markdown cheat-sheets</title>
+	  <link>//mark_down_cheatsheet</link>
+	  <author></author>
+	  <pubDate>2016-02-01T13:48:37+05:30</pubDate>
+	  <guid>//mark_down_cheatsheet</guid>
+	  <description><![CDATA[
+	     <p>Source : https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet</p>
+
+<h1 id="h1----h1">H1 - # H1</h1>
+<h2 id="h2----h2">H2 - ## H2</h2>
+<h3 id="h3----h3">H3 - ### H3</h3>
+<h4 id="h4----h4">H4 - #### H4</h4>
+<h5 id="h5----h5">H5 - ##### H5</h5>
+<h6 id="h6----h6">H6 -  ######H6</h6>
+
+<h1 id="will-become-a-heading">Will become a heading</h1>
+
+<h2 id="will-become-a-sub-heading">Will become a sub heading</h2>
+
+<p><em>This will be Italic</em></p>
+
+<p><strong>This will be Bold</strong></p>
+
+<ul>
+  <li>This will be a list item</li>
+  <li>
+    <p>This will be a list item</p>
+
+    <p>Add a indent and this will end up as code</p>
+  </li>
+</ul>
+
+<p>Alternatively, for H1 and H2, an underline-ish style:</p>
+
+<h1 id="alt-h1">Alt-H1</h1>
+
+<h2 id="alt-h2">Alt-H2</h2>
+
+<p>Emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>.</p>
+
+<p>Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.</p>
+
+<p>Combined emphasis with <strong>asterisks and <em>underscores</em></strong>.</p>
+
+<p>Strikethrough uses two tildes. <del>Scratch this.</del></p>
+
+<ol>
+  <li>First ordered list item</li>
+  <li>Another item
+⋅⋅* Unordered sub-list.</li>
+  <li>Actual numbers don’t matter, just that it’s a number
+⋅⋅1. Ordered sub-list</li>
+  <li>And another item.</li>
+</ol>
+
+<p>⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we’ll use three here to also align the raw Markdown).</p>
+
+<p>⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
+⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
+⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)</p>
+
+<ul>
+  <li>Unordered list can use asterisks</li>
+  <li>Or minuses</li>
+  <li>Or pluses</li>
+</ul>
+
+<p><a href="https://www.google.com">I’m an inline-style link</a></p>
+
+<p><a href="https://www.google.com" title="Google's Homepage">I’m an inline-style link with title</a></p>
+
+<p><a href="https://www.mozilla.org">I’m a reference-style link</a></p>
+
+<p><a href="../blob/master/LICENSE">I’m a relative reference to a repository file</a></p>
+
+<p><a href="http://slashdot.org">You can use numbers for reference-style link definitions</a></p>
+
+<p>Or leave it empty and use the <a href="http://www.reddit.com">link text itself</a>.</p>
+
+<p>URLs and URLs in angle brackets will automatically get turned into links. 
+http://www.example.com or <a href="http://www.example.com">http://www.example.com</a> and sometimes 
+example.com (but not on Github, for example).</p>
+
+<p>Some text to show that the reference links can follow later.</p>
+
+<p>Here’s our logo (hover to see the title text):</p>
+
+<p>Inline-style: 
+<img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="Logo Title Text 1" /></p>
+
+<p>Reference-style: 
+<img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="Logo Title Text 2" /></p>
+
+<p>Inline <code class="language-plaintext highlighter-rouge">code</code> has <code class="language-plaintext highlighter-rouge">back-ticks around</code> it.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">JavaScript syntax highlighting</span><span class="dl">"</span><span class="p">;</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">s</span><span class="p">);</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">s</span> <span class="o">=</span> <span class="s">"Python syntax highlighting"</span>
+<span class="k">print</span> <span class="n">s</span>
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>No language indicated, so no syntax highlighting. 
+But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
+</code></pre></div></div>
+
+<p>var s = “JavaScript syntax highlighting”;
+alert(s);</p>
+
+<p>s = “Python syntax highlighting”
+print s</p>
+
+<p>No language indicated, so no syntax highlighting in Markdown Here (varies on Github). 
+But let’s throw in a <b>tag</b>.</p>
+
+<p>Colons can be used to align columns.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tables</th>
+      <th style="text-align: center">Are</th>
+      <th style="text-align: right">Cool</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>col 3 is</td>
+      <td style="text-align: center">right-aligned</td>
+      <td style="text-align: right">$1600</td>
+    </tr>
+    <tr>
+      <td>col 2 is</td>
+      <td style="text-align: center">centered</td>
+      <td style="text-align: right">$12</td>
+    </tr>
+    <tr>
+      <td>zebra stripes</td>
+      <td style="text-align: center">are neat</td>
+      <td style="text-align: right">$1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>There must be at least 3 dashes separating each header cell.
+The outer pipes (|) are optional, and you don’t need to make the 
+raw Markdown line up prettily. You can also use inline Markdown.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Markdown</th>
+      <th>Less</th>
+      <th>Pretty</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><em>Still</em></td>
+      <td><code class="language-plaintext highlighter-rouge">renders</code></td>
+      <td><strong>nicely</strong></td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p>Blockquotes are very handy in email to emulate reply text.
+This line is part of the same quote.</p>
+</blockquote>
+
+<p>Quote break.</p>
+
+<blockquote>
+  <p>This is a very long line that will still be quoted properly when it wraps. Oh boy let’s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can <em>put</em> <strong>Markdown</strong> into a blockquote.</p>
+
+</blockquote>
+
+<dl>
+  <dt>Definition list</dt>
+  <dd>Is something people use sometimes.</dd>
+
+  <dt>Markdown in HTML</dt>
+  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+</dl>
+
+<p>Three or more…</p>
+
+<hr />
+
+<p>Hyphens</p>
+
+<hr />
+
+<p>Asterisks</p>
+
+<hr />
+
+<p>Underscores</p>
+
+<p>Here’s a line for us to start with.</p>
+
+<p>This line is separated from the one above by two newlines, so it will be a <em>separate paragraph</em>.</p>
+
+<p>This line is also a separate paragraph, but…
+This line is only separated by a single newline, so it’s a separate line in the <em>same paragraph</em>.</p>
+
+<p><a href="http://www.youtube.com/watch?feature=player_embedded&amp;v=YOUTUBE_VIDEO_ID_HERE " target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a></p>
+
+<p><a href="http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" alt="IMAGE ALT TEXT HERE" /></a></p>
+
 	  ]]></description>
 	</item>
 

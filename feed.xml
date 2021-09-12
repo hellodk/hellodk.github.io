@@ -123,6 +123,21 @@ Kyrgystan also hosts a lot of Indian students looking for a career in the medici
     
       
       <item>
+        <title>Deploying Kubernetes Cluster on Vagrant</title>
+        
+          <description>&lt;p&gt;In this blog post we will cover the installation of a Kubernetes Cluster over 3 virtual machines spawned using Virtualbox and Vagrant.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sun, 02 Dec 2018 18:00:00 +0530</pubDate>
+        <link>
+        http://localhost:4000/deploying-kubernetes_cluster_vagrant</link>
+        <guid isPermaLink="true">http://localhost:4000/deploying-kubernetes_cluster_vagrant</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>The Road to Kingdom</title>
         
           <description>&lt;h4&gt;Found somewhere on the media and definitely worth a read....&lt;/h4&gt;
@@ -133,23 +148,6 @@ Kyrgystan also hosts a lot of Indian students looking for a career in the medici
         <link>
         http://localhost:4000/the_road_to_a_kingdom</link>
         <guid isPermaLink="true">http://localhost:4000/the_road_to_a_kingdom</guid>
-      </item>
-      
-    
-      
-      <item>
-        <title>Kubernetes Cluster on Vagrant</title>
-        
-          <description>&lt;p&gt;In this tutorial we will cover the installation of a Kubernetes Cluster over 3 virtual machines spawned using Virtualbox and Vagrant.
-This can be also useful to install Kubernetes over Bare Metal server or any sort of Virtual Machines as well.
-&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Thu, 04 Feb 2016 18:00:00 +0530</pubDate>
-        <link>
-        http://localhost:4000/kubernetes_cluster_vagrant</link>
-        <guid isPermaLink="true">http://localhost:4000/kubernetes_cluster_vagrant</guid>
       </item>
       
     
@@ -186,6 +184,21 @@ Rethinkdb is an open-source, scalable JSON database built from the ground up for
         <link>
         http://localhost:4000/rethinkdb_installation_ubuntu14</link>
         <guid isPermaLink="true">http://localhost:4000/rethinkdb_installation_ubuntu14</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Markdown cheat-sheets</title>
+        
+          <description>&lt;p&gt;Source : https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 01 Feb 2016 13:48:37 +0530</pubDate>
+        <link>
+        http://localhost:4000/mark_down_cheatsheet</link>
+        <guid isPermaLink="true">http://localhost:4000/mark_down_cheatsheet</guid>
       </item>
       
     
