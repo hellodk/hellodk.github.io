@@ -1,835 +1,196 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
+    <title>Curiosity is the most powerful thing you own - Articles</title>
     <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
-    <link>https://hellodk.io///</link>
-    <atom:link href="https://hellodk.io///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 06 Jun 2020 21:52:17 +0530</pubDate>
-    <lastBuildDate>Sat, 06 Jun 2020 21:52:17 +0530</lastBuildDate>
-    <generator>Jekyll v2.4.0</generator>
+    <link>
+    http://localhost:4000</link>
     
+      
+      <item>
+        <title>EKS - The Sins we Committed</title>
+        
+          <description>
+</description>
+        
+        <pubDate>Thu, 02 Sep 2021 15:48:00 +0530</pubDate>
+        <link>
+        http://localhost:4000/EKS-the-sins-we-commitred</link>
+        <guid isPermaLink="true">http://localhost:4000/EKS-the-sins-we-commitred</guid>
+      </item>
+      
+    
+      
       <item>
         <title>My Resume Hosted</title>
-        <description>&lt;!DOCTYPE html&gt;
+        
+          <description>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 
-&lt;style&gt;
-.tab-1 {position:absolute;left:180px; }
-
-.tab-2 {position:absolute;left:300px; }
-
-p.small {
-  line-height: 0.7;
-}
-
-p.big {
-  line-height: 1.8;
-}
-
-
-
-&lt;/style&gt;
-
-&lt;head&gt;
-	&lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/css/hr_tag.css&quot; /&gt;
-	&lt;title&gt;Curriculum Vitae&lt;/title&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-
-&lt;a href=&quot;/&quot; class=&quot;home_icon&quot;&gt;
-	&lt;img src=&quot;/assets/images/utilities/home_icon.png&quot; alt=&quot;Blog Logo&quot; style=&quot;cursor: pointer;width: 40px; height: 40px;   float: right;&quot; /&gt;
-&lt;/a&gt;
-
-&lt;h1 &gt;Deepak Gupta&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Email: &lt;span class=&quot;tab-1&quot;&gt;hello.dk@outlook.com&lt;/li&gt;
-&lt;li&gt;About.me: &lt;span class=&quot;tab-1&quot;&gt;&lt;a href=&quot;https://about.me/hellodk&quot;&gt;about.me/hellodk&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Blog: &lt;span class=&quot;tab-1&quot;&gt;&lt;a href=&quot;https://www.hellodk.io&quot;&gt;hellodk.io&lt;/a&gt;&lt;/li&gt;&lt;/li&gt;
-&lt;li&gt;Github: &lt;span class=&quot;tab-1&quot;&gt;&lt;a href=&quot;https://github.com/hellodk&quot;&gt;github.com/hellodk&lt;/a&gt;&lt;/li&gt;&lt;/li&gt;
-&lt;li&gt;LinkedIn: &lt;span class=&quot;tab-1&quot;&gt;&lt;a href=&quot;https://www.linkedin.com/in/hellodk&quot;&gt;linkedin.com/in/hellodk&lt;/a&gt;&lt;/li&gt;&lt;/li&gt;
-&lt;li&gt;Docker Hub: &lt;span class=&quot;tab-1&quot;&gt;&lt;a href=&quot;https://hub.docker.com/r/hellodk&quot;&gt;hub.docker.com/r/hellodk&lt;/a&gt;&lt;/li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr class=&quot;bigHr&quot;&gt;
-
-&lt;h2&gt;Work Experience:&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;h3&gt;DevOps Consultant/Trainer, Bengaluru&lt;/h3&gt;&lt;/li&gt;
-&lt;h5&gt;June 2018 - PRESENT&lt;/h5&gt;
-&lt;p&gt;I&#39;ve helped organisations adopt DevOps tooling/practices, scaling strategies &amp; have delivered 200+ corporate trainings on DevOps tools across the globe to a broad set of audiences(Developers/Sysadmins, Freshers, Architects, CTO&#39;s, VP) with nearabout 95% success rate.&lt;/p&gt;
-
-&lt;li&gt;&lt;h3&gt;DevOps Lead - Moveinsync Technology, Bengaluru&lt;/h3&gt;&lt;/li&gt;
-&lt;h5&gt;January 2018 - June 2018&lt;/h5&gt;
-&lt;p&gt;Moveinsync is India&#39;s chief employee transportation management solution. I had lead the DevOps team at Moveinsync to build &amp; monitor a highly scalable multi-tenant application on cloud.
-I&#39;ve contributed to VAPT, Implementing DR and achieve government certification which helped us to secure more clients.&lt;/p&gt;
-
-&lt;li&gt;&lt;h3&gt;Systems Engineer - Myntra Designs, Bengaluru&lt;/h3&gt;&lt;/li&gt;
-&lt;h5&gt;June 2016 - January 2018&lt;/h5&gt;
-&lt;p&gt;Myntra Designs is the biggest Indian fashion e-commerce organisation in India.
-I was a part of the sysadmin team managing 99.9999% uptime of infrastructure(Datacenter, AWS &amp; Azure), monitoring microservices, API calls, revenue metrics, on-calls, writing internal tools, automating deployments,  database maintenance etc.
-&lt;/p&gt;
-
-&lt;li&gt;&lt;h3&gt;DevOps Engineer - Knowlarity Communications, Bengaluru&lt;/h3&gt;&lt;/li&gt;
-&lt;h5&gt;January 2015 - May 2016&lt;/h5&gt;
-&lt;p&gt;Knowlarity Communications works on AI enabled cloud telephony.
-My primary responsibilities were to automate deployments, maintain databases and write API&#39;s to scrub data upto 440 million records, take care of the Billing framework model, creating grafana dashboards, backup and recovery, maintain rabbitmq clusters.
-&lt;/p&gt;
-
-&lt;li&gt;&lt;h3&gt;Project Engineer - Wipro Technologies, Bengaluru&lt;/h3&gt;&lt;/li&gt;
-&lt;h5&gt;November 2011 - January 2015&lt;/h5&gt;
-&lt;p&gt;Wipro Technologies is an Indian MNC providing IT consulting &amp; services.
-I was primarily responsible to write applications in Java for telecom OSS and also creating API&#39;s for Openstack implementation.&lt;/p&gt;
-&lt;/br&gt;
-&lt;/ul&gt;
-
-&lt;hr class=&quot;bigHr&quot;&gt;
-&lt;h2&gt;Software Skills:&lt;/h2&gt;
-&lt;ul&gt;
-&lt;!---li&gt;Programming: 	Python, Java, Golang, Nodejs, C(Agile/Kanban Methodology)&lt;/li&gt;
-&lt;li&gt;Web Frameworks: Django, Spring Boot, Flask, Falcon, Spring Cloud&lt;/li&gt;
-&lt;li&gt;Build Tools: Jenkins, Jira, Gerrit&lt;/li&gt;
-&lt;li&gt;Cryptocurrency: Blockchain, Bitcoin, Ethereum, Hyperledger&lt;/li&gt;
-&lt;li&gt;Load balancers: HA Proxy, Nginx&lt;/li&gt;
-&lt;li&gt;CDN: Akamai, CloudFront, Cloudflare&lt;/li&gt;
-&lt;li&gt;Web/App servers: Nginx, Apache, Gunicorn, uwsgi, tomcat&lt;/li&gt;
-&lt;li&gt;Configuration Management: Ansible, Saltstack, Fabric, Puppet, Chef&lt;/li&gt;
-&lt;li&gt;Protocols/ Architectures:	REST, CORBA, SNMP, HTTP, TCP/IP, SIP, Wireshark&lt;/li&gt;
-&lt;li&gt;Cloud/ Virtualizations: AWS, Azure, Heroku, OpenStack, Vagrant, KVM, Docker&lt;/li&gt;
-&lt;li&gt;Visualizations: Grafana, D3, Kibana, Talend&lt;/li&gt;
-&lt;li&gt;Others: RaspberryPi, Spartan 3E, AVR, Elasticsearch, Induino, Arduino, MOSHELL, Debian Packaging, freeswitch, WCDMA, LTE, 3PP, NMS, EMS, FCAPS, RNC, RBS, Scribe, Logstash, Fluentd,heka&lt;/li---&gt;
-&lt;li&gt;Programming:
-&lt;ul&gt;
-	&lt;li&gt;Present Proficiency: &lt;span class=&quot;tab-2&quot;&gt; Python, Bash&lt;/li&gt;
-	&lt;li&gt;Past Proficiency: &lt;span class=&quot;tab-2&quot;&gt; Java, Golang, Nodejs, C&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Cloud Computing: &lt;span class=&quot;tab-2&quot;&gt;  AWS, Azure, Heroku, Openstack&lt;/li&gt;
-&lt;li&gt;Container Technologies: &lt;span class=&quot;tab-2&quot;&gt;  Docker, Kubernetes&lt;/li&gt;
-&lt;li&gt;Monitoring Tools: &lt;span class=&quot;tab-2&quot;&gt;  Zabbix, Nagios, Icinga2, Sensu, Datadog, Iciniga2&lt;/li&gt;
-&lt;li&gt;SQL Databases: &lt;span class=&quot;tab-2&quot;&gt;  MySQL, PostgreSQL, MariaDB&lt;/li&gt;
-&lt;li&gt;NoSQL Databases: &lt;span class=&quot;tab-2&quot;&gt;  MongoDB, Cassandra, Redis, DynamoDB, CouchDB&lt;/li&gt;
-&lt;li&gt;Web Server/Load Balancers: &lt;span class=&quot;tab-2&quot;&gt;  Nginx, HA Proxy&lt;/li&gt;
-&lt;li&gt;Messaging Tools: &lt;span class=&quot;tab-2&quot;&gt;  RabbitMQ, Kafka&lt;/li&gt;
-&lt;li&gt;Configuration Management: &lt;span class=&quot;tab-2&quot;&gt;  Ansible, Terraform, Chef, Puppet&lt;/li&gt;
-&lt;li&gt;Programming: &lt;span class=&quot;tab-2&quot;&gt;  Java, Python, Golang&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;Visualizations: &lt;span class=&quot;tab-2&quot;&gt;  Grafana, D3, Kibana, Talend&lt;/li&gt;
-&lt;li&gt;Others: &lt;span class=&quot;tab-2&quot;&gt; Elasticsearch, Solr, Jenkins
-&lt;/ul&gt;
-
-&lt;hr class=&quot;bigHr&quot;&gt;
-&lt;h2&gt;
-	Projects Summary:
-&lt;/h2&gt;
-&lt;ul&gt;
-	&lt;li&gt;
-&lt;h3&gt;Disaster Recovery
-&lt;/h3&gt;&lt;/li&gt;
-&lt;p&gt;Creating DR infrastructure, requirement gathering and creation of Kubernetes cluster on bare metal servers and implementing the deployment pipelines - blue-green and canary
-Infrastructure &amp; service monitoring, sending alerts over slack and SMS
-&lt;/p&gt;
-
-&lt;li&gt;
-	&lt;h3&gt;Payments Service:
-&lt;/h3&gt;
-&lt;/li&gt;
-&lt;p&gt;
-Create payments service for facilitating payments transactions using Java and Spring Boot and implementing analytics with Talend to monitor the payments/orders. Invoved in Sprint Planning, Requirement gathering, Architecture planning, writing unit test-cases, coding configuration of the cluster, managing shards/replicas of the payments database, coordinating UAT and SIT and load tests
-&lt;/p&gt;
-
-&lt;li&gt;
-	&lt;h3&gt;Centralized Log Management:
-&lt;/h3&gt;
-&lt;/li&gt;
-&lt;p&gt;
-To monitor logs centrally, we needed a powerful tool. Elasticsearch is what we choose for this project and developed on top of Java using Spring Cloud. Initiated the requirement gathering, created UML diagrams, architecture planning, automated deployment &amp; configuration of the cluster, managing shards and the replicas for elasticsearch cluster, analytics on the data using talend
-&lt;/p&gt;
-
-&lt;li&gt;
-	&lt;h3&gt;
-PCI Compliance:
-&lt;/h3&gt;
-&lt;/li&gt;
-&lt;p&gt;
-Ensured the Payments setup is PCI DSS compliant by creating network segmentations for servers(DMZ environment) and implementing Intrusion Detection Systems(OSSEC/Alienvault) &amp; patching(Spacewalk) the air gapped systems. Responsible for getting the VAPT(Vulnerability Assessment &amp; Penetration Testing)
-&lt;/p&gt;
-
-&lt;li&gt;
-	&lt;h3&gt;
-	Apollo:
-&lt;/h3&gt;
-&lt;/li&gt;
-&lt;p&gt;
-App deployment via one click using Ansible, Docker and Kubernetes by  automatically creating templates for tasks using jinja2 templating systems and wrote executors, setting up Jenkins jobs etc.
-&lt;/p&gt;
-
-&lt;li&gt;
-	&lt;h3&gt;
-Sethji:
-&lt;/h3&gt;
-&lt;/li&gt;
-&lt;p&gt;
-Track AWS/Azure Billing Charges
-Bill analysis using ETL &amp; Setup the billing management stack on python and flask
-reduced billing costs by 25% by identifying overprovisioned/unused services etc.
-&lt;/p&gt;
-
-&lt;li&gt;
-	&lt;h3&gt;
-	Graphite Grafana Integration
-&lt;/h3&gt;
-&lt;/li&gt;
-&lt;p&gt;
-monitor services, function calls, throughput, response code status, revenue etc.
-Requirement gathering, UML, coding, writing automation, configuration and deployment on Python
-&lt;/p&gt;
-
-&lt;li&gt;
-&lt;h3&gt;
-	Monitoring Setup
-&lt;/h3&gt;
-&lt;/li&gt;
-&lt;p&gt;
-	Monitoring for complete Infrastructure
-Setup monitoring for our infrastructure(hybrid) over Icinga2/Zabbix and Talend
-Ensured High Availability of Services
-&lt;/p&gt;
-
-&lt;li&gt;&lt;h3&gt;Daily Operations - A usual day in the life of a DevOps&lt;/h3&gt;&lt;/li&gt;
-&lt;p&gt;
-	&lt;ul&gt;
-&lt;li&gt;Developing tools over C++/Java/Python/Golang&lt;/br&gt;&lt;/li&gt;
-&lt;li&gt;Security Audit - Implemented IDS, DDOS mitigation via fail2ban&lt;/br&gt;&lt;/li&gt;
-&lt;li&gt;Packet tracing/filtering using customized tool &amp; Wireshark&lt;/br&gt;&lt;/li&gt;
-&lt;li&gt;Fixing security vulnerabilities in infrastructure&lt;/br&gt;&lt;/li&gt;
-&lt;li&gt;Log Aggregation and Analytics using Elasticsearch/Solr/Kibana&lt;/br&gt;&lt;/li&gt;
-&lt;li&gt;Implemented key rotation policy&lt;/br&gt;&lt;/li&gt;
-&lt;li&gt;Implemented HA RabbitMQ cluster serving as a backbone for intercommunication between microservices(close to 400+ microservices) with 99.99999% SLA&lt;/br&gt;&lt;/li&gt;
-&lt;li&gt;DNS, LDAP, Monitoring, Load Balancing over Nginx/HA Proxy&lt;/br&gt;&lt;/li&gt;
-&lt;li&gt;Reduce data transfer costs &amp; improved performance&lt;/br&gt;&lt;/li&gt;
-&lt;li&gt;Subnet planning helped reduce the complexity of whitelisting services/IP’s&lt;/br&gt;&lt;/li&gt;
-&lt;li&gt;Network planning for infrastructure migration&lt;/br&gt;&lt;/li&gt;
-&lt;li&gt;Helped setup Azure account with basic services like DNS, LDAP, monitoring&lt;/br&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;
-
-&lt;li&gt;
-	&lt;h3&gt;
-	Clickstream Analytics
-&lt;/h3&gt;
-&lt;/li&gt;
-&lt;p&gt;
-A single point to handle all clickstream data and do analytics on that
-Integrating the existing SQL databases with ETL(Talend) and creating dashboards
-Fine details like demography, geographic locations, time etc were extracted
-Used the analytics data to create recommendation engine
-&lt;/p&gt;
-
-&lt;li&gt;
-&lt;h3&gt;
-	WRAN CM OSS-RC (Operational Support System – Radio &amp; Core)
-&lt;/h3&gt;
-&lt;/li&gt;
-&lt;p&gt;
-OSS-RC is a comprehensive domain manager for network infrastructure deployed with operators around the world integrating and managing a wide range of network components. Together with IP and Broadband offering, it’s a comprehensive solution for total network management of the telecommunications infrastructure
-Design of OSSRC products, configuring network elements of OSS-RC using Spring/Java
-Sprint Planning, Requirement gathering, Implementation for new changes proposed, creating user stories
-followed Test Driven Development, Coordinating in SIT, UAT
-&lt;/p&gt;
-&lt;li&gt;
-&lt;h3&gt;
-	Cloud Adapter
-&lt;/h3&gt;
-&lt;/li&gt;
-&lt;p&gt;
-Integrate cloud services with services on physical machines for centralized monitoring
-Set up the development environment, configurations, writing test cases using J-unit
-wrote authentication modules, schedulers, startup scripts, managing notifications on Java
-&lt;/p&gt;
-&lt;li&gt;
-&lt;h3&gt;
-	Billing Framework
-&lt;/h3&gt;
-&lt;/li&gt;
-&lt;p&gt;
-The most challenging work for any organisation, taking care of different types of contracts etc.
-Created the Billing Framework using Python and Django
-&lt;/p&gt;
-&lt;li&gt;
-&lt;h3&gt;
-	NDNC Deployment
-&lt;/h3&gt;
-&lt;/li&gt;
-&lt;p&gt;
-Being a telemarketer, we can call only to non-dnd registered numbers
-TRAI only provides dnd data in form of CSV(500 million rows)
-Challenge was to develop our own NDNC scrubbing solution and keep it updated using Spring Boot
-Requirement gathering, UML/flow diagrams getting the NDNC data, feeding the data into our database, writing API&#39;s, automated product deployment automation, performance tuning etc. using Python/Falcon and RethinkDB
-&lt;/p&gt;&lt;/ul&gt;
-&lt;hr class=&quot;bigHr&quot;&gt;
-&lt;h3&gt;
-	Side Projects
-&lt;/h3&gt;
-&lt;ul&gt;
-&lt;p&gt;
-&lt;li&gt;Developed several multiplayer games in Python, e.g. Stopwatch, Pong, Memory, Spaceship, Blackjack &amp; Rice Rocks Full Game
-&lt;/li&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-&lt;li&gt;
-RTL design &amp; Synthesis of a 32-bit Microprocessor using VHDL
-&lt;/li&gt;
-Our goal was to design a 32-bit microprocessor in VHDL, which will perform arithmetic and logic function that is on a standard 32-bit microprocessor
-Target Device: Spartan 3E Tools
-Used: Xilinx 9.1, Modelsim SE 5.7f
-&lt;/p&gt;
-
-&lt;p&gt;
-&lt;li&gt;
-Blockchain Signalling System
-&lt;/li&gt;
-Used blockchain for Signalling DDOS attacks in a cooperative &amp; distributed network defence
-&lt;/p&gt;
-
-&lt;p&gt;
-&lt;li&gt;
-Real-time Bitcoin Price Monitor using Arduino
-&lt;/li&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-	&lt;li&gt;
-Decentralized fleet tracking with blockchain
-&lt;/li&gt;
-Asset tracking mechanism in a decentralized fashion. Each action, event, alerts were stored in the blockchain
-&lt;/p&gt;
-
-&lt;p&gt;
-&lt;li&gt;
-Developed an own cryptocurrency for testing purpose using Litecoin
-&lt;/li&gt;
-&lt;/p&gt;
-&lt;/ul&gt;
-
-&lt;hr class=&quot;bigHr&quot;&gt;
-
-&lt;h3&gt;
-	Awards &amp; Achievements:
-&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Maestro Award for Making a Difference in the Account&lt;/li&gt;
-&lt;p&gt;I was awarded for technically ramping up my team members in short span of time &amp; making a difference in the Account&lt;/p&gt;
-&lt;li&gt;High Flyer Award for individual contribution in the Account&lt;/li&gt;
-&lt;p&gt;I was awarded for my role as an Individual Contributor in the team&lt;/p&gt;
-&lt;/ul&gt;
-
-&lt;hr class=&quot;bigHr&quot;&gt;
-
-&lt;h3&gt;
-Certifications:
-&lt;/h3&gt;
-
-&lt;ul&gt;
-	&lt;p&gt;
-		&lt;li&gt;&lt;a href=&quot;https://academy.datastax.com/certs/lookup/2303fe2a-eecb-4db2-abd4-274e17160b6f&quot; target=&quot;_blank&quot;&gt;Apache Cassandra 3.x Administrator Associate&lt;/a&gt;&lt;/li&gt;
-	&lt;/p&gt;
-	&lt;p&gt;
-		&lt;li&gt;&lt;a href=&quot;https://www.coursera.org/account/accomplishments/certificate/S87NC2BJCLZ6&quot; target=&quot;_blank&quot;&gt;Big Data, Cloud Computing, &amp; CDN Emerging Technologies&lt;/a&gt;&lt;/li&gt;
-	&lt;/p&gt;
-	&lt;p&gt;
-		&lt;li&gt;&lt;a href=&quot;https://cert.nobleprog.com/certificate/528869/5fe84&quot; target=&quot;_blank&quot;&gt;Blockchain for Developers&lt;/a&gt;&lt;/li&gt;
-	&lt;/p&gt;
-	&lt;p&gt;
-		&lt;li&gt;&lt;a href=&quot;https://www.coursera.org/account/accomplishments/verify/NS4UB74CKYTX&quot; target=&quot;_blank&quot;&gt;Interfacing with the Raspberry Pi&lt;/a&gt;&lt;/li&gt;
-	&lt;/p&gt;
-	&lt;p&gt;
-		&lt;li&gt;&lt;a href=&quot;https://www.coursera.org/account/accomplishments/verify/BMXZN7BA4Y&quot; target=&quot;_blank&quot;&gt;An Introduction to Interactive Programming with Python(RICE University)&lt;/a&gt;&lt;/li&gt;
-	&lt;/p&gt;
-&lt;/ul&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;</description>
-        <pubDate>Tue, 24 Mar 2020 00:00:00 +0530</pubDate>
-        <link>https://hellodk.io///resume</link>
-        <guid isPermaLink="true">https://hellodk.io///resume</guid>
+</description>
         
-        <category>tutorials</category>
-        
-        
-        <category>dk</category>
-        
+        <pubDate>Wed, 08 Jul 2020 00:00:00 +0530</pubDate>
+        <link>
+        http://localhost:4000/resume</link>
+        <guid isPermaLink="true">http://localhost:4000/resume</guid>
       </item>
+      
     
+      
+      <item>
+        <title>The First Snowfall Encounter</title>
+        
+          <description>&lt;p&gt;My first encounter with Snowfall was during my travel to Bishkek, the capital city of Kyrgystan. Kyrgystan is a beautiful landlocked country in Central Asia and my trip to Kyrgystan brought to me a whole new perspective.
+The cuisines were full of flavour(friends used to translate Russian food menu for me).
+Kyrgystan also hosts a lot of Indian students looking for a career in the medicine domain.
+&lt;img src=&quot;assets/images/the-first-snowfall-encounter/Kyrgyzstan/20191227_173428.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;assets/images/the-first-snowfall-encounter/Kyrgyzstan/20191225_224547.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;assets/images/the-first-snowfall-encounter/Kyrgyzstan/20191225_224535.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;assets/images/the-first-snowfall-encounter/Kyrgyzstan/20191225_224510.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;assets/images/the-first-snowfall-encounter/Kyrgyzstan/20191225_224456.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;assets/images/the-first-snowfall-encounter/Kyrgyzstan/20191225_083001.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;assets/images/the-first-snowfall-encounter/Kyrgyzstan/20191224_082857.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;assets/images/the-first-snowfall-encounter/Kyrgyzstan/20191223_172820.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;assets/images/the-first-snowfall-encounter/Kyrgyzstan/20191223_172803.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;assets/images/the-first-snowfall-encounter/Kyrgyzstan/20191223_134140.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;assets/images/the-first-snowfall-encounter/Kyrgyzstan/20191222_201944.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;assets/images/the-first-snowfall-encounter/Kyrgyzstan/20191222_201842.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;assets/images/the-first-snowfall-encounter/Kyrgyzstan/20191222_140438.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;assets/images/the-first-snowfall-encounter/Kyrgyzstan/20191222_140412.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;assets/images/the-first-snowfall-encounter/Kyrgyzstan/20191222_140358.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;assets/images/the-first-snowfall-encounter/Kyrgyzstan/20191222_093857.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;assets/images/the-first-snowfall-encounter/Kyrgyzstan/20191221_172532.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;assets/images/the-first-snowfall-encounter/Kyrgyzstan/20191221_172512.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;assets/images/the-first-snowfall-encounter/Kyrgyzstan/20191221_135930.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;assets/images/the-first-snowfall-encounter/Kyrgyzstan/20191221_131022.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;assets/images/the-first-snowfall-encounter/Kyrgyzstan/20191221_130941.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;assets/images/the-first-snowfall-encounter/Kyrgyzstan/20191220_234832.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;assets/images/the-first-snowfall-encounter/Kyrgyzstan/20191220_082957.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;assets/images/the-first-snowfall-encounter/Kyrgyzstan/20191220_082953.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;assets/images/the-first-snowfall-encounter/Kyrgyzstan/20191220_080003.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;assets/images/the-first-snowfall-encounter/Kyrgyzstan/20191220_075956.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        
+        <pubDate>Sun, 22 Dec 2019 04:48:00 +0530</pubDate>
+        <link>
+        http://localhost:4000/Kyrgyzstan-the-first-snowfall-encounter</link>
+        <guid isPermaLink="true">http://localhost:4000/Kyrgyzstan-the-first-snowfall-encounter</guid>
+      </item>
+      
+    
+      
       <item>
         <title>The Road to Kingdom</title>
-        <description>&lt;h4&gt;Found somewhere on the media and definitely worth a read....&lt;/h4&gt;
+        
+          <description>&lt;h4&gt;Found somewhere on the media and definitely worth a read....&lt;/h4&gt;
 
-&lt;p&gt;There was a road to a kingdom, it had a big piece of rock in the middle of the road. People would pass by, the horses would break their kneels and carts would get blocked, but nobody did anything.
-&lt;/p&gt;
-
-&lt;p&gt;One fine day a girl was passing by carrying a caret of beers and she hit the rock really hard and fell. And you guessed it right, the casket fell down and all her brewed beer bottles fell down and broke, dust soaked it all and it was all gone. That was her family&#39;s last chance, they were hungry didn&#39;t have any money.
-&lt;/p&gt;
-
-&lt;p&gt;She sat there and cried but she wondered why the rock was still there for it to hurt someone else. So she dug up the rock in the road with her hands till they bled, used everything she had to pull it out. It took hours and then when she was gonna fill it up, she saw there something else, a bag of gold. The king put that rock in the middle of the road because he knew the person who dug it out - who did something deserves a reward - deserve to have their life changed for the good forever!!
-&lt;/p&gt;</description>
-        <pubDate>Thu, 23 Mar 2017 20:03:00 +0000</pubDate>
-        <link>https://hellodk.io///the_road_to_a_kingdom</link>
-        <guid isPermaLink="true">https://hellodk.io///the_road_to_a_kingdom</guid>
+</description>
         
-        <category>fiction</category>
-        
-        
-        <category>dk</category>
-        
+        <pubDate>Fri, 24 Mar 2017 01:33:00 +0530</pubDate>
+        <link>
+        http://localhost:4000/the_road_to_a_kingdom</link>
+        <guid isPermaLink="true">http://localhost:4000/the_road_to_a_kingdom</guid>
       </item>
+      
     
+      
       <item>
         <title>Kubernetes Cluster on Vagrant</title>
-        <description>&lt;p&gt;In this tutorial we will cover the installation of a Kubernetes Cluster over 3 virtual machines spawned using Virtualbox and Vagrant.
+        
+          <description>&lt;p&gt;In this tutorial we will cover the installation of a Kubernetes Cluster over 3 virtual machines spawned using Virtualbox and Vagrant.
 This can be also useful to install Kubernetes over Bare Metal server or any sort of Virtual Machines as well.
 &lt;/p&gt;
 
-&lt;h3&gt;Assumptions&lt;/h3&gt;
-&lt;ul&gt;
-	&lt;li&gt;Vagrant and Virtualbox are already installed.&lt;/li&gt;
-	&lt;li&gt;We have 3 Centos 7 virtual machines running.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;Pre-requisites&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Set the host-names for all 3 machines with the below commands&lt;/li&gt;
-&lt;ul&gt;
-	&lt;li style=&quot;color: #4233ff&quot;&gt;sudo hostnamectl set-hostname kubem&lt;/li&gt;
-    &lt;li style=&quot;color: #4233ff&quot;&gt;sudo hostnamectl set-hostname worker1&lt;/li&gt;
-    &lt;li style=&quot;color: #4233ff&quot;&gt;sudo hostnamectl set-hostname worker2&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;li&gt;Disable selinux&lt;/li&gt;
-&lt;ul&gt;
-    &lt;li style=&quot;color: #4233ff&quot;&gt;set selinux 0&lt;/li&gt;
-    &lt;li&gt;edit the file /etc/sysconfig/selinux and disable selinux&lt;/li&gt;
-    or use the below command directly to disable selinux
-    &lt;li style=&quot;color: #4233ff&quot;&gt;sudo sed -i s/^SELINUX=.*$/SELINUX=disabled/ /etc/selinux/config&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;li&gt;Disable swap memory&lt;/li&gt;
-&lt;ul&gt;
-	&lt;li style=&quot;color: #4233ff&quot;&gt;swapoff -a&lt;/li&gt;
-	&lt;li&gt;vim /etc/fstab&lt;/li&gt;
-	or
-	&lt;li style=&quot;color: #4233ff&quot;&gt;sudo sed -i &#39;/ swap / s/^\(.*\)$/#\1/g&#39; /etc/fstab&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;li&gt;Set net bridge  for proper traffic routing&lt;/li&gt;
-&lt;ul&gt;
-	&lt;li style=&quot;color: #4233ff&quot;&gt;cat &lt;&lt;EOF &gt;  /etc/sysctl.d/k8s.conf
-net.bridge.bridge-nf-call-ip6tables = 1
-net.bridge.bridge-nf-call-iptables = 1
-EOF&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;li &gt;Reload sysctl&lt;/li&gt;
-&lt;ul&gt;
-    &lt;li style=&quot;color: #4233ff&quot;&gt;sysctl --system&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;li&gt;Set DNS entries in /etc/hosts&lt;/li&gt;
-&lt;ul&gt;
-	&lt;li style=&quot;color: #4233ff&quot;&gt;192.168.10.60 kubem&lt;/li&gt;
-	&lt;li style=&quot;color: #4233ff&quot;&gt;192.168.10.61 worker1&lt;/li&gt;
-	&lt;li style=&quot;color: #4233ff&quot;&gt;192.168.10.62 worker2&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;li&gt;Docker Installation&lt;/li&gt;
-&lt;ul&gt;
-	&lt;li style=&quot;color: #4233ff&quot;&gt;yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo&lt;/li&gt;
-	&lt;li style=&quot;color: #4233ff&quot;&gt;yum update -y&lt;/li&gt;
-	&lt;li style=&quot;color: #4233ff&quot;&gt;yum install -y yum-utils device-mapper-persistent-data lvm2 -y&lt;/li&gt;
-	&lt;li style=&quot;color: #4233ff&quot;&gt;sudo yum install docker-ce -y&lt;/li&gt;
-	&lt;li style=&quot;color: #4233ff&quot;&gt;sudo yum install docker-ce -y&lt;/li&gt;
-	&lt;li style=&quot;color: #4233ff&quot;&gt;systemctl enable docker&lt;/li&gt;
-	&lt;li style=&quot;color: #4233ff&quot;&gt;systemctl start docker&lt;/li&gt;
-	&lt;li style=&quot;color: #4233ff&quot;&gt;systemctl status docker&lt;/li&gt;
-	&lt;li style=&quot;color: #4233ff&quot;&gt;systemctl status docker&lt;/li&gt;
-	&lt;li style=&quot;color: #4233ff&quot;&gt;docker version&lt;/li&gt;
-	&lt;li style=&quot;color: #4233ff&quot;&gt;docker info&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;li&gt;Installing kubelet, kubeadm, kubectl&lt;/li&gt;
-&lt;ul&gt;
-&lt;li style=&quot;color: #4233ff&quot;&gt;cat &lt;&lt;EOF &gt; /etc/yum.repos.d/kubernetes.repo
-[kubernetes]
-name=Kubernetes
-baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
-enabled=1
-gpgcheck=1
-repo_gpgcheck=1
-gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg
-        https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
-EOF
-&lt;/li&gt;
-&lt;li style=&quot;color: #4233ff&quot;&gt;yum install -y kubelet-1.15.1 kubeadm-1.15.1&lt;/li&gt;
-&lt;li style=&quot;color: #4233ff&quot;&gt;systemctl enable kubelet&lt;/li&gt;
-&lt;li style=&quot;color: #4233ff&quot;&gt;systemctl start kubelet&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;li&gt;Initialize the kubernetes cluster&lt;/li&gt;
-&lt;ul&gt;
-	&lt;li style=&quot;color: #4233ff&quot;&gt;kubeadm init --apiserver-advertise-address=172.31.19.193 --pod-network-cidr=10.244.0.0/16 --service-cidr=10.244.0.0/12&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;li&gt;Become Non-root user&lt;/li&gt;
-&lt;ul&gt;
-&lt;li style=&quot;color: #4233ff&quot;&gt;mkdir -p $HOME/.kube&lt;/li&gt;
-&lt;li style=&quot;color: #4233ff&quot;&gt;sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config&lt;/li&gt;
-&lt;li style=&quot;color: #4233ff&quot;&gt;sudo chown $(id -u):$(id -g) $HOME/.kube/config&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;li&gt;Creating the CNI and Dashboard:&lt;/li&gt;
-&lt;ul&gt;
-&lt;li style=&quot;color: #4233ff&quot;&gt;kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml&lt;/li&gt;
-&lt;li style=&quot;color: #4233ff&quot;&gt;kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/aio/deploy/recommended/kubernetes-dashboard.yaml&lt;/li&gt;
-&lt;li style=&quot;color: #4233ff&quot;&gt;kubectl -n kube-system edit service kubernetes-dashboard&lt;/li&gt;
-change from ClusterIP to NodePort
-&lt;li style=&quot;color: #4233ff&quot;&gt;kubectl describe services kubernetes-dashboard -n kube-system&lt;/li&gt;
-&lt;li style=&quot;color: #4233ff&quot;&gt;kubectl -n kube-system get secret&lt;/li&gt;
-&lt;li style=&quot;color: #4233ff&quot;&gt;kubectl -n kube-system describe secret namespace-contoller-token-xyxyx&lt;/li&gt;
-now use this token to login to the cluster IP&lt;/ul&gt;&lt;/EOF&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/EOF&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;</description>
-        <pubDate>Thu, 04 Feb 2016 12:30:00 +0000</pubDate>
-        <link>https://hellodk.io///kubernetes_cluster_vagrant</link>
-        <guid isPermaLink="true">https://hellodk.io///kubernetes_cluster_vagrant</guid>
+</description>
         
-        <category>tutorials</category>
-        
-        
-        <category>dk</category>
-        
+        <pubDate>Thu, 04 Feb 2016 18:00:00 +0530</pubDate>
+        <link>
+        http://localhost:4000/kubernetes_cluster_vagrant</link>
+        <guid isPermaLink="true">http://localhost:4000/kubernetes_cluster_vagrant</guid>
       </item>
+      
     
+      
+      <item>
+        <title>Author</title>
+        
+          <description>Too often we under-estimate the power of a touch, a smile, a kind word, a listening ear, an honest compliment, or the smallest act of caring, all of which have the potential to turn a life around. 
+The idea behind writing this blog/website is to connect to people and share my experiences with them.
+
+</description>
+        
+        <pubDate>Thu, 04 Feb 2016 18:00:00 +0530</pubDate>
+        <link>
+        http://localhost:4000/author</link>
+        <guid isPermaLink="true">http://localhost:4000/author</guid>
+      </item>
+      
+    
+      
       <item>
         <title>RethinkDb Installation on Ubuntu-14.04</title>
-        <description>Let&#39;s get some hands on rethinkdb today and find it out yourself. &lt;/br&gt;
+        
+          <description>Let's get some hands on rethinkdb today and find it out yourself. &lt;/br&gt;
 &lt;/br&gt;
 So what is rethinkdb?
 &lt;/br&gt;&lt;/br&gt;
 Rethinkdb is an open-source, scalable JSON database built from the ground up for the realtime web.
 &lt;/br&gt;RethinkDB inverts the traditional database architecture by exposing an exciting new access model – instead of polling for changes, the developer can tell RethinkDB to continuously push updated query results to applications in realtime. RethinkDB’s realtime push architecture dramatically reduces the time and effort necessary to build scalable realtime apps. RethinkDB also offers a flexible query language, intuitive operations and monitoring APIs, and is easy to setup and learn. Just like any other database solution, rethinkdb ships as a client-server component model. The installation process for both the server and the client are illustrated below:
 
-&lt;p&gt;How to Install RethinkDb:&lt;/p&gt;
-1. Add the RethinkDB PPA to your list of repositories : 
-&lt;br&gt;&lt;/br&gt;
-&lt;code&gt;source /etc/lsb-release &amp;&amp; echo &quot;deb http://download.rethinkdb.com/apt $DISTRIB_CODENAME main&quot; | sudo tee /etc/apt/sources.list.d/rethinkdb.list&lt;/code&gt;
-&lt;br&gt;&lt;/br&gt;
-2. Add the keys:&lt;br&gt;&lt;/br&gt;
-
-&lt;code&gt;wget -qO- http://download.rethinkdb.com/apt/pubkey.gpg | sudo apt-key add -&lt;/code&gt;
-&lt;br&gt;&lt;/br&gt;
-3. Update the repository:
-&lt;br&gt;&lt;/br&gt;
-&lt;code&gt;sudo apt-get update&lt;/code&gt;
-&lt;br&gt;&lt;/br&gt;
-4. Install the rethinkdb server via apt-get:
-&lt;br&gt;&lt;/br&gt;
-&lt;code&gt;sudo apt-get -y install rethinkdb&lt;/code&gt;
-&lt;br&gt;&lt;/br&gt;
-Install rethinkdb client:
-&lt;br&gt;&lt;/br&gt;
-1. Install the python-pip package:
-&lt;br&gt;&lt;/br&gt;
-&lt;code&gt;sudo apt-get install python-pip&lt;/code&gt;
-&lt;br&gt;&lt;/br&gt;
-2. Install the rethinkdb python client:
-&lt;br&gt;&lt;/br&gt;
-&lt;code&gt;sudo pip install rethinkdb&lt;/code&gt;
-&lt;br&gt;&lt;/br&gt;
-The above steps ensure that rethinkdb is installed on the system, while it does not ensures that this will start the rethinkdb service on system startup. You still need to start the rethinkdb service using the below command
-&lt;br&gt;&lt;/br&gt;
-&lt;code&gt;rethinkdb&lt;/code&gt;
-&lt;br&gt;&lt;/br&gt;
-The above command will ensure that rethinkdb is running as a terminal process, and will exit once the terminal is closed, or the process is killed, in short it will not run rethinkdb as a background service.
-&lt;br&gt;&lt;/br&gt;
-To start rethinkdb as a service, please follow the below steps:
-&lt;br&gt;&lt;/br&gt;
-1.  Move to the directory /etc/rethinkdb
-&lt;br&gt;&lt;/br&gt;&lt;code&gt;cd /etc/rethinkdb&lt;/code&gt;
-&lt;br&gt;&lt;/br&gt;
-2. Copy the file to /etc/rethinkdb/instances.d and rename the file as per your requirements ensuring the extension is .conf only. Say for example the file name is rethinkdb1.conf
-&lt;br&gt;&lt;/br&gt;&lt;code&gt;cp default.conf.sample rethinkdb1.conf&lt;/code&gt;
-&lt;br&gt;&lt;/br&gt;
-3. Now open the file /etc/rethinkdb/instances.d/rethinkdb1.conf and modify the paramaters as per your requirements.
-&lt;br&gt;&lt;/br&gt;&lt;code&gt;vim rethinkdb1.conf&lt;/code&gt;
-&lt;br&gt;&lt;/br&gt;
-4. If setting up a cluster, we suggest do change the server-name to somethink like &#39;rethinkdb-primary&#39; or &#39;rethinkdb-1&#39; or &#39;master&#39; or &#39;slave&#39;. This will ensure that we have a meaningful naming convention for our cluster.
-&lt;br&gt;&lt;/br&gt;
-5. The default port details are :
-&lt;br&gt;&lt;/br&gt;
-&lt;code&gt;29015 :&lt;/code&gt; Rethinkdb listens for intracluster connections
-&lt;/br&gt;
-&lt;code&gt;28015 :&lt;/code&gt; Rethinkdb listens for client driver connections
-&lt;/br&gt;
-&lt;code&gt;8080  :&lt;/code&gt; Rethinkdb listens for administrative HTTP connections
-&lt;/br&gt;
-&lt;code&gt;22    :&lt;/code&gt; For SSH. The server uses public key authentication.
-&lt;/br&gt;
-&lt;code&gt;80    :&lt;/code&gt; For HTTP. It is used during the setup process but otherwise redirects to HTTPS.
-&lt;/br&gt;
-&lt;code&gt;443   :&lt;/code&gt; For HTTPS. An Nginx server sits between RethinkDB and the world and provides basic HTTP authentication and secure HTTPS connections for the web UI
-&lt;br&gt;&lt;/br&gt;
-&lt;/body&gt;
-&lt;/html&gt;</description>
-        <pubDate>Thu, 04 Feb 2016 10:18:00 +0000</pubDate>
-        <link>https://hellodk.io///rethinkdb_installation_ubuntu14</link>
-        <guid isPermaLink="true">https://hellodk.io///rethinkdb_installation_ubuntu14</guid>
+</description>
         
-        <category>tutorials</category>
-        
-        
-        <category>dk</category>
-        
+        <pubDate>Thu, 04 Feb 2016 15:48:00 +0530</pubDate>
+        <link>
+        http://localhost:4000/rethinkdb_installation_ubuntu14</link>
+        <guid isPermaLink="true">http://localhost:4000/rethinkdb_installation_ubuntu14</guid>
       </item>
+      
     
+      
       <item>
         <title>Getting started with Cassandra</title>
-        <description>&lt;p&gt;The Growth of Big Data - Big Data is one of the key forces driving the growth and popularity of NoSQL for business. The almost limitless array of data collection technologies ranging from simple online actions to point of sale systems to GPS tools to smartphones and tablets to sophisticated sensors – and many more – act as force multipliers for data growth.
+        
+          <description>&lt;p&gt;The Growth of Big Data - Big Data is one of the key forces driving the growth and popularity of NoSQL for business. The almost limitless array of data collection technologies ranging from simple online actions to point of sale systems to GPS tools to smartphones and tablets to sophisticated sensors – and many more – act as force multipliers for data growth.
 &lt;/p&gt;
 
-In fact, one of the first reasons to use NoSQL is because you have a Big Data project to tackle. A Big Data project is normally typified by:
-&lt;ol&gt;
-  &lt;li&gt;&lt;i&gt;High data velocity&lt;/i&gt; – lots of data coming in very quickly, possibly from different locations.&lt;/li&gt;
-  &lt;li&gt;&lt;i&gt;Data variety&lt;/i&gt; – storage of data that is structured, semi-structured and unstructured.&lt;/li&gt;
-  &lt;li&gt;&lt;i&gt;Data volume&lt;/i&gt; – data that involves many terabytes or petabytes in size.     &lt;/li&gt;
-  &lt;li&gt;&lt;i&gt;Data complexity&lt;/i&gt; – data that is stored and managed in different locations or data centers.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;table style=&quot;width:100%&quot;&gt;
-  &lt;caption&gt;Comparison&lt;/caption&gt;
-  &lt;tr&gt;
-    &lt;th&gt;Datamodel&lt;/th&gt;
-    &lt;th&gt;Performance&lt;/th&gt;
-    &lt;th&gt;Scalability&lt;/th&gt;
-    &lt;th&gt;Flexibility&lt;/th&gt;
-    &lt;th&gt;Complexity&lt;/th&gt;
-    &lt;th&gt;Functionality&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;Key-value store&lt;/td&gt;&lt;td&gt;High&lt;/td&gt;&lt;td&gt;High&lt;/td&gt;&lt;td&gt;High&lt;/td&gt;&lt;td&gt;None&lt;/td&gt;&lt;td&gt;Variable (None)&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;Column Store&lt;/td&gt;&lt;td&gt;High&lt;/td&gt;&lt;td&gt;High&lt;/td&gt;&lt;td&gt;Loq&lt;/td&gt;&lt;td&gt;Moderate&lt;/td&gt;&lt;td&gt;Low Minimal&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;Document Store&lt;/td&gt;&lt;td&gt;High&lt;/td&gt;&lt;td&gt;Variable&lt;/td&gt;&lt;td&gt;High&lt;/td&gt;&lt;td&gt;Low&lt;/td&gt;&lt;td&gt;Variable&lt;/td&gt;
-  &lt;/tr&gt;
-    &lt;tr&gt;
-    &lt;td&gt;Graph Database&lt;/td&gt;&lt;td&gt;Variable&lt;/td&gt;&lt;td&gt;Variable&lt;/td&gt;&lt;td&gt;High&lt;/td&gt;&lt;td&gt;High&lt;/td&gt;&lt;td&gt;Graph Theory&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Cassandra is perfect for managing large amounts of structured, semi-structured, and unstructured data across multiple data centers and the cloud. Cassandra delivers continuous availability, linear scalability, and operational simplicity across many commodity servers with no single point of failure, along with a powerful dynamic data model designed for maximum flexibility and fast response times. Built-for-scale architecture means that it is capable of handling petabytes of information and thousands of concurrent users/operations per second.&lt;/p&gt;
-
-&lt;p&gt;An apache Software Foundation project, Cassandra is column oriented database and is an open source distributed database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure. Cassandra does not support joins or subqueries. Rather, Cassandra emphasizes denormalization through features like collections.&lt;/p&gt;
-
-Each node in a cluster can accept read and write requests, regardless of where the data is actually located in the cluster.
-
-When a node goes down, read/write requests can be served from other nodes in the network.
-
-&lt;p&gt;The key components of Cassandra are as follows:&lt;/p&gt;
-1. &lt;code&gt;Node&lt;/code&gt; − It is the place where data is stored.
-&lt;br/&gt;
-2. &lt;code&gt;Data center&lt;/code&gt; − It is a collection of related nodes.
-&lt;br/&gt;
-3. &lt;code&gt;Cluster&lt;/code&gt;− A cluster is a component that contains one or more data centers.
-&lt;br/&gt;
-4. &lt;code&gt;Commit log&lt;/code&gt; − The commit log is a crash-recovery mechanism in Cassandra. Every write operation is written to the commit log.
-&lt;br/&gt;
-5. &lt;code&gt;Mem-table&lt;/code&gt; − A mem-table is a memory-resident data structure. After commit log, the data will be written to the mem-table. Sometimes, for a single-column family, there will be multiple mem-tables.
-&lt;br/&gt;
-6. &lt;code&gt;SSTable&lt;/code&gt; − It is a disk file to which the data is flushed from the mem-table when its contents reach a threshold value.
-&lt;br/&gt;
-7. &lt;code&gt;Bloom filter&lt;/code&gt; − These are nothing but quick, nondeterministic, algorithms for testing whether an element is a member of a set. It is a special kind of cache. Bloom filters are accessed after every query.
-
-&lt;br/&gt;&lt;br/&gt;
-&lt;h5&gt;Commands:&lt;/h5&gt;
-&lt;code&gt;nodetool cfstats :&lt;/code&gt; displays statistics for each table and keyspace.
-&lt;br/&gt;
-&lt;code&gt;nodetool cfhistograms :&lt;/code&gt; provides statistics about a table, including read/write latency, row size, column count, and number of SSTables.
-&lt;br/&gt;
-&lt;code&gt;nodetool netstats :&lt;/code&gt; provides statistics about network operations and connections.
-&lt;br/&gt;
-&lt;code&gt;nodetool tpstats :&lt;/code&gt; provides statistics about the number of active, pending, and completed tasks for each stage of Cassandra operations by thread pool.
-&lt;br/&gt;
-&lt;code&gt;nodetool status :&lt;/code&gt;
-&lt;br/&gt;
-&lt;code&gt;cqlsh machine_ip&lt;/code&gt; -  connects to the machine cqlsh
-&lt;br/&gt;
-&lt;br/&gt;
-&lt;h5&gt;&lt;u&gt;cqlsh command list:&lt;/u&gt;&lt;/h5&gt;
-&lt;code&gt;HELP &lt;/code&gt; - Displays help topics for all cqlsh commands.
-&lt;br/&gt;
-&lt;code&gt;CAPTURE &lt;/code&gt; - Captures the output of a command and adds it to a file.
-&lt;br/&gt;
-&lt;code&gt;CONSISTENCY &lt;/code&gt; - Shows the current consistency level, or sets a new consistency level.
-&lt;br/&gt;
-&lt;code&gt;COPY &lt;/code&gt; - Copies data to and from Cassandra.
-&lt;br/&gt;
-&lt;code&gt;DESCRIBE &lt;/code&gt; - Describes the current cluster of Cassandra and its objects.
-&lt;br/&gt;
-&lt;code&gt;EXPAND &lt;/code&gt; - Expands the output of a query vertically.
-&lt;br/&gt;
-&lt;code&gt;EXIT &lt;/code&gt; - Using this command, you can terminate cqlsh.
-&lt;br/&gt;
-&lt;code&gt;PAGING &lt;/code&gt; - Enables or disables query paging.
-&lt;br/&gt;
-&lt;code&gt;SHOW &lt;/code&gt; - Displays the details of current cqlsh session such as Cassandra version, host, or data type assumptions.
-&lt;br/&gt;
-&lt;code&gt;SOURCE -&lt;/code&gt; Executes a file that contains CQL statements.
-&lt;br/&gt;
-&lt;code&gt;TRACING -&lt;/code&gt; Enables or disables request tracing.
-&lt;br/&gt;
-&lt;br/&gt;
-&lt;h5&gt;&lt;u&gt;Upgrading:&lt;/u&gt;&lt;/h5&gt;
-&lt;p&gt;To upgrade an existing cassandra installation, you can follow the below instructions:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;code&gt;mkdir ~/cassandra_backup&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;sudo cp -r /etc/cassandra/* ~/cassandra_backup&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;sudo vi /etc/cassandra/cassandra.yaml&lt;/code&gt; and edit num_tokens to 1 and uncomment the initial_token and set it to 1&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;nodetool upgradesstables&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;nodetool drain&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;sudo service cassandra stop&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;sudo cp -r /etc/cassandra/* ~/cassandra_backup_new&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;sudo apt-get install cassandra=2.1.12&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Open the old and new cassandra.yaml files and diff them.&lt;/li&gt;
-&lt;li&gt;Merge the diffs by hand, including the partitioner setting, from the old file into the new one.&lt;/li&gt;
-&lt;li&gt;Do not use the default partitioner setting in the new cassandra.yaml because it has changed in this release to the Murmur3Partitioner. The Murmur3Partitioner can only be used for new clusters. After data has been added to the cluster, you cannot change the partitioner without reworking tables, which is not practical. Use your old partitioner setting in the new cassandra.yaml file.&lt;/li&gt;
-&lt;li&gt;Save the file as cassandra.yaml.
-&lt;br/&gt;Configuration file &#39;/etc/cassandra/cassandra.yaml&#39;
- ==&gt; Modified (by you or by a script) since installation.
- ==&gt; Package distributor has shipped an updated version.
-   What would you like to do about it ?  Your options are:
-    Y or I  : install the package maintainer&#39;s version
-    N or O  : keep your currently-installed version
-      D     : show the differences between the versions
-      Z     : start a shell to examine the situation
- The default action is to keep your current version.
-*** cassandra.yaml (Y/I/N/O/D/Z) [default=N] ? &lt;/li&gt;
-&lt;/ol&gt;
-&lt;h5&gt;Inserting values into tables&lt;/h5&gt;
-&lt;code&gt;CREATE KEYSPACE key_space WITH replication = {
-  &#39;class&#39;: &#39;NetworkTopologyStrategy&#39;,
-  &#39;cdr_record&#39;: &#39;2&#39;
-};&lt;/code&gt;
-&lt;br/&gt;
-&lt;code&gt;INSERT INTO key_space.emp (emp_id,emp_city,emp_name,emp_phone,emp_sal) VALUES(3,&#39;Kolkata&#39;,&#39;Stag1&#39;,4412,60);&lt;/code&gt;
-&lt;br/&gt;
-&lt;code&gt;UPDATE TABLE emp(
-   emp_id int PRIMARY KEY,
-   emp_name text,
-   emp_city text,
-   emp_sal varint,
-   emp_phone varint);
-&lt;/code&gt;
-&lt;br/&gt;
-&lt;code&gt;INSERT INTO TABLE emp(emp_id int,emp_name,emp_city,emp_sal,emp_phone) VALUES(1,&#39;foo&#39;,&#39;Bangalore&#39;,24,1234567);&lt;/code&gt;
-&lt;br/&gt;
-&lt;h5&gt;Nodetool Command Set:&lt;/h5&gt;
-1. &lt;code&gt;nodetool status&lt;/code&gt;
-&lt;br/&gt;
-2. &lt;code&gt;nodetool info&lt;/code&gt;
-&lt;br/&gt;
-3. &lt;code&gt;nodetool -host 10.60.8.23 ring&lt;/code&gt;
-&lt;br/&gt;
 </description>
-        <pubDate>Thu, 28 Jan 2016 10:18:00 +0000</pubDate>
-        <link>https://hellodk.io///getting_familiar_with_cassandra</link>
-        <guid isPermaLink="true">https://hellodk.io///getting_familiar_with_cassandra</guid>
         
-        <category>tutorials</category>
-        
-        
-        <category>dk</category>
-        
+        <pubDate>Thu, 28 Jan 2016 15:48:00 +0530</pubDate>
+        <link>
+        http://localhost:4000/getting_familiar_with_cassandra</link>
+        <guid isPermaLink="true">http://localhost:4000/getting_familiar_with_cassandra</guid>
       </item>
+      
     
+      
       <item>
         <title>5 interesting cloud predictions for 2016</title>
-        <description>&lt;ol&gt;
-&lt;li&gt;It&amp;#39;s time for IOT-&lt;/li&gt;
-&lt;/ol&gt;
+        
+          <description>&lt;p&gt;####1. It’s time for IOT-&lt;/p&gt;
 
-&lt;p&gt;The IOT or the Internet of Things has been a buzzword around for quite some time. And finally the time has come for IOT to be on boom. It is predicted that by the end of 2016, there will be one billion connected devices.&lt;/p&gt;
-
-&lt;p&gt;The Internet of Things is all set to harness the awesomeness of Cloud computing this year. IOT and Cloud combined together breaks free all limitations. The duo combo can help right from analyzing the weather conditions at your home and water the plants to conducting major surgeries remotely to powering drones for military, logistics etc. and what not!!&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Cloud is expanding - AWS coming to India in 2016. Owing to the huge demand in the Indian sub-continent for Cloud services, AWS(Amazon Web Services)- one of the top cloud services provider has plans to setup India region in 2016. Do I still need to say anything more on this?&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;More and more startups will be focusing towards adapting cloud culture - Cloud is so versatile and flexible, it allows you to work from any corner of the world. Startups ideally do not have the infrastructure/resources to manage their own data-centers or hardware. Cloud provides then with Infrastructure as a Service at a very affordable rates, so they can focus more on their product.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Outcast for more flexible cloud apps – The need for more flexible cloud apps can not be denied. With the rise in clod computing, will come the rise for ease of accessibility. This will trigger quiet a lot of cloud apps to outcast in the near future, similar to AWS CLI.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;With the rise in better internet services and bandwidth in the second and third world&amp;#39;s Dockerization/containerization will be emerging as a critical technology and on rise and will soon be a critical component in deployments.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Security - Cloud security should be a major concern for everyone working on cloud/IOT. One should perform a security assessment before starting their design. For IOT&amp;#39;s, using an RTOS does not ensure security and neither does Encryption. One should ensure all attack vectors are addressed. Even if you are able to secure the cloud, rest assured it may not be enough because your device can still be compromised.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
 </description>
-        <pubDate>Thu, 28 Jan 2016 10:18:00 +0000</pubDate>
-        <link>https://hellodk.io///5_interesting_cloud_predictions_2016</link>
-        <guid isPermaLink="true">https://hellodk.io///5_interesting_cloud_predictions_2016</guid>
         
-        <category>tutorials</category>
-        
-        
-        <category>dk</category>
-        
+        <pubDate>Thu, 28 Jan 2016 15:48:00 +0530</pubDate>
+        <link>
+        http://localhost:4000/5_interesting_cloud_predictions_2016</link>
+        <guid isPermaLink="true">http://localhost:4000/5_interesting_cloud_predictions_2016</guid>
       </item>
+      
     
-      <item>
-        <title>Author</title>
-        <description>Too often we under-estimate the power of a touch, a smile, a kind word, a listening ear, an honest compliment, or the smallest act of caring, all of which have the potential to turn a life around. 
-The idea behind writing this blog/website is to connect to people and share my experiences with them.
-
-&lt;/br&gt;
-&lt;/br&gt;
-You can find my availability here from my calendar
-
-&lt;section class=&quot;post-content&quot; style=&quot;width: 100%; height: 400px;&quot;&gt;
-    &lt;iframe src=&quot;https://calendar.google.com/calendar/embed?src=hcb2b4c4iegm7p70eg2geeu7ck%40group.calendar.google.com&amp;ctz=Asia%2FKolkata&quot; style=&quot;border: 0&quot; width=&quot;100%&quot; height=&quot;100%&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
-&lt;/section&gt;
-&lt;/br&gt;
-&lt;p&gt;Found your slot?&lt;/p&gt;
-&lt;p&gt;I&#39;ll be happy to talk as per your preffered schedule and take this forward.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://calendly.com/hellodk&quot; target=&quot;_blank&quot;&gt;Block my calendar&lt;/a&gt;&lt;/p&gt;
-&lt;a href=&quot;https://calendar.google.com/calendar/embed?src=hcb2b4c4iegm7p70eg2geeu7ck%40group.calendar.google.com&amp;ctz=Asia%2FKolkata&quot; target=&quot;_blank&quot;&gt; Need a full screen view of the calendar?&lt;/a&gt;</description>
-        <pubDate>Mon, 28 Dec 2015 10:18:00 +0000</pubDate>
-        <link>https://hellodk.io///author</link>
-        <guid isPermaLink="true">https://hellodk.io///author</guid>
-        
-        <category>author</category>
-        
-        
-        <category>auhtor</category>
-        
-      </item>
-    
+      
       <item>
         <title>About</title>
-        <description>Too often we under-estimate the power of a touch, a smile, a kind word, a listening ear, an honest compliment, or the smallest act of caring, all of which have the potential to turn a life around. 
+        
+          <description>Too often we under-estimate the power of a touch, a smile, a kind word, a listening ear, an honest compliment, or the smallest act of caring, all of which have the potential to turn a life around. 
 The idea behind writing this blog/website is to connect to people and share my experiences with them.
 </description>
-        <pubDate>Mon, 28 Dec 2015 10:18:00 +0000</pubDate>
-        <link>https://hellodk.io///about</link>
-        <guid isPermaLink="true">https://hellodk.io///about</guid>
         
-        <category>about</category>
-        
-        
-        <category>about</category>
-        
+        <pubDate>Mon, 28 Dec 2015 15:48:00 +0530</pubDate>
+        <link>
+        http://localhost:4000/about</link>
+        <guid isPermaLink="true">http://localhost:4000/about</guid>
       </item>
+      
     
   </channel>
 </rss>

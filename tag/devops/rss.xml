@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>https://hellodk.io/</title>
+   
+   <link>http://localhost:4000</link>
+   <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
+   <language>en-uk</language>
+   <managingEditor> </managingEditor>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>EKS - The Sins we Committed</title>
+	  <link>//EKS-the-sins-we-commitred</link>
+	  <author></author>
+	  <pubDate>2021-09-02T15:48:00+05:30</pubDate>
+	  <guid>//EKS-the-sins-we-commitred</guid>
+	  <description><![CDATA[
+	     
+
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>Kubernetes Cluster on Vagrant</title>
+	  <link>//kubernetes_cluster_vagrant</link>
+	  <author></author>
+	  <pubDate>2016-02-04T18:00:00+05:30</pubDate>
+	  <guid>//kubernetes_cluster_vagrant</guid>
+	  <description><![CDATA[
+	     <p>In this tutorial we will cover the installation of a Kubernetes Cluster over 3 virtual machines spawned using Virtualbox and Vagrant.
+This can be also useful to install Kubernetes over Bare Metal server or any sort of Virtual Machines as well.
+</p>
+
+<h3>Assumptions</h3>
+<ul>
+	<li>Vagrant and Virtualbox are already installed.</li>
+	<li>We have 3 Centos 7 virtual machines running.</li>
+</ul>
+
+<h3>Pre-requisites</h3>
+<ul>
+<li>Set the host-names for all 3 machines with the below commands</li>
+<ul>
+	<li style="color: #4233ff">sudo hostnamectl set-hostname kubem</li>
+    <li style="color: #4233ff">sudo hostnamectl set-hostname worker1</li>
+    <li style="color: #4233ff">sudo hostnamectl set-hostname worker2</li>
+</ul>
+
+<li>Disable selinux</li>
+<ul>
+    <li style="color: #4233ff">set selinux 0</li>
+    <li>edit the file /etc/sysconfig/selinux and disable selinux</li>
+    or use the below command directly to disable selinux
+    <li style="color: #4233ff">sudo sed -i s/^SELINUX=.*$/SELINUX=disabled/ /etc/selinux/config</li>
+</ul>
+
+<li>Disable swap memory</li>
+<ul>
+	<li style="color: #4233ff">swapoff -a</li>
+	<li>vim /etc/fstab</li>
+	or
+	<li style="color: #4233ff">sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab</li>
+</ul>
+
+<li>Set net bridge  for proper traffic routing</li>
+<ul>
+	<li style="color: #4233ff">cat <<EOF >  /etc/sysctl.d/k8s.conf
+net.bridge.bridge-nf-call-ip6tables = 1
+net.bridge.bridge-nf-call-iptables = 1
+EOF</li>
+</ul>
+
+<li >Reload sysctl</li>
+<ul>
+    <li style="color: #4233ff">sysctl --system</li>
+</ul>
+
+<li>Set DNS entries in /etc/hosts</li>
+<ul>
+	<li style="color: #4233ff">192.168.10.60 kubem</li>
+	<li style="color: #4233ff">192.168.10.61 worker1</li>
+	<li style="color: #4233ff">192.168.10.62 worker2</li>
+</ul>
+
+<li>Docker Installation</li>
+<ul>
+	<li style="color: #4233ff">yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo</li>
+	<li style="color: #4233ff">yum update -y</li>
+	<li style="color: #4233ff">yum install -y yum-utils device-mapper-persistent-data lvm2 -y</li>
+	<li style="color: #4233ff">sudo yum install docker-ce -y</li>
+	<li style="color: #4233ff">sudo yum install docker-ce -y</li>
+	<li style="color: #4233ff">systemctl enable docker</li>
+	<li style="color: #4233ff">systemctl start docker</li>
+	<li style="color: #4233ff">systemctl status docker</li>
+	<li style="color: #4233ff">systemctl status docker</li>
+	<li style="color: #4233ff">docker version</li>
+	<li style="color: #4233ff">docker info</li>
+</ul>
+
+<li>Installing kubelet, kubeadm, kubectl</li>
+<ul>
+<li style="color: #4233ff">cat <<EOF > /etc/yum.repos.d/kubernetes.repo
+[kubernetes]
+name=Kubernetes
+baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+enabled=1
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg
+        https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+EOF
+</li>
+<li style="color: #4233ff">yum install -y kubelet-1.15.1 kubeadm-1.15.1</li>
+<li style="color: #4233ff">systemctl enable kubelet</li>
+<li style="color: #4233ff">systemctl start kubelet</li>
+</ul>
+
+<li>Initialize the kubernetes cluster</li>
+<ul>
+	<li style="color: #4233ff">kubeadm init --apiserver-advertise-address=172.31.19.193 --pod-network-cidr=10.244.0.0/16 --service-cidr=10.244.0.0/12</li>
+</ul>
+
+<li>Become Non-root user</li>
+<ul>
+<li style="color: #4233ff">mkdir -p $HOME/.kube</li>
+<li style="color: #4233ff">sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config</li>
+<li style="color: #4233ff">sudo chown $(id -u):$(id -g) $HOME/.kube/config</li>
+</ul>
+
+<li>Creating the CNI and Dashboard:</li>
+<ul>
+<li style="color: #4233ff">kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml</li>
+<li style="color: #4233ff">kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/aio/deploy/recommended/kubernetes-dashboard.yaml</li>
+<li style="color: #4233ff">kubectl -n kube-system edit service kubernetes-dashboard</li>
+change from ClusterIP to NodePort
+<li style="color: #4233ff">kubectl describe services kubernetes-dashboard -n kube-system</li>
+<li style="color: #4233ff">kubectl -n kube-system get secret</li>
+<li style="color: #4233ff">kubectl -n kube-system describe secret namespace-contoller-token-xyxyx</li>
+now use this token to login to the cluster IP</ul></EOF></li></ul></EOF></li></ul></ul>
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>RethinkDb Installation on Ubuntu-14.04</title>
+	  <link>//rethinkdb_installation_ubuntu14</link>
+	  <author></author>
+	  <pubDate>2016-02-04T15:48:00+05:30</pubDate>
+	  <guid>//rethinkdb_installation_ubuntu14</guid>
+	  <description><![CDATA[
+	     Let's get some hands on rethinkdb today and find it out yourself. </br>
+</br>
+So what is rethinkdb?
+</br></br>
+Rethinkdb is an open-source, scalable JSON database built from the ground up for the realtime web.
+</br>RethinkDB inverts the traditional database architecture by exposing an exciting new access model – instead of polling for changes, the developer can tell RethinkDB to continuously push updated query results to applications in realtime. RethinkDB’s realtime push architecture dramatically reduces the time and effort necessary to build scalable realtime apps. RethinkDB also offers a flexible query language, intuitive operations and monitoring APIs, and is easy to setup and learn. Just like any other database solution, rethinkdb ships as a client-server component model. The installation process for both the server and the client are illustrated below:
+
+<p>How to Install RethinkDb:</p>
+1. Add the RethinkDB PPA to your list of repositories : 
+<br></br>
+<code>source /etc/lsb-release && echo "deb http://download.rethinkdb.com/apt $DISTRIB_CODENAME main" | sudo tee /etc/apt/sources.list.d/rethinkdb.list</code>
+<br></br>
+2. Add the keys:<br></br>
+
+<code>wget -qO- http://download.rethinkdb.com/apt/pubkey.gpg | sudo apt-key add -</code>
+<br></br>
+3. Update the repository:
+<br></br>
+<code>sudo apt-get update</code>
+<br></br>
+4. Install the rethinkdb server via apt-get:
+<br></br>
+<code>sudo apt-get -y install rethinkdb</code>
+<br></br>
+Install rethinkdb client:
+<br></br>
+1. Install the python-pip package:
+<br></br>
+<code>sudo apt-get install python-pip</code>
+<br></br>
+2. Install the rethinkdb python client:
+<br></br>
+<code>sudo pip install rethinkdb</code>
+<br></br>
+The above steps ensure that rethinkdb is installed on the system, while it does not ensures that this will start the rethinkdb service on system startup. You still need to start the rethinkdb service using the below command
+<br></br>
+<code>rethinkdb</code>
+<br></br>
+The above command will ensure that rethinkdb is running as a terminal process, and will exit once the terminal is closed, or the process is killed, in short it will not run rethinkdb as a background service.
+<br></br>
+To start rethinkdb as a service, please follow the below steps:
+<br></br>
+1.  Move to the directory /etc/rethinkdb
+<br></br><code>cd /etc/rethinkdb</code>
+<br></br>
+2. Copy the file to /etc/rethinkdb/instances.d and rename the file as per your requirements ensuring the extension is .conf only. Say for example the file name is rethinkdb1.conf
+<br></br><code>cp default.conf.sample rethinkdb1.conf</code>
+<br></br>
+3. Now open the file /etc/rethinkdb/instances.d/rethinkdb1.conf and modify the paramaters as per your requirements.
+<br></br><code>vim rethinkdb1.conf</code>
+<br></br>
+4. If setting up a cluster, we suggest do change the server-name to somethink like 'rethinkdb-primary' or 'rethinkdb-1' or 'master' or 'slave'. This will ensure that we have a meaningful naming convention for our cluster.
+<br></br>
+5. The default port details are :
+<br></br>
+<code>29015 :</code> Rethinkdb listens for intracluster connections
+</br>
+<code>28015 :</code> Rethinkdb listens for client driver connections
+</br>
+<code>8080  :</code> Rethinkdb listens for administrative HTTP connections
+</br>
+<code>22    :</code> For SSH. The server uses public key authentication.
+</br>
+<code>80    :</code> For HTTP. It is used during the setup process but otherwise redirects to HTTPS.
+</br>
+<code>443   :</code> For HTTPS. An Nginx server sits between RethinkDB and the world and provides basic HTTP authentication and secure HTTPS connections for the web UI
+<br></br>
+</body>
+</html>
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>Getting started with Cassandra</title>
+	  <link>//getting_familiar_with_cassandra</link>
+	  <author></author>
+	  <pubDate>2016-01-28T15:48:00+05:30</pubDate>
+	  <guid>//getting_familiar_with_cassandra</guid>
+	  <description><![CDATA[
+	     <p>The Growth of Big Data - Big Data is one of the key forces driving the growth and popularity of NoSQL for business. The almost limitless array of data collection technologies ranging from simple online actions to point of sale systems to GPS tools to smartphones and tablets to sophisticated sensors – and many more – act as force multipliers for data growth.
+</p>
+
+In fact, one of the first reasons to use NoSQL is because you have a Big Data project to tackle. A Big Data project is normally typified by:
+<ol>
+  <li><i>High data velocity</i> – lots of data coming in very quickly, possibly from different locations.</li>
+  <li><i>Data variety</i> – storage of data that is structured, semi-structured and unstructured.</li>
+  <li><i>Data volume</i> – data that involves many terabytes or petabytes in size.     </li>
+  <li><i>Data complexity</i> – data that is stored and managed in different locations or data centers.</li>
+</ol>
+
+<table style="width:100%">
+  <caption>Comparison</caption>
+  <tr>
+    <th>Datamodel</th>
+    <th>Performance</th>
+    <th>Scalability</th>
+    <th>Flexibility</th>
+    <th>Complexity</th>
+    <th>Functionality</th>
+  </tr>
+  <tr>
+    <td>Key-value store</td><td>High</td><td>High</td><td>High</td><td>None</td><td>Variable (None)</td>
+  </tr>
+  <tr>
+    <td>Column Store</td><td>High</td><td>High</td><td>Loq</td><td>Moderate</td><td>Low Minimal</td>
+  </tr>
+  <tr>
+    <td>Document Store</td><td>High</td><td>Variable</td><td>High</td><td>Low</td><td>Variable</td>
+  </tr>
+    <tr>
+    <td>Graph Database</td><td>Variable</td><td>Variable</td><td>High</td><td>High</td><td>Graph Theory</td>
+  </tr>
+</table>
+
+<p>Cassandra is perfect for managing large amounts of structured, semi-structured, and unstructured data across multiple data centers and the cloud. Cassandra delivers continuous availability, linear scalability, and operational simplicity across many commodity servers with no single point of failure, along with a powerful dynamic data model designed for maximum flexibility and fast response times. Built-for-scale architecture means that it is capable of handling petabytes of information and thousands of concurrent users/operations per second.</p>
+
+<p>An apache Software Foundation project, Cassandra is column oriented database and is an open source distributed database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure. Cassandra does not support joins or subqueries. Rather, Cassandra emphasizes denormalization through features like collections.</p>
+
+Each node in a cluster can accept read and write requests, regardless of where the data is actually located in the cluster.
+
+When a node goes down, read/write requests can be served from other nodes in the network.
+
+<p>The key components of Cassandra are as follows:</p>
+1. <code>Node</code> − It is the place where data is stored.
+<br/>
+2. <code>Data center</code> − It is a collection of related nodes.
+<br/>
+3. <code>Cluster</code>− A cluster is a component that contains one or more data centers.
+<br/>
+4. <code>Commit log</code> − The commit log is a crash-recovery mechanism in Cassandra. Every write operation is written to the commit log.
+<br/>
+5. <code>Mem-table</code> − A mem-table is a memory-resident data structure. After commit log, the data will be written to the mem-table. Sometimes, for a single-column family, there will be multiple mem-tables.
+<br/>
+6. <code>SSTable</code> − It is a disk file to which the data is flushed from the mem-table when its contents reach a threshold value.
+<br/>
+7. <code>Bloom filter</code> − These are nothing but quick, nondeterministic, algorithms for testing whether an element is a member of a set. It is a special kind of cache. Bloom filters are accessed after every query.
+
+<br/><br/>
+<h5>Commands:</h5>
+<code>nodetool cfstats :</code> displays statistics for each table and keyspace.
+<br/>
+<code>nodetool cfhistograms :</code> provides statistics about a table, including read/write latency, row size, column count, and number of SSTables.
+<br/>
+<code>nodetool netstats :</code> provides statistics about network operations and connections.
+<br/>
+<code>nodetool tpstats :</code> provides statistics about the number of active, pending, and completed tasks for each stage of Cassandra operations by thread pool.
+<br/>
+<code>nodetool status :</code>
+<br/>
+<code>cqlsh machine_ip</code> -  connects to the machine cqlsh
+<br/>
+<br/>
+<h5><u>cqlsh command list:</u></h5>
+<code>HELP </code> - Displays help topics for all cqlsh commands.
+<br/>
+<code>CAPTURE </code> - Captures the output of a command and adds it to a file.
+<br/>
+<code>CONSISTENCY </code> - Shows the current consistency level, or sets a new consistency level.
+<br/>
+<code>COPY </code> - Copies data to and from Cassandra.
+<br/>
+<code>DESCRIBE </code> - Describes the current cluster of Cassandra and its objects.
+<br/>
+<code>EXPAND </code> - Expands the output of a query vertically.
+<br/>
+<code>EXIT </code> - Using this command, you can terminate cqlsh.
+<br/>
+<code>PAGING </code> - Enables or disables query paging.
+<br/>
+<code>SHOW </code> - Displays the details of current cqlsh session such as Cassandra version, host, or data type assumptions.
+<br/>
+<code>SOURCE -</code> Executes a file that contains CQL statements.
+<br/>
+<code>TRACING -</code> Enables or disables request tracing.
+<br/>
+<br/>
+<h5><u>Upgrading:</u></h5>
+<p>To upgrade an existing cassandra installation, you can follow the below instructions:</p>
+<ol>
+<li><code>mkdir ~/cassandra_backup</code></li>
+<li><code>sudo cp -r /etc/cassandra/* ~/cassandra_backup</code></li>
+<li><code>sudo vi /etc/cassandra/cassandra.yaml</code> and edit num_tokens to 1 and uncomment the initial_token and set it to 1</li>
+<li><code>nodetool upgradesstables</code></li>
+<li><code>nodetool drain</code></li>
+<li><code>sudo service cassandra stop</code></li>
+<li><code>sudo cp -r /etc/cassandra/* ~/cassandra_backup_new</code></li>
+<li><code>sudo apt-get install cassandra=2.1.12</code></li>
+<li>Open the old and new cassandra.yaml files and diff them.</li>
+<li>Merge the diffs by hand, including the partitioner setting, from the old file into the new one.</li>
+<li>Do not use the default partitioner setting in the new cassandra.yaml because it has changed in this release to the Murmur3Partitioner. The Murmur3Partitioner can only be used for new clusters. After data has been added to the cluster, you cannot change the partitioner without reworking tables, which is not practical. Use your old partitioner setting in the new cassandra.yaml file.</li>
+<li>Save the file as cassandra.yaml.
+<br/>Configuration file '/etc/cassandra/cassandra.yaml'
+ ==> Modified (by you or by a script) since installation.
+ ==> Package distributor has shipped an updated version.
+   What would you like to do about it ?  Your options are:
+    Y or I  : install the package maintainer's version
+    N or O  : keep your currently-installed version
+      D     : show the differences between the versions
+      Z     : start a shell to examine the situation
+ The default action is to keep your current version.
+*** cassandra.yaml (Y/I/N/O/D/Z) [default=N] ? </li>
+</ol>
+<h5>Inserting values into tables</h5>
+<code>CREATE KEYSPACE key_space WITH replication = {
+  'class': 'NetworkTopologyStrategy',
+  'cdr_record': '2'
+};</code>
+<br/>
+<code>INSERT INTO key_space.emp (emp_id,emp_city,emp_name,emp_phone,emp_sal) VALUES(3,'Kolkata','Stag1',4412,60);</code>
+<br/>
+<code>UPDATE TABLE emp(
+   emp_id int PRIMARY KEY,
+   emp_name text,
+   emp_city text,
+   emp_sal varint,
+   emp_phone varint);
+</code>
+<br/>
+<code>INSERT INTO TABLE emp(emp_id int,emp_name,emp_city,emp_sal,emp_phone) VALUES(1,'foo','Bangalore',24,1234567);</code>
+<br/>
+<h5>Nodetool Command Set:</h5>
+1. <code>nodetool status</code>
+<br/>
+2. <code>nodetool info</code>
+<br/>
+3. <code>nodetool -host 10.60.8.23 ring</code>
+<br/>
+
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>5 interesting cloud predictions for 2016</title>
+	  <link>//5_interesting_cloud_predictions_2016</link>
+	  <author></author>
+	  <pubDate>2016-01-28T15:48:00+05:30</pubDate>
+	  <guid>//5_interesting_cloud_predictions_2016</guid>
+	  <description><![CDATA[
+	     <p>####1. It’s time for IOT-</p>
+
+<p>The IOT or the Internet of Things has been a buzzword around for quite some time. And finally the time has come for IOT to be on boom. It is predicted that by the end of 2016, there will be one billion connected devices.</p>
+
+<p>The Internet of Things is all set to harness the awesomeness of Cloud computing this year. IOT and Cloud combined together breaks free all limitations. The duo combo can help right from analyzing the weather conditions at your home and water the plants to conducting major surgeries remotely to powering drones for military, logistics etc. and what not!!</p>
+
+<p>####2. Cloud is expanding -
+AWS coming to India in 2016. Owing to the huge demand in the Indian sub-continent for Cloud services, AWS(Amazon Web Services)- one of the top cloud services provider has plans to setup India region in 2016. Do I still need to say anything more on this?</p>
+
+<p>More and more startups will be focusing towards adapting cloud culture - Cloud is so versatile and flexible, it allows you to work from any corner of the world. Startups ideally do not have the infrastructure/resources to manage their own data-centers or hardware. Cloud provides then with Infrastructure as a Service at a very affordable rates, so they can focus more on their product.</p>
+
+<p>####3. Outcast for more flexible cloud apps –
+The need for more flexible cloud apps can not be denied. With the rise in clod computing, will come the rise for ease of accessibility. This will trigger quiet a lot of cloud apps to outcast in the near future, similar to AWS CLI.</p>
+
+<p>####4. Rise of Containerization
+With the rise in better internet services and bandwidth in the second and third world’s Dockerization/containerization will be emerging as a critical technology and on rise and will soon be a critical component in deployments.</p>
+
+<p>####5. Security
+Cloud security should be a major concern for everyone working on cloud/IOT. One should perform a security assessment before starting their design. For IOT’s, using an RTOS does not ensure security and neither does Encryption. One should ensure all attack vectors are addressed. Even if you are able to secure the cloud, rest assured it may not be enough because your device can still be compromised.</p>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>

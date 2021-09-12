@@ -5,17 +5,17 @@
    
       <title>https://hellodk.io/</title>
    
-   <link>https://hellodk.io/</link>
+   <link>http://localhost:4000</link>
    <description>A beautiful narrative written over an elegant publishing platform. The story begins here...</description>
    <language>en-uk</language>
-   <managingEditor> Deepak Gupta</managingEditor>
+   <managingEditor> </managingEditor>
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
 	  <title>About</title>
 	  <link>//about</link>
-	  <author>Deepak Gupta</author>
-	  <pubDate>2015-12-28T10:18:00+00:00</pubDate>
+	  <author></author>
+	  <pubDate>2015-12-28T15:48:00+05:30</pubDate>
 	  <guid>//about</guid>
 	  <description><![CDATA[
 	     Too often we under-estimate the power of a touch, a smile, a kind word, a listening ear, an honest compliment, or the smallest act of caring, all of which have the potential to turn a life around. 
