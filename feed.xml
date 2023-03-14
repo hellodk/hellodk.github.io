@@ -8,6 +8,21 @@
     
       
       <item>
+        <title>How to deploy Jenkins with SSL</title>
+        
+          <description>&lt;p&gt;It has been quiet sometime since I got my hands dirty, so here we go today!! Recently we had a use-case where we needed to setup a Jenkins server on a public network for some POC and we as DevOps could not bear the fact that the traffic exiting from our network is in plain text. Hence we wanted to do something about it and we would like to share our view point on how did we achieved this goal.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 14 Mar 2023 15:48:00 +0530</pubDate>
+        <link>
+        http://localhost:4000/jenkins_installation_ssl</link>
+        <guid isPermaLink="true">http://localhost:4000/jenkins_installation_ssl</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>Upgrading Sublime Text</title>
         
           <description>&lt;h3 id=&quot;upgrade-your-sublime-text-with-the-below-steps&quot;&gt;Upgrade your Sublime Text with the below steps&lt;/h3&gt;
