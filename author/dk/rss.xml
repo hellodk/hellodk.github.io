@@ -12,6 +12,36 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>How to achieve CI CD on Mobile Applications</title>
+	  <link>//mobile_ci_cd</link>
+	  <author></author>
+	  <pubDate>2023-03-16T12:04:00+05:30</pubDate>
+	  <guid>//mobile_ci_cd</guid>
+	  <description><![CDATA[
+	     <h5 id="lets-take-a-stroll-over-the-different-terminologies-we-may-come-across-during-our-journey-of-mobile-ci-cd">Let’s take a stroll over the different terminologies we may come across during our journey of Mobile CI CD</h5>
+
+<ul>
+  <li>Dynamic Instrumentation</li>
+</ul>
+
+<p>Dynamic instrumentation is the technique to tweak the application at runtime and analyze the application behaviour.</p>
+
+<p>This application tweaking is done through the injection of instrumentation code.
+Essentially we are allowed to execute our debug scripts inside another process.</p>
+
+<p>They are mainly two different types of instrumentation - Embedded, and injection
+Embedded instrumentation can be done by patching the binary application with our instrumentation agent in the form of a shared library, dll, and dylib
+Whereas injection will spawn the instrumentation agent as a process and will inject into the runtime environment like Android Zygote. The main reason to choose one over another is that only embedded can successfully run in a jailed environment</p>
+
+<p>There are mutilple tools that canbe used for dynamic instrumentation:</p>
+<ol>
+  <li>Frida</li>
+</ol>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>How to deploy Jenkins with SSL</title>
 	  <link>//jenkins_installation_ssl</link>
 	  <author></author>
@@ -186,11 +216,13 @@ p.big {
 HDFC Bank Limited is an Indian banking and financial services company headquartered in Mumbai. It is India's largest private sector bank by assets and world's 10th largest bank by market capitalisation as of April 2021. I am contributing to the below areas
 <ul>
 	<li>Defining secure CI/CD worlflow architecture(OSA, SAST, Container Trust Registry, DAST)</li>
-	<li>Writing IAAC</li>
+	<li>Writing IAAC for k8s, rabbitmq, kafka, nginx etc.</li>
 	<li>Detecting security issues with applications by Implementing Policy as a code</li>
 	<li>Monitoring systems with Prometheus, Grafana, Graphite, ELK</li>
 	<li>MLOps Implementation using kubeflow</li>
 	<li>Mobile CI CD Implementation for Android and iOS using Fastlane, Flutter, Bitrise.io</li>
+	<li>Implementation of Distroless and Multistage image builds across applications</li>
+	<li>Writing kubernetes CRD's for internal applications</li>
 </ul>
 </p>
 

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- Page Meta -->
-    <title>Curiosity is the most powerful thing you own</title>
+    <title>How to achieve CI CD on Mobile Applications</title>
     <meta name="description" content="A beautiful narrative written over an elegant publishing platform. The story begins here..." />
 
     <!-- Mobile Meta -->
@@ -26,31 +26,31 @@
     <style>.hljs { background: none; }</style>
 
     <!-- Ghost outputs important style and meta data with this tag -->
-        <link rel="canonical" href="http://localhost:4000//tag/hellodk/" />
+        <link rel="canonical" href="http://localhost:4000//mobile_ci_cd" />
     <meta name="referrer" content="origin" />
     <link rel="next" href="/page2/" />
 
     <meta property="og:site_name" content="Curiosity is the most powerful thing you own" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Curiosity is the most powerful thing you own" />
+    <meta property="og:title" content="How to achieve CI CD on Mobile Applications" />
     <meta property="og:description" content="A beautiful narrative written over an elegant publishing platform. The story begins here..." />
-    <meta property="og:url" content="http://localhost:4000//tag/hellodk/" />
-    <meta property="og:image" content="/assets/images/cover2.jpg" />
+    <meta property="og:url" content="http://localhost:4000//mobile_ci_cd" />
+    <meta property="og:image" content="/assets/images/jenkins/jenkins.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Curiosity is the most powerful thing you own" />
+    <meta name="twitter:title" content="How to achieve CI CD on Mobile Applications" />
     <meta name="twitter:description" content="A beautiful narrative written over an elegant publishing platform. The story begins here..." />
-    <meta name="twitter:url" content="http://localhost:4000//tag/hellodk/" />
-    <meta name="twitter:image:src" content="/assets/images/cover2.jpg" />
+    <meta name="twitter:url" content="http://localhost:4000//mobile_ci_cd" />
+    <meta name="twitter:image:src" content="/assets/images/jenkins/jenkins.png" />
 
     <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "Website",
     "publisher": "Curiosity is the most powerful thing you own",
-    "name": "Curiosity is the most powerful thing you own",
-    "url": "http://localhost:4000//tag/hellodk/",
-    "image": "/assets/images/cover2.jpg",
+    "name": "How to achieve CI CD on Mobile Applications",
+    "url": "http://localhost:4000//mobile_ci_cd",
+    "image": "/assets/images/jenkins/jenkins.png",
     "description": "A beautiful narrative written over an elegant publishing platform. The story begins here..."
 }
     </script>
@@ -60,7 +60,7 @@
 
 
 </head>
-<body class="tag-template nav-closed">
+<body class="home-template nav-closed">
 
     <!-- The blog navigation links -->
     <div class="nav">
@@ -88,64 +88,35 @@
     <div class="site-wrapper">
 
         <!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
-        <!-- dynamically overriding backgrounds for tags as well as descriptions -->
+        <!-- default -->
 
+<!-- The comment above "< default" means - insert everything in this file into -->
+    <!-- the [body] of the default.hbs template, which contains our header/footer. -->
 
-<!-- default -->
-<!-- The tag above means - insert everything in this file into the [body] of the default.hbs template -->
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
 
-<!-- If we have a tag cover, display that - else blog cover - else nothing -->
-<header class="main-header tag-head " style="background-image: url(/assets/images/cover2.jpg) ">
-    <nav class="main-nav overlay clearfix">
+<header class="main-header post-head " style="background-image: url(/assets/images/jenkins/jenkins.png) ">
+    <nav class="main-nav  overlay  clearfix">
         <a class="blog-logo" href="/"><img src="/assets/images/utilities/home_icon.png" alt="Blog Logo" /></a>
         
             <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
         
     </nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">Hellodk</h1>
-            <h2 class="page-description">
-            
-			    A 3-post collection
-            
-            </h2>
-        </div>
-    </div>
 </header>
 
-<!-- The main content area on the homepage -->
-<main id="content" class="content" role="main">
+<main class="content" role="main">
 
-    <!-- The tag below includes the post loop - partials/loop.hbs -->
-        <!-- Previous/next page links - only displayed on page 2+ -->
-    <div class="extra-pagination inner">
-        
-            <nav class="pagination" role="pagination">
-    
-    <span class="page-number"> Page 1 of 1 </span>
-     
-</nav>
-        
-    </div>
+    <article class="post tag-tutorials">
 
-    <!-- This is the post loop - each post will be output using this markup -->
-    
-    <article class="post">
         <header class="post-header">
-            <h2 class="post-title"><a href="/mobile_ci_cd">How to achieve CI CD on Mobile Applications</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p>Let’s take a stroll over the different terminologies we may come across during our journey of Mobile CI CD Dynamic Instrumentation Dynamic instrumentation is the technique... <a class="read-more" href="/mobile_ci_cd">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            
-                
+            <h1 class="post-title">How to achieve CI CD on Mobile Applications</h1>
+            <section class="post-meta">
+            <!-- <a href='/'></a> -->
 
-                <img class="author-thumb" src="/assets/images/dk_profile.jpg" alt="Author image" nopin="nopin" />
-                <!-- author -->
-                <a href='/author/hellodk'>Deepak Gupta</a>
-
+            
+                
+                    <a href='/author/hellodk'>Deepak Gupta</a>
                 
             
                 
@@ -158,9 +129,9 @@
             
                 
             
-
-            <!-- [[tags prefix=" on "]] -->
-            
+            <time class="post-date" datetime="2023-03-16">16 Mar 2023</time>
+                <!-- [[tags prefix=" on "]] -->
+                
                 on
                 
                     
@@ -195,26 +166,76 @@
                        <a href='/tag/hellodk'>Hellodk</a>
                     
                 
-            
-            <time class="post-date" datetime="2023-03-16">16 Mar 2023</time>
-        </footer>
-    </article>
-    
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="/jenkins_installation_ssl">How to deploy Jenkins with SSL</a></h2>
+                
+            </section>
         </header>
-        <section class="post-excerpt">
-            <p>It has been quiet sometime since I got my hands dirty, so here we go today!! Recently we had a use-case where we needed to setup... <a class="read-more" href="/jenkins_installation_ssl">&raquo;</a></p>
+
+        <section class="post-content">
+
+            <h5 id="lets-take-a-stroll-over-the-different-terminologies-we-may-come-across-during-our-journey-of-mobile-ci-cd">Let’s take a stroll over the different terminologies we may come across during our journey of Mobile CI CD</h5>
+
+<ul>
+  <li>Dynamic Instrumentation</li>
+</ul>
+
+<p>Dynamic instrumentation is the technique to tweak the application at runtime and analyze the application behaviour.</p>
+
+<p>This application tweaking is done through the injection of instrumentation code.
+Essentially we are allowed to execute our debug scripts inside another process.</p>
+
+<p>They are mainly two different types of instrumentation - Embedded, and injection
+Embedded instrumentation can be done by patching the binary application with our instrumentation agent in the form of a shared library, dll, and dylib
+Whereas injection will spawn the instrumentation agent as a process and will inject into the runtime environment like Android Zygote. The main reason to choose one over another is that only embedded can successfully run in a jailed environment</p>
+
+<p>There are mutilple tools that canbe used for dynamic instrumentation:</p>
+<ol>
+  <li>Frida</li>
+</ol>
+
+
         </section>
-        <footer class="post-meta">
-            
-                
 
-                <img class="author-thumb" src="/assets/images/dk_profile.jpg" alt="Author image" nopin="nopin" />
-                <!-- author -->
-                <a href='/author/hellodk'>Deepak Gupta</a>
+        <footer class="post-footer">
 
+            <!-- Everything inside the #author tags pulls data from the author -->
+            <!-- #author-->
+            
+                
+                    
+                        <figure class="author-image">
+                            <a class="img" href="/author/hellodk" style="background-image: url(/assets/images/dk_profile.jpg)"><span class="hidden">hellodk's Picture</span></a>
+                        </figure>
+                    
+
+                    <section class="author">
+                        <h4><a href="/author/hellodk">Deepak Gupta</a></h4>
+
+                        
+                            <p> A full time technologist cum foodieeeeeee... I spend most of my time playing with open source tools and technologies. I prefer hanging out most of the time, and have been a taveller since ages, besides being a biker at heart I do love to practice photography in my liesure.</p>
+                        
+                        <div class="author-meta">
+                            <span class="author-location icon-location"> Bangalore, India</span>
+                            <span class="author-link icon-link"><a href="https://www.linkedin.com/in/hellodk/"> linkedin.com/in/hellodk/</a></span>
+                        </div>
+                    </section>
+
+                    <!-- /author  -->
+
+                    <section class="share">
+                        <h4>Share this post</h4>
+                        <a class="icon-twitter" href="http://twitter.com/share?text=How to achieve CI CD on Mobile Applications&amp;url=http://localhost:4000mobile_ci_cd"
+                            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                            <span class="hidden">Twitter</span>
+                        </a>
+                        <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000mobile_ci_cd"
+                            onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                            <span class="hidden">Facebook</span>
+                        </a>
+                        <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:4000mobile_ci_cd"
+                           onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                            <span class="hidden">Google+</span>
+                        </a>
+                    </section>
                 
             
                 
@@ -228,118 +249,33 @@
                 
             
 
-            <!-- [[tags prefix=" on "]] -->
+            <!-- Add Disqus Comments -->
             
-                on
-                
-                    
-                       <a href='/tag/tutorials'>Tutorials</a>,
-                    
-                
-                    
-                       <a href='/tag/jenkins'>Jenkins</a>,
-                    
-                
-                    
-                       <a href='/tag/ssl'>Ssl</a>,
-                    
-                
-                    
-                       <a href='/tag/security'>Security</a>,
-                    
-                
-                    
-                       <a href='/tag/2023'>2023</a>,
-                    
-                
-                    
-                       <a href='/tag/year'>Year</a>,
-                    
-                
-                    
-                       <a href='/tag/hellodk'>Hellodk</a>
-                    
-                
-            
-            <time class="post-date" datetime="2023-03-14">14 Mar 2023</time>
+
         </footer>
+
     </article>
-    
-    <article class="post">
-        <header class="post-header">
-            <h2 class="post-title"><a href="/5_interesting_cloud_predictions_2016">5 interesting cloud predictions for 2016</a></h2>
-        </header>
-        <section class="post-excerpt">
-            <p>1. It’s time for IOT- The IOT or the Internet of Things has been a buzzword around for quite some time. And finally the time has... <a class="read-more" href="/5_interesting_cloud_predictions_2016">&raquo;</a></p>
-        </section>
-        <footer class="post-meta">
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-
-            <!-- [[tags prefix=" on "]] -->
-            
-                on
-                
-                    
-                       <a href='/tag/tutorials'>Tutorials</a>,
-                    
-                
-                    
-                       <a href='/tag/cloud'>Cloud</a>,
-                    
-                
-                    
-                       <a href='/tag/security'>Security</a>,
-                    
-                
-                    
-                       <a href='/tag/iot'>Iot</a>,
-                    
-                
-                    
-                       <a href='/tag/predictions'>Predictions</a>,
-                    
-                
-                    
-                       <a href='/tag/2016'>2016</a>,
-                    
-                
-                    
-                       <a href='/tag/year'>Year</a>,
-                    
-                
-                    
-                       <a href='/tag/hellodk'>Hellodk</a>
-                    
-                
-            
-            <time class="post-date" datetime="2016-01-28">28 Jan 2016</time>
-        </footer>
-    </article>
-    
-
-    <!-- Previous/next page links - displayed on every page -->
-    
-        <nav class="pagination" role="pagination">
-    
-    <span class="page-number"> Page 1 of 1 </span>
-     
-</nav>
-    
-
 
 </main>
+
+<aside class="read-next">
+
+    <!-- [[! next_post ]] -->
+    
+    <!-- [[! /next_post ]] -->
+    <!-- [[! prev_post ]] -->
+    
+        <a class="read-next-story prev " style="background-image: url(/assets/images/jenkins/jenkins.png)" href="/jenkins_installation_ssl">
+            <section class="post">
+                <h2>How to deploy Jenkins with SSL</h2>
+                <p>It has been quiet sometime since I got my hands dirty, so here we go...</p>
+            </section>
+        </a>
+    
+    <!-- [[! /prev_post ]] -->
+</aside>
+
+<!-- /post -->
 
 
         <!-- The tiny footer at the very bottom -->
